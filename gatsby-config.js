@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/codespud",
   siteMetadata: {
     title: `CodeSpud`,
     author: `@codespud`,
@@ -60,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-54548746-1`,
       },
     },
     `gatsby-plugin-feed`,

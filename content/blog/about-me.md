@@ -4,7 +4,7 @@ author: chris
 type: post
 date: 2009-09-24T01:07:00+00:00
 url: /2009/09/about-me/
-featured_image : /potato.png
+featured_image :  /potato.png
 
 ---
 

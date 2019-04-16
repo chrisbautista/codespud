@@ -5,7 +5,7 @@ title: "BoxerJS"
 categories: []
 tags: []
 excerpt: "Lightweight jQuery Plugin to transform links containing images into quick previews.See project page..."
-featured_image: /boxerjs_codespud.png
+featured_image :  /boxerjs_codespud.png
 contentType: works
 ---
 

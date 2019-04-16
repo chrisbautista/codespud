@@ -4,7 +4,7 @@ author: chris
 type: post
 date: 2016-08-25T21:45:43+00:00
 url: /2016/08/experiments-ajax-test/
-featured_image: /assets/2016/08/AJAX_logo_by_gengns.svg_.png
+featured_image :  /assets/2016/08/AJAX_logo_by_gengns.svg_.png
 draft: true
 
 ---

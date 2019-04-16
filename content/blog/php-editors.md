@@ -5,7 +5,7 @@ type: post
 date: 2008-01-19T07:29:00+00:00
 draft: true
 url: /?p=284
-featured_image: /qa_signage10.jpg
+featured_image :  /qa_signage10.jpg
 
 ---
 

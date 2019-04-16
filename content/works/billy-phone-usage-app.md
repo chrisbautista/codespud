@@ -6,7 +6,7 @@ categories: []
 tags: []
 excerpt: "Billy barks so your phone bills don't bite. Download Billy for free and start tracking your mobile ..."
 contentType: works
-featured_image: /billy_mobile_usage_app.png
+featured_image :  /billy_mobile_usage_app.png
 ---
 
 Billy barks so your phone bills don't bite. Download Billy for free and start tracking your mobile usage.

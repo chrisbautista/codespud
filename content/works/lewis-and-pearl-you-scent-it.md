@@ -6,7 +6,7 @@ categories: []
 tags: []
 excerpt: "You Scent It! is a promotional Facebook application by Lewis and Pearl.Participants must choose amo..."
 contentType: works
-featured_image: /you-scent-it-facebook-promo.png
+featured_image :  /you-scent-it-facebook-promo.png
 
 ---
 

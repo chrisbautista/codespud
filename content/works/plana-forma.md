@@ -6,7 +6,7 @@ categories: []
 tags: []
 excerpt: "The Plana FORMA App allows you to schedule and register for classes at the Plana FORMA studios of y..."
 contentType: works
-featured_image: /plana_forma_mobile_app.png
+featured_image :  /plana_forma_mobile_app.png
 
 ---
 

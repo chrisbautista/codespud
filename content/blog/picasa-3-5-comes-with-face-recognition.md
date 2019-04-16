@@ -4,7 +4,7 @@ author: chris
 type: post
 date: 2009-09-24T00:28:00+00:00
 url: /2009/09/picasa-3-5-comes-with-face-recognition/
-featured_image: /clown-mask.gif
+featured_image :  /clown-mask.gif
 
 ---
 

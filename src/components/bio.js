@@ -42,10 +42,10 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> from Canada. &nbsp;
               <SocialAnchor href={`https://twitter.com/${social.twitter}`}>
-                <Icon src={`/twitter.png`} />
+                <Icon src={`twitter.png`} />
               </SocialAnchor>
               <SocialAnchor href={`${social.linkedin}`}>
-                <Icon src={`/linkedin.png`} />
+                <Icon src={`linkedin.png`} />
               </SocialAnchor>
             </p>
           </BioContainer>

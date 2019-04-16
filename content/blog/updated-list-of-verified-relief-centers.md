@@ -4,7 +4,7 @@ author: chris
 type: post
 date: 2009-09-28T23:02:00+00:00
 url: /2009/09/updated-list-of-verified-relief-centers/
-featured_image: /potatokorner-ondoy-victims.jpg
+featured_image :  potatokorner-ondoy-victims.jpg
 
 ---
 

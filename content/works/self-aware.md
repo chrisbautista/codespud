@@ -6,7 +6,7 @@ categories: []
 tags: []
 excerpt: "Most women do not complain about domestic violence (verbal and physical) because they have no evidence to prove it. This app, when activated, monitors for a spike in the ambient sound decibel level (for example shouting), and automatically starts recording,..."
 contentType: works
-featured_image: /self-app-for-aware-foundation.png
+featured_image :  /self-app-for-aware-foundation.png
 
 ---
 
