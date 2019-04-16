@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Apr 2019 18:38:18 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Apr 2019 18:49:09 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
 
 People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.  
 ]]></description><link>https://www.codespud.com/make-bash-prompt-work/</link><guid isPermaLink="false">https://www.codespud.com/make-bash-prompt-work/</guid><pubDate>Mon, 14 Nov 2016 04:08:17 GMT</pubDate><content:encoded>&lt;p&gt;If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or &lt;a href=&quot;https://www.gnu.org/software/bash/bash.html&quot;&gt;BASH&lt;/a&gt; for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.&lt;/p&gt;
@@ -6,7 +6,19 @@ People tell me the invention of the GUI (graphical user interface) is the best t
 &lt;!--more--&gt;
 &lt;p&gt;I find myself working on the command line for work more and more — managing my servers even my Apple computer. So I get to spend much of my time on the command line. Launching commands like a stenographer recording the latest court drama. I realized very early how powerful the command line could be.&lt;/p&gt;
 &lt;p&gt;But not having a GUI does not mean you should be happy with the default command prompt. Is this familiar?&lt;figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.codespud.com/wp-content/uploads/2016/11/boring.png&quot; alt=&quot;boring&quot; width=&quot;512&quot; height=&quot;224&quot; class=&quot;alignnone size-full wp-image-544&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2016/11/boring.png 512w, http://www.codespud.com/wp-content/uploads/2016/11/boring-300x131.png 300w&quot; sizes=&quot;(max-width: 512px) 100vw, 512px&quot;&gt; &lt;figcaption&gt;Boring command prompt!&lt;/figcaption&gt;&lt;/figure&gt; &lt;/p&gt;
+&lt;p&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/ad9bd2e81c124fa0c1135aab9bd4db0e/c5a17/boring.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 512px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 43.75%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVQoz9XLsQ2AMAwEQA8BvNyDscFPEZT9V4MBEFJCxfUntdZSTjObXy1PZE+6B4BhbCY8GLGp6oRmkpnh0ZlJru53RkfGBz/NF2VtNYgAofWlAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;boring&quot; title src=&quot;/static/ad9bd2e81c124fa0c1135aab9bd4db0e/c5a17/boring.png&quot; srcset=&quot;/static/ad9bd2e81c124fa0c1135aab9bd4db0e/cf440/boring.png 148w,
+/static/ad9bd2e81c124fa0c1135aab9bd4db0e/d2d38/boring.png 295w,
+/static/ad9bd2e81c124fa0c1135aab9bd4db0e/c5a17/boring.png 512w&quot; sizes=&quot;(max-width: 512px) 100vw, 512px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;figcaption&gt;Boring command prompt!&lt;/figcaption&gt;&lt;/figure&gt; &lt;/p&gt;
 &lt;p&gt;Using the table below we can build a BASH prompt that is not only pretty but saves us a few keystrokes as well.&lt;/p&gt;
 &lt;h2&gt;BASH Special Characters Reference&lt;/h2&gt;
 &lt;table border=&quot;1&quot; width=&quot;80%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
@@ -274,7 +286,19 @@ People tell me the invention of the GUI (graphical user interface) is the best t
 &lt;/table&gt;
 &lt;h2&gt;Change the Bash Prompt&lt;/h2&gt;
 &lt;p&gt;The environment variable we want to modify is &lt;strong&gt;PS1&lt;/strong&gt;.&lt;figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.codespud.com/wp-content/uploads/2016/11/editPS1.png&quot; alt=&quot;editps1&quot; width=&quot;376&quot; height=&quot;90&quot; class=&quot;alignnone size-full wp-image-535&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2016/11/editPS1.png 376w, http://www.codespud.com/wp-content/uploads/2016/11/editPS1-300x72.png 300w&quot; sizes=&quot;(max-width: 376px) 100vw, 376px&quot;&gt; &lt;/figure&gt; &lt;/p&gt;
+&lt;p&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f45264fdce8f784f7c300350495a6407/a80c4/editPS1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 376px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 23.936170212765955%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAABD0lEQVQY02OYM3fuggWLenp6+/r7J02eVlTSkJpemJufl5GZXVRckpaRkZmTl5Obl5dfkFdQlJ2bl5qeUVpeGR0d7e3tzeDr7+/o5OTn7+fm5mFrY5iTpR4RJi8hqSohIausrCIlLSUjKycrKysvJ6+gqKiopCQjI6OioiohLs7Hx8eQl58PNLeurjY/vyg7K/7+TemHNxkSYgTs7XWtrC11dHUMjIwNjQzNLcw11NWEhYXFxcVFRUWBpKSkJIO7m5udnZ25uZmlpYWpqa21taq7q7C3p0hUhLS5mY6SsoqaujoQaWhoqiorAi1EBgzc3FyCgoICIACiBYVE+fkl+PiArhID2gO0RAQGIBYiAwBQhUTk+CyD/wAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;editps1&quot; title src=&quot;/static/f45264fdce8f784f7c300350495a6407/a80c4/editPS1.png&quot; srcset=&quot;/static/f45264fdce8f784f7c300350495a6407/cf440/editPS1.png 148w,
+/static/f45264fdce8f784f7c300350495a6407/d2d38/editPS1.png 295w,
+/static/f45264fdce8f784f7c300350495a6407/a80c4/editPS1.png 376w&quot; sizes=&quot;(max-width: 376px) 100vw, 376px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;/figure&gt; &lt;/p&gt;
 &lt;p&gt;Using the reference table above we can break down the current prompt as&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;\u&lt;/em&gt; – the current user&lt;/li&gt;
@@ -283,12 +307,50 @@ People tell me the invention of the GUI (graphical user interface) is the best t
 &lt;/ul&gt;
 &lt;p&gt;Not very useful is it? Let’s change that.&lt;/p&gt;
 &lt;p&gt;By modifying the PS1 variable and exporting it with the command below we can manipulate the prompt to output anything we want.&lt;figure&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley.png&quot; alt=&quot;bash_prompt_smiley&quot; width=&quot;476&quot; height=&quot;131&quot; class=&quot;alignnone size-full wp-image-538&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley.png 476w, http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley-300x83.png 300w&quot; sizes=&quot;(max-width: 476px) 100vw, 476px&quot;&gt; &lt;figcaption&gt;Add a smiley&lt;/figcaption&gt;&lt;/figure&gt; &lt;/p&gt;
+&lt;p&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/4ca4fe36197c24f556104151e17bae2c/c6717/bash_prompt_smiley.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 476px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 27.521008403361346%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEUlEQVQY02P4iwT+4Aa/f//5/+/Pi4+/H77/8/jDn7df//789ZvhP3Hg3z8Q+eDj/8NP/x949O/Ys39//v1n6O7q6uzs7Ovr6+7urq9vqK2traysrKkBklUgUF0DFKmpqamorKyrqysoyCvJy8yq6sorrc7LyWKIiIj08/dz9/BwcHDQ0NBUVFCUkpJWUFCUlZOTBQI5OUVFRSAtKSWlpKzMycnFxsTAIWvI6VDKycLAUFBYmJmRmZqWFhUdbWfvYG5upqevb2pqZmhkZAAEhkYmJqZArpaWlr6BARDp6unpGxiqGVgCDWWor6trbm5uBAN3Dy+gE4DagIqARsjLyysqAu1TVlFRkUMF0pJiEhISAAkmtl0Qk+PGAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;bash_prompt_smiley&quot; title src=&quot;/static/4ca4fe36197c24f556104151e17bae2c/c6717/bash_prompt_smiley.png&quot; srcset=&quot;/static/4ca4fe36197c24f556104151e17bae2c/cf440/bash_prompt_smiley.png 148w,
+/static/4ca4fe36197c24f556104151e17bae2c/d2d38/bash_prompt_smiley.png 295w,
+/static/4ca4fe36197c24f556104151e17bae2c/c6717/bash_prompt_smiley.png 476w&quot; sizes=&quot;(max-width: 476px) 100vw, 476px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;figcaption&gt;Add a smiley&lt;/figcaption&gt;&lt;/figure&gt; &lt;/p&gt;
 &lt;p&gt;Below is my favorite bash prompt which I install for all my servers and even my workstation. I can easily see important details like the hostname – very important if you find yourself managing multiple terminal windows and you can distinguish between windows. This configuration also shows the load averages, the current date and time and the working directory. The color helps to give it contrast to the monotonous black on white default of most terminal windows.&lt;figure&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action.png&quot; alt=&quot;mybashpromot_in_action&quot; width=&quot;719&quot; height=&quot;370&quot; class=&quot;alignnone size-full wp-image-536&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action.png 719w, http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action-300x154.png 300w&quot; sizes=&quot;(max-width: 719px) 100vw, 719px&quot;&gt; &lt;/figure&gt; &lt;/p&gt;
+&lt;p&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/c3af717b947ea9ad65a2f789837478c1/04c1a/mybashpromot_in_action.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 51.46036161335188%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/UlEQVQoz0WR227aQBCGfdkkBh+wd71r4zPmVAPGdjBgSCDEGAgUNYUmrVKpjUgPSqtUqlT1omovetX3aJ+zK5KK1Wg0u6N//08zVMU3sCu5rezpmNZLgmJhoygbFWxZVmD7rwfJZjj4nC4/TqYdzzQsCSMZ/j9UNTq6fnlxOT1bxL3ED3KCuJ9h6CzHCgBjMI/8N6vVehi/6LXnQyMMZEXWIAQP4thp3vW7N+PZ1+ngz4erm+lokw7fTUZlxGMIufrM8mOzbOcdwywXZT0PoLhzjl0nHK5Ub2xy9HHUn3S6adicNR9XWnNt+Uuza/XQa/aicr2gOUh1sISknbgbd9zbv+7J2rAU7nCV5YUszxNw8PQ3jC4g80i12rLiEFJRAGDnuhW7oas3ikkiv70WSy6QTaQVsFrCtq5UkWmZDbMQukrR0QoIQYwQRtJ9EAAKJ3ewkQI2I4oESMKStH2HQEJAzEGzCkafDlh2j2EOWG6P5UimOX6fYXOiSEl2XagO6Gwmw+c4QSANEiLYzlOSgMDnVf3VJN2M+ptkcDs+vjpqk+L9ZFSzTIrlmCTwfl6efzlf/Hi+/L5+8u3ZwtY1QRQJAfkDQTD0G9P24Wnoz6KA5BPfS6OwaOgUaRt5JSg5nlOo2abv2K1KSVXkB/PtTjMcR7NsZstM6vsrwf4HTuNgNuEOI80AAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;mybashpromot_in_action&quot; title src=&quot;/static/c3af717b947ea9ad65a2f789837478c1/b9e4f/mybashpromot_in_action.png&quot; srcset=&quot;/static/c3af717b947ea9ad65a2f789837478c1/cf440/mybashpromot_in_action.png 148w,
+/static/c3af717b947ea9ad65a2f789837478c1/d2d38/mybashpromot_in_action.png 295w,
+/static/c3af717b947ea9ad65a2f789837478c1/b9e4f/mybashpromot_in_action.png 590w,
+/static/c3af717b947ea9ad65a2f789837478c1/04c1a/mybashpromot_in_action.png 719w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+     &lt;/figure&gt; &lt;/p&gt;
 &lt;h2&gt;Make it Permanent&lt;/h2&gt;
 &lt;p&gt;To make your BASH prompt permanent, just edit ~/.bash_profile or ~/.bashrc or ~/.profile or run the command&lt;figure&gt; &lt;/p&gt;
-&lt;img src=&quot;http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent.png&quot; alt=&quot;Make your bash prompt permanent&quot; width=&quot;722&quot; height=&quot;183&quot; class=&quot;alignnone size-full wp-image-541&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent.png 722w, http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent-300x76.png 300w&quot; sizes=&quot;(max-width: 722px) 100vw, 722px&quot;&gt;  
+
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/8d2457d18e004d7c91b1678654e982c6/fef0a/make_bashprompt_permanent.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 25.346260387811636%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1UlEQVQY03WM626CMACF+wzQC1PZqDBqiwS06wWmKNQFl8UfvsSM7/8CQ2IWs2Rfzo+Tk5wPdP2+P7vL9bs9NnorbaPr1tTOdPvWVQe3Pbjm43P31W6cqWz9vrFVZaxVWkv5BnKZ6U4eT73ZaVYmYsUzuVgqoaQq07XKVcFXaybj5ySa05QxGtEwDD3P830f0JimPCnKQuSCCcYzHr/Oo/hFcL4U+YLxSTCZBbPp05QQgjEmI8EIwAgjiAYN9OFQbkH4NiIIx+DhQu6fP4BfzSOPevI/P7ARKxokV/ZIAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;Make your bash prompt permanent&quot; title src=&quot;/static/8d2457d18e004d7c91b1678654e982c6/b9e4f/make_bashprompt_permanent.png&quot; srcset=&quot;/static/8d2457d18e004d7c91b1678654e982c6/cf440/make_bashprompt_permanent.png 148w,
+/static/8d2457d18e004d7c91b1678654e982c6/d2d38/make_bashprompt_permanent.png 295w,
+/static/8d2457d18e004d7c91b1678654e982c6/b9e4f/make_bashprompt_permanent.png 590w,
+/static/8d2457d18e004d7c91b1678654e982c6/fef0a/make_bashprompt_permanent.png 722w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+      
  
 &lt;h2&gt;Ideas&lt;/h2&gt;
 &lt;ol&gt;
@@ -605,7 +667,7 @@ Aside from the design and flow of the application, my immediate concern was whe
 &lt;p&gt;First time you push a project (git push heroku master) and it’s empty, it would trigger a error similar to this&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;!     Push rejected, no Cedar-supported app detected&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;It just means, Heroku does not know what your app is about and so it can’t build the application. Solution is just provide a common starter file like index.php or index.html. This will tell Heroku that you have a PHP or HTML project and build the necessary dependencies.  You can also fix this by providing a composer.json, setting up the dependencies you need.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png&quot;&gt;&lt;img class=&quot;aligncenter wp-image-318 size-full&quot; src=&quot;http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png&quot; alt=&quot;Deploy&quot; width=&quot;846&quot; height=&quot;495&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png 846w, http://www.codespud.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-300x176.png 300w, http://www.codespud.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-768x449.png 768w&quot; sizes=&quot;(max-width: 846px) 100vw, 846px&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png&quot;&gt;&lt;img class=&quot;aligncenter wp-image-318 size-full&quot; src=&quot;http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png&quot; alt=&quot;Deploy&quot; width=&quot;846&quot; height=&quot;495&quot; srcset=&quot;/assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png 846w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-300x176.png 300w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-768x449.png 768w&quot; sizes=&quot;(max-width: 846px) 100vw, 846px&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Install Twitter Search Widget]]></title><description><![CDATA[When I started blogging again last September, I was delighted to get a template with built-in message polling to twitter. I played with it a bit and settled with the look you see at the right. I am not a prolific &#8216;twitterer&#8217;, but I love the whole concept of [micropublishing][1].
 
 ]]></description><link>https://www.codespud.com/install-twitter-search-widget/</link><guid isPermaLink="false">https://www.codespud.com/install-twitter-search-widget/</guid><pubDate>Mon, 19 Oct 2009 04:40:00 GMT</pubDate><content:encoded>&lt;p&gt;When I started blogging again last September, I was delighted to get a template with built-in message polling to twitter. I played with it a bit and settled with the look you see at the right. I am not a prolific ‘twitterer’, but I love the whole concept of &lt;a href=&quot;http://en.wikipedia.org/wiki/Micropublishing&quot;&gt;micropublishing&lt;/a&gt;.&lt;/p&gt;
@@ -868,7 +930,19 @@ _Oh, I forgot he gets to trash another Aston Martin while saving the girl(not th
 _&lt;br&gt;
 OCR is not integrated into Google Docs Home interface yet, but this API improvement is a step closer. Heres, a mockup of how I believe this feature would integrate into Google Docs’s upload function.&lt;/p&gt;
 &lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
-  &lt;img class=&quot;alignnone size-medium wp-image-468&quot; src=&quot;http://www.codespud.com/wp-content/uploads/2009/09/ocr-googlemockup-300x212.png&quot; alt=&quot;ocr-googlemockup&quot; width=&quot;300&quot; height=&quot;212&quot; srcset=&quot;http://www.codespud.com/wp-content/uploads/2009/09/ocr-googlemockup-300x212.png 300w, http://www.codespud.com/wp-content/uploads/2009/09/ocr-googlemockup.png 400w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot;&gt;
+  
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/fc40b901f78cc8b2419933ea4ebb33e6/135ae/ocr-googlemockup-300x212.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 300px; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 70.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAACT0lEQVQ4y52SyW7UQBCG51k5QsiRJ0AcuPIESBwI5MINCSFxRXAAMsyMJ5kZ791u77vdXn6qe0KU5RZLn6q67Ppdf3cvuCgReRYO5hWEqBBlA+Z5xvRIFl3doY5jxEGEvmrR1RLAjMc+i52d48dFhN9Gip8XQmM4Jaykhxl1MOOHWHH/gEPUIygGLN5+j/HyM8erLyFef43w4hPHyUcfp+eMoofn577m9PxYUzw7c/D0PXF25OSDiyfvbLz5FmKxJ2WRtVgfGLZWgCsnxNYO9HrvJzCoZpgcG2K193WdpQ2CnCbKO/Csgyh6RNWgJ12E5QhMEuv1Cn8v/mC9WsIyD/BdGwHzkCURuqZCUxWati7v7bHKJ52lNVlm+YBpHOCzAHvThGnZsB0Xns9g2Q7VOVggkKTZTfs4zRjGGXKY0MuB8qNgWJIgJ8GZBEWUIMsL5EV1jGWFlGKa5UiIvChRVg2KqtaUdaPFul7SD46CyvaCF2pCCdN2wYMQXISUOzQhh+16YFzA54GeUoQxAoLRd4GI0HQS7X1BlkvM0wiXCViOB8tlkNcW5luQS21V8T+Xw0jQQHcFyfKk9pDB82giilVVoW0bokVT12iaBgM1juN4w6QgISnl9bvhtuAIh+ypQ1AHcnl5BYsOx6F8t9vROxcF7WHf9yRea2qi61otrqZUtRvL6thdatoaG1xuDRIzYRPmYQ/fc5FnCdIkRhhyGMYSm80Sy+Uv6jGvb87RcqwE3VTqS2qH5R3cqIJzC7X2kgZ+2t6BpZ3uF3RlvEziH4pkHdbogXdyAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;ocr-googlemockup&quot; title src=&quot;/static/fc40b901f78cc8b2419933ea4ebb33e6/135ae/ocr-googlemockup-300x212.png&quot; srcset=&quot;/static/fc40b901f78cc8b2419933ea4ebb33e6/cf440/ocr-googlemockup-300x212.png 148w,
+/static/fc40b901f78cc8b2419933ea4ebb33e6/d2d38/ocr-googlemockup-300x212.png 295w,
+/static/fc40b901f78cc8b2419933ea4ebb33e6/135ae/ocr-googlemockup-300x212.png 300w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot;&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
 &lt;/div&gt;
 &lt;p&gt;The feature is still in its early stages, shown by errors and misses in documents generated by the live demo. The developers did say to use high quality images.&lt;/p&gt;
 &lt;blockquote&gt;
