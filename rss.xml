@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Apr 2019 18:23:30 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Apr 2019 18:38:18 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
 
 People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.  
 ]]></description><link>https://www.codespud.com/make-bash-prompt-work/</link><guid isPermaLink="false">https://www.codespud.com/make-bash-prompt-work/</guid><pubDate>Mon, 14 Nov 2016 04:08:17 GMT</pubDate><content:encoded>&lt;p&gt;If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or &lt;a href=&quot;https://www.gnu.org/software/bash/bash.html&quot;&gt;BASH&lt;/a&gt; for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.&lt;/p&gt;
@@ -1738,133 +1738,112 @@ Our goal is to make a shell script to create backups (in tar-gzip versions) of t
 &lt;p&gt;&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Our goal is to make a shell script to create backups (in tar-gzip versions) of the folders we want unto a safe location on a disk. We want to be able to list all the folders and have the script loop through them. Now that’s settled, we can proceed to the code.&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;First, don’t forget to tell linux what scripting interpreter to use. I usually use &lt;span style=&quot;font-style: italic;&quot;&gt;sh&lt;/span&gt; but there are others like &lt;span style=&quot;font-style: italic;&quot;&gt;bash and ksh&lt;/span&gt;. But many experts suggest to use sh for portability to older systems.&lt;/p&gt;
-&lt;p&gt;`&lt;br /&gt;&lt;/p&gt;
-&lt;h1&gt;!/bin/sh&lt;br /&gt;&lt;/h1&gt;
-&lt;p&gt;` &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/sh&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Next, we configure the script. The lines below enumerates the folders I want archived ,then stores them in a SHELL VARIABLE named FOLDERS. (duhh!..)&lt;/p&gt;
-&lt;div style=&quot;background-color: darkgrey; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  # &amp;#8212; LIST OF FILES/FOLDERS TO BACKUP&lt;br /&gt; FOLDERS=&amp;#8221;/var/www/html /opt/sandbox&amp;#8221;
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# — LIST OF FILES/FOLDERS TO BACKUP&lt;/span&gt;
+FOLDERS&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”/var/www/html /opt/sandbox”&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This line saves the folder path I want the archives to be stored in.&lt;/p&gt;
-&lt;div style=&quot;background-color: darkgrey; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  # &amp;#8212; BACKUP HERE&lt;br /&gt; BACKUPFOLDER=&amp;#8221;/opt/backup&amp;#8221;
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# — BACKUP HERE&lt;/span&gt;
+BACKUPFOLDER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”/opt/backup”&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;REMINDER&lt;/em&gt;&lt;br&gt;
 Make sure that the backup folder exist. If it doesn’t run the lines below on the console.&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; mkdir /opt/backup&lt;br /&gt; &gt; chown root:root /opt/backup&lt;br /&gt; &gt; chmod 755 /opt/backup
 &lt;/div&gt;
 &lt;p&gt;Here I configure the command string I want to use. Regarding the details of the command I used – see this &lt;a href=&quot;http://potatokorner.blogspot.com/2008/12/linux-snippet-backup-using-tar-and-gzip.html&quot;&gt;[link]&lt;/a&gt;.&lt;/p&gt;
-&lt;div style=&quot;background-color: darkgrey; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  # &amp;#8212; ARCHIVE COMMAND&lt;br /&gt; COMPRESSCMD=&amp;#8221;tar czfv &amp;#8220;
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# — ARCHIVE COMMAND&lt;/span&gt;
+COMPRESSCMD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”tar czfv “&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Here we use the &lt;span style=&quot;font-style: italic;&quot;&gt;for&lt;/span&gt; command to loop through all the items we listed in &lt;span style=&quot;font-style: italic;&quot;&gt;$FOLDERS&lt;/span&gt; and store it in another variable, &lt;span style=&quot;font-style: italic;&quot;&gt;$itm&lt;/span&gt;.&lt;/p&gt;
-&lt;div style=&quot;background-color: darkgrey; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  ## loop thru folders&lt;br /&gt; for itm in $FOLDERS; do&lt;br /&gt; # commands here&lt;br /&gt; &amp;#8230;.&lt;br /&gt; done
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;## loop thru folders&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; itm &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$FOLDERS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# commands here&lt;/span&gt;
+….
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;These lines configures the commands we’re going to use inside the loop. The first line generates a formatted file path for my archive, $FARCHIVE.&lt;/p&gt;
-&lt;div style=&quot;background-color: darkgrey; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  FARCHIVE=$BACKUPFOLDER/`basename $itm`_`uname -n`_`date +%F`.tgz&lt;br /&gt; $COMPRESSCMD $FARCHIVE $itm
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;FARCHIVE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt;/&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;basename&lt;/span&gt; $itm&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;_&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;uname&lt;/span&gt; -n&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;_&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt; +%F&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;.tgz
+&lt;span class=&quot;token variable&quot;&gt;$COMPRESSCMD&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$FARCHIVE&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$itm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;If you’ve noticed I used the tilde symbol(`). Yes they are not single quotation marks. In linux console, any commands enclosed within tildes are ran first and the result is returned as a string. So for example &lt;span style=&quot;font-style: italic;&quot;&gt;$itm&lt;/span&gt; is equal to &lt;span style=&quot;font-style: italic;&quot;&gt;/var/www/html&lt;/span&gt;. The resulting FARCHIVE value will be:&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; echo $FARCHIVE&lt;br /&gt; /opt/backup/html_potato_2009-01-02.tgz
 &lt;/div&gt;
 &lt;p&gt;The second line uses $FARCHIVE as well as the command we configured earlier and runs it.&lt;/p&gt;
 &lt;p&gt;For a breakdown of the enclosed commands we used.&lt;/p&gt;
 &lt;p&gt;echo the last(base) name in a path string.&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; basename /var/www/html&lt;br /&gt; html
 &lt;/div&gt;
 &lt;p&gt;echo the system’s computer name.&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; uname -n&lt;br /&gt; potato
 &lt;/div&gt;
 &lt;p&gt;echo the current date in this format (YYYY-MM-DD)&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; date +%F&lt;br /&gt; 2009-01-02
 &lt;/div&gt;
 &lt;p&gt;Here is the full script.&lt;/p&gt;
-&lt;div style=&quot;background-color: black; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
-  &lt;p&gt;
-    #!/bin/sh&lt;br /&gt; #set -x&lt;br /&gt; #&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;&lt;br /&gt; # ID: cabBackup.sh &amp;#8211; BACKUP items to folder&lt;br /&gt; # USAGE: ./cabBackup.sh&lt;br /&gt; #&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;&lt;br /&gt; # AUTHOR: codespud 2008-2009&lt;br /&gt; # VERSION: 0.01
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # TODO: arguments&lt;br /&gt; # TODO: config file&lt;br /&gt; # TODO: functions&lt;br /&gt; # TODO: filtering
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # Sources&lt;br /&gt; # http://www.hsrl.rutgers.edu/ug/shell_help.html
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # PATH&lt;br /&gt; PATH=/opt/bin:/usr/bin:/bin; export PATH
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # CONFIG
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # &amp;#8212; LIST OF FILES/FOLDERS TO BACKUP if not specified via console
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    FOLDERS=&amp;#8221;/var/www/html /opt/sandbox&amp;#8221;&lt;br /&gt; #FOLDERS=&amp;#8221;&amp;#8221;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # &amp;#8212; BACKUP HERE&lt;br /&gt; BACKUPFOLDER=&amp;#8221;/opt/backup&amp;#8221;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # &amp;#8212; ARCHIVE COMMAND&lt;br /&gt; COMPRESSCMD=&amp;#8221;tar czfv &amp;#8221;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # &amp;#8212; DO NOT EDIT BEYOND THIS LINE (unless if you knw what ur doing ;] ) &amp;#8212;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # Check if the folder exists if not make it&lt;br /&gt; [ ! -d $BACKUPFOLDER ] &amp;&amp; mkdir -p $BACKUPFOLDER || :
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    chown root:root $BACKUPFOLDER&lt;br /&gt; chmod 755 $BACKUPFOLDER
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    # clean the screen&lt;br /&gt; clear
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    echo lets start
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    ## loop thru folders&lt;br /&gt; for itm in $FOLDERS; do
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    FARCHIVE=$BACKUPFOLDER/`basename $itm`_`uname -n`_`date +%F`.tgz&lt;br /&gt; $COMPRESSCMD $FARCHIVE $itm
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    done
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    echo .. done
-  &lt;/p&gt;
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#set -x&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#——————————————–&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# ID: cabBackup.sh – BACKUP items to folder&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# USAGE: ./cabBackup.sh&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#——————————————–&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# AUTHOR: codespud 2008-2009&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# VERSION: 0.01&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# TODO: arguments&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# TODO: config file&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# TODO: functions&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# TODO: filtering&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Sources&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# http://www.hsrl.rutgers.edu/ug/shell_help.html&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# PATH&lt;/span&gt;
+PATH&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/opt/bin:/usr/bin:/bin&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;export&lt;/span&gt; PATH
+
+&lt;span class=&quot;token comment&quot;&gt;# CONFIG&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# — LIST OF FILES/FOLDERS TO BACKUP if not specified via console&lt;/span&gt;
+
+FOLDERS&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”/var/www/html /opt/sandbox”
+&lt;span class=&quot;token comment&quot;&gt;#FOLDERS=””&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# — BACKUP HERE&lt;/span&gt;
+BACKUPFOLDER&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”/opt/backup”
+
+&lt;span class=&quot;token comment&quot;&gt;# — ARCHIVE COMMAND&lt;/span&gt;
+COMPRESSCMD&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;”tar czfv ”
+
+&lt;span class=&quot;token comment&quot;&gt;# — DO NOT EDIT BEYOND THIS LINE (unless if you knw what ur doing ;] ) —&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Check if the folder exists if not make it&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; -d &lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; -p &lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;chown&lt;/span&gt; root:root &lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; 755 &lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# clean the screen&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;clear&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; lets start
+
+&lt;span class=&quot;token comment&quot;&gt;## loop thru folders&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; itm &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$FOLDERS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+
+FARCHIVE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$BACKUPFOLDER&lt;/span&gt;/&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;basename&lt;/span&gt; $itm&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;_&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;uname&lt;/span&gt; -n&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;_&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt; +%F&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;.tgz
+&lt;span class=&quot;token variable&quot;&gt;$COMPRESSCMD&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$FARCHIVE&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$itm&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now name and save the file. I named mine &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;cabBackup.sh&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;You need to make the script executable.&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; chmod 755 ./cabBackup.sh
 &lt;/div&gt;
 &lt;p&gt;There you have it just run it from the console.&lt;/p&gt;
-&lt;div style=&quot;background-color: green; color: white; font-size: 8pt; padding: 3px;&quot;&gt;
+&lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
   &gt; ./cabBackup.sh
 &lt;/div&gt;
 &lt;p&gt;There are still some things we need to do to make it a fully fledged automation script like configuration files, some pre-process commands and error trapping. But what we have now serves our purpose very well. I’ll post revisions of this script so watch for that.&lt;/p&gt;
