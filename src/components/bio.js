@@ -8,6 +8,27 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import styled from "styled-components"
+
+const BioImage = styled(Image)`
+  clear: both;
+  float: left;
+  margin-right: 10px;
+  border-radius: 30px;
+`
+
+const BioContainer = styled.div`
+  height: 80px;
+  display: flex;
+  width: 100%;
+`
+const Icon = styled.img`
+  border-radius: 15px;
+  width: 28px;
+`
+const SocialAnchor = styled.a`
+  box-shadow: none;
+`
 
 function Bio() {
   return (
@@ -16,16 +37,18 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div>
-            <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
+          <BioContainer>
+            <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              Written by <strong>{author}</strong> from Canada. &nbsp;
+              <SocialAnchor href={`https://twitter.com/${social.twitter}`}>
+                <Icon src={`/twitter.png`} />
+              </SocialAnchor>
+              <SocialAnchor href={`${social.linkedin}`}>
+                <Icon src={`/linkedin.png`} />
+              </SocialAnchor>
             </p>
-          </div>
+          </BioContainer>
         )
       }}
     />
@@ -34,7 +57,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/profile.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
@@ -46,6 +69,7 @@ const bioQuery = graphql`
         author
         social {
           twitter
+          linkedin
         }
       }
     }
