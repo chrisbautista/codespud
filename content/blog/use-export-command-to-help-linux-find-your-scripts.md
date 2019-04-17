@@ -3,36 +3,23 @@ title: Use Export Command To Help Linux Find Your Scripts
 author: chris
 type: post
 date: 2009-09-25T03:37:00+00:00
-url: /2009/09/use-export-command-to-help-linux-find-your-scripts/
-blogger_blog:
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
-blogger_permalink:
-  - /2009/09/use-export-command-to-help-linux-find.html
-  - /2009/09/use-export-command-to-help-linux-find.html
-  - /2009/09/use-export-command-to-help-linux-find.html
-blogger_internal:
-  - /feeds/21010737/posts/default/1907023520845605522
-  - /feeds/21010737/posts/default/1907023520845605522
-  - /feeds/21010737/posts/default/1907023520845605522
-
+redirect_from:
+  - /2009/09/use-export-command-to-help-linux-find-your-scripts/
 ---
-###### Level: Beginner, Intermediate
-
-<div style="margin-left: 1em; margin-right: 1em; text-align: center;">
-  <img border="0" src="http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png" /><br />Yeah your a rockstar!
-</div>
 
 You compiled and installed a linux binary or made a nifty script but you don&#8217;t want to mess the server bin tree. So you placed it in an isolated folder like so:
 
-<div>
-  /usr/local/myscripts/really/great/work/bin/myutility
+<!--more-->
+
+###### Level: Beginner, Intermediate
+
+<div style="margin-left: 1em; margin-right: 1em; text-align: center;">
+  <img src="http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png" /><br />Yeah your a rockstar!
 </div>
+
+```bash
+  /usr/local/myscripts/really/great/work/bin/myutility
+```
 
 You go on with business as usual. But soon you got tired of typing the whole path or changing folders every time you need the app. You could simplify your life by making a symbolic link(shortcut) or a wrapper script and place it on a more convenient path like /bin or /usr/bin. But you realize that would be defeating your original intent. what do you do? <!--more-->
 

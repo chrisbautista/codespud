@@ -40,12 +40,12 @@ function Bio() {
           <BioContainer>
             <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
             <p>
-              Written by <strong>{author}</strong> from Canada. &nbsp;
+              Written by <strong>{author}</strong> &nbsp;
               <SocialAnchor href={`https://twitter.com/${social.twitter}`}>
-                <Icon src={`twitter.png`} />
+                <Icon src={`/twitter.png`} />
               </SocialAnchor>
               <SocialAnchor href={`${social.linkedin}`}>
-                <Icon src={`linkedin.png`} />
+                <Icon src={`/linkedin.png`} />
               </SocialAnchor>
             </p>
           </BioContainer>

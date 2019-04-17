@@ -3,7 +3,8 @@ title: Install Twitter Search Widget
 author: chris
 type: post
 date: 2009-10-19T04:40:00+00:00
-url: /2009/10/install-twitter-search-widget/
+redirect_from: 
+  - /2009/10/install-twitter-search-widget/
 blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com

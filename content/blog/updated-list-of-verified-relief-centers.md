@@ -3,22 +3,21 @@ title: Updated list of Verified Relief Centers
 author: chris
 type: post
 date: 2009-09-28T23:02:00+00:00
-url: /2009/09/updated-list-of-verified-relief-centers/
+redirect_from: 
+  - /2009/09/updated-list-of-verified-relief-centers/
 featured_image :  potatokorner-ondoy-victims.jpg
 
 ---
 
-> image attributed to: http://news.xinhuanet.com
 
 Here&#8217;s another repost.A list of verified in-kind drop off points for Ondoy victims relief operations. Includes what they need and who to contact.
-
+<!--more-->
+> image attributed to: http://news.xinhuanet.com
 For updates keep checking <a href="http://www.gmanews.tv/story/173288/update-list-of-verified-relief-centers-for-ondoy-victims" target="_blank">gmanewstv.com</a>
 
-### Update: List of verified relief centers for &#8216;Ondoy&#8217; victims
+#### Update: List of verified relief centers for &#8216;Ondoy&#8217; victims
 
-<center>
   <b><span style="text-decoration: underline;">QUEZON CITY</span></b>
-</center>
 
 **<span style="text-decoration: underline;">UP College of Arts and Letters</span>**
 

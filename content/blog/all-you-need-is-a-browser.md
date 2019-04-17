@@ -3,7 +3,8 @@ title: All You Need Is A Browser
 author: chris
 type: post
 date: 2009-10-12T05:02:00+00:00
-url: /2009/10/all-you-need-is-a-browser/
+redirect_from: 
+  - /2009/10/all-you-need-is-a-browser/
 
 
 ---

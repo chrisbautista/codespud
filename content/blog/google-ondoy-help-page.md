@@ -3,7 +3,8 @@ title: Google Ondoy Help Page
 author: chris
 type: post
 date: 2009-09-28T10:39:00+00:00
-url: /2009/09/google-ondoy-help-page/
+redirect_from: 
+  - /2009/09/google-ondoy-help-page/
 excerpt: Google joins the Filipino nation in helping those affected by Typhoon Ondoy!
 
 ---

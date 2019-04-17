@@ -3,7 +3,8 @@ title: What Browser?
 author: chris
 type: post
 date: 2009-10-10T16:04:00+00:00
-url: /2009/10/what-browser/
+redirect_from: 
+  - /2009/10/what-browser/
 blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com
@@ -22,13 +23,12 @@ blogger_internal:
   - /feeds/21010737/posts/default/5020628614146954525
 
 ---
-## WhatBrowser.org?
 
-Ever wondered what a browser truly is? Or know someone you&#8217;ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don&#8217;t fret, Google comes to the rescue again. <a name='more'></a>
-
+Ever wondered what a browser truly is? Or know someone you&#8217;ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don&#8217;t fret, Google comes to the rescue again. 
+<!--more-->
 Built by &#8220;some folks from Google&#8221;, WhatBrowser.org is a site dedicated to what we all would agree to be the most used application in any computer, &#8220;the Browser&#8221;. Any Operating System has it in some form or another(Anyone said <a href="http://en.wikipedia.org/wiki/Lynx_(web_browser))" target="_blank">Lynx</a>(?). Companies battle it out for supremacy, sometimes even forcing their religion; <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729&pn=2" target="_blank">I mean browser, down our throats</a>. Whatever a browser is or where it came from, it paved the way for the information superhighway AKA The Internet. That is cause for celebration and dedicatory site, won&#8217;t you agree? 
 
-WhatBrowser.org is kind of timely if you think <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729" target="_blank">Oct 13 will be birthday no. 15</a> of the commercial browser. Imagine software, a teener! No wonder some people still gets confused (LOL).<!--more-->
+WhatBrowser.org is kind of timely if you think <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729" target="_blank">Oct 13 will be birthday no. 15</a> of the commercial browser. Imagine software, a teener! No wonder some people still gets confused (LOL).
 
 ## Visit the site
 

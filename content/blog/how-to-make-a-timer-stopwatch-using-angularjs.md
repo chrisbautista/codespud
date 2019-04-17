@@ -3,11 +3,12 @@ title: How To Make A Timer/Stopwatch Using AngularJS
 author: chris
 type: post
 date: 2014-09-28T18:09:50+00:00
-url: /2014/09/how-to-make-a-timer-stopwatch-using-angularjs/
+redirect_from: 
+  - /2014/09/how-to-make-a-timer-stopwatch-using-angularjs/
 featured_image: /assets/2014/09/angular-featured.png
 
 ---
-I&#8217;ve got some leeway pushing <a title="Khrunus" href="https://github.com/chrisbautista/Khrunus" target="_blank">Khrunus</a> off the ground.  I&#8217;ve always been successful using JavaScript&#8217;s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:
+I&#8217;ve got some leeway pushing <a title="Khrunus" href="https://github.com/chrisbautista/Khrunus" target="_blank">Khrunus</a> off the ground.  I&#8217;ve always been successful using JavaScript&#8217;s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:<!--more--> 
 
 ## Problem
 
@@ -17,7 +18,7 @@ How to use AngularJS to make a time related app, in this case a timer for loggin
 
 Before I started this little venture, I need to detail the parameters of the experiment.
 
-Firstly,  I need to layout my application in two sections. The top section will show a digital clock face and a button to toggle(start or stop) the clock. The bottom section will be a table showing start and end times, as well as the total duration. <!--more--> To know that the application is successful, start and end times should be logged. Using those values I can compute for the duration.
+Firstly,  I need to layout my application in two sections. The top section will show a digital clock face and a button to toggle(start or stop) the clock. The bottom section will be a table showing start and end times, as well as the total duration. To know that the application is successful, start and end times should be logged. Using those values I can compute for the duration.
 
 We have two modes; an idle state,&#8221;stopped&#8221; and an active mode,&#8221;started&#8221;. We need to consider that when coding the helper functions.
 

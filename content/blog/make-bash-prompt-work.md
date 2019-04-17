@@ -3,26 +3,28 @@ title: Make Your Bash Prompt Work For You
 author: chris
 type: post
 date: 2016-11-14T04:08:17+00:00
-url: /2016/11/make-bash-prompt-work/
-featured_image :  /assets/2016/11/mybashpromot_in_action.png
-
+redirect_from:
+  - /2016/11/make-bash-prompt-work/
+featured_image: /assets/2016/11/mybashpromot_in_action.png
 ---
+
 If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
 
-People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.  
+People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.
+
 <!--more-->
 
 I find myself working on the command line for work more and more &#8212; managing my servers even my Apple computer. So I get to spend much of my time on the command line. Launching commands like a stenographer recording the latest court drama. I realized very early how powerful the command line could be.
 
 But not having a GUI does not mean you should be happy with the default command prompt. Is this familiar?<figure>
 
-<img src="http://www.codespud.com/wp-content/uploads/2016/11/boring.png" alt="boring" width="512" height="224" class="alignnone size-full wp-image-544" srcset="http://www.codespud.com/wp-content/uploads/2016/11/boring.png 512w, http://www.codespud.com/wp-content/uploads/2016/11/boring-300x131.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> <figcaption>Boring command prompt!</figcaption></figure> 
+<img src="/assets/2016/11/boring.png" alt="boring" width="512" height="224" class="alignnone size-full wp-image-544" srcset="/assets/2016/11/boring.png 512w, /assets/2016/11/boring-300x131.png 300w" sizes="(max-width: 512px) 100vw, 512px" /> <figcaption>Boring command prompt!</figcaption></figure>
 
 Using the table below we can build a BASH prompt that is not only pretty but saves us a few keystrokes as well.
 
 ## BASH Special Characters Reference
 
-<table border="1" width="80%" cellspacing="0" cellpadding="3">
+<table >
   <tr>
     <th>
       Special character
@@ -290,41 +292,39 @@ Using the table below we can build a BASH prompt that is not only pretty but sav
 
 The environment variable we want to modify is **PS1**.<figure>
 
-<img src="http://www.codespud.com/wp-content/uploads/2016/11/editPS1.png" alt="editps1" width="376" height="90" class="alignnone size-full wp-image-535" srcset="http://www.codespud.com/wp-content/uploads/2016/11/editPS1.png 376w, http://www.codespud.com/wp-content/uploads/2016/11/editPS1-300x72.png 300w" sizes="(max-width: 376px) 100vw, 376px" /> </figure> 
+<img src="/assets/2016/11/editPS1.png" alt="editps1" width="376" height="90" class="alignnone size-full wp-image-535" srcset="/assets/2016/11/editPS1.png 376w, /assets/2016/11/editPS1-300x72.png 300w" sizes="(max-width: 376px) 100vw, 376px" /> </figure>
 
 Using the reference table above we can break down the current prompt as
 
-  * _\u_ &#8211; the current user
-  * _\h_ &#8211; the computer&#8217;s hostname
-  * _\w_ &#8211; the current working directory
+- _\u_ &#8211; the current user
+- _\h_ &#8211; the computer&#8217;s hostname
+- _\w_ &#8211; the current working directory
 
 Not very useful is it? Let&#8217;s change that.
 
-By modifying the PS1 variable and exporting it with the command below we can manipulate the prompt to output anything we want.<figure> 
+By modifying the PS1 variable and exporting it with the command below we can manipulate the prompt to output anything we want.<figure>
 
-<img src="http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley.png" alt="bash_prompt_smiley" width="476" height="131" class="alignnone size-full wp-image-538" srcset="http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley.png 476w, http://www.codespud.com/wp-content/uploads/2016/11/bash_prompt_smiley-300x83.png 300w" sizes="(max-width: 476px) 100vw, 476px" /> <figcaption>Add a smiley</figcaption></figure> 
+<img src="/assets/2016/11/bash_prompt_smiley.png" alt="bash_prompt_smiley" width="476" height="131" class="alignnone size-full wp-image-538" srcset="/assets/2016/11/bash_prompt_smiley.png 476w, /assets/2016/11/bash_prompt_smiley-300x83.png 300w" sizes="(max-width: 476px) 100vw, 476px" /> <figcaption>Add a smiley</figcaption></figure>
 
-Below is my favorite bash prompt which I install for all my servers and even my workstation. I can easily see important details like the hostname &#8211; very important if you find yourself managing multiple terminal windows and you can distinguish between windows. This configuration also shows the load averages, the current date and time and the working directory. The color helps to give it contrast to the monotonous black on white default of most terminal windows.<figure> 
+Below is my favorite bash prompt which I install for all my servers and even my workstation. I can easily see important details like the hostname &#8211; very important if you find yourself managing multiple terminal windows and you can distinguish between windows. This configuration also shows the load averages, the current date and time and the working directory. The color helps to give it contrast to the monotonous black on white default of most terminal windows.<figure>
 
-<img src="http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action.png" alt="mybashpromot_in_action" width="719" height="370" class="alignnone size-full wp-image-536" srcset="http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action.png 719w, http://www.codespud.com/wp-content/uploads/2016/11/mybashpromot_in_action-300x154.png 300w" sizes="(max-width: 719px) 100vw, 719px" /> </figure> 
+<img src="/assets/2016/11/mybashpromot_in_action.png" alt="mybashpromot_in_action" width="719" height="370" class="alignnone size-full wp-image-536" srcset="/assets/2016/11/mybashpromot_in_action.png 719w, /assets/2016/11/mybashpromot_in_action-300x154.png 300w" sizes="(max-width: 719px) 100vw, 719px" /> </figure>
 
 ## Make it Permanent
 
-To make your BASH prompt permanent, just edit ~/.bash_profile or ~/.bashrc or ~/.profile or run the command<figure> 
+To make your BASH prompt permanent, just edit ~/.bash_profile or ~/.bashrc or ~/.profile or run the command<figure>
 
-<img src="http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent.png" alt="Make your bash prompt permanent" width="722" height="183" class="alignnone size-full wp-image-541" srcset="http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent.png 722w, http://www.codespud.com/wp-content/uploads/2016/11/make_bashprompt_permanent-300x76.png 300w" sizes="(max-width: 722px) 100vw, 722px" />  
-</figure> 
+<img src="/assets/2016/11/make_bashprompt_permanent.png" alt="Make your bash prompt permanent" width="722" height="183" class="alignnone size-full wp-image-541" srcset="/assets/2016/11/make_bashprompt_permanent.png 722w, /assets/2016/11/make_bashprompt_permanent-300x76.png 300w" sizes="(max-width: 722px) 100vw, 722px" />  
+</figure>
 
+## Ideas
 
-
-## Ideas 
-
-  1. Count the files in the current directory 
-  2. Display in blinking colors the last line of a todo list 
-  3. Display CPU/Memory/Disk usage 
-  4. Display command to pull up a help screen 
-  5. Echo a smiley if the system is working in top condition 
+1. Count the files in the current directory
+2. Display in blinking colors the last line of a todo list
+3. Display CPU/Memory/Disk usage
+4. Display command to pull up a help screen
+5. Echo a smiley if the system is working in top condition
 
 There you have it, you can now work on the command line with a little bit more help. The key here is to be creative and think of what you want your bash prompt to have. Enjoy!
 
- [1]: https://www.gnu.org/software/bash/bash.html
+[1]: https://www.gnu.org/software/bash/bash.html

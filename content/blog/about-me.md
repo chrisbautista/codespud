@@ -4,13 +4,15 @@ author: chris
 type: post
 date: 2009-09-24T01:07:00+00:00
 url: /2009/09/about-me/
+redirect_from: 
+  - /2009/09/about-me/
 featured_image :  /potato.png
 
 ---
 
 Hi! I&#8217;m Chris Bautista. I&#8217;m a veteran programmer, addicted gamer, clueless photographer and novice writer. 
 
-This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. I do love challenges so if you have a topic I can help with post it as a comment or email me at [chris at codespud.com][1].
+This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. <!--more--> I do love challenges so if you have a topic I can help with post it as a comment or email me at [chris at codespud.com][1].
 
 ## What I do
 

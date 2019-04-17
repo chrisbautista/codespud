@@ -3,7 +3,8 @@ title: 'Updates on Ondoy: Places to donate – Efforts by bloggers'
 author: chris
 type: post
 date: 2009-09-28T03:07:00+00:00
-url: /2009/09/updates-on-ondoy-places-to-donate-efforts-by-bloggers/
+redirect_from: 
+  - /2009/09/updates-on-ondoy-places-to-donate-efforts-by-bloggers/
 featured_image : ./potatokorner-philippines_flooding.jpg
 
 ---

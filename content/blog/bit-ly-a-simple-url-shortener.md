@@ -3,7 +3,8 @@ title: bit.ly, a simple url shortener
 author: chris
 type: post
 date: 2009-10-17T23:50:00+00:00
-url: /2009/10/bit-ly-a-simple-url-shortener/
+redirect_from: 
+  - /2009/10/bit-ly-a-simple-url-shortener/
 
 ---
 It started with <a href="http://tinyurl.com/" target="_blank">TinyURL</a>, <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL aliasing/shortening</a> has become big business with similar sites growing out of the woodwork(See <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL Shortening &#8211; History</a>). With other unrelated services following the trend, like <a href="http://scr.im/" target="_blank">scr.im</a>(email aliasing) and <a href="http://twt.fm/" target="_blank">twt.fm</a>(promotes music), adding value to support our slowly growing twittering society. Bit.ly is one such revolutionary child; [but this child has grown big enough to even rival TinyURL][1].

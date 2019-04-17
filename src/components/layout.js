@@ -12,13 +12,21 @@ const Header = styled.header`
   margin: 0 auto;
   text-decoration: none;
   margin-bottom: 1em;
+  
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `
 
 const MainMenu = styled.div`
   float: right;
+
+  @media screen and (max-width: 768px) {
+    float: unset;
+  }
 `
 const H3 = styled.h3`
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 1.4em;
 `
@@ -28,6 +36,12 @@ const MenuLink = styled(Link)`
 const NavUl = styled.ul`
   list-style: none;
   display: inline-block;
+    
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 `
 const NavLi = styled.li`
   list-style: none;
@@ -35,6 +49,12 @@ const NavLi = styled.li`
   min-width: 90px;
   padding: 5px 10px 5px 0;
   margin-bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+    border-bottom: 1px solid #000;
+    font-size: 1.5em;
+  }
 `
 
 const Footer = styled.footer`
@@ -49,7 +69,10 @@ const Footer = styled.footer`
 const FooterColumn = styled.p`
   margin: 0 auto;
   padding: 30px 15%;
-  text-align: justify;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    padding: 0 10px;
+  } 
 `
 const Disclaimer = FooterColumn
 
@@ -89,7 +112,7 @@ const Menu = () => (
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children, data } = this.props
+    const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
