@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Tue, 16 Apr 2019 21:31:10 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Wed, 17 Apr 2019 03:42:02 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
 
 People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.  
 ]]></description><link>https://www.codespud.com/make-bash-prompt-work/</link><guid isPermaLink="false">https://www.codespud.com/make-bash-prompt-work/</guid><pubDate>Mon, 14 Nov 2016 04:08:17 GMT</pubDate><content:encoded>&lt;p&gt;If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or &lt;a href=&quot;https://www.gnu.org/software/bash/bash.html&quot;&gt;BASH&lt;/a&gt; for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.&lt;/p&gt;
@@ -21,7 +21,7 @@ People tell me the invention of the GUI (graphical user interface) is the best t
      &lt;figcaption&gt;Boring command prompt!&lt;/figcaption&gt;&lt;/figure&gt; &lt;/p&gt;
 &lt;p&gt;Using the table below we can build a BASH prompt that is not only pretty but saves us a few keystrokes as well.&lt;/p&gt;
 &lt;h2&gt;BASH Special Characters Reference&lt;/h2&gt;
-&lt;table border=&quot;1&quot; width=&quot;80%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+&lt;table &gt;
   &lt;tr&gt;
     &lt;th&gt;
       Special character
@@ -525,22 +525,12 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;p&gt;**Backend: **PHP, MySQL&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Frontend:&lt;/strong&gt;HTML, Javascript, JQuery, JQuery UI&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Source: &lt;a href=&quot;https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/youscentit&quot; title=&quot;Github : Youscentit&quot;&gt;Click here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Demo: &lt;a href=&quot;https://chrisbautista.github.io/projects/youscentit/build/&quot; title=&quot;Github: You Scent It Demo&quot;&gt;Click here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How To Make A Timer/Stopwatch Using AngularJS]]></title><description><![CDATA[I&#8217;ve got some leeway pushing <a title="Khrunus" href="https://github.com/chrisbautista/Khrunus" target="_blank">Khrunus</a> off the ground.  I&#8217;ve always been successful using JavaScript&#8217;s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:
-
-## Problem
-
-How to use AngularJS to make a time related app, in this case a timer for logging elapsed time?
-
-## What I need
-
-Before I started this little venture, I need to detail the parameters of the experiment.
-
-Firstly,  I need to layout my application in two sections. The top section will show a digital clock face and a button to toggle(start or stop) the clock. The bottom section will be a table showing start and end times, as well as the total duration. ]]></description><link>https://www.codespud.com/how-to-make-a-timer-stopwatch-using-angularjs/</link><guid isPermaLink="false">https://www.codespud.com/how-to-make-a-timer-stopwatch-using-angularjs/</guid><pubDate>Sun, 28 Sep 2014 18:09:50 GMT</pubDate><content:encoded>&lt;p&gt;I’ve got some leeway pushing &lt;a title=&quot;Khrunus&quot; href=&quot;https://github.com/chrisbautista/Khrunus&quot; target=&quot;_blank&quot;&gt;Khrunus&lt;/a&gt; off the ground.  I’ve always been successful using JavaScript’s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Demo: &lt;a href=&quot;https://chrisbautista.github.io/projects/youscentit/build/&quot; title=&quot;Github: You Scent It Demo&quot;&gt;Click here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How To Make A Timer/Stopwatch Using AngularJS]]></title><description><![CDATA[I&#8217;ve got some leeway pushing <a title="Khrunus" href="https://github.com/chrisbautista/Khrunus" target="_blank">Khrunus</a> off the ground.  I&#8217;ve always been successful using JavaScript&#8217;s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:]]></description><link>https://www.codespud.com/how-to-make-a-timer-stopwatch-using-angularjs/</link><guid isPermaLink="false">https://www.codespud.com/how-to-make-a-timer-stopwatch-using-angularjs/</guid><pubDate>Sun, 28 Sep 2014 18:09:50 GMT</pubDate><content:encoded>&lt;p&gt;I’ve got some leeway pushing &lt;a title=&quot;Khrunus&quot; href=&quot;https://github.com/chrisbautista/Khrunus&quot; target=&quot;_blank&quot;&gt;Khrunus&lt;/a&gt; off the ground.  I’ve always been successful using JavaScript’s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:&lt;!--more--&gt; &lt;/p&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;How to use AngularJS to make a time related app, in this case a timer for logging elapsed time?&lt;/p&gt;
 &lt;h2&gt;What I need&lt;/h2&gt;
 &lt;p&gt;Before I started this little venture, I need to detail the parameters of the experiment.&lt;/p&gt;
-&lt;p&gt;Firstly,  I need to layout my application in two sections. The top section will show a digital clock face and a button to toggle(start or stop) the clock. The bottom section will be a table showing start and end times, as well as the total duration. &lt;!--more--&gt; To know that the application is successful, start and end times should be logged. Using those values I can compute for the duration.&lt;/p&gt;
+&lt;p&gt;Firstly,  I need to layout my application in two sections. The top section will show a digital clock face and a button to toggle(start or stop) the clock. The bottom section will be a table showing start and end times, as well as the total duration. To know that the application is successful, start and end times should be logged. Using those values I can compute for the duration.&lt;/p&gt;
 &lt;p&gt;We have two modes; an idle state,”stopped” and an active mode,”started”. We need to consider that when coding the helper functions.&lt;/p&gt;
 &lt;h2&gt;Solution&lt;/h2&gt;
 &lt;p&gt;Firstly, we start with a basic AngularJS template. Please note I am assuming you have at least some experience working with HTML, Javascript and AngularJS.&lt;/p&gt;
@@ -629,11 +619,9 @@ Arduino Due, Sensor Shield&lt;/p&gt;
 &lt;p&gt;PHP, JSON, MySQL&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Download Links:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lowe.billypostpaid.pak&quot; title=&quot;Billy - Android&quot;&gt;ANDROID&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Quick and Free Way to Set Up Your App using Heroku]]></title><description><![CDATA[I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research.  First in my list was a workflow to streamline development. It&#8217;s been a while since I modified my workflow and so I thought it was time for a change.
-
-Aside from the design and flow of the application, my immediate concern was where to host my apps once I&#8217;m done with the first milestone. I was researching around the interweb and a familiar link caught my eye.  Heroku was the 2nd link of my search. I investigated Heroku when I first made a Facebook application for Lowe Philippines.  I remember seeing a link to Heroku from Facebook&#8217;s &#8220;Create App&#8221; wizard. Back then I was more curious than impressed. Anyway, this time I was very curious but now I&#8217;m also very impressed with how Heroku made it easy to deploy an app. Heroku does not magically build a scaffold for you but it does guide you through steps in their &#8220;Getting started&#8221; page and heck it&#8217;s free.  
 ]]></description><link>https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</link><guid isPermaLink="false">https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</guid><pubDate>Sun, 20 Apr 2014 20:52:49 GMT</pubDate><content:encoded>&lt;p&gt;I had a struck of inspiration earlier this week. I’ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research.  First in my list was a workflow to streamline development. It’s been a while since I modified my workflow and so I thought it was time for a change.&lt;/p&gt;
-&lt;p&gt;Aside from the design and flow of the application, my immediate concern was where to host my apps once I’m done with the first milestone. I was researching around the interweb and a familiar link caught my eye.  Heroku was the 2nd link of my search. I investigated Heroku when I first made a Facebook application for Lowe Philippines.  I remember seeing a link to Heroku from Facebook’s “Create App” wizard. Back then I was more curious than impressed. Anyway, this time I was very curious but now I’m also very impressed with how Heroku made it easy to deploy an app. Heroku does not magically build a scaffold for you but it does guide you through steps in their “Getting started” page and heck it’s free.  &lt;/p&gt;
 &lt;!--more--&gt;
+&lt;p&gt;Aside from the design and flow of the application, my immediate concern was where to host my apps once I’m done with the first milestone. I was researching around the interweb and a familiar link caught my eye.  Heroku was the 2nd link of my search. I investigated Heroku when I first made a Facebook application for Lowe Philippines.  I remember seeing a link to Heroku from Facebook’s “Create App” wizard. Back then I was more curious than impressed. Anyway, this time I was very curious but now I’m also very impressed with how Heroku made it easy to deploy an app. Heroku does not magically build a scaffold for you but it does guide you through steps in their “Getting started” page and heck it’s free.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What you get for a free account?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;One(1) Dyno&lt;/li&gt;
@@ -856,16 +844,12 @@ Update 2010/08/21: If you don’t like Chrome. Mozilla’s Prism accomplishes th
 &lt;p&gt;&lt;a href=&quot;http://www.google.com/support/chrome/&quot; target=&quot;_blank&quot;&gt;http://www.google.com/support/chrome/&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;http://www.makeuseof.com/tag/5-great-alternatives-to-google-docs-you-should-consider/&quot; target=&quot;_blank&quot;&gt;http://www.makeuseof.com/tag/5-great-alternatives-to-google-docs-you-should-consider/&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;http://alternativeto.net/&quot; target=&quot;_blank&quot;&gt;http://alternativeto.net&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/&quot; target=&quot;_blank&quot;&gt;http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What Browser?]]></title><description><![CDATA[## WhatBrowser.org?
-
-Ever wondered what a browser truly is? Or know someone you&#8217;ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don&#8217;t fret, Google comes to the rescue again. <a name='more'></a>
-
-Built by &#8220;some folks from Google&#8221;, WhatBrowser.org is a site dedicated to what we all would agree to be the most used application in any computer, &#8220;the Browser&#8221;. Any Operating System has it in some form or another(Anyone said <a href="http://en.wikipedia.org/wiki/Lynx_(web_browser))" target="_blank">Lynx</a>(?). Companies battle it out for supremacy, sometimes even forcing their religion; <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729&pn=2" target="_blank">I mean browser, down our throats</a>. Whatever a browser is or where it came from, it paved the way for the information superhighway AKA The Internet. That is cause for celebration and dedicatory site, won&#8217;t you agree? 
-
-WhatBrowser.org is kind of timely if you think <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729" target="_blank">Oct 13 will be birthday no. 15</a> of the commercial browser. Imagine software, a teener! No wonder some people still gets confused (LOL).]]></description><link>https://www.codespud.com/what-browser/</link><guid isPermaLink="false">https://www.codespud.com/what-browser/</guid><pubDate>Sat, 10 Oct 2009 16:04:00 GMT</pubDate><content:encoded>&lt;h2&gt;WhatBrowser.org?&lt;/h2&gt;
-&lt;p&gt;Ever wondered what a browser truly is? Or know someone you’ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don’t fret, Google comes to the rescue again. &lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/&quot; target=&quot;_blank&quot;&gt;http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What Browser?]]></title><description><![CDATA[
+Ever wondered what a browser truly is? Or know someone you&#8217;ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don&#8217;t fret, Google comes to the rescue again. 
+]]></description><link>https://www.codespud.com/what-browser/</link><guid isPermaLink="false">https://www.codespud.com/what-browser/</guid><pubDate>Sat, 10 Oct 2009 16:04:00 GMT</pubDate><content:encoded>&lt;p&gt;Ever wondered what a browser truly is? Or know someone you’ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don’t fret, Google comes to the rescue again. &lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;Built by “some folks from Google”, WhatBrowser.org is a site dedicated to what we all would agree to be the most used application in any computer, “the Browser”. Any Operating System has it in some form or another(Anyone said &lt;a href=&quot;http://en.wikipedia.org/wiki/Lynx_(web_browser))&quot; target=&quot;_blank&quot;&gt;Lynx&lt;/a&gt;(?). Companies battle it out for supremacy, sometimes even forcing their religion; &lt;a href=&quot;http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729&amp;pn=2&quot; target=&quot;_blank&quot;&gt;I mean browser, down our throats&lt;/a&gt;. Whatever a browser is or where it came from, it paved the way for the information superhighway AKA The Internet. That is cause for celebration and dedicatory site, won’t you agree? &lt;/p&gt;
-&lt;p&gt;WhatBrowser.org is kind of timely if you think &lt;a href=&quot;http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729&quot; target=&quot;_blank&quot;&gt;Oct 13 will be birthday no. 15&lt;/a&gt; of the commercial browser. Imagine software, a teener! No wonder some people still gets confused (LOL).&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;WhatBrowser.org is kind of timely if you think &lt;a href=&quot;http://www.pcadvisor.co.uk/news/index.cfm?newsid=3203729&quot; target=&quot;_blank&quot;&gt;Oct 13 will be birthday no. 15&lt;/a&gt; of the commercial browser. Imagine software, a teener! No wonder some people still gets confused (LOL).&lt;/p&gt;
 &lt;h2&gt;Visit the site&lt;/h2&gt;
 &lt;p&gt;When you visit the site, you are presented a video. The video is a cute presentation of what a browser Is and what it is Not. It continues with what you can do with it(browser). Watch the video. It may amuse you and educate you a bit at the same time. Also opposite the video is the name of the browser you used to access the site, the user-agent. You can see that I use Chrome. I will admit that lacking plugins for Chrome was kind of a turn off at first, but with the release of the &lt;a href=&quot;http://dev.chromium.org/getting-involved/dev-channel&quot; target=&quot;_blank&quot;&gt;dev channel&lt;/a&gt; and it’s plugin support, I found myself doing more and more work with it, but thats a topic for another day. &lt;/p&gt;
 &lt;p&gt;Your user-agent may not be what you expect it to be,since some browsers enable you to &lt;a href=&quot;http://johnbokma.com/mexit/2004/04/24/changinguseragent.html&quot; target=&quot;_blank&quot;&gt;change user agents&lt;/a&gt;. The site also has 3 more sections below the video, linking to other features/services. I especially like the “Under the hood” page. There you can subject your browser to some benchmarking tests. I’ll post a comprehensive post related to this tests later.&lt;/p&gt;
@@ -882,7 +866,11 @@ WhatBrowser.org is kind of timely if you think <a href="http://www.pcadvisor.co.
 &lt;li&gt;&lt;a href=&quot;http://kb.iu.edu/data/aepv.html&quot; target=&quot;_blank&quot;&gt;http://kb.iu.edu/data/aepv.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.techcrunch.com/2009/06/17/yeah-what-is-a-browser-anyway/&quot; target=&quot;_blank&quot;&gt;http://www.techcrunch.com/2009/06/17/yeah-what-is-a-browser-anyway/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://browsers.about.com/od/howbrowserswork/a/whatisabrowser.htm&quot; target=&quot;_blank&quot;&gt;http://browsers.about.com/od/howbrowserswork/a/whatisabrowser.htm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Funny Video: Animator vs Animated]]></title><description><![CDATA[Shared for your viewing pleasure.  Programmers beware the evil of AI! LOL!]]></description><link>https://www.codespud.com/funny-video-animator-vs-animated/</link><guid isPermaLink="false">https://www.codespud.com/funny-video-animator-vs-animated/</guid><pubDate>Thu, 08 Oct 2009 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Shared for your viewing pleasure. &lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Funny Video: Animator vs Animated]]></title><description><![CDATA[
+Shared for your viewing pleasure.
+
+]]></description><link>https://www.codespud.com/funny-video-animator-vs-animated/</link><guid isPermaLink="false">https://www.codespud.com/funny-video-animator-vs-animated/</guid><pubDate>Thu, 08 Oct 2009 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Shared for your viewing pleasure.&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;&lt;em&gt;Programmers beware the evil of AI! LOL!&lt;/em&gt;&lt;/p&gt;
 
           &lt;div
@@ -897,8 +885,7 @@ WhatBrowser.org is kind of timely if you think <a href="http://www.pcadvisor.co.
             height: 100%;
           &quot;&gt;&lt;/iframe&gt;
           &lt;/div&gt;
-          
-&lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Updates on Pepeng]]></title><description><![CDATA[Though Typhoon Pepeng(Pharma) spared Metro Manila, it ’ s still wreaking havoc to thousands of our countrymen up North. Let ’ s pray for…]]></description><link>https://www.codespud.com/updates-on-pepeng/</link><guid isPermaLink="false">https://www.codespud.com/updates-on-pepeng/</guid><pubDate>Sun, 04 Oct 2009 00:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Though Typhoon Pepeng(Pharma) spared Metro Manila, it’s still wreaking havoc to thousands of our countrymen up North. Let’s pray for them and if we can, help in getting the information to government units (Like the NDCC, PNC etc.). Using the latest twitter search widget and Google Ajax Feeds, I’m setting up this page as an outpost to get updates on Typhoon Pepeng. Use it as you see fit. &lt;/p&gt;
+          </content:encoded></item><item><title><![CDATA[Updates on Pepeng]]></title><description><![CDATA[Though Typhoon Pepeng(Pharma) spared Metro Manila, it ’ s still wreaking havoc to thousands of our countrymen up North. Let ’ s pray for…]]></description><link>https://www.codespud.com/updates-on-pepeng/</link><guid isPermaLink="false">https://www.codespud.com/updates-on-pepeng/</guid><pubDate>Sun, 04 Oct 2009 00:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Though Typhoon Pepeng(Pharma) spared Metro Manila, it’s still wreaking havoc to thousands of our countrymen up North. Let’s pray for them and if we can, help in getting the information to government units (Like the NDCC, PNC etc.). Using the latest twitter search widget and Google Ajax Feeds, I’m setting up this page as an outpost to get updates on Typhoon Pepeng. Use it as you see fit. &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Reminder: If the feeds don’t show, you might need to enable Javascript.&lt;/em&gt;&lt;br&gt;
 Bookmark this page for the latest news on Bagyong Pepeng.&lt;/p&gt;
 &lt;p&gt;Together let’s be vigilant!&lt;/p&gt;
@@ -949,15 +936,17 @@ OCR is not integrated into Google Docs Home interface yet, but this API improvem
 &lt;p&gt;OCR will only work well on high-resolution images. The quality of the extracted text isn’t perfect yet, but we’re busy improving it!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Miss or not, this is all very exciting, especially for Google Doc users like myself.&lt;/p&gt;
-&lt;p&gt;source: &lt;a href=&quot;http://googledataapis.blogspot.com/2009/09/import-scans-or-go-multilingual.html&quot;&gt;http://googledataapis.blogspot.com/2009/09/import-scans-or-go-multilingual.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Updated list of Verified Relief Centers]]></title><description><![CDATA[image attributed to:  http://news.xinhuanet.com Here ’ s another repost.A list of verified in-kind drop off points for Ondoy victims relief…]]></description><link>https://www.codespud.com/updated-list-of-verified-relief-centers/</link><guid isPermaLink="false">https://www.codespud.com/updated-list-of-verified-relief-centers/</guid><pubDate>Mon, 28 Sep 2009 23:02:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;p&gt;image attributed to: &lt;a href=&quot;http://news.xinhuanet.com&quot;&gt;http://news.xinhuanet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;source: &lt;a href=&quot;http://googledataapis.blogspot.com/2009/09/import-scans-or-go-multilingual.html&quot;&gt;http://googledataapis.blogspot.com/2009/09/import-scans-or-go-multilingual.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Updated list of Verified Relief Centers]]></title><description><![CDATA[
+
+Here&#8217;s another repost.A list of verified in-kind drop off points for Ondoy victims relief operations. Includes what they need and who to contact.
+]]></description><link>https://www.codespud.com/updated-list-of-verified-relief-centers/</link><guid isPermaLink="false">https://www.codespud.com/updated-list-of-verified-relief-centers/</guid><pubDate>Mon, 28 Sep 2009 23:02:00 GMT</pubDate><content:encoded>&lt;p&gt;Here’s another repost.A list of verified in-kind drop off points for Ondoy victims relief operations. Includes what they need and who to contact.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;image attributed to: &lt;a href=&quot;http://news.xinhuanet.com&quot;&gt;http://news.xinhuanet.com&lt;/a&gt;
+For updates keep checking &lt;a href=&quot;http://www.gmanews.tv/story/173288/update-list-of-verified-relief-centers-for-ondoy-victims&quot; target=&quot;_blank&quot;&gt;gmanewstv.com&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Here’s another repost.A list of verified in-kind drop off points for Ondoy victims relief operations. Includes what they need and who to contact.&lt;/p&gt;
-&lt;p&gt;For updates keep checking &lt;a href=&quot;http://www.gmanews.tv/story/173288/update-list-of-verified-relief-centers-for-ondoy-victims&quot; target=&quot;_blank&quot;&gt;gmanewstv.com&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Update: List of verified relief centers for ‘Ondoy’ victims&lt;/h3&gt;
-&lt;center&gt;
-  &lt;b&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;QUEZON CITY&lt;/span&gt;&lt;/b&gt;
-&lt;/center&gt;
+&lt;h4&gt;Update: List of verified relief centers for ‘Ondoy’ victims&lt;/h4&gt;
+&lt;p&gt;  &lt;b&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;QUEZON CITY&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;UP College of Arts and Letters&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Go to:&lt;/strong&gt; College of Arts and Letters (CAL)&lt;br&gt;
 University of the Philippines, Diliman, Quezon City&lt;br&gt;
@@ -1522,20 +1511,17 @@ I collected some details of donation centers and numbers but it pales in compari
 &lt;strong&gt;&lt;a href=&quot;http://www.ketsanarelief.com/&quot; target=&quot;_blank&quot;&gt;http://www.ketsanarelief.com/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;These are times that I’m proud to be Filipino!&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Project 10^100: The Voting Begins]]></title><description><![CDATA[**Project 10^100**
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Project 10^100: The Voting Begins]]></title><description><![CDATA[
+**Project 10^100**
 
 Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas. Projects they believe, can do the most good.
 
-<div style="border: 1px solid #DDD; clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png"><img src="http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png" border="0" /></a>
-</div>
-
 ]]></description><link>https://www.codespud.com/project-10100-the-voting-begins/</link><guid isPermaLink="false">https://www.codespud.com/project-10100-the-voting-begins/</guid><pubDate>Fri, 25 Sep 2009 23:39:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Project 10^100&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Project 10^100 is a Google Project that transcends the information superhighway. It’s aim, simply, is to help – to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas. Projects they believe, can do the most good.&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;div style=&quot;border: 1px solid #DDD; clear: both; text-align: center;&quot;&gt;
   &lt;a style=&quot;margin-left: 1em; margin-right: 1em;&quot; href=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png&quot; border=&quot;0&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;!--more--&gt;
 &lt;p&gt;The past year (2008), Google received more than 150,000 ideas. It took another year(2009) and 3000 Google employees to sort them through. The ideas need to cover one of the following categories&lt;/p&gt;
 &lt;p&gt;Categories:&lt;/p&gt;
 &lt;ul&gt;
@@ -1556,26 +1542,16 @@ Project 10^100 is a Google Project that transcends the information superhighway.
 &lt;/div&gt;
 &lt;p&gt;So I invite you guys to go on &lt;a href=&quot;http://www.project10tothe100.com/vote.html&quot; target=&quot;_blank&quot;&gt;Project 10^100’s voting page&lt;/a&gt;. Read all the ideas, and look into yourself what you think will help this hurting world of ours. Then pick the best one. After that invite others( friends,family, co-workers etc.) to do the same.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;It’s great that large companies like Google still have that sense of civic responsibility to better this world. I hope this generation can nurture what Google started and the projects that will win this opportunity. God bless us all!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use Export Command To Help Linux Find Your Scripts]]></title><description><![CDATA[###### Level: Beginner, Intermediate
-
-<div style="margin-left: 1em; margin-right: 1em; text-align: center;">
-  <img border="0" src="http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png" /><br />Yeah your a rockstar!
-</div>
-
+&lt;p&gt;It’s great that large companies like Google still have that sense of civic responsibility to better this world. I hope this generation can nurture what Google started and the projects that will win this opportunity. God bless us all!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use Export Command To Help Linux Find Your Scripts]]></title><description><![CDATA[
 You compiled and installed a linux binary or made a nifty script but you don&#8217;t want to mess the server bin tree. So you placed it in an isolated folder like so:
 
-<div>
-  /usr/local/myscripts/really/great/work/bin/myutility
-</div>
-
-You go on with business as usual. But soon you got tired of typing the whole path or changing folders every time you need the app. You could simplify your life by making a symbolic link(shortcut) or a wrapper script and place it on a more convenient path like /bin or /usr/bin. But you realize that would be defeating your original intent. what do you do? ]]></description><link>https://www.codespud.com/use-export-command-to-help-linux-find-your-scripts/</link><guid isPermaLink="false">https://www.codespud.com/use-export-command-to-help-linux-find-your-scripts/</guid><pubDate>Fri, 25 Sep 2009 03:37:00 GMT</pubDate><content:encoded>&lt;h6&gt;Level: Beginner, Intermediate&lt;/h6&gt;
+]]></description><link>https://www.codespud.com/use-export-command-to-help-linux-find-your-scripts/</link><guid isPermaLink="false">https://www.codespud.com/use-export-command-to-help-linux-find-your-scripts/</guid><pubDate>Fri, 25 Sep 2009 03:37:00 GMT</pubDate><content:encoded>&lt;p&gt;You compiled and installed a linux binary or made a nifty script but you don’t want to mess the server bin tree. So you placed it in an isolated folder like so:&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h6&gt;Level: Beginner, Intermediate&lt;/h6&gt;
 &lt;div style=&quot;margin-left: 1em; margin-right: 1em; text-align: center;&quot;&gt;
-  &lt;img border=&quot;0&quot; src=&quot;http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png&quot;&gt;&lt;br&gt;Yeah your a rockstar!
+  &lt;img src=&quot;http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png&quot;&gt;&lt;br&gt;Yeah your a rockstar!
 &lt;/div&gt;
-&lt;p&gt;You compiled and installed a linux binary or made a nifty script but you don’t want to mess the server bin tree. So you placed it in an isolated folder like so:&lt;/p&gt;
-&lt;div&gt;
-  /usr/local/myscripts/really/great/work/bin/myutility
-&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;  /usr/local/myscripts/really/great/work/bin/myutility&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You go on with business as usual. But soon you got tired of typing the whole path or changing folders every time you need the app. You could simplify your life by making a symbolic link(shortcut) or a wrapper script and place it on a more convenient path like /bin or /usr/bin. But you realize that would be defeating your original intent. what do you do? &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;br&gt;
 Simple. Do what experts do. Use “export” to modify the PATH environment variable.&lt;/p&gt;
@@ -1686,8 +1662,11 @@ Simple. Do what experts do. Use “export” to modify the PATH environment vari
                 
                 &lt;p&gt;
                   &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potatokorner/potatokorner-tutorial-export-command.pdf&quot; target=&quot;_blank&quot;&gt;Download a PDF copy&lt;/a&gt;
-                &lt;/p&gt;</content:encoded></item><item><title><![CDATA[About Me]]></title><description><![CDATA[Hi! I ’ m Chris Bautista. I ’ m a veteran programmer, addicted gamer, clueless photographer and novice writer.  This blog is mostly about…]]></description><link>https://www.codespud.com/about-me/</link><guid isPermaLink="false">https://www.codespud.com/about-me/</guid><pubDate>Thu, 24 Sep 2009 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi! I’m Chris Bautista. I’m a veteran programmer, addicted gamer, clueless photographer and novice writer. &lt;/p&gt;
-&lt;p&gt;This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. I do love challenges so if you have a topic I can help with post it as a comment or email me at &lt;a href=&quot;mailto:chris@codespud.com&quot;&gt;chris at codespud.com&lt;/a&gt;.&lt;/p&gt;
+                &lt;/p&gt;</content:encoded></item><item><title><![CDATA[About Me]]></title><description><![CDATA[
+Hi! I&#8217;m Chris Bautista. I&#8217;m a veteran programmer, addicted gamer, clueless photographer and novice writer. 
+
+This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. ]]></description><link>https://www.codespud.com/about-me/</link><guid isPermaLink="false">https://www.codespud.com/about-me/</guid><pubDate>Thu, 24 Sep 2009 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi! I’m Chris Bautista. I’m a veteran programmer, addicted gamer, clueless photographer and novice writer. &lt;/p&gt;
+&lt;p&gt;This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. &lt;!--more--&gt; I do love challenges so if you have a topic I can help with post it as a comment or email me at &lt;a href=&quot;mailto:chris@codespud.com&quot;&gt;chris at codespud.com&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;What I do&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Owner, &lt;a href=&quot;http://www.codespud.com/&quot;&gt;CodeSpud Web Services.&lt;/a&gt;&lt;/li&gt;
@@ -1696,40 +1675,29 @@ Simple. Do what experts do. Use “export” to modify the PATH environment vari
 &lt;li&gt;Cook (Trying to be a Chef)&lt;/li&gt;
 &lt;li&gt;Voracious Eater&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://encyclopedia2.thefreedictionary.com/click+potato&quot;&gt;Clickpotato&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Picasa 3.5 comes with Face Recognition]]></title><description><![CDATA[http://picasa-readme.blogspot.com/ .. With name tags, you can organize your photos based on what matters most: the people in them ]]></description><link>https://www.codespud.com/picasa-3-5-comes-with-face-recognition/</link><guid isPermaLink="false">https://www.codespud.com/picasa-3-5-comes-with-face-recognition/</guid><pubDate>Thu, 24 Sep 2009 00:28:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;http://picasa-readme.blogspot.com/&quot; target=&quot;_blank&quot;&gt;http://picasa-readme.blogspot.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Picasa 3.5 comes with Face Recognition]]></title><description><![CDATA[
+Google released Picasa 3.5 yesterday, with some cool features. In keeping with Picasa Web Albums enhancements, &nbsp;Developers have added <a href="http://picasa.google.com/features-nametags.html" target="_blank">face recognition</a> and <a href="http://en.wikipedia.org/wiki/Geotagging" target="_blank">geo tags</a> to their photo-organizer-slash-jack-of-all-trades software.
+
+]]></description><link>https://www.codespud.com/picasa-3-5-comes-with-face-recognition/</link><guid isPermaLink="false">https://www.codespud.com/picasa-3-5-comes-with-face-recognition/</guid><pubDate>Thu, 24 Sep 2009 00:28:00 GMT</pubDate><content:encoded>&lt;p&gt;Google released Picasa 3.5 yesterday, with some cool features. In keeping with Picasa Web Albums enhancements,  Developers have added &lt;a href=&quot;http://picasa.google.com/features-nametags.html&quot; target=&quot;_blank&quot;&gt;face recognition&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Geotagging&quot; target=&quot;_blank&quot;&gt;geo tags&lt;/a&gt; to their photo-organizer-slash-jack-of-all-trades software.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;&lt;a href=&quot;http://picasa-readme.blogspot.com/&quot; target=&quot;_blank&quot;&gt;http://picasa-readme.blogspot.com/&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;.. With name tags, you can organize your photos based on what matters most: the people in them &lt;/p&gt;
+&lt;p&gt;With name tags, you can organize your photos based on what matters most: the people in them&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div style=&quot;text-align: justify;&quot;&gt;
-  I love Picasa. I organize , upload, retouch pictures with it and recently, with its moviemaker functions, made a nice &lt;a href=&quot;http://www.potatokorner.co.cc/2009/09/happy-anniversary.html#main&quot; target=&quot;_blank&quot;&gt;music video(?) for my Girl&lt;/a&gt;. &lt;/p&gt; 
-  
-  &lt;p&gt;
-    Google released Picasa 3.5 yesterday, with some cool features. In keeping with Picasa Web Albums enhancements, &amp;nbsp;Developers have added &lt;a href=&quot;http://picasa.google.com/features-nametags.html&quot; target=&quot;_blank&quot;&gt;face recognition&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Geotagging&quot; target=&quot;_blank&quot;&gt;geo tags&lt;/a&gt; to their photo-organizer-slash-jack-of-all-trades software. &lt;/div&gt; 
-    
-    &lt;p&gt;
-      &lt;a name=&apos;more&apos;&gt;&lt;/a&gt;
-    &lt;/p&gt;
-    
-    &lt;div style=&quot;text-align: justify;&quot;&gt;
-      As soon as the announcement came, I installed Picasa 3.5 &amp;#8211; eager to try the new features. As it seems, face recognition is activated from start , no warning whatsoever, but you do need to login to your picasa account to get your name tags.&lt;/p&gt; 
-      
-      &lt;p&gt;
-        Processing seems a bit longer than usual, as with the old version, you can still use the application even while it&amp;#8217;s still sorting through all your stuff &amp;#8211; so no worries. Picasa 3.5 got almost 100% from my tests. I already tagged faces on Web Albums so I didn&amp;#8217;t had the chance to tag new faces. But I&amp;#8217;m amazed how good this works even if the person is facing front or showing their profile. Nevertheless, your results may vary depending on how distinct people in your photos are. If it&amp;#8217;s anything like Picasa Web Albums, the engine should improve in time the more you use it.
-      &lt;/p&gt;
-      
-      &lt;p&gt;
-        Its a great addition to Picasa. It eases the pain of digging all your albums to find people. I know I&amp;#8217;ll be abusing this one for a long time. 🙂&lt;/div&gt; 
-        
-        &lt;p&gt;
-          &lt;i&gt;&lt;a href=&quot;http://picasa.google.com/&quot; target=&quot;_blank&quot;&gt;Download Picasa 3.5&lt;/a&gt;&lt;br /&gt;Image from &lt;a href=&quot;http://parenting.leehansen.com/downloads/clipart/halloween/pages/clown-mask.htm&quot; target=&quot;_blank&quot;&gt;http://parenting.leehansen.com&lt;/a&gt;&lt;/i&gt;
-        &lt;/p&gt;</content:encoded></item><item><title><![CDATA[NES on Javascript]]></title><description><![CDATA[Here ’ s something amazing for Javascript, your good-ole    NES (Nintendo Entertainment System) games are now available and playable via Ben…]]></description><link>https://www.codespud.com/nes-on-javascript/</link><guid isPermaLink="false">https://www.codespud.com/nes-on-javascript/</guid><pubDate>Mon, 21 Sep 2009 08:19:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
-  &lt;a href=&quot;http://1.bp.blogspot.com/_BBS5bkzuLXM/SrczGU-OfDI/AAAAAAAAChg/6-G46_rCSWY/s1600-h/bullzipsite.PNG&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://1.bp.blogspot.com/_BBS5bkzuLXM/SrczGU-OfDI/AAAAAAAAChg/6-G46_rCSWY/s400/bullzipsite.PNG&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
+&lt;p&gt;As soon as the announcement came, I installed Picasa 3.5 – eager to try the new features. As it seems, face recognition is activated from start , no warning whatsoever, but you do need to login to your picasa account to get your name tags.&lt;/p&gt;
+&lt;p&gt;Processing seems a bit longer than usual, as with the old version, you can still use the application even while it’s still sorting through all your stuff – so no worries. Picasa 3.5 got almost 100% from my tests. I already tagged faces on Web Albums so I didn’t had the chance to tag new faces. But I’m amazed how good this works even if the person is facing front or showing their profile. Nevertheless, your results may vary depending on how distinct people in your photos are. If it’s anything like Picasa Web Albums, the engine should improve in time the more you use it.&lt;/p&gt;
+&lt;p&gt;Its a great addition to Picasa. It eases the pain of digging all your albums to find people. I know I’ll be abusing this one for a long time. 🙂&lt;/p&gt;
+&lt;p&gt;
+&lt;i&gt;&lt;a href=&quot;http://picasa.google.com/&quot; target=&quot;_blank&quot;&gt;Download Picasa 3.5&lt;/a&gt;&lt;br /&gt;Image from &lt;a href=&quot;http://parenting.leehansen.com/downloads/clipart/halloween/pages/clown-mask.htm&quot; target=&quot;_blank&quot;&gt;http://parenting.leehansen.com&lt;/a&gt;&lt;/i&gt;
+&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NES on Javascript]]></title><description><![CDATA[
+Here&#8217;s something amazing for Javascript, your good-ole &nbsp;NES (Nintendo Entertainment System) games are now available and playable via Ben Firshman&#8217;s JSNES page. JSNES, is an NES emulator built on javascript&#8217;s canvas objects.
+
+]]></description><link>https://www.codespud.com/nes-on-javascript/</link><guid isPermaLink="false">https://www.codespud.com/nes-on-javascript/</guid><pubDate>Mon, 21 Sep 2009 08:19:00 GMT</pubDate><content:encoded>&lt;p&gt;Here’s something amazing for Javascript, your good-ole  NES (Nintendo Entertainment System) games are now available and playable via Ben Firshman’s JSNES page. JSNES, is an NES emulator built on javascript’s canvas objects.&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;div&gt;
   &lt;a href=&quot;http://benfirshman.com/projects/jsnes/&quot; target=&quot;_blank&quot;&gt;http://benfirshman.com/projects/jsnes/&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Here’s something amazing for Javascript, your good-ole  NES (Nintendo Entertainment System) games are now available and playable via Ben Firshman’s JSNES page. JSNES, is an NES emulator built on javascript’s canvas objects.&lt;/p&gt;
-&lt;p&gt;Mr. Firshman recommends to use Google’s Chrome browser to maximize your gaming pleasure. I tried it on IE8, it doesnt work as well. So take his word for it. &lt;/p&gt;
+&lt;p&gt;Mr. Firshman recommends to use Google’s Chrome browser to maximize your gaming pleasure. I tried it on IE8, it doesnt work as well. So take his word for it.&lt;/p&gt;
 &lt;p&gt;Aside from SMB(Super Mario Bros.), he also ported some old favorites like the Zelda, the banana maniac-Donkey Kong and the blaster wielding Megaman. &lt;/p&gt;
 &lt;div&gt;
 &lt;/div&gt;
@@ -1745,11 +1713,15 @@ Simple. Do what experts do. Use “export” to modify the PATH environment vari
 &lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Question: When can we start seeing 3D games running on browsers? Hehehe&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[XOXO Creativity]]></title><description><![CDATA[Here ’ s a good way to promote creativity and have fun at the same time. The rule is to draw as many things as your imagination can conjure…]]></description><link>https://www.codespud.com/xoxo-creativity/</link><guid isPermaLink="false">https://www.codespud.com/xoxo-creativity/</guid><pubDate>Sun, 20 Sep 2009 12:16:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[XOXO Creativity]]></title><description><![CDATA[
+Here&#8217;s a good way to promote creativity and have fun at the same time. The rule is to draw as many things as your imagination can conjure up from X&#8217;s and O&#8217;s.
+
+]]></description><link>https://www.codespud.com/xoxo-creativity/</link><guid isPermaLink="false">https://www.codespud.com/xoxo-creativity/</guid><pubDate>Sun, 20 Sep 2009 12:16:00 GMT</pubDate><content:encoded>&lt;p&gt;Here’s a good way to promote creativity and have fun at the same time. The rule is to draw as many things as your imagination can conjure up from X’s and O’s.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
   &lt;a href=&quot;http://2.bp.blogspot.com/_BBS5bkzuLXM/SrYMrUXkywI/AAAAAAAAChE/-eiXrZLTvAk/s1600-h/crea7128934724tivity11.jpg&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://2.bp.blogspot.com/_BBS5bkzuLXM/SrYMrUXkywI/AAAAAAAAChE/-eiXrZLTvAk/s400/crea7128934724tivity11.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;Almost done.
 &lt;/div&gt;
-&lt;p&gt;Here’s a good way to promote creativity and have fun at the same time. The rule is to draw as many things as your imagination can conjure up from X’s and O’s.&lt;br&gt;
-&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;This is what &lt;strong&gt;Panamericana School of Art and Design&lt;/strong&gt; did in a advertising campaign.I tried googling for their site but can’t seem to find it. Anyway I’ll update this page when I get more info. &lt;/p&gt;
+&lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;This is what &lt;strong&gt;Panamericana School of Art and Design&lt;/strong&gt; did in a advertising campaign.I tried googling for their site but can’t seem to find it. Anyway I’ll update this page when I get more info.&lt;/p&gt;
 &lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
   &lt;a href=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/SrYM7xiv9pI/AAAAAAAAChM/kgBpufSfVeo/s1600-h/creativityasdad12.jpg&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/SrYM7xiv9pI/AAAAAAAAChM/kgBpufSfVeo/s400/creativityasdad12.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;There&amp;#x2019;s something naughty in this shot.
 &lt;/div&gt;
@@ -1757,39 +1729,50 @@ Simple. Do what experts do. Use “export” to modify the PATH environment vari
 &lt;p&gt;&lt;em&gt;Credit to Panamericana for the idea.&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;Images from &lt;a href=&quot;http://www.toxel.com/inspiration/2009/05/06/school-of-art-and-design-creativity-test/&quot;&gt;www.toxel.com&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;O’s Creativity Test &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potatokorner/potatokorner-O-creativity-test.pdf&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;br&gt;
-X’s Creativity Test &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potatokorner/potatokorner-X-creativity-test.pdf&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Resume on Youtube!]]></title><link>https://www.codespud.com/resume-on-youtube/</link><guid isPermaLink="false">https://www.codespud.com/resume-on-youtube/</guid><pubDate>Sat, 19 Sep 2009 13:51:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;
+X’s Creativity Test &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potatokorner/potatokorner-X-creativity-test.pdf&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Resume on Youtube!]]></title><description><![CDATA[
+<div style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+  <img border="0" src="http://3.bp.blogspot.com/_BBS5bkzuLXM/SrTbWg_-NnI/AAAAAAAACg8/C9JxDO7GXBk/s320/youtubea23123.jpg" />
+</div>
+
+<div style="text-align: justify;">
+  Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). &nbsp;Gone will be the days where you had to restart a video just to continue where you left of. Now you dont need to restart a whole video or pause till the video fully loads then skip every so and so, just to pick up where you last watched.
+</div>
+
+]]></description><link>https://www.codespud.com/resume-on-youtube/</link><guid isPermaLink="false">https://www.codespud.com/resume-on-youtube/</guid><pubDate>Sat, 19 Sep 2009 13:51:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;
   &lt;img border=&quot;0&quot; src=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/SrTbWg_-NnI/AAAAAAAACg8/C9JxDO7GXBk/s320/youtubea23123.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div style=&quot;text-align: justify;&quot;&gt;
   Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). &amp;nbsp;Gone will be the days where you had to restart a video just to continue where you left of. Now you dont need to restart a whole video or pause till the video fully loads then skip every so and so, just to pick up where you last watched.
 &lt;/div&gt;
-&lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;div style=&quot;text-align: justify;&quot;&gt;
   Note the feature will only work for resumes past the 3 minute mark &amp;#8211; meaning any resumes less than mentioned duration are ignored &amp;#8211; so you need to run the video from the start again. A perfectly logical limitation.&amp;nbsp;&lt;/p&gt; 
   
   &lt;p&gt;
     This addition is a big step forward for online media players &amp;#8211; hopefully other video sites will follow suit. 🙂 &amp;nbsp;For more info go &lt;a href=&quot;http://googlesystem.blogspot.com/2009/09/youtube-resume.html&quot;&gt;here&lt;/a&gt;
   &lt;/p&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Google got reCAPTCHA]]></title><description><![CDATA[Google announced recently in its official blog, that it has acquired reCAPTCHA.  CAPTCHA  is a web technology made out of necessity. It…]]></description><link>https://www.codespud.com/google-got-recaptcha/</link><guid isPermaLink="false">https://www.codespud.com/google-got-recaptcha/</guid><pubDate>Sat, 19 Sep 2009 08:55:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Google got reCAPTCHA]]></title><description><![CDATA[
+Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they&#8217;re the annoying barely readable text images when you register/login for a site.
+
+]]></description><link>https://www.codespud.com/google-got-recaptcha/</link><guid isPermaLink="false">https://www.codespud.com/google-got-recaptcha/</guid><pubDate>Sat, 19 Sep 2009 08:55:00 GMT</pubDate><content:encoded>&lt;p&gt;Google announced recently in its official blog, that it has acquired reCAPTCHA. &lt;a href=&quot;http://en.wikipedia.org/wiki/CAPTCHA&quot; target=&quot;_blank&quot;&gt;CAPTCHA&lt;/a&gt; is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they’re the annoying barely readable text images when you register/login for a site.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
   &lt;a href=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s1600-h/recaptcha-1231dasdqd.gif&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s320/recaptcha-1231dasdqd.gif&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
+&lt;p&gt;Anyway, this move by Google is more than just for improving it’s CAPTCHA capabilities. As they explain, reCAPTCHA technology will improve Google projects that require reading text in images. The best to benefit from this are &lt;span style=&quot;font-family: Arial; font-size: 13px; white-space: pre;&quot;&gt;Google’s &lt;span style=&quot;font-family: &apos;Times New Roman&apos;; font-size: medium; white-space: normal;&quot;&gt; &lt;a href=&quot;http://books.google.com/&quot; target=&quot;_blank&quot;&gt;Books&lt;/a&gt; project and the recent &lt;a href=&quot;http://fastflip.googlelabs.com/&quot; target=&quot;_blank&quot;&gt;Fast Flip &lt;/a&gt; zine search. For more info see the &lt;a href=&quot;http://googleblog.blogspot.com/2009/09/teaching-computers-to-read-google.html&quot; target=&quot;_blank&quot;&gt;official announcement.&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[M I STUPID?]]></title><description><![CDATA[
+Do you know how to send an SOS in morse code? Do you know your birthstone? Or the winners of the Oscars since 1927 ? MIStupid.com has an assortment of trivia and topics not known by the most of us. As a bonus they have categories with games and puzzles you can play with when you catch a bit of an information overload.
+
+]]></description><link>https://www.codespud.com/m-i-stupid/</link><guid isPermaLink="false">https://www.codespud.com/m-i-stupid/</guid><pubDate>Sat, 19 Sep 2009 07:41:00 GMT</pubDate><content:encoded>&lt;p&gt;Do you know how to send an SOS in morse code? Do you know your birthstone? Or the winners of the Oscars since 1927 ? MIStupid.com has an assortment of trivia and topics not known by the most of us. As a bonus they have categories with games and puzzles you can play with when you catch a bit of an information overload.&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
-&lt;/div&gt;
-&lt;p&gt;Google announced recently in its official blog, that it has acquired reCAPTCHA. &lt;a href=&quot;http://en.wikipedia.org/wiki/CAPTCHA&quot; target=&quot;_blank&quot;&gt;CAPTCHA&lt;/a&gt; is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they’re the annoying barely readable text images when you register/login for a site. &lt;/p&gt;
-&lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;br&gt;
-Anyway, this move by Google is more than just for improving it’s CAPTCHA capabilities. As they explain, reCAPTCHA technology will improve Google projects that require reading text in images. The best to benefit from this are &lt;span style=&quot;font-family: Arial; font-size: 13px; white-space: pre;&quot;&gt;Google’s &lt;span style=&quot;font-family: &apos;Times New Roman&apos;; font-size: medium; white-space: normal;&quot;&gt; &lt;a href=&quot;http://books.google.com/&quot; target=&quot;_blank&quot;&gt;Books&lt;/a&gt; project and the recent &lt;a href=&quot;http://fastflip.googlelabs.com/&quot; target=&quot;_blank&quot;&gt;Fast Flip &lt;/a&gt; zine search. For more info see the &lt;a href=&quot;http://googleblog.blogspot.com/2009/09/teaching-computers-to-read-google.html&quot; target=&quot;_blank&quot;&gt;official announcement.&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[M I STUPID?]]></title><description><![CDATA[Do you know how to send an SOS in morse code? Do you know your birthstone? Or the winners of the Oscars since 1927 ? MIStupid.com has an…]]></description><link>https://www.codespud.com/m-i-stupid/</link><guid isPermaLink="false">https://www.codespud.com/m-i-stupid/</guid><pubDate>Sat, 19 Sep 2009 07:41:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
-  &lt;a href=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s1600-h/mistupidman.gif&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s320/mistupidman.gif&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s1600-h/mistupidman.gif&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img src=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s320/mistupidman.gif&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;div&gt;
   &lt;a href=&quot;http://mistupid.com/contents.htm&quot; target=&quot;_blank&quot;&gt;http://mistupid.com/contents.htm&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Do you know how to send an SOS in morse code? Do you know your birthstone? Or the winners of the Oscars since 1927 ? MIStupid.com has an assortment of trivia and topics not known by the most of us. As a bonus they have categories with games and puzzles you can play with when you catch a bit of an information overload.&lt;/p&gt;
 &lt;p&gt;No matter how trivial or uninteresting the fact is &lt;strong&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;MIStupid.com&lt;/span&gt;&lt;/strong&gt; will surely have it, otherwise go back to &lt;strong&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Google&lt;/span&gt;&lt;/strong&gt; (hehehe). Well okay it’s not Encarta but its free and &lt;strong&gt;&lt;span style=&quot;color: green;&quot;&gt;&lt;span style=&quot;color: green; font-weight: bold;&quot;&gt;GREEN&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt; 🙂&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;p&gt;potato&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Write a Backup Shell Script using Tar and Gnu Zip]]></title><description><![CDATA[<div style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="http://2.bp.blogspot.com/_BBS5bkzuLXM/SrIVgPdlW3I/AAAAAAAACfM/Ni40JEFfA-I/s1600-h/linux-logo.jpg"><img src="http://2.bp.blogspot.com/_BBS5bkzuLXM/SrIVgPdlW3I/AAAAAAAACfM/Ni40JEFfA-I/s320/linux-logo.jpg" border="0" /></a>
-</div>
-
+&lt;p&gt;potato&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Write a Backup Shell Script using Tar and Gnu Zip]]></title><description><![CDATA[
 Happy New Year!
 
 As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you&#8217;re new to shell scripting you might like to read this articles.
@@ -1799,17 +1782,12 @@ As promised I made a rudimentary Linux shell script utilizing the tar and gzip c
 
 If you&#8217;re lazy like I am. Don&#8217;t worry I&#8217;ll explain parts of the code.
 
-<a name="more"></a>
-
-Our goal is to make a shell script to create backups (in tar-gzip versions) of the folders we want unto a safe location on a disk. We want to be able to list all the folders and have the script loop through them. Now that&#8217;s settled, we can proceed to the code.]]></description><link>https://www.codespud.com/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</link><guid isPermaLink="false">https://www.codespud.com/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</guid><pubDate>Fri, 02 Jan 2009 23:20:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
-  &lt;a style=&quot;margin-left: 1em; margin-right: 1em;&quot; href=&quot;http://2.bp.blogspot.com/_BBS5bkzuLXM/SrIVgPdlW3I/AAAAAAAACfM/Ni40JEFfA-I/s1600-h/linux-logo.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_BBS5bkzuLXM/SrIVgPdlW3I/AAAAAAAACfM/Ni40JEFfA-I/s320/linux-logo.jpg&quot; border=&quot;0&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Happy New Year!&lt;/p&gt;
+]]></description><link>https://www.codespud.com/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</link><guid isPermaLink="false">https://www.codespud.com/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</guid><pubDate>Fri, 02 Jan 2009 23:20:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy New Year!&lt;/p&gt;
 &lt;p&gt;As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you’re new to shell scripting you might like to read this articles.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&quot;&gt;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;http://tldp.org/LDP/abs/html/&quot;&gt;http://tldp.org/LDP/abs/html/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you’re lazy like I am. Don’t worry I’ll explain parts of the code.&lt;/p&gt;
-&lt;p&gt;&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;Our goal is to make a shell script to create backups (in tar-gzip versions) of the folders we want unto a safe location on a disk. We want to be able to list all the folders and have the script loop through them. Now that’s settled, we can proceed to the code.&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;First, don’t forget to tell linux what scripting interpreter to use. I usually use &lt;span style=&quot;font-style: italic;&quot;&gt;sh&lt;/span&gt; but there are others like &lt;span style=&quot;font-style: italic;&quot;&gt;bash and ksh&lt;/span&gt;. But many experts suggest to use sh for portability to older systems.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/sh&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1909,8 +1887,7 @@ FARCHIVE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span clas
 
 &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now name and save the file. I named mine &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;cabBackup.sh&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;You need to make the script executable.&lt;/p&gt;
 &lt;div style=&quot;background-color: green; color: white; padding: 10px;&quot;&gt;
@@ -1924,112 +1901,95 @@ FARCHIVE&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span clas
 &lt;p&gt;Links&lt;br&gt;
 &lt;a href=&quot;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&quot;&gt;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;http://tldp.org/LDP/abs/html/&quot;&gt;http://tldp.org/LDP/abs/html/&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://potatokorner.blogspot.com/2008/12/linux-snippet-backup-using-tar-and-gzip.html&quot;&gt;Linux: Snippet – Backup using Tar and gzip&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Linux: Snippet – Backup using Tar and gzip]]></title><description><![CDATA[<div>
-  <div>
-    
-    <p>
-      <span ><br /> </span><br /> <span ><span style="font-size: small;">As a programmer i have to make multiple revisions of a project on a remote site. Getting things wrong and messing up the files tend to happen more often than I am comfortable with. Fortunately, making quick backups in linux is a breeze. You can either make a folder and just copy your existing files via recursive </span></span><a href="http://www.blogger.com/post-edit.g?blogID=21010737&postID=4758938169519074006"><span ><span style="font-size: small;">cp</span></span></a><span ><span style="font-size: small;"> command or; archive it using tar and gzip. Personally, I prefer archives since they tend to be smaller and easy to manage. </span></span><br /> ]]></description><link>https://www.codespud.com/linux-snippet-backup-using-tar-and-gzip/</link><guid isPermaLink="false">https://www.codespud.com/linux-snippet-backup-using-tar-and-gzip/</guid><pubDate>Sun, 07 Dec 2008 08:51:00 GMT</pubDate><content:encoded>&lt;div&gt;
-  &lt;div&gt;
-    
-    &lt;p&gt;
-      &lt;span &gt;&lt;br /&gt; &lt;/span&gt;&lt;br /&gt; &lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;As a programmer i have to make multiple revisions of a project on a remote site. Getting things wrong and messing up the files tend to happen more often than I am comfortable with. Fortunately, making quick backups in linux is a breeze. You can either make a folder and just copy your existing files via recursive &lt;/span&gt;&lt;/span&gt;&lt;a href=&quot;http://www.blogger.com/post-edit.g?blogID=21010737&amp;postID=4758938169519074006&quot;&gt;&lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;cp&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt; command or; archive it using tar and gzip. Personally, I prefer archives since they tend to be smaller and easy to manage. &lt;/span&gt;&lt;/span&gt;&lt;br /&gt; &lt;!--more--&gt;&lt;/div&gt; 
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;Install tar and gzip&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;You can be hardcore and download the source for tar and gzip and recompile them.&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: 13px;&quot;&gt; &lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;a href=&quot;http://www.gnu.org/software/tar&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;http://www.gnu.org/software/tar/&lt;/span&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;a href=&quot;http://www.gzip.org/&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;http://www.gzip.org/&lt;/span&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: small;&quot;&gt;Or you can use apt-get or yum(Yellow dog Updater, Modified ? &amp;#8212; weird name ) to do it for you.&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: small;&quot;&gt;yum install tar&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: small;&quot;&gt;yum install gzip&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Sample commands&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-family: &apos;courier new&apos;;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Archive a folder ( -c means create )&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf -  folder | gzip &amp;gt; archive.tar.gz&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-family: &apos;courier new&apos;;&quot;&gt;Archive a file&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf -  filename | gzip &amp;gt; archive.tar.gz&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Archive files&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf -  filename1 filename2 | gzip &amp;gt; archive.tar.gz&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Alternative format (-z means use gzip to compress)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvzf /path/to/dir/archive.tar.gz filename1&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvzf /path/to/dir/archive.tar.gz filename1 filename2&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;div&gt;
-        &lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Extracting (-x means extract )&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;pre&gt;&lt;span style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar xvzf /path/to/dir/archive.tar.gz&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;There are other ways and tools to make your archives. But we&amp;#8217;ll continue with that some other time. For the really lazy, I&amp;#8217;ll make a bash script that uses tar and gzip in a later post so watch for that.&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-      &lt;/div&gt;
-      
-      &lt;div&gt;
-        &lt;span &gt;&lt;span style=&quot;font-size: small;&quot;&gt;I hope my article helped some newbies out there. Mabuhay!&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PHP – Editors]]></title><link>https://www.codespud.com/php-editors/</link><guid isPermaLink="false">https://www.codespud.com/php-editors/</guid><pubDate>Sat, 19 Jan 2008 07:29:00 GMT</pubDate><content:encoded>&lt;div  &gt;
+&lt;a href=&quot;http://potatokorner.blogspot.com/2008/12/linux-snippet-backup-using-tar-and-gzip.html&quot;&gt;Linux: Snippet – Backup using Tar and gzip&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Linux: Snippet – Backup using Tar and gzip]]></title><description><![CDATA[
+As a programmer i have to make multiple revisions of a project on a remote site. Getting things wrong and messing up the files tend to happen more often than I am comfortable with. Fortunately, making quick backups in linux is a breeze. You can either make a folder and just copy your existing files via recursive <a href="http://www.blogger.com/post-edit.g?blogID=21010737&postID=4758938169519074006">cp</a>command or; archive it using tar and gzip. Personally, I prefer archives since they tend to be smaller and easy to manage. ]]></description><link>https://www.codespud.com/linux-snippet-backup-using-tar-and-gzip/</link><guid isPermaLink="false">https://www.codespud.com/linux-snippet-backup-using-tar-and-gzip/</guid><pubDate>Sun, 07 Dec 2008 08:51:00 GMT</pubDate><content:encoded>&lt;p&gt;As a programmer i have to make multiple revisions of a project on a remote site. Getting things wrong and messing up the files tend to happen more often than I am comfortable with. Fortunately, making quick backups in linux is a breeze. You can either make a folder and just copy your existing files via recursive &lt;a href=&quot;http://www.blogger.com/post-edit.g?blogID=21010737&amp;postID=4758938169519074006&quot;&gt;cp&lt;/a&gt;command or; archive it using tar and gzip. Personally, I prefer archives since they tend to be smaller and easy to manage. &lt;!--more--&gt;&lt;/p&gt;
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span &gt;&lt;span&gt;Install tar and gzip&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;div&gt;
+&lt;span &gt;&lt;span&gt; You can be hardcore and download the source for tar and gzip and recompile them.&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-size: 13px;&quot;&gt; &lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;div&gt;
+&lt;a href=&quot;http://www.gnu.org/software/tar&quot;&gt;&lt;span&gt;http://www.gnu.org/software/tar/&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+  
+ &lt;div&gt;
+&lt;a href=&quot;http://www.gzip.org/&quot;&gt;&lt;span&gt;http://www.gzip.org/&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span&gt; Or you can use apt-get or yum(Yellow dog Updater, Modified ? &amp;#8212; weird name ) to do it for you.&lt;/span&gt;
+&lt;/div&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span&gt; yum install tar&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;div&gt;
+&lt;span&gt; yum install gzip&lt;/span&gt;
+&lt;/div&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;Sample commands&lt;/span&gt;
+&lt;/div&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;Archive a folder ( -c means create )&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf - folder | gzip &amp;gt; archive.tar.gz&lt;/span&gt;&lt;/pre&gt;
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-family: &apos;courier new&apos;;&quot;&gt;Archive a file&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf - filename | gzip &amp;gt; archive.tar.gz&lt;/span&gt;&lt;/pre&gt;
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;Archive files&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvf - filename1 filename2 | gzip &amp;gt; archive.tar.g&lt;/span&gt;&lt;/pre&gt;
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;Alternative format (-z means use gzip to compress)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvzf /path/to/dir/archive.tar.gz filename&lt;/span&gt;&lt;/pre&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar cvzf /path/to/dir/archive.tar.gz filename1 filename&lt;/span&gt;&lt;/pre&gt;
+  
+ &lt;div&gt;
+&lt;span style=&quot;font-weight: bold;&quot;&gt;Extracting (-x means extract )&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ &lt;pre&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;color: #009900;&quot;&gt;tar xvzf /path/to/dir/archive.tar.gz&lt;/span&gt;&lt;/pre&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span&gt; There are other ways and tools to make your archives. But we&amp;#8217;ll continue with that some other time. For the really lazy, I&amp;#8217;ll make a bash script that uses tar and gzip in a later post so watch for that.&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+  
+ 
+  
+ &lt;div&gt;
+&lt;span &gt;&lt;span&gt; I hope my article helped some newbies out there. Mabuhay!&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[PHP – Editors]]></title><link>https://www.codespud.com/php-editors/</link><guid isPermaLink="false">https://www.codespud.com/php-editors/</guid><pubDate>Sat, 19 Jan 2008 07:29:00 GMT</pubDate><content:encoded>&lt;div  &gt;
   &lt;p&gt;
     In programming, editors are specialized applications used to create,open and modify files. Wikipedia can explain this further(click here).
   &lt;/p&gt;
