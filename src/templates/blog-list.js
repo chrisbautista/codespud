@@ -20,6 +20,16 @@ const Story = styled.div`
   }
 `
 
+const MoreLink = styled(Link)`
+  background-color: antiquewhite;
+  border-radius: 15px;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.1);
+  padding: 6px 18px;
+  width: 62px;
+  display: inline-block;
+  text-align: center;
+`
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -60,9 +70,10 @@ class BlogIndex extends React.Component {
 
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.excerpt,
                 }}
               />
+              <MoreLink to={node.fields.slug}>{`More`}</MoreLink>
             </Story>
           )
         })}

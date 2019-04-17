@@ -3,12 +3,12 @@ title: All You Need Is A Browser
 author: chris
 type: post
 date: 2009-10-12T05:02:00+00:00
-redirect_from: 
+redirect_from:
   - /2009/10/all-you-need-is-a-browser/
-
-
 ---
-The web has become more than just a <a href="http://www.ipl.org/" target="_blank">glorified paperless library</a>, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer&#8217;s desktop. Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you&#8217;re interested, read on!.  
+
+The web has become more than just a <a href="http://www.ipl.org/" target="_blank">glorified paperless library</a>, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer&#8217;s desktop. Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you&#8217;re interested, read on!.
+
 <!--more-->
 
 ### What you need?
@@ -59,25 +59,25 @@ Download from [here][1].
 
 ##### Office Alternative(Word, Excel, PowerPoint etc.)
 
-  * <a href="http://docs.google.com/" target="_blank">Google Docs</a>
-  * <a href="http://www.thinkfree.com/" target="_blank">Thinkfree.com/</a>
-  * <a href="http://www.zoho.com/" target="_blank">Zoho</a>
-  * <a href="http://www.peepel.com/" target="_blank">Peepel</a>
-  * <a href="http://www.adobe.com/acom/buzzword/" target="_blank">Buzz Word</a>
-  * <a href="http://etherpad.com/" target="_blank">Etherpad</a>
-  * <a href="http://opengoo.org/" target="_blank">OpenGoo</a>
+- <a href="http://docs.google.com/" target="_blank">Google Docs</a>
+- <a href="http://www.thinkfree.com/" target="_blank">Thinkfree.com/</a>
+- <a href="http://www.zoho.com/" target="_blank">Zoho</a>
+- <a href="http://www.peepel.com/" target="_blank">Peepel</a>
+- <a href="http://www.adobe.com/acom/buzzword/" target="_blank">Buzz Word</a>
+- <a href="http://etherpad.com/" target="_blank">Etherpad</a>
+- <a href="http://opengoo.org/" target="_blank">OpenGoo</a>
 
 ##### Email
 
-  * <a href="https://mail.google.com/" target="_blank">Gmail</a>
-  * <a href="http://www.fastmail.fm/" target="_blank">Fastmail</a>
-  * <a href="http://www.runbox.com/" target="_blank">Runbox</a>
-  * <a href="https://www.inbox.com/login.aspx?gdi=true" target="_blank">Inbox.com</a>
+- <a href="https://mail.google.com/" target="_blank">Gmail</a>
+- <a href="http://www.fastmail.fm/" target="_blank">Fastmail</a>
+- <a href="http://www.runbox.com/" target="_blank">Runbox</a>
+- <a href="https://www.inbox.com/login.aspx?gdi=true" target="_blank">Inbox.com</a>
 
 ##### Calendar and Tasks
 
-  * <a href="https://www.google.com/calendar/render?tab=mc" target="_blank">Google Calendar</a>
-  * <a href="http://30boxes.com/" target="_blank">30boxes</a>
+- <a href="https://www.google.com/calendar/render?tab=mc" target="_blank">Google Calendar</a>
+- <a href="http://30boxes.com/" target="_blank">30boxes</a>
 
 &nbsp;
 
@@ -87,22 +87,22 @@ Download from [here][1].
 
 ##### Music Player/Online Radio
 
-  * <a href="http://listen.grooveshark.com/" target="_blank">Grooveshark</a>
-  * <a href="http://spotify.com/" target="_blank">Spotify.com</a>
-  * <a href="http://www.pandora.com/" target="_blank">Pandora Radio</a>
-  * <a href="http://www.last.fm/" target="_blank">Last.FM</a>
-  * <a href="http://www.jamendo.com/en/" target="_blank">Jamendo.com</a>
+- <a href="http://listen.grooveshark.com/" target="_blank">Grooveshark</a>
+- <a href="http://spotify.com/" target="_blank">Spotify.com</a>
+- <a href="http://www.pandora.com/" target="_blank">Pandora Radio</a>
+- <a href="http://www.last.fm/" target="_blank">Last.FM</a>
+- <a href="http://www.jamendo.com/en/" target="_blank">Jamendo.com</a>
 
 ##### Picture Organizer
 
-  * <a href="http://picasaweb.google.com/home" target="_blank">Picasa Web Albums</a>
-  * <a href="http://www.flickr.com/" target="_blank">Flickr</a>
-  * <a href="http://www.fotonomy.com/" target="_blank">Fotomy</a>
-  * <a href="http://www.smugmug.com/" target="_blank">SmugMug</a>
+- <a href="http://picasaweb.google.com/home" target="_blank">Picasa Web Albums</a>
+- <a href="http://www.flickr.com/" target="_blank">Flickr</a>
+- <a href="http://www.fotonomy.com/" target="_blank">Fotomy</a>
+- <a href="http://www.smugmug.com/" target="_blank">SmugMug</a>
 
 ##### Instant Messaging
 
-  * <a href="http://meebo.com/home" target="_blank">Meebo</a>
+- <a href="http://meebo.com/home" target="_blank">Meebo</a>
 
 If you know other similar applications or more web alternatives to desktop applications, please don&#8217;t hesitate to mention in it in your comments.
 
@@ -113,4 +113,4 @@ If you know other similar applications or more web alternatives to desktop appli
 <a href="http://alternativeto.net/" target="_blank">http://alternativeto.net</a>  
 <a href="http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/" target="_blank">http://brontesaurus.com/blog/2008/12/3-webmail-alternatives/</a>
 
- [1]: http://prism.mozillalabs.com/
+[1]: http://prism.mozillalabs.com/
