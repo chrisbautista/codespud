@@ -5,27 +5,10 @@ type: post
 date: 2009-09-19T08:55:00+00:00
 redirect_from:
   - /2009/09/google-got-recaptcha/
-blogger_internal:
-  - /feeds/21010737/posts/default/4678543514363080025
-  - /feeds/21010737/posts/default/4678543514363080025
-  - /feeds/21010737/posts/default/4678543514363080025
-blogger_permalink:
-  - /2009/09/google-got-recaptcha.html
-  - /2009/09/google-got-recaptcha.html
-  - /2009/09/google-got-recaptcha.html
-blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
-blogger_blog:
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
+
 ---
 
-Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they&#8217;re the annoying barely readable text images when you register/login for a site.
-
-<!--more-->
+Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. <!--more-->Yes, they&#8217;re the annoying barely readable text images when you register/login for a site.
 
 <div style="clear: both; text-align: center;">
   <a href="http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s1600-h/recaptcha-1231dasdqd.gif" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s320/recaptcha-1231dasdqd.gif" /></a>

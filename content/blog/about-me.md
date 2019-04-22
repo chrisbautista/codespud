@@ -7,6 +7,7 @@ url: /2009/09/about-me/
 redirect_from: 
   - /2009/09/about-me/
 featured_image :  /potato.png
+contentType: profile
 
 ---
 

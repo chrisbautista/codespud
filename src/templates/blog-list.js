@@ -70,7 +70,7 @@ class BlogIndex extends React.Component {
 
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
+                  __html: node.fields.description || node.excerpt,
                 }}
               />
               <MoreLink to={node.fields.slug}>{`More`}</MoreLink>
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        frontmatter: { draft: { ne: true }, contentType: { nin: ["works"] } }
+        frontmatter: { draft: { ne: true }, contentType: { nin: ["works", "profile"] } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
@@ -109,6 +109,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            description
             featured_image
           }
         }

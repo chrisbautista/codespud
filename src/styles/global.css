@@ -68,6 +68,18 @@ a:hover{
     text-decoration: underline;
 }
 
+td,th {
+    border: 1px solid #DDD;
+    padding: 2px;
+}
+th {
+    border: 1px solid #777;
+    background-color: #062F4F;
+    font-weight: bold;
+    color: snow;
+    padding: 3px;
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 20px;
