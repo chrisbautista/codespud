@@ -1,8 +1,13 @@
-## Setup
+# My Blog
+
+[www.codespud.com](https://www.codespud.com)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
+## Setup
+
 ```bash
-git clone blog
+git clone https://github.com/chrisbautista/codespud.git blog
 cd blog
 npm install
 ```
@@ -14,8 +19,6 @@ To get the app up and running (and really see if it worked), run:
 ```shell
 gatsby develop
 ```
-
-## Helpful Emoji 🐨 💰 💯
 
 ## Troubleshooting
 
