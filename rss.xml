@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Wed, 17 Apr 2019 04:27:02 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 22 Apr 2019 19:07:25 GMT</lastBuildDate><item><title><![CDATA[Make Your Bash Prompt Work For You]]></title><description><![CDATA[
 If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.
 
-People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.
-
 ]]></description><link>https://www.codespud.com/make-bash-prompt-work/</link><guid isPermaLink="false">https://www.codespud.com/make-bash-prompt-work/</guid><pubDate>Mon, 14 Nov 2016 04:08:17 GMT</pubDate><content:encoded>&lt;p&gt;If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or &lt;a href=&quot;https://www.gnu.org/software/bash/bash.html&quot;&gt;BASH&lt;/a&gt; for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.&lt;/p&gt;
-&lt;p&gt;People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.&lt;/p&gt;
 &lt;!--more--&gt;
+&lt;p&gt;People tell me the invention of the GUI (graphical user interface) is the best thing that ever happened to modern computing. I beg to differ. Not all work is accomplished through the GUI nor is it efficient.&lt;/p&gt;
 &lt;p&gt;I find myself working on the command line for work more and more — managing my servers even my Apple computer. So I get to spend much of my time on the command line. Launching commands like a stenographer recording the latest court drama. I realized very early how powerful the command line could be.&lt;/p&gt;
 &lt;p&gt;But not having a GUI does not mean you should be happy with the default command prompt. Is this familiar?&lt;figure&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -620,9 +618,7 @@ Arduino Due, Sensor Shield&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Server:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;PHP, JSON, MySQL&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Download Links:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lowe.billypostpaid.pak&quot; title=&quot;Billy - Android&quot;&gt;ANDROID&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Quick and Free Way to Set Up Your App using Heroku]]></title><description><![CDATA[I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research.  First in my list was a workflow to streamline development. It&#8217;s been a while since I modified my workflow and so I thought it was time for a change.
-]]></description><link>https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</link><guid isPermaLink="false">https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</guid><pubDate>Sun, 20 Apr 2014 20:52:49 GMT</pubDate><content:encoded>&lt;p&gt;I had a struck of inspiration earlier this week. I’ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research.  First in my list was a workflow to streamline development. It’s been a while since I modified my workflow and so I thought it was time for a change.&lt;/p&gt;
-&lt;!--more--&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lowe.billypostpaid.pak&quot; title=&quot;Billy - Android&quot;&gt;ANDROID&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Quick and Free Way to Set Up Your App using Heroku]]></title><description><![CDATA[I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research. ]]></description><link>https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</link><guid isPermaLink="false">https://www.codespud.com/quick-and-free-way-to-set-up-your-app-using-heroku/</guid><pubDate>Sun, 20 Apr 2014 20:52:49 GMT</pubDate><content:encoded>&lt;p&gt;I had a struck of inspiration earlier this week. I’ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research. &lt;!--more--&gt;First in my list was a workflow to streamline development. It’s been a while since I modified my workflow and so I thought it was time for a change.&lt;/p&gt;
 &lt;p&gt;Aside from the design and flow of the application, my immediate concern was where to host my apps once I’m done with the first milestone. I was researching around the interweb and a familiar link caught my eye.  Heroku was the 2nd link of my search. I investigated Heroku when I first made a Facebook application for Lowe Philippines.  I remember seeing a link to Heroku from Facebook’s “Create App” wizard. Back then I was more curious than impressed. Anyway, this time I was very curious but now I’m also very impressed with how Heroku made it easy to deploy an app. Heroku does not magically build a scaffold for you but it does guide you through steps in their “Getting started” page and heck it’s free.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What you get for a free account?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -753,10 +749,7 @@ Arduino Due, Sensor Shield&lt;/p&gt;
 &lt;li&gt;I found the optimum interval for showing tweets is 5 secs, but of course it depends on what you intend to use it for.  &lt;/li&gt;
 &lt;li&gt;Sometimes, you can clean your results by showing hashtags and filtering unwanted tags out with minus(-).  &lt;/li&gt;
 &lt;li&gt;Enable scrollbars if you chose to load all results.&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[bit.ly, a simple url shortener]]></title><description><![CDATA[It started with <a href="http://tinyurl.com/" target="_blank">TinyURL</a>, <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL aliasing/shortening</a> has become big business with similar sites growing out of the woodwork(See <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL Shortening &#8211; History</a>). With other unrelated services following the trend, like <a href="http://scr.im/" target="_blank">scr.im</a>(email aliasing) and <a href="http://twt.fm/" target="_blank">twt.fm</a>(promotes music), adding value to support our slowly growing twittering society. Bit.ly is one such revolutionary child; [but this child has grown big enough to even rival TinyURL][1].
-
-]]></description><link>https://www.codespud.com/bit-ly-a-simple-url-shortener/</link><guid isPermaLink="false">https://www.codespud.com/bit-ly-a-simple-url-shortener/</guid><pubDate>Sat, 17 Oct 2009 23:50:00 GMT</pubDate><content:encoded>&lt;p&gt;It started with &lt;a href=&quot;http://tinyurl.com/&quot; target=&quot;_blank&quot;&gt;TinyURL&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/URL_shortening&quot; target=&quot;_blank&quot;&gt;URL aliasing/shortening&lt;/a&gt; has become big business with similar sites growing out of the woodwork(See &lt;a href=&quot;http://en.wikipedia.org/wiki/URL_shortening&quot; target=&quot;_blank&quot;&gt;URL Shortening – History&lt;/a&gt;). With other unrelated services following the trend, like &lt;a href=&quot;http://scr.im/&quot; target=&quot;_blank&quot;&gt;scr.im&lt;/a&gt;(email aliasing) and &lt;a href=&quot;http://twt.fm/&quot; target=&quot;_blank&quot;&gt;twt.fm&lt;/a&gt;(promotes music), adding value to support our slowly growing twittering society. Bit.ly is one such revolutionary child; &lt;a href=&quot;http://mashable.com/2009/09/08/bitly-tinyurl/&quot;&gt;but this child has grown big enough to even rival TinyURL&lt;/a&gt;.&lt;/p&gt;
-&lt;!--more--&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Bit.ly, A Simple URL Shortener]]></title><description><![CDATA[It started with <a href="http://tinyurl.com/" target="_blank">TinyURL</a>, <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL aliasing/shortening</a> has become big business with similar sites growing out of the woodwork(See <a href="http://en.wikipedia.org/wiki/URL_shortening" target="_blank">URL Shortening &#8211; History</a>). With other unrelated services following the trend, like <a href="http://scr.im/" target="_blank">scr.im</a>(email aliasing) and <a href="http://twt.fm/" target="_blank">twt.fm</a>(promotes music), adding value to support our slowly growing twittering society. ]]></description><link>https://www.codespud.com/bit-ly-a-simple-url-shortener/</link><guid isPermaLink="false">https://www.codespud.com/bit-ly-a-simple-url-shortener/</guid><pubDate>Sat, 17 Oct 2009 23:50:00 GMT</pubDate><content:encoded>&lt;p&gt;It started with &lt;a href=&quot;http://tinyurl.com/&quot; target=&quot;_blank&quot;&gt;TinyURL&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/URL_shortening&quot; target=&quot;_blank&quot;&gt;URL aliasing/shortening&lt;/a&gt; has become big business with similar sites growing out of the woodwork(See &lt;a href=&quot;http://en.wikipedia.org/wiki/URL_shortening&quot; target=&quot;_blank&quot;&gt;URL Shortening – History&lt;/a&gt;). With other unrelated services following the trend, like &lt;a href=&quot;http://scr.im/&quot; target=&quot;_blank&quot;&gt;scr.im&lt;/a&gt;(email aliasing) and &lt;a href=&quot;http://twt.fm/&quot; target=&quot;_blank&quot;&gt;twt.fm&lt;/a&gt;(promotes music), adding value to support our slowly growing twittering society. &lt;!--more--&gt;Bit.ly is one such revolutionary child; &lt;a href=&quot;http://mashable.com/2009/09/08/bitly-tinyurl/&quot;&gt;but this child has grown big enough to even rival TinyURL&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What so great about bit.ly?&lt;/p&gt;
 &lt;p&gt;It accomplishes it task, but with flair. I love that bit.ly provides a means for me to track how many clicked the URLs i sent. Might be the reason for it’s sudden increase in popularity for such a short period. It doesn’t hurt either that it’s officially endorsed by twitter.com.&lt;/p&gt;
 &lt;p&gt;The member’s site has a number of features but I’ll concentrate on URL shortening and tracking.&lt;/p&gt;
@@ -765,10 +758,7 @@ Arduino Due, Sensor Shield&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Above screenshot you see the URL entry tool in RED dashed borders. This is where you jam your uber long URL. Usually, URL shortening is more conveniently done via an API call via a tool in your client software. But if you’re just want your un-memorize-able URL to be easier to carry around or share then the web tool should suffice.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://bit.ly/&quot;&gt;bit.ly, a simple url shortener&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[All You Need Is A Browser]]></title><description><![CDATA[
-The web has become more than just a <a href="http://www.ipl.org/" target="_blank">glorified paperless library</a>, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer&#8217;s desktop. Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you&#8217;re interested, read on!.
-
-]]></description><link>https://www.codespud.com/all-you-need-is-a-browser/</link><guid isPermaLink="false">https://www.codespud.com/all-you-need-is-a-browser/</guid><pubDate>Mon, 12 Oct 2009 05:02:00 GMT</pubDate><content:encoded>&lt;p&gt;The web has become more than just a &lt;a href=&quot;http://www.ipl.org/&quot; target=&quot;_blank&quot;&gt;glorified paperless library&lt;/a&gt;, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer’s desktop. Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you’re interested, read on!.&lt;/p&gt;
-&lt;!--more--&gt;
+The web has become more than just a <a href="http://www.ipl.org/" target="_blank">glorified paperless library</a>, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer&#8217;s desktop. ]]></description><link>https://www.codespud.com/all-you-need-is-a-browser/</link><guid isPermaLink="false">https://www.codespud.com/all-you-need-is-a-browser/</guid><pubDate>Mon, 12 Oct 2009 05:02:00 GMT</pubDate><content:encoded>&lt;p&gt;The web has become more than just a &lt;a href=&quot;http://www.ipl.org/&quot; target=&quot;_blank&quot;&gt;glorified paperless library&lt;/a&gt;, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer’s desktop. &lt;!--more--&gt;Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you’re interested, read on!.&lt;/p&gt;
 &lt;h3&gt;What you need?&lt;/h3&gt;
 &lt;p&gt;You need to install &lt;a href=&quot;http://www.google.com/chrome&quot; target=&quot;_blank&quot;&gt;Google’s Chrome&lt;/a&gt; browser. No specific channel. Though I recommend using &lt;a href=&quot;http://dev.chromium.org/getting-involved/dev-channel&quot; target=&quot;_blank&quot;&gt;“Dev”&lt;/a&gt;, for plugin support and cutting edge stuff. Secondly a list of online services that emulates software you normally would install like Gmail/YahooMail(Email), Grooveshark(Music Player) etc. Also, depending on the web application, you might need to register for accounts to use their services.&lt;/p&gt;
 &lt;h3&gt;How?&lt;/h3&gt;
@@ -1147,43 +1137,25 @@ University of the Philippines, Diliman, Quezon City&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;– Compiled by Annalyn Ardoña and Patricia Faustino, GMA NEWS AND PUBLIC AFFAIRS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update: some more info from &lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot;&gt;google-ondoy page&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Google Ondoy Help Page]]></title><description><![CDATA[Updates: <http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html>_
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Google Ondoy Help Page]]></title><description><![CDATA[
+Updates: 
+http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html
 
 Google joins the Filipino nation in helping those affected by Typhoon Ondoy!
 
-I am reposting the info here if you have time please check the actual google page.
-
-<a href="http://www.google.com/landing/typhoon-ondoy.html" target="_blank">http://www.google.com/landing/typhoon-ondoy.html</a>
-
-]]></description><link>https://www.codespud.com/google-ondoy-help-page/</link><guid isPermaLink="false">https://www.codespud.com/google-ondoy-help-page/</guid><pubDate>Mon, 28 Sep 2009 10:39:00 GMT</pubDate><content:encoded>&lt;p&gt;Updates: &lt;a href=&quot;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&quot;&gt;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&lt;/a&gt;_&lt;/p&gt;
+I am reposting the info here if you have time please check the actual google page.]]></description><link>https://www.codespud.com/google-ondoy-help-page/</link><guid isPermaLink="false">https://www.codespud.com/google-ondoy-help-page/</guid><pubDate>Mon, 28 Sep 2009 10:39:00 GMT</pubDate><content:encoded>&lt;p&gt;Updates:
+&lt;a href=&quot;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&quot;&gt;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Google joins the Filipino nation in helping those affected by Typhoon Ondoy!&lt;/p&gt;
-&lt;p&gt;I am reposting the info here if you have time please check the actual google page.&lt;/p&gt;
+&lt;p&gt;I am reposting the info here if you have time please check the actual google page.&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot; target=&quot;_blank&quot;&gt;http://www.google.com/landing/typhoon-ondoy.html&lt;/a&gt;&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: white; font-family: arial, sans-serif; font-size: 13px; line-height: 19px;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 style=&quot;color: #333333; font-size: 1.85em; font-weight: normal; line-height: 1.25; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 13px;&quot;&gt;
-  Help for Typhoon Ondoy Victims in the Philippines
-&lt;/h1&gt;
-&lt;div style=&quot;clear: both; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-  &lt;span&gt;O&lt;/span&gt;n September 26, 2009, Typhoon Ondoy brought a month&amp;#8217;s worth of rainfall to Metro Manila and nearby areas in just a few hours, causing severe flooding which resulted in the loss of many lives and the displacement of hundreds of thousands of people. This site compiles relevant information about the disaster, including a volunteer-maintained map of persons needing rescue and a list of relief organizations accepting donations, so that more help can be provided where it is needed. You can also keep track of the latest news on&amp;nbsp;&lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;Google News&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;YouTube&lt;/a&gt;.
-&lt;/div&gt;
-&lt;p&gt;&lt;a name=&apos;more&apos;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 style=&quot;font-size: 1.23em; line-height: 1.25; margin-bottom: 0.81em; margin-left: 0px; margin-right: 0px; margin-top: 20px;&quot;&gt;
-  Know someone who needs help?
-&lt;/h2&gt;
-&lt;div style=&quot;margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-  A group of volunteer map makers have been maintaining the map below, which documents flood updates and persons needing rescue. If you know someone who needs help urgently or if you would like to report the status of the flood in your area, please&lt;a href=&quot;https://spreadsheets.google.com/viewform?formkey=dExYV0pxcWlLLWVOUmQzeDUwWUdObVE6MA&quot; style=&quot;color: #0000cc;&quot;&gt;complete this form&lt;/a&gt;. The information will be sent to the group&amp;#8217;s main database for posting on the map.
-&lt;/div&gt;
+&lt;h3&gt;Help for Typhoon Ondoy Victims in the Philippines&lt;/h3&gt;
+&lt;p&gt;  &lt;span&gt;O&lt;/span&gt;n September 26, 2009, Typhoon Ondoy brought a month’s worth of rainfall to Metro Manila and nearby areas in just a few hours, causing severe flooding which resulted in the loss of many lives and the displacement of hundreds of thousands of people. This site compiles relevant information about the disaster, including a volunteer-maintained map of persons needing rescue and a list of relief organizations accepting donations, so that more help can be provided where it is needed. You can also keep track of the latest news on &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;Google News&lt;/a&gt; and &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Know someone who needs help?&lt;/h3&gt;
+&lt;p&gt;  A group of volunteer map makers have been maintaining the map below, which documents flood updates and persons needing rescue. If you know someone who needs help urgently or if you would like to report the status of the flood in your area, please&lt;a href=&quot;https://spreadsheets.google.com/viewform?formkey=dExYV0pxcWlLLWVOUmQzeDUwWUdObVE6MA&quot; style=&quot;color: #0000cc;&quot;&gt;complete this form&lt;/a&gt;. The information will be sent to the group’s main database for posting on the map.&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;View &lt;a href=&quot;http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=110868206150348750692.00047479b6400ee29bd89&amp;ll=14.645791,121.107874&amp;spn=0.107954,0.154324&amp;source=embed&quot; style=&quot;color: blue; text-align: left;&quot;&gt;Ondoy situation map for Metro Manila&lt;/a&gt; in a larger map&lt;/small&gt;&lt;/p&gt;
-&lt;div style=&quot;color: #666666; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-  Disclaimer: This map was initiated by a group of volunteers not directly connected with Google. We cannot guarantee 100% accuracy of all placemarks. If you are familiar with Google Maps and would like to help the group&amp;#8217;s volunteer efforts, please email&lt;a href=&quot;http://www.google.com/landing/typhoonondoy@googlegroups.com&quot; style=&quot;color: #0000cc;&quot;&gt;typhoonondoy@googlegroups.com&lt;/a&gt;.
-&lt;/div&gt;
-&lt;h2 style=&quot;font-size: 1.23em; line-height: 1.25; margin-bottom: 0.81em; margin-left: 0px; margin-right: 0px; margin-top: 20px;&quot;&gt;
-  Useful Links
-&lt;/h2&gt;
-&lt;h3 style=&quot;font-size: 1.08em; line-height: 1.2; margin-bottom: 0.93em; margin-left: 0px; margin-right: 0px; margin-top: 1.4em;&quot;&gt;
-  News and Updates
-&lt;/h3&gt;
+&lt;p&gt;  Disclaimer: This map was initiated by a group of volunteers not directly connected with Google. We cannot guarantee 100% accuracy of all placemarks. If you are familiar with Google Maps and would like to help the group’s volunteer efforts, please email&lt;a href=&quot;http://www.google.com/landing/typhoonondoy@googlegroups.com&quot; style=&quot;color: #0000cc;&quot;&gt;typhoonondoy@googlegroups.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Useful Links&lt;/h3&gt;
+&lt;h4&gt;News and Updates&lt;/h4&gt;
 &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
   &lt;li&gt;
     &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;q=ondoy+&quot; style=&quot;color: #0000cc;&quot;&gt;Google News&lt;/a&gt;
@@ -1198,7 +1170,8 @@ I am reposting the info here if you have time please check the actual google pag
     &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.gov.ph%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHX2nPQmikb5g5aiMavnCNp7nas_g&quot; style=&quot;color: #0000cc;&quot;&gt;Official Government Site&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    Local media websites &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
+    Local media websites 
+    &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
       &lt;li&gt;
         &lt;a href=&quot;http://www.abs-cbnnews.com/&quot; style=&quot;color: #0000cc;&quot; title=&quot;ABS-CBN News&quot;&gt;ABS-CBN News&lt;/a&gt;
       &lt;/li&gt;
@@ -1214,271 +1187,219 @@ I am reposting the info here if you have time please check the actual google pag
       &lt;li&gt;
         &lt;a href=&quot;http://www.phistar.com/&quot; style=&quot;color: #0000cc;&quot; title=&quot;Philippine Star&quot;&gt;Philippine Star&lt;/a&gt;
       &lt;/li&gt;
+    &lt;/ul&gt;    
+    &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h4&gt;Disaster Emergency&lt;/h4&gt;
+&lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
+&lt;li&gt;
+  Rescue Operations 
+  &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
+    &lt;li&gt;
+      National Disaster Coordinating Council (NDCC) (+632-9125668, +632-9111406, +632-9115061, +632-9122665) Help hotlines: (+65 734-2118, 734-2120)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Philippine Coast Guard (+632-5276136)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Air Force (+63908-1126976, +632-8535023)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Metro Manila Development Authority (136)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Marikina City Rescue (+632-6462436, +632-6462423, +632920-9072902)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Pasig Rescue Emergency Number (+632-6310099)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Quezon City Rescue (161)
+    &lt;/li&gt;
+    &lt;li&gt;
+      San Juan City Hall Command Post (+632-4681697)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Bureau of Fire Protection Region III (Central Luzon) Hotline: (+63245-9634376)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Senator Dick Gordon (+639178997898, +63938-444BOYS, +632-9342118, +632-4338528)
+    &lt;/li&gt;
+    &lt;li&gt;
+      Senator Manny Villar (+639174226800. +639172414864, +639276751981)
+    &lt;/li&gt;
+    &lt;/ul&gt;
+  
+  &lt;/li&gt; 
+    
+  &lt;li&gt;
+      Civil Society/ Media 
+      &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
+        &lt;li&gt;
+          Philippine National Red Cross (143, +632-5270000)
+        &lt;/li&gt;
+        &lt;li&gt;
+          Philippine National Red Cross Rizal Chapter operations center hotline: (+632-6350922, +632-6347824)
+        &lt;/li&gt;
+        &lt;li&gt;
+          Go to&amp;nbsp;&lt;a href=&quot;http://www.facebook.com/topic.php?uid=116724526976&amp;topic=9724&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;GMA Facebook page&lt;/a&gt;&amp;nbsp;&amp; post complete addresses and names of people in need of immediate help.
+        &lt;/li&gt;
+        &lt;li&gt;
+          ABS-CBN Typhoon Ondoy Hotline: (+632-4163641)
+        &lt;/li&gt;
+        &lt;li&gt;
+          Jam 88.3: (+632- 6318803) or SMS at JAM (space) 883 (space) your message to 2968
+        &lt;/li&gt;
+      &lt;/ul&gt;
+              
+  &lt;/li&gt; 
+                
+  &lt;li&gt;
+    Rubber Boat Requests, 4×4 Trucks &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
+      &lt;li&gt;
+        NCRPO (+632-8383203, +632-8383354)
+      &lt;/li&gt;
+      &lt;li&gt;
+        Private citizens who would like to lend their motor boats for rescue&lt;br /&gt;please call emergency nos: +632-9125668, +632-9111406, +632-9122665, +632-9115061)
+      &lt;/li&gt;
+      &lt;li&gt;
+        You can also text (+632917-4226800 or +632927-6751981) for rescue dump trucks.
+      &lt;/li&gt;
+      &lt;li&gt;
+        For those who are able to lend 4×4 trucks for rescue: Please send truck to Greenhills Shoppng Center Unimart Grocery to await deployment, Tel No. (+632920-9072902).
+      &lt;/li&gt;
     &lt;/ul&gt;
     
-    &lt;p&gt;
-      &lt;/li&gt; &lt;/ul&gt; 
-      
-      &lt;h3 style=&quot;font-size: 1.08em; line-height: 1.2; margin-bottom: 0.93em; margin-left: 0px; margin-right: 0px; margin-top: 1.4em;&quot;&gt;
-        Disaster Emergency
-      &lt;/h3&gt;
-      
-      &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
-        &lt;li&gt;
-          Rescue Operations &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
-            &lt;li&gt;
-              National Disaster Coordinating Council (NDCC) (+632-9125668, +632-9111406, +632-9115061, +632-9122665) Help hotlines: (+65 734-2118, 734-2120)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Philippine Coast Guard (+632-5276136)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Air Force (+63908-1126976, +632-8535023)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Metro Manila Development Authority (136)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Marikina City Rescue (+632-6462436, +632-6462423, +632920-9072902)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Pasig Rescue Emergency Number (+632-6310099)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Quezon City Rescue (161)
-            &lt;/li&gt;
-            &lt;li&gt;
-              San Juan City Hall Command Post (+632-4681697)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Bureau of Fire Protection Region III (Central Luzon) Hotline: (+63245-9634376)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Senator Dick Gordon (+639178997898, +63938-444BOYS, +632-9342118, +632-4338528)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Senator Manny Villar (+639174226800. +639172414864, +639276751981)
-            &lt;/li&gt;
-          &lt;/ul&gt;
-          
-          &lt;p&gt;
-            &lt;/li&gt; 
-            
-            &lt;li&gt;
-              Civil Society/ Media &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
-                &lt;li&gt;
-                  Philippine National Red Cross (143, +632-5270000)
-                &lt;/li&gt;
-                &lt;li&gt;
-                  Philippine National Red Cross Rizal Chapter operations center hotline: (+632-6350922, +632-6347824)
-                &lt;/li&gt;
-                &lt;li&gt;
-                  Go to&amp;nbsp;&lt;a href=&quot;http://www.facebook.com/topic.php?uid=116724526976&amp;topic=9724&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;GMA Facebook page&lt;/a&gt;&amp;nbsp;&amp; post complete addresses and names of people in need of immediate help.
-                &lt;/li&gt;
-                &lt;li&gt;
-                  ABS-CBN Typhoon Ondoy Hotline: (+632-4163641)
-                &lt;/li&gt;
-                &lt;li&gt;
-                  Jam 88.3: (+632- 6318803) or SMS at JAM (space) 883 (space) your message to 2968
-                &lt;/li&gt;
-              &lt;/ul&gt;
-              
-              &lt;p&gt;
-                &lt;/li&gt; 
-                
-                &lt;li&gt;
-                  Rubber Boat Requests, 4×4 Trucks &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
-                    &lt;li&gt;
-                      NCRPO (+632-8383203, +632-8383354)
-                    &lt;/li&gt;
-                    &lt;li&gt;
-                      Private citizens who would like to lend their motor boats for rescue&lt;br /&gt;please call emergency nos: +632-9125668, +632-9111406, +632-9122665, +632-9115061)
-                    &lt;/li&gt;
-                    &lt;li&gt;
-                      You can also text (+632917-4226800 or +632927-6751981) for rescue dump trucks.
-                    &lt;/li&gt;
-                    &lt;li&gt;
-                      For those who are able to lend 4×4 trucks for rescue: Please send truck to Greenhills Shoppng Center Unimart Grocery to await deployment, Tel No. (+632920-9072902).
-                    &lt;/li&gt;
-                  &lt;/ul&gt;
-                  
-                  &lt;p&gt;
-                    &lt;/li&gt; &lt;/ul&gt; 
+  &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h3&gt;Online and In-Kind Donations&lt;/h3&gt;
+&lt;p&gt;  Below you’ll find a list of groups in the Phillippines that are accepting cash and in-kind donations to help with disaster relief efforts:&lt;/p&gt;
+&lt;h4&gt;Monetary Donations&lt;/h4&gt;
+  &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
+    1. Bank Donations &lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot; target=&quot;_blank&quot;&gt;Actual table here&lt;/a&gt;
+  &lt;/div&gt;
                     
-                    &lt;h3 style=&quot;font-size: 1.08em; line-height: 1.2; margin-bottom: 0.93em; margin-left: 0px; margin-right: 0px; margin-top: 1.4em;&quot;&gt;
-                      Online and In-Kind Donations
-                    &lt;/h3&gt;
+  &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
+    1. Credit Card/PayPal Donations
+  &lt;/div&gt;
                     
-                    &lt;div style=&quot;margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-                      Below you&amp;#8217;ll find a list of groups in the Phillippines that are accepting cash and in-kind donations to help with disaster relief efforts:
-                    &lt;/div&gt;
+  &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;http://www.google.com/url?q=http://www.kapusofoundation.com/donate&amp;usd=2&amp;usg=ALhdy2946VOU4pgNTr6v4MUOlJa43wdQog&quot; style=&quot;color: #0000cc;&quot;&gt;GMA Kapuso Foundation&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;http://www.txtpower.org/2009/09/philippines-help-typhoon-victims-in-luzon-philippine&quot; style=&quot;color: #0000cc;&quot;&gt;ABS-CBN Foundation&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;http://www.philippineaid.com/&quot; style=&quot;color: #0000cc;&quot;&gt;Philippine Aid&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
                     
-                    &lt;h4 style=&quot;font-size: 1em; margin-bottom: -1em; margin-left: 0px; margin-right: 0px; margin-top: 1em; padding-bottom: 20px;&quot;&gt;
-                      Monetary Donations
-                    &lt;/h4&gt;
-                    
-                    &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-                      1. Bank Donations &lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot; target=&quot;_blank&quot;&gt;Actual table here&lt;/a&gt;
-                    &lt;/div&gt;
-                    
-                    &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-                      1. Credit Card/PayPal Donations
-                    &lt;/div&gt;
-                    
-                    &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
-                      &lt;li&gt;
-                        &lt;a href=&quot;http://www.google.com/url?q=http://www.kapusofoundation.com/donate&amp;usd=2&amp;usg=ALhdy2946VOU4pgNTr6v4MUOlJa43wdQog&quot; style=&quot;color: #0000cc;&quot;&gt;GMA Kapuso Foundation&lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;a href=&quot;http://www.txtpower.org/2009/09/philippines-help-typhoon-victims-in-luzon-philippine&quot; style=&quot;color: #0000cc;&quot;&gt;ABS-CBN Foundation&lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;a href=&quot;http://www.philippineaid.com/&quot; style=&quot;color: #0000cc;&quot;&gt;Philippine Aid&lt;/a&gt;
-                      &lt;/li&gt;
-                    &lt;/ul&gt;
-                    
-                    &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
-                      1. SMS Donations
-                    &lt;/div&gt;
-                    
-                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;-webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; border-collapse: collapse; font-size: 1em; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px; width: 500px;&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;th style=&quot;background-color: #f1f1f1; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; text-align: left; vertical-align: top;&quot;&gt;
-                        &lt;/th&gt;
-                        
-                        &lt;th style=&quot;background-color: #f1f1f1; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; text-align: left; vertical-align: top;&quot;&gt;
-                          Procedure
-                        &lt;/th&gt;
-                        
-                        &lt;th style=&quot;background-color: #f1f1f1; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; text-align: left; vertical-align: top;&quot;&gt;
-                          Smart Money
-                        &lt;/th&gt;
-                        
-                        &lt;th style=&quot;background-color: #f1f1f1; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; text-align: left; vertical-align: top;&quot;&gt;
-                          Globe GCash
-                        &lt;/th&gt;
-                      &lt;/tr&gt;
-                      
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          PNRC
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          Type RED &lt;amount&gt; Ex. RED 100&lt;/amount&gt;
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          4493
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          2899
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          TXT POWER
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          5577-5144-1866-7103
-                        &lt;/td&gt;
-                        
-                        &lt;td style=&quot;border-bottom-color: rgb(204, 204, 204); border-bottom-style: solid; border-bottom-width: 1px; padding-right: 1em; vertical-align: top;&quot;&gt;
-                          0917-9751092.
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                    
-                    &lt;div style=&quot;margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px;&quot;&gt;
-                    &lt;/div&gt;
-                    
-                    &lt;h4 style=&quot;font-size: 1em; margin-bottom: -1em; margin-left: 0px; margin-right: 0px; margin-top: 1em; padding-bottom: 20px;&quot;&gt;
-                      In-Kind Donation
-                    &lt;/h4&gt;
-                    
-                    &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Victory Fort&lt;/strong&gt;&amp;nbsp;is opening its doors to those affected by the typhoon. Call 813-FORT.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;NoyMar relief Operations&lt;/strong&gt;: Clare Amador (+639285205508) or Jana Vicente at +639285205499). Drop off for relief donations is at Balay Expo Center across Farmers Market Cubao.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Miriam Quiambao&lt;/strong&gt;&amp;nbsp;drop off points: One Orchard Road Building in Eastwood, or message&amp;nbsp;&lt;a href=&quot;http://www.twitter.com/miriamq&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;http://www.twitter.com/miriamq&lt;/a&gt;for more details.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Philippine Army Gym&amp;nbsp;&lt;/strong&gt;inside Fort Bonifacio or&amp;nbsp;&lt;strong&gt;GHQ Gym&lt;/strong&gt;&amp;nbsp;in Camp Aguinaldo are now distributing donations for Ondoy Victims.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Team Manila&lt;/strong&gt;&amp;nbsp;stores in Trinoma, Mall of Asia, Jupiter Bel-Air and Rockwell shall be accepting relief goods (Canned Goods, Ready-to-drink Milk,Bottled Water and Clothes) for distribution by Veritas.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Caritas Manila&lt;/strong&gt;&amp;nbsp;Office at Jesus St., Pandacan Manila near Nagtahan Bridge (+632-5639298, +632-5639308)
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Radio Veritas&lt;/strong&gt;&amp;nbsp;at Veritas Tower West Ave. Cor EDSA (+632-9257931-40)
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Aranaz Stores&lt;/strong&gt;&amp;nbsp;in Rockwell &amp; Greenbelt is accepting donations of any kind for Payatas communities affected by Ondoy
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Simbahang Lingkod ng Bayan Task Force Noah&lt;/strong&gt;, a disaster response arm of the Jesuits, is accepting donations. Please drop it off sa Ateneo Cervini Dorm.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Philippine National Red Cross&lt;/strong&gt;‘&amp;nbsp;&lt;a href=&quot;http://www.redcross.org.ph/Site/PNRC/wtd.aspx&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;different ways to Donate.&lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Red Cross Load Donations&lt;/strong&gt;: Right now the easiest way to make donations from the seat of your chair is via mobile phone load. The Red Cross Rescue and Relief Operations. Text: RED&lt;space&gt;AMOUNT to 2899 (Globe) or 4483 (Smart)&lt;/space&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Ateneo de Manila University&lt;/strong&gt;&amp;nbsp;is now accepting donations for the victims of Ondoy. Donations can be dropped at MVP Lobby. For those stranded/those who need help: To all students who need help or know of people who need help. Please text the name, location, and contact number to (+6329088877166). ATENEO, which is now an&amp;nbsp;&lt;strong&gt;open shelter, accepts refugees&lt;/strong&gt;. Call (+632917-8952792)
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Papemelroti&lt;/strong&gt;&amp;nbsp;stores in 91 Roces Ave. / Ali Mall Cubao / SM City North EDSA / SM Fairview / SM Megamall / Glorietta 3 in Makati / SM Centerpoint / SM Southmall are accepting relief goods (canned goods / milk / bottled water / clothes – NO CASH pls.)
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;TXTPower&lt;/strong&gt;&amp;nbsp;now accepts donations via SmartMoney 5577514418667103, GCash 09179751092 and Paypal&lt;a href=&quot;http://is.gd/3GvuN&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;http://is.gd/3GvuN&lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Our Lady of Pentecost Parish&amp;nbsp;&lt;/strong&gt;(+632-4342397, +632-9290665) per&amp;nbsp;&lt;a href=&quot;http://twitter.com/gabemercado/status/4393300142&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; title=&quot;Gabe Mercado on Twitter&quot;&gt;Gabe Mercado&lt;/a&gt;, donations are very much welcome. The Parish is located at 12 F. Dela Rosa corner C. Salvador Sts., Loyola Heights, Quezon City.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Hillsborough Village Chapel&lt;/strong&gt;&amp;nbsp;– Water, blankets, shoes, and clothes may be sent to Hillsborough Village Chapel in Muntinlupa City. These will go to families whose houses were washed out in the nearby sitios.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        Greenhills/Mandaluyong/San Juan Area, if you want to help out with the rescue and relief operations, you can drop off your donations (clothes, food, etc..) at&amp;nbsp;&lt;strong&gt;La Salle Greenhills&lt;/strong&gt;&amp;nbsp;Gate 2 tomorrow or volunteer from 9am to receive, sort, repack the donations.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Petron&lt;/strong&gt;: You may bring your relief goods to all Petron branches.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;LUCA&lt;/strong&gt;&amp;nbsp;stores (Rockwell, Shang-rila, Eastwood, or GA towers): Send your old clothes &amp; donations (no cash pls).
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;“LUZON RELIEF: Volunteer / Donate / Pray”&lt;/strong&gt;: Donations can be brought to RENAISSANCE FITNESS CENTER, 2nd Floor, Bramante Building, Renaissance Towers Ortigas, MeralcoAvenue, Pasig City starting MONDAY (Sept.28) / 9am – 7pm Contact Person: Warren Habaluyas (+632929-8713488) or email at&amp;nbsp;&lt;a href=&quot;http://us.mc1114.mail.yahoo.com/mc/compose?to=luzonrelief@gmail.com&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;luzonrelief@gmail.com&lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;MOONSHINE&lt;/strong&gt;&amp;nbsp;boutique in Rockwell also accepting relief good to help Ondoy victims in Marikina and&amp;nbsp;&lt;span style=&quot;background-color: transparent; background-repeat: repeat repeat;&quot;&gt;Cainta.&lt;/span&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Katipunan Avenue. Contact Erica Paredes&lt;/strong&gt;&amp;nbsp;at (+632917-4741930) — they need bread, packed juice, sandwich filling (tuna, chicken, anything) You can help her make them, deliver the sandwiches to her house, or help her distribute! Call for more details.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Manor Superclub&lt;/strong&gt;, Eastwood City will accept goods and other emergency items starting Sunday at 10 am.
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;Citizens Disaster Response Center (CDRC):&lt;/strong&gt;&amp;nbsp;Relief goods for typhoon victims being accepted at 72-A Times St., West Triangle, QC. Tel (+632-9299820/22)
-                      &lt;/li&gt;
-                      &lt;li&gt;
-                        &lt;strong&gt;MINISTOP&lt;/strong&gt;&amp;nbsp;IBARRA (Espana cor. Blumentritt, Sampaloc Manila) is also accepting relief goods, Food (non-perishable goods only) Clothing, Medicines, Beds, Pillows, Blankets, Emergency Supplies to help Typhoon Ondoy victims.
-                      &lt;/li&gt;
-                    &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Updates on Ondoy: Places to donate – Efforts by bloggers]]></title><description><![CDATA[
+  &lt;div style=&quot;font-weight: bold; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 1em;&quot;&gt;
+    1. SMS Donations
+  &lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Procedure&lt;/th&gt;
+&lt;th&gt;Smart Money&lt;/th&gt;
+&lt;th&gt;Globe GCash&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PNRC&lt;/td&gt;
+&lt;td&gt;Type RED &lt;code class=&quot;language-text&quot;&gt;Ex. RED 100&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;4493&lt;/td&gt;
+&lt;td&gt;2899&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TXT POWER&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5577-5144-1866-7103&lt;/td&gt;
+&lt;td&gt;0917-9751092&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5&gt;In-Kind Donation&lt;/h5&gt;
+  &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Victory Fort&lt;/strong&gt;&amp;nbsp;is opening its doors to those affected by the typhoon. Call 813-FORT.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;NoyMar relief Operations&lt;/strong&gt;: Clare Amador (+639285205508) or Jana Vicente at +639285205499). Drop off for relief donations is at Balay Expo Center across Farmers Market Cubao.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Miriam Quiambao&lt;/strong&gt;&amp;nbsp;drop off points: One Orchard Road Building in Eastwood, or message &lt;a href=&quot;http://www.twitter.com/miriamq&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;http://www.twitter.com/miriamq&lt;/a&gt; for more details.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Philippine Army Gym&amp;nbsp;&lt;/strong&gt;inside Fort Bonifacio or&amp;nbsp;&lt;strong&gt;GHQ Gym&lt;/strong&gt;&amp;nbsp;in Camp Aguinaldo are now distributing donations for Ondoy Victims.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Team Manila&lt;/strong&gt;&amp;nbsp;stores in Trinoma, Mall of Asia, Jupiter Bel-Air and Rockwell shall be accepting relief goods (Canned Goods, Ready-to-drink Milk,Bottled Water and Clothes) for distribution by Veritas.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Caritas Manila&lt;/strong&gt;&amp;nbsp;Office at Jesus St., Pandacan Manila near Nagtahan Bridge (+632-5639298, +632-5639308)
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Radio Veritas&lt;/strong&gt;&amp;nbsp;at Veritas Tower West Ave. Cor EDSA (+632-9257931-40)
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Aranaz Stores&lt;/strong&gt;&amp;nbsp;in Rockwell &amp; Greenbelt is accepting donations of any kind for Payatas communities affected by Ondoy
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Simbahang Lingkod ng Bayan Task Force Noah&lt;/strong&gt;, a disaster response arm of the Jesuits, is accepting donations. Please drop it off sa Ateneo Cervini Dorm.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Philippine National Red Cross&lt;/strong&gt;‘&amp;nbsp;&lt;a href=&quot;http://www.redcross.org.ph/Site/PNRC/wtd.aspx&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;different ways to Donate.&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Red Cross Load Donations&lt;/strong&gt;: Right now the easiest way to make donations from the seat of your chair is via mobile phone load. The Red Cross Rescue and Relief Operations. Text: RED&lt;space&gt;AMOUNT to 2899 (Globe) or 4483 (Smart)&lt;/space&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Ateneo de Manila University&lt;/strong&gt;&amp;nbsp;is now accepting donations for the victims of Ondoy. Donations can be dropped at MVP Lobby. For those stranded/those who need help: To all students who need help or know of people who need help. Please text the name, location, and contact number to (+6329088877166). ATENEO, which is now an&amp;nbsp;&lt;strong&gt;open shelter, accepts refugees&lt;/strong&gt;. Call (+632917-8952792)
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Papemelroti&lt;/strong&gt;&amp;nbsp;stores in 91 Roces Ave. / Ali Mall Cubao / SM City North EDSA / SM Fairview / SM Megamall / Glorietta 3 in Makati / SM Centerpoint / SM Southmall are accepting relief goods (canned goods / milk / bottled water / clothes – NO CASH pls.)
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;TXTPower&lt;/strong&gt;&amp;nbsp;now accepts donations via SmartMoney 5577514418667103, GCash 09179751092 and Paypal&lt;a href=&quot;http://is.gd/3GvuN&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;http://is.gd/3GvuN&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Our Lady of Pentecost Parish&amp;nbsp;&lt;/strong&gt;(+632-4342397, +632-9290665) per&amp;nbsp;&lt;a href=&quot;http://twitter.com/gabemercado/status/4393300142&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; title=&quot;Gabe Mercado on Twitter&quot;&gt;Gabe Mercado&lt;/a&gt;, donations are very much welcome. The Parish is located at 12 F. Dela Rosa corner C. Salvador Sts., Loyola Heights, Quezon City.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Hillsborough Village Chapel&lt;/strong&gt;&amp;nbsp;– Water, blankets, shoes, and clothes may be sent to Hillsborough Village Chapel in Muntinlupa City. These will go to families whose houses were washed out in the nearby sitios.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Greenhills/Mandaluyong/San Juan Area, if you want to help out with the rescue and relief operations, you can drop off your donations (clothes, food, etc..) at&amp;nbsp;&lt;strong&gt;La Salle Greenhills&lt;/strong&gt;&amp;nbsp;Gate 2 tomorrow or volunteer from 9am to receive, sort, repack the donations.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Petron&lt;/strong&gt;: You may bring your relief goods to all Petron branches.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;LUCA&lt;/strong&gt;&amp;nbsp;stores (Rockwell, Shang-rila, Eastwood, or GA towers): Send your old clothes &amp; donations (no cash pls).
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;“LUZON RELIEF: Volunteer / Donate / Pray”&lt;/strong&gt;: Donations can be brought to RENAISSANCE FITNESS CENTER, 2nd Floor, Bramante Building, Renaissance Towers Ortigas, MeralcoAvenue, Pasig City starting MONDAY (Sept.28) / 9am – 7pm Contact Person: Warren Habaluyas (+632929-8713488) or email at&amp;nbsp;&lt;a href=&quot;http://us.mc1114.mail.yahoo.com/mc/compose?to=luzonrelief@gmail.com&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;luzonrelief@gmail.com&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;MOONSHINE&lt;/strong&gt;&amp;nbsp;boutique in Rockwell also accepting relief good to help Ondoy victims in Marikina and&amp;nbsp;&lt;span style=&quot;background-color: transparent; background-repeat: repeat repeat;&quot;&gt;Cainta.&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Katipunan Avenue. Contact Erica Paredes&lt;/strong&gt;&amp;nbsp;at (+632917-4741930) — they need bread, packed juice, sandwich filling (tuna, chicken, anything) You can help her make them, deliver the sandwiches to her house, or help her distribute! Call for more details.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Manor Superclub&lt;/strong&gt;, Eastwood City will accept goods and other emergency items starting Sunday at 10 am.
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;Citizens Disaster Response Center (CDRC):&lt;/strong&gt;&amp;nbsp;Relief goods for typhoon victims being accepted at 72-A Times St., West Triangle, QC. Tel (+632-9299820/22)
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;strong&gt;MINISTOP&lt;/strong&gt;&amp;nbsp;IBARRA (Espana cor. Blumentritt, Sampaloc Manila) is also accepting relief goods, Food (non-perishable goods only) Clothing, Medicines, Beds, Pillows, Blankets, Emergency Supplies to help Typhoon Ondoy victims.
+    &lt;/li&gt;
+  &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Updates on Ondoy: Places to donate – Efforts by bloggers]]></title><description><![CDATA[
 A call for help. If you are able, please donate whatever you can spare to the victims of Ondoy(Ketsana).
 
 I collected some details of donation centers and numbers but it pales in comparison to what other bloggers were able to post. ]]></description><link>https://www.codespud.com/updates-on-ondoy-places-to-donate-efforts-by-bloggers/</link><guid isPermaLink="false">https://www.codespud.com/updates-on-ondoy-places-to-donate-efforts-by-bloggers/</guid><pubDate>Mon, 28 Sep 2009 03:07:00 GMT</pubDate><content:encoded>&lt;p&gt;A call for help. If you are able, please donate whatever you can spare to the victims of Ondoy(Ketsana).&lt;/p&gt;
@@ -1516,13 +1437,7 @@ I collected some details of donation centers and numbers but it pales in compari
 &lt;blockquote&gt;
 &lt;p&gt;These are times that I’m proud to be Filipino!&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Project 10^100: The Voting Begins]]></title><description><![CDATA[
-**Project 10^100**
-
-Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas. Projects they believe, can do the most good.
-
-]]></description><link>https://www.codespud.com/project-10100-the-voting-begins/</link><guid isPermaLink="false">https://www.codespud.com/project-10100-the-voting-begins/</guid><pubDate>Fri, 25 Sep 2009 23:39:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Project 10^100&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Project 10^100 is a Google Project that transcends the information superhighway. It’s aim, simply, is to help – to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas. Projects they believe, can do the most good.&lt;/p&gt;
-&lt;!--more--&gt;
+Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.]]></description><link>https://www.codespud.com/project-10100-the-voting-begins/</link><guid isPermaLink="false">https://www.codespud.com/project-10100-the-voting-begins/</guid><pubDate>Fri, 25 Sep 2009 23:39:00 GMT</pubDate><content:encoded>&lt;p&gt;Project 10^100 is a Google Project that transcends the information superhighway. It’s aim, simply, is to help – to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.&lt;!--more--&gt; Projects they believe, can do the most good.&lt;/p&gt;
 &lt;div style=&quot;border: 1px solid #DDD; clear: both; text-align: center;&quot;&gt;
   &lt;a style=&quot;margin-left: 1em; margin-right: 1em;&quot; href=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png&quot; border=&quot;0&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
@@ -1738,28 +1653,13 @@ X’s Creativity Test &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potato
   <img border="0" src="http://3.bp.blogspot.com/_BBS5bkzuLXM/SrTbWg_-NnI/AAAAAAAACg8/C9JxDO7GXBk/s320/youtubea23123.jpg" />
 </div>
 
-<div style="text-align: justify;">
-  Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). &nbsp;Gone will be the days where you had to restart a video just to continue where you left of. Now you dont need to restart a whole video or pause till the video fully loads then skip every so and so, just to pick up where you last watched.
-</div>
-
-]]></description><link>https://www.codespud.com/resume-on-youtube/</link><guid isPermaLink="false">https://www.codespud.com/resume-on-youtube/</guid><pubDate>Sat, 19 Sep 2009 13:51:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;
+  Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). ]]></description><link>https://www.codespud.com/resume-on-youtube/</link><guid isPermaLink="false">https://www.codespud.com/resume-on-youtube/</guid><pubDate>Sat, 19 Sep 2009 13:51:00 GMT</pubDate><content:encoded>&lt;div style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;
   &lt;img border=&quot;0&quot; src=&quot;http://3.bp.blogspot.com/_BBS5bkzuLXM/SrTbWg_-NnI/AAAAAAAACg8/C9JxDO7GXBk/s320/youtubea23123.jpg&quot;&gt;
 &lt;/div&gt;
-&lt;div style=&quot;text-align: justify;&quot;&gt;
-  Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). &amp;nbsp;Gone will be the days where you had to restart a video just to continue where you left of. Now you dont need to restart a whole video or pause till the video fully loads then skip every so and so, just to pick up where you last watched.
-&lt;/div&gt;
-&lt;!--more--&gt;
-&lt;div style=&quot;text-align: justify;&quot;&gt;
-  Note the feature will only work for resumes past the 3 minute mark &amp;#8211; meaning any resumes less than mentioned duration are ignored &amp;#8211; so you need to run the video from the start again. A perfectly logical limitation.&amp;nbsp;&lt;/p&gt; 
-  
-  &lt;p&gt;
-    This addition is a big step forward for online media players &amp;#8211; hopefully other video sites will follow suit. 🙂 &amp;nbsp;For more info go &lt;a href=&quot;http://googlesystem.blogspot.com/2009/09/youtube-resume.html&quot;&gt;here&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Google got reCAPTCHA]]></title><description><![CDATA[
-Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they&#8217;re the annoying barely readable text images when you register/login for a site.
-
-]]></description><link>https://www.codespud.com/google-got-recaptcha/</link><guid isPermaLink="false">https://www.codespud.com/google-got-recaptcha/</guid><pubDate>Sat, 19 Sep 2009 08:55:00 GMT</pubDate><content:encoded>&lt;p&gt;Google announced recently in its official blog, that it has acquired reCAPTCHA. &lt;a href=&quot;http://en.wikipedia.org/wiki/CAPTCHA&quot; target=&quot;_blank&quot;&gt;CAPTCHA&lt;/a&gt; is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. Yes, they’re the annoying barely readable text images when you register/login for a site.&lt;/p&gt;
-&lt;!--more--&gt;
+&lt;p&gt;  Streaming Video giant, Youtube, recently announced a Resume feature along with other improvements for their groundbreaking service. (Cheers! claps! Bring in the beer! LOL). &lt;!--more--&gt;Gone will be the days where you had to restart a video just to continue where you left of. Now you dont need to restart a whole video or pause till the video fully loads then skip every so and so, just to pick up where you last watched.&lt;/p&gt;
+&lt;p&gt;Note the feature will only work for resumes past the 3 minute mark – meaning any resumes less than mentioned duration are ignored – so you need to run the video from the start again. A perfectly logical limitation. &lt;/p&gt;
+&lt;p&gt;This addition is a big step forward for online media players – hopefully other video sites will follow suit. 🙂  For more info go &lt;a href=&quot;http://googlesystem.blogspot.com/2009/09/youtube-resume.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Google got reCAPTCHA]]></title><description><![CDATA[
+Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. ]]></description><link>https://www.codespud.com/google-got-recaptcha/</link><guid isPermaLink="false">https://www.codespud.com/google-got-recaptcha/</guid><pubDate>Sat, 19 Sep 2009 08:55:00 GMT</pubDate><content:encoded>&lt;p&gt;Google announced recently in its official blog, that it has acquired reCAPTCHA. &lt;a href=&quot;http://en.wikipedia.org/wiki/CAPTCHA&quot; target=&quot;_blank&quot;&gt;CAPTCHA&lt;/a&gt; is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. &lt;!--more--&gt;Yes, they’re the annoying barely readable text images when you register/login for a site.&lt;/p&gt;
 &lt;div style=&quot;clear: both; text-align: center;&quot;&gt;
   &lt;a href=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s1600-h/recaptcha-1231dasdqd.gif&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSXzUCQrPI/AAAAAAAACgk/abV4JRYilQE/s320/recaptcha-1231dasdqd.gif&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
