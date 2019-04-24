@@ -7,3 +7,5 @@ const FeaturedImage = styled.img`
   margin-right: 20px;
   float: left;
 `
+
+export default FeaturedImage

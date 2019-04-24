@@ -64,16 +64,16 @@ class BlogIndex extends React.Component {
           return (
             <Story key={node.fields.slug}>
               <h3>
-                <Link to={node.fields.slug}>{title}</Link>
+                <Link to={node.fields.slug} title={title}>{title}</Link>
               </h3>
               <small>{node.frontmatter.date}</small>
 
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.fields.description || node.excerpt,
+                  __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-              <MoreLink to={node.fields.slug}>{`More`}</MoreLink>
+              <MoreLink to={node.fields.slug} title={title}>{`More`}</MoreLink>
             </Story>
           )
         })}
@@ -109,7 +109,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
             featured_image
           }
         }

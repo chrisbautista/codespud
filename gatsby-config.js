@@ -71,8 +71,9 @@ module.exports = {
         short_name: `codespud`,
         start_url: `/`,
         background_color: `#fdfdfd`,
-        theme_color: `#663399`,
+        theme_color: `#e8b95c`,
         display: `minimal-ui`,
+        icon: "content/assets/potato.png", // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
