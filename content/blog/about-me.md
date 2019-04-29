@@ -6,6 +6,7 @@ date: 2009-09-24T01:07:00+00:00
 url: /2009/09/about-me/
 redirect_from: 
   - /2009/09/about-me/
+  - /about
 featured_image :  /potato.png
 contentType: profile
 
