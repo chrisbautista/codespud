@@ -6,7 +6,7 @@ categories: []
 tags: []
 excerpt: "Surf, in celebration of it's anniversary, is thanking it's customers with \"American Idol\"-ish con..."
 contentType: works
-featured_image: surf-biggest-fan-facebook-app.png
+featured_image: /surf-biggest-fan-facebook-app.png
 
 ---
 
