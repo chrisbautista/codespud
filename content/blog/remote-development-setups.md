@@ -7,22 +7,19 @@ featured_image :  /architecture-ssh.png
 
 ---
 
-Tell me if you have the same situation as I am. You're workstation cannot support the technology stack your project requires. Having VMs or Docker installed on my workstation is out of the question since it barely can support office software. So, in my case I ended up building a development machine(Ubuntu) as a desktop server that I remotely connect to via SSH when developing. When I have access to the machine I can work quite well. Problem happens when I need to access my codebase remotely. Here's a list of options I've tried to facilitate this setup. <!--more-->
+Tell me if you're in the same situation. You have a workstation that cannot support the technology stack your project requires. Having VMs or Docker installed on your machine is out of the question since it can barely support office software. You end up building a development machine(perhaps an Ubuntu box) as a desktop server. This works well for a while until you need to access your code base remotely. Luckily theres a number of ways you can facilitate this setup. <!--more-->
 
 ## The Options
 
-I have different ways to accommodate this setup:
+- **Local editor/IDE via SFTP**. - This entails connecting via SFTP and uploading the code changes manually. Problem with this setup, you need to run a lot of steps to test your code. Upload (manually) then run tests, rinse and repeat. Don't expect to use any IDE functionality here. Not very useful but it works when the need arises. I recommend using [WinSCP](https://winscp.net/eng/download.php) on windows for this.  
 
-- **Local editor/IDE via SFTP**. - Connect via SFTP and upload the code changes. I hate this setup cause you have to manually upload your files. Another problem with this setup, you need to run a lot of steps to test your code. Upload (manually) then run tests, rinse and repeat. Don't expect to use any IDE functionality here. Not very useful but it works when the need arises. I recommend using [WinSCP](https://winscp.net/eng/download.php) on windows.  
+- **Local editor/IDE with automatic syncing via an SFTP client.** - Very similar to the first option minus the manual uploads. Some SFTP clients would have a "sync on changes" option. Winscp has the  ["keep up to date"](https://winscp.net/eng/docs/task_keep_up_to_date) feature which serves this purpose well. 
 
-- **Local editor with automatic syncing via an SFTP client.** - Very similar to the first option minus the manual uploads. Some SFTP clients would have a "sync on changes" option. Winscp has the  ["keep up to date" feature](https://winscp.net/eng/docs/task_keep_up_to_date)
+  For Apple machines, [Panic's](https://panic.com/) Coda/Transmit setup is a great example.  
 
-  For Apple machines, [Panic's](https://panic.com/) Coda/Transmit setup is a great example of this.  
+  Additionally, using a plugin, some editors/IDE's (e.g. SublimeText, VSCode etc.) would be able to carry out the same use case. In my experience though, managing files via plugin is not very consistent. When it fails, it fails spectacularly with me ending up trying to resolve corrupted files. 
 
-  Using a plugin some editor/IDE's (e.g. SublimeText, VSCode etc.) would be able to carry out the same use case. In my experience though, syncing via plugin is not very consistent. When it fails, it fails spectacularly with me ending up trying to resolve corrupted files.  
-
-
-- **Local IDE using rsync** - Rsync is similar to using SFTP. The most popular setup is to watch for file changes and then trigger an rsync command to upload only the delta. No manual uploading but not very diffent from the first one in this list.  
+- **Local IDE using rsync** - This setup leverages [rsync](https://rsync.samba.org/features.html) to synchronize your changes automatically. Using rsync is similar to using SFTP with automatic syncing. Difference is that rsync by default only upload/download files that changed. The most popular setup is to watch for file changes and then trigger an rsync command to upload only the delta. No manual uploading but not very different from the first one in this list. You can use inotifywait or gulps watch functionality to monitor file changes then manually trigger a function or command based on rsync.
 
     **Using inotifywait**,
 
@@ -60,12 +57,12 @@ I have different ways to accommodate this setup:
 
     ```
 
-- **Local IDE using SSHFS** - SSHFS can mount directories and files from remote machines as if they are local folders. Using this logic you can open your remotely available code base into your local IDE. Since most Linux machines support SSH and it does not need any other libraries to install and configure not to mention setups with firewalls since most would have SSH open. Although useful it's not very consistently executed in most clients. 
+- **Local IDE using SSHFS** - SSHFS(Secured SHell File Systems) can mount directories and files from remote machines as if they were local folders. Using this logic you can setup your remotely available code base into your local IDE. This is very easy to put up since most Linux machines support SSH and it does not need any other libraries to install and configure. Although useful it's not very consistently executed in most clients. 
    For windows, check out [NetDrive](https://www.nsoftware.com/sftp/netdrive/) and [WinSFP](http://www.secfs.net/winfsp/) 
 
-- **Remote editing using vi/vim** - Developing using vim on the development machine. Setup requires opening a terminal and connecting to the remote machine via SSH. Then navigating to your codebase and opening vim. You are given a powerful text editor with vi's legendary code editing features. Adding a little configuration and some plugins, vim will work a very capable IDE. It's free and it's local to your development machine. Problem is the learning curve and you need to get over the idea that you're using a terminal to code. Another issue is when you need to upload new files like images and pdf's. You will need upload via SFTP or git to add new files. 
+- **Remote editing using vi/vim** - Developing using vim on the development machine is a very powerful setup. This requires opening a terminal and connecting to the remote machine via SSH. Then navigating to your code base and running vim. You use vi's powerful text editing features to edit files. A bit of tweaking  and installing some vi/vim plugins would make vim work more like an IDE. Problem most have is the learning curve but once you get around the idea of coding on the terminal, you might end up loving it or not. :) Another minor issue is when you need to upload new files like images and pdf's. If you're use to drag and dropping your files into your IDE this might be off-putting. You will need a separate SFTP client to do upload these files. 
 
-  Here's a link to my [vimrc](https://github.com/chrisbautista/vim-workflow/blob/master/.vimrc) that I use to configure my vim editor. Search through github there's no shortage of excellent vim configurations. 
+  Here's a link to my [vimrc](https://github.com/chrisbautista/vim-workflow/blob/master/.vimrc). Search through github there's no shortage of excellent vim configurations that might fit your liking. 
 
   ```
     "====================
@@ -84,8 +81,11 @@ I have different ways to accommodate this setup:
     "====================
     ...
     ```
-    
-- **Remote editing using a cloud editor** - This has been quite popular lately. Using the [Cloud9 IDE](https://github.com/c9/core) project you can set up any codebase and make it available via the browser. IDE is not as powerful as eclipse ( or clones e.g. PHPStorm, netbeans) but it keeps your code and tasks in the same machine. Significantly better as you it provides means to add files and in-editor search. Most would have terminal emulation and support for plugins. Problem is you can't really do this for all your projects. Since you will be exposing the editor via the browser (although there are ways to secure it) you still run the risk having your code hacked easier than without it.
+  My recommendation to you is to use vim without modifications. Once you get the hang of it, you might NOT even need plugins. 
+
+- **Remote editing using a cloud editor** - This has been quite popular lately. My favorite is [Cloud9 IDE](https://en.wikipedia.org/wiki/Cloud9_IDE). Even [Amazon Web Services(AWS) uses it](https://aws.amazon.com/cloud9/) for its cloud services. 
+
+  Using the [Cloud9 IDE](https://github.com/c9/core) project you can set up any code base and make it available via the browser. It is not as powerful as eclipse ( or clones e.g. PHPStorm, netbeans) but it keeps your code and tasks in the same machine -- not yet at least. But it is significantly better than most options in this list as its very similar to how you would develop in a reguler IDE. Most would have terminal emulation as well and support for plugins. Problem is you can't really do this for all your projects. Since you will be exposing the editor via the browser you still run the risk having your code hacked easier than without it. Like any internal application, there are ways to secure it.  
 
     ```bash 
 
@@ -116,16 +116,24 @@ I have different ways to accommodate this setup:
 
     >   [Optional] If your server requires multi-factor authentication, set "`remote.SSH.showLoginTerminal`":`true` in settings.json 
     >   and enable the [ControlMaster](http://man.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5?query=ssh%255fconfig%26arch=i386#ControlMaster) SSH feature. See here for details.
-    
-  To connect is straightforward as well,
-    
-  
+
+## Security
+
+Since you're code base needs to be accessed in the cloud, security is very important. Most of this setups use Secured SHell since its more secure than FTP and not to mention a lot of firewalls would have SSH open. There are also some features you might want to keep to secure SSH further. 
+
+- Never let login with root `(PermitRootLogin=no)` and create sudo-users
+- Enable key authentication `(PubKeyAuthentication=yes)`
+- Limiting the service to specific host and address instead of listening to all interfaces. `(ListenAddress=hostname:port)`
+- Create Private keys with passphrases
+
+There are other SSHD configuration options that can further secure your connection. Check some recommendations from [ssh.com](https://www.ssh.com/ssh/)
+
+For Cloud editors like Cloud9 IDE; Enabling SSL(HTTPS), gating(strong password) and limiting access to known networks will keep your risk to a minimum. 
 
 ## Recommendation
+
+I still prefer using vim for remote development but having an IDE setup like **VSCode with Remote Development pack** comes with great benefits which a developer like me finds quite appealing. Having  to use a graphical UI for engaging my code base not to mention having some great plugins for language support is a major plus. But I digress, this is not an article to compare the benefits of IDEs in development. :) I'll let you decide on that on your own. 
+
 It really depends on what's available for you and how comfortable you are at different environments. 
-
-I still prefer using vim for remote development but having an IDE setup like **VSCode with Remote Development pack** comes with great benefits which a developer like me finds quite appealing. Having  to use a graphical UI for engaging my codebase not to mention having some great plugins for language support is a major plus. But I digress, this is not an article to compare the benefits of IDEs in development. :) I'll let you decide on that on your own. 
-
-
 
 *Image attributed to **Microsoft VS Code Documentation**.*
