@@ -86,7 +86,7 @@ const AnimatedCard = ({post}) => {
     )
   }
 
-class WorksIndex extends React.Component {
+class WorksIndex extends Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
