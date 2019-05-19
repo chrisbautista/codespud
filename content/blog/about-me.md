@@ -19,7 +19,7 @@ This blog is mostly about family , friends, programming, internet culture and ev
 ## What I do
 
   * Owner, [CodeSpud Web Services.][2]
-  * Web designer
+  * [Web developer](https://github.com/chrisbautista/) 
   * Video Gamer (Console mostly and some coin-ops)
   * Cook (Trying to be a Chef)
   * Voracious Eater
@@ -28,3 +28,4 @@ This blog is mostly about family , friends, programming, internet culture and ev
  [1]: mailto:chris@codespud.com
  [2]: http://www.codespud.com/
  [3]: http://encyclopedia2.thefreedictionary.com/click+potato
+ [4]: https://github.com/chrisbautista/
