@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 19 May 2019 23:26:58 GMT</lastBuildDate><item><title><![CDATA[Remote Development Setup]]></title><description><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 19 May 2019 23:34:17 GMT</lastBuildDate><item><title><![CDATA[Remote Development Setup]]></title><description><![CDATA[
 Tell me if you're in the same situation. You have a workstation that cannot support the technology stack your project requires. Having VMs or Docker installed on your machine is out of the question since it can barely support office software. You end up building a development machine(perhaps an Ubuntu box) as a desktop server. This works well for a while until you need to access your code base remotely. Luckily theres a number of ways you can facilitate this setup. ]]></description><link>https://www.codespud.com/remote-development-setups/</link><guid isPermaLink="false">https://www.codespud.com/remote-development-setups/</guid><pubDate>Sun, 19 May 2019 12:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Tell me if you’re in the same situation. You have a workstation that cannot support the technology stack your project requires. Having VMs or Docker installed on your machine is out of the question since it can barely support office software. You end up building a development machine(perhaps an Ubuntu box) as a desktop server. This works well for a while until you need to access your code base remotely. Luckily theres a number of ways you can facilitate this setup. &lt;!--more--&gt;&lt;/p&gt;
 &lt;h2&gt;The Options&lt;/h2&gt;
 &lt;ul&gt;
@@ -1778,7 +1778,7 @@ This blog is mostly about family , friends, programming, internet culture and ev
 &lt;h2&gt;What I do&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Owner, &lt;a href=&quot;http://www.codespud.com/&quot;&gt;CodeSpud Web Services.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Web designer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/chrisbautista/&quot;&gt;Web developer&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;Video Gamer (Console mostly and some coin-ops)&lt;/li&gt;
 &lt;li&gt;Cook (Trying to be a Chef)&lt;/li&gt;
 &lt;li&gt;Voracious Eater&lt;/li&gt;
