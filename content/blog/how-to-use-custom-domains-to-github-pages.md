@@ -1,12 +1,12 @@
 ---
 title: How to Use Custom Domains with Github Pages
-author: chris
+author: Chris
 type: post
 date: 2019-04-22T14:20:00+00:00
 
 ---
 
-Hosting a project wiki or a personal blog on github is very easy with github-pages and static site generators like Jekyl.  You will end up with a site hosted on `<Project/Repository Name>.github.io`, if you're happy with that then skip the rest of this article. If you want more or just curious on the steps then keep reading. <!--more-->
+Hosting a project wiki or a personal blog on Github is very easy with github-pages and static site generators like Jekyll.  You will end up with a site hosted on `<Project/Repository Name>.github.io`, if you're happy with that then skip the rest of this article. If you want more or just curious about the steps then keep reading. <!--more-->
 
 ## What you'll need
 
@@ -17,7 +17,7 @@ Hosting a project wiki or a personal blog on github is very easy with github-pag
 
 1. Setup your domain hosting
 
-    As an example, I am using Godaddy's admin panel. You're mileage might be different but most domain providers will have similar tools for you to use. 
+    As an example, I am using Godaddy's admin panel. Your mileage might be different but most domain providers will have similar tools for you to use. 
 
     ![alt text][1]
 
@@ -36,9 +36,9 @@ Hosting a project wiki or a personal blog on github is very easy with github-pag
         - Points to: chrisbautista.github.io
         - TTL: 1 hour
 
-    4. Save you're settings.
+    4. Save your settings.
 
-    > Update: seems Godaddy has upgraded their interface you need to add those entries and the settings are automatically saved for you. 
+    > Update: It seems Godaddy has upgraded their interface you need to add those entries and the settings are automatically saved for you. 
 
 
 2. <a name="setup-gh">Setup Github Pages</a>
@@ -53,7 +53,7 @@ Hosting a project wiki or a personal blog on github is very easy with github-pag
 
     3. Point branch to __gh-pages branch__
     4. Fill in your domain. In my case, it's _www.codespud.com_.
-    5. Enable __'Enforce HTTPS'__, if the option is enabled. Sometimes it will indicate you need to wait for 24 hours. Just check again later and enable if you're allowed to. If you have a different issue checkout [Github article](https://help.github.com/en/articles/troubleshooting-custom-domains) on troubleshooting custom domains. 
+    5. Enable __'Enforce HTTPS'__, if the option is enabled. Sometimes it will indicate you need to wait for 24 hours. Just check again later and enable it if you're allowed to. If you have a different issue checkout [Github article](https://help.github.com/en/articles/troubleshooting-custom-domains) on troubleshooting custom domains. 
 
 ---
 ### NPM package
@@ -72,11 +72,11 @@ Point it to your static site code, e.g. (_dist_ folder)
 gh-pages -d dist 
 ```
 
-This will setup your github pages with the content of your _dist_ folder and point it to whatever domain you specified in CNAME. 
+This will set up your Github pages with the content of your _dist_ folder and point it to whatever domain you specified in CNAME. 
 
 ## Conclusion
 
-If everything went well. You should have your github hosted site using your shiny new custom domain. :)
+If everything went well. You should have your Github hosted site using your shiny new custom domain. :)
 
 
 

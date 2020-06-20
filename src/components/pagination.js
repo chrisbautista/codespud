@@ -10,6 +10,7 @@ const PaginationNav = styled.ul`
   list-style: none;
   padding: 0;
 `
+
 const Pagination = ({
   numPages,
   prevPage,

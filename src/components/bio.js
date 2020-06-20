@@ -70,6 +70,7 @@ const bioQuery = graphql`
         social {
           twitter
           linkedin
+          github
         }
       }
     }

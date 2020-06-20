@@ -7,6 +7,7 @@ module.exports = {
     social: {
       twitter: `chrisbautista`,
       linkedin: `https://www.linkedin.com/in/cabautista/`,
+      github: `https://github.com/chrisbautista`,
     },
   },
   plugins: [

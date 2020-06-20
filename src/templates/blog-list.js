@@ -1,34 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
+import Context from '../core/context';
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
-
-import styled from "styled-components"
-
-const Story = styled.div`
-  clear: both;
-  display: block;
-  margin-bottom: 2em;
-
-  :after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-`
-
-const MoreLink = styled(Link)`
-  background-color: antiquewhite;
-  border-radius: 15px;
-  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.1);
-  padding: 6px 18px;
-  width: 62px;
-  display: inline-block;
-  text-align: center;
-`
+import BlogStory from './blog-story'
 
 class BlogIndex extends React.Component {
   render() {
@@ -36,46 +14,28 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
-    const isFirst = currentPage === 1
-    const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
-    const nextPage = (currentPage + 1).toString()
+    const ctx = new Context()
+
     const Pages = (
       <Pagination
         numPages={numPages}
-        prevPage={prevPage}
-        isFirst={isFirst}
-        isLast={isLast}
+        prevPage={currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()}
+        isFirst={currentPage === 1}
+        isLast={currentPage === numPages}
         currentPage={currentPage}
-        nextPage={nextPage}
+        nextPage={(currentPage + 1).toString()}
       />
     )
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
+        <SEO title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
         {Pages}
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <Story key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug} title={title}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-              <MoreLink to={node.fields.slug} title={title}>{`More`}</MoreLink>
-            </Story>
-          )
+          return <BlogStory ctx={ctx} node={node} />
         })}
         {Pages}
       </Layout>
