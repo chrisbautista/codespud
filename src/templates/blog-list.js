@@ -24,6 +24,7 @@ class BlogIndex extends React.Component {
         isLast={currentPage === numPages}
         currentPage={currentPage}
         nextPage={currentPage + 1 === numPages ? `/${numPages}` : `/${currentPage + 1}`}
+        
       />
     )
 
@@ -62,7 +63,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(format: HTML)
+          excerpt
           fields {
             slug
           }

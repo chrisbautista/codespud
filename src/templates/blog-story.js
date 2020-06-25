@@ -24,18 +24,22 @@ const MoreLink = styled(Link)`
     text-align: center;
 `
 
+const Excerpt = styled.p`
+  text-align: justify;
+`;
+
 export default function BlogStory({ ctx, node }) {
     const title = node.frontmatter.title || node.fields.slug
-
+    
     return <Story >
         <h3>
             <Link to={node.fields.slug} title={title}>{title}</Link>
         </h3>
         <small>{node.frontmatter.date}</small>
 
-        <p
+        <Excerpt
             dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
+                __html: node.excerpt,
             }}
         />
         <MoreLink to={node.fields.slug} title={title}>{ctx.i18n.More}</MoreLink>

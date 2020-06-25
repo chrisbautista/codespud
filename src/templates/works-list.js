@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import styled from "styled-components"
-import { useSpring, animated } from 'react-spring'
 
 const FeaturedImage = styled.img`
   max-width: 100%;
@@ -37,8 +36,8 @@ const H3 = styled.h3`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
   grid-auto-flow: dense;
 
   @media (max-width: 659px) {
@@ -60,28 +59,27 @@ const Card = styled.div`
   &:hover {
     box-shadow: 0 -5px 22px 0 rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 659px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem;
+  } 
 `
 
 const Description = styled.p`
   text-align: justify;
 `
 
-const AnimatedCard = ({post}) => {
+const AnimatedCard = ({ post }) => {
   const node = post;
   const title = node.frontmatter.title || node.fields.slug
 
-  const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 100, friction: 10 }, zIndex: 10}))
-
-  if(!node) return false;
+  if (!node) return false;
 
   return (
-      <animated.div  key={node.fields.slug}
-      onMouseMove={() => set({ xys: [1, 1, 1.05] , zIndex: 99})}
-      onMouseOut={() => set({ xys: [0, 0, 1] , zIndex: 10})}
-      style={{zIndex: props.zIndex, transform: props.xys.interpolate(trans), height: '100%'}}>
-      <Card >
-        <StyledLink to={`${node.fields.slug}`}>
+    <Card >
+      <StyledLink to={`${node.fields.slug}`}>
         <H3>
           {title}
         </H3>
@@ -99,11 +97,10 @@ const AnimatedCard = ({post}) => {
             __html: node.frontmatter.description || node.excerpt,
           }}
         />
-        </StyledLink>
-      </Card>
-      </animated.div>
-    )
-  }
+      </StyledLink>
+    </Card>
+  )
+}
 
 class WorksIndex extends Component {
   render() {

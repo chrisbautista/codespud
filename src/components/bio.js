@@ -34,12 +34,14 @@ const SocialAnchor = styled.a`
   margin: 0 5px;
 `
 
-const WrittenBy = styled.p`
+const WrittenBy = styled.div`
   text-align: left;
+  margin: 1rem 0;
 `;
 
-const SocialIcons = styled.p`
+const SocialIcons = styled.div`
   vertical-align: middle;
+  margin: 1rem 0;
 `;
 
 function Bio() {

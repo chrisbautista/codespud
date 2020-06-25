@@ -23,11 +23,11 @@ const Pagination = ({
 }) => {
   return <PaginationNav>
     <li>
-      {!isFirst && (
+      {!isFirst ? (
         <Link to={prevPage} rel="prev">
           ← Previous Page
         </Link>
-      )}{" "}
+      ) : <span>← Previous Page</span>}
     </li>
     {showPageNumbers &&
       Array.from({ length: numPages }, (_, i) => (
@@ -50,11 +50,11 @@ const Pagination = ({
         </li>
       ))}
     <li>
-      {!isLast && (
+      {!isLast ? (
         <Link to={nextPage} rel="next">
           Next Page →
         </Link>
-      )}
+      ) : <span>Next Page →</span>}
     </li>
   </PaginationNav>
 }
