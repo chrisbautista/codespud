@@ -9,6 +9,7 @@ const PaginationNav = styled.ul`
   align-items: center;
   list-style: none;
   padding: 0;
+  margin: 1rem 0;
 `
 
 const Pagination = ({
@@ -19,15 +20,14 @@ const Pagination = ({
   isFirst,
   isLast,
   showPageNumbers = false,
-}) => (
-  <PaginationNav>
+}) => {
+  return <PaginationNav>
     <li>
       {!isFirst && (
         <Link to={prevPage} rel="prev">
           ← Previous Page
         </Link>
       )}{" "}
-      &nbsp;
     </li>
     {showPageNumbers &&
       Array.from({ length: numPages }, (_, i) => (
@@ -55,9 +55,8 @@ const Pagination = ({
           Next Page →
         </Link>
       )}
-      &nbsp;
     </li>
   </PaginationNav>
-)
+}
 
 export default Pagination

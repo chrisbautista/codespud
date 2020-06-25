@@ -9,26 +9,38 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
+import Icon, { IconType } from './icons'
 
 const BioImage = styled(Image)`
   clear: both;
   float: left;
   margin-right: 10px;
   border-radius: 30px;
+  width: 25px;
+  height: 25px;
 `
 
 const BioContainer = styled.div`
   height: 80px;
   display: flex;
   width: 100%;
+  justify-content: start;
+  margin-bottom: 3rem;
 `
-const Icon = styled.img`
-  border-radius: 15px;
-  width: 28px;
-`
+
 const SocialAnchor = styled.a`
   box-shadow: none;
+  display: inline-block;
+  margin: 0 5px;
 `
+
+const WrittenBy = styled.p`
+  text-align: left;
+`;
+
+const SocialIcons = styled.p`
+  vertical-align: middle;
+`;
 
 function Bio() {
   return (
@@ -38,16 +50,18 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         return (
           <BioContainer>
+            <WrittenBy>
             <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
-            <p>
               Written by <strong>{author}</strong> &nbsp;
+            </WrittenBy>
+            <SocialIcons>
               <SocialAnchor href={`https://twitter.com/${social.twitter}`} title={social.twitter}>
-                <Icon src={`/twitter.png`}  alt={social.twitter}/>
+                <Icon type={IconType.Twitter} />
               </SocialAnchor>
               <SocialAnchor href={`${social.linkedin}`} title={social.linkedin}>
-                <Icon src={`/linkedin.png`} alt={social.linkedin}/>
+                <Icon type={IconType.LinkedIn} />
               </SocialAnchor>
-            </p>
+            </SocialIcons>
           </BioContainer>
         )
       }}

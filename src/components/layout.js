@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import Container from "./container"
+import Menu from "./menu"
 
 const PageWrapper = styled.div`
   color: #333;
@@ -19,42 +20,8 @@ const Header = styled.header`
   }
 `
 
-const MainMenu = styled.div`
-  float: right;
-
-  @media screen and (max-width: 768px) {
-    float: unset;
-  }
-`
-const H3 = styled.h3`
-  font-weight: 700;
-  font-size: 1.4em;
-`
-const MenuLink = styled(Link)`
-  border-bottom: none;
-`
-const NavUl = styled.ul`
-  list-style: none;
-  display: inline-block;
-    
-  @media screen and (max-width: 768px) {
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-`
-const NavLi = styled.li`
-  list-style: none;
-  display: inline-block;
-  min-width: 90px;
-  padding: 5px 10px 5px 0;
-  margin-bottom: 0;
-
-  @media screen and (max-width: 768px) {
-    min-width: 100%;
-    border-bottom: 1px solid #000;
-    font-size: 1.5em;
-  }
+const H1 = styled.h1`
+  margin-top: 1rem;
 `
 
 const Footer = styled.footer`
@@ -86,49 +53,16 @@ const Main = styled.main`
   min-height: 400px;
 `
 
-const Menu = () => (
-  <MainMenu>
-    <nav>
-      <NavUl>
-        <NavLi>
-          <MenuLink to={`/`} alt={`Codespud`}>
-            Home
-          </MenuLink>
-        </NavLi>
-        <NavLi>
-          <MenuLink to={"/works"} alt={`Works`}>
-            Works
-          </MenuLink>
-        </NavLi>
-        <NavLi>
-          <MenuLink to={"/about-me"} alt={`About`}>
-            About
-          </MenuLink>
-        </NavLi>
-      </NavUl>
-    </nav>
-  </MainMenu>
-)
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { title, children } = this.props
+    let header = (
+      <H1>
+        <Link to={`/`}>{title}</Link>
+      </H1>
+    )
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link to={`/`}>{title}</Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <H3>
-          <Link to={`/`}>{title}</Link>
-        </H3>
-      )
-    }
     return (
       <PageWrapper>
         <Container>

@@ -16,6 +16,7 @@ const FeaturedImage = styled.img`
 const Figure = styled.figure`
   overflow: hidden;
   min-height: 140px;
+  margin: 2rem 0;
 `
 
 const StyledLink = styled(Link)`
@@ -36,31 +37,49 @@ const H3 = styled.h3`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-flow: dense;
+
+  @media (max-width: 659px) {
+      display: flex;
+      flex-direction: column;
+  }
 `
+
 const Card = styled.div`
-  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 22px 0 rgba(0,0,0,0.1);
   border: 2px solid #e7e7e7;
   border-radius: 4px;
-  padding: 0.5rem 0.7em;
+  padding: 2rem 1.7em;
   background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 -5px 22px 0 rgba(0, 0, 0, 0.1);
+  }
+`
+
+const Description = styled.p`
+  text-align: justify;
 `
 
 const AnimatedCard = ({post}) => {
   const node = post;
-  if(!node) return false;
-  console.log('xxxx', node);
   const title = node.frontmatter.title || node.fields.slug
+
   const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 170, friction: 26 }, zIndex: 10}))
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 100, friction: 10 }, zIndex: 10}))
+
+  if(!node) return false;
+
   return (
       <animated.div  key={node.fields.slug}
-      onMouseMove={() => set({ xys: [1, 1, 1.07] , zIndex: 99})}
+      onMouseMove={() => set({ xys: [1, 1, 1.05] , zIndex: 99})}
       onMouseOut={() => set({ xys: [0, 0, 1] , zIndex: 10})}
-      style={{zIndex: props.zIndex, transform: props.xys.interpolate(trans) 
-     }}>
+      style={{zIndex: props.zIndex, transform: props.xys.interpolate(trans), height: '100%'}}>
       <Card >
         <StyledLink to={`${node.fields.slug}`}>
         <H3>
@@ -75,7 +94,7 @@ const AnimatedCard = ({post}) => {
             />
           </Figure>
         )}
-        <p
+        <Description
           dangerouslySetInnerHTML={{
             __html: node.frontmatter.description || node.excerpt,
           }}

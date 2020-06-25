@@ -26,6 +26,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <Bio />
         <h1>{post.frontmatter.title}</h1>
         <p>{post.frontmatter.date}</p>
         <div>
@@ -37,7 +38,9 @@ class BlogPostTemplate extends React.Component {
           )}
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        
         <hr />
+        
         <Bio />
 
         <PaginationNav>

@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Codespudd`,
+        name: `Codespud`,
         short_name: `codespud`,
         start_url: `/`,
         background_color: `#fdfdfd`,

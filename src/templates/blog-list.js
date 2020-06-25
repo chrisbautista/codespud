@@ -19,11 +19,11 @@ class BlogIndex extends React.Component {
     const Pages = (
       <Pagination
         numPages={numPages}
-        prevPage={currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()}
+        prevPage={currentPage - 1 === 1 ? "/" : `/${(currentPage - 1)}`}
         isFirst={currentPage === 1}
         isLast={currentPage === numPages}
         currentPage={currentPage}
-        nextPage={(currentPage + 1).toString()}
+        nextPage={currentPage + 1 === numPages ? `/${numPages}` : `/${currentPage + 1}`}
       />
     )
 
@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
         <Bio />
         {Pages}
         {posts.map(({ node }) => {
-          return <BlogStory ctx={ctx} node={node} />
+          return <BlogStory key={node.fields.slug} ctx={ctx} node={node} />
         })}
         {Pages}
       </Layout>
