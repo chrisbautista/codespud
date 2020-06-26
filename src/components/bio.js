@@ -9,7 +9,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
-import Icon, { IconType } from './icons'
+import Icon, { IconType } from "./icons"
 
 const BioImage = styled(Image)`
   clear: both;
@@ -21,11 +21,10 @@ const BioImage = styled(Image)`
 `
 
 const BioContainer = styled.div`
-  height: 80px;
   display: flex;
   width: 100%;
-  justify-content: start;
-  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: flex-end;
 `
 
 const SocialAnchor = styled.a`
@@ -36,28 +35,33 @@ const SocialAnchor = styled.a`
 
 const WrittenBy = styled.div`
   text-align: left;
-  margin: 1rem 0;
-`;
+  font-size: 1rem;
+`
 
 const SocialIcons = styled.div`
   vertical-align: middle;
-  margin: 1rem 0;
-`;
+`
 
-function Bio() {
+function Bio(props) {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <BioContainer>
+          <BioContainer style={{ justifyContent: props.type === 'left' ? 'flex-start': 'flex-end'}}>
             <WrittenBy>
-            <BioImage fixed={data.avatar.childImageSharp.fixed} alt={author} />
+              <BioImage
+                fixed={data.avatar.childImageSharp.fixed}
+                alt={author}
+              />
               Written by <strong>{author}</strong> &nbsp;
             </WrittenBy>
             <SocialIcons>
-              <SocialAnchor href={`https://twitter.com/${social.twitter}`} title={social.twitter}>
+              <SocialAnchor
+                href={`https://twitter.com/${social.twitter}`}
+                title={social.twitter}
+              >
                 <Icon type={IconType.Twitter} />
               </SocialAnchor>
               <SocialAnchor href={`${social.linkedin}`} title={social.linkedin}>
@@ -75,7 +79,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 25, height: 25) {
           ...GatsbyImageSharpFixed
         }
       }

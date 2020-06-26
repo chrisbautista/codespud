@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -36,22 +35,22 @@ const H3 = styled.h3`
 
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: dense;
 
   @media (max-width: 659px) {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 `
 
 const Card = styled.div`
-  box-shadow: 0 5px 22px 0 rgba(0,0,0,0.1);
-  border: 2px solid #e7e7e7;
+  font-size: 0.875rem;
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 2rem 1.7em;
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -64,32 +63,41 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 0 1rem;
-  } 
+  }
+
+  & > a > p {
+    font-weight: normal;
+  }
+
+  h3 {
+    font-weight: 600;
+  }
 `
 
 const Description = styled.p`
   text-align: justify;
 `
 
+const Title = styled.h1`
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 3rem;
+`
+
 const AnimatedCard = ({ post }) => {
-  const node = post;
+  const node = post
   const title = node.frontmatter.title || node.fields.slug
 
-  if (!node) return false;
+  if (!node) return false
 
   return (
-    <Card >
+    <Card>
       <StyledLink to={`${node.fields.slug}`}>
-        <H3>
-          {title}
-        </H3>
+        <H3>{title}</H3>
 
         {node.frontmatter.featured_image && (
           <Figure>
-            <FeaturedImage
-              src={node.frontmatter.featured_image}
-              alt={title}
-            />
+            <FeaturedImage src={node.frontmatter.featured_image} alt={title} />
           </Figure>
         )}
         <Description
@@ -111,9 +119,11 @@ class WorksIndex extends Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Portfolio" keywords={[`works`, `portfolio`]} />
-        <Bio />
+        <Title>{"Portfolio"}</Title>
         <Cards>
-          {posts.map(({ node }) => <AnimatedCard post={node} />)}
+          {posts.map(({ node }) => (
+            <AnimatedCard post={node} />
+          ))}
         </Cards>
       </Layout>
     )

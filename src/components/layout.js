@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import Container from "./container"
 import Menu from "./menu"
 
+import Bio from "../components/bio"
+
 const PageWrapper = styled.div`
   color: #333;
 `
@@ -12,8 +14,9 @@ const PageWrapper = styled.div`
 const Header = styled.header`
   margin: 0 auto;
   text-decoration: none;
-  margin-bottom: 1em;
-  
+  margin-bottom: 4rem;
+  max-width: 960px;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
@@ -39,20 +42,18 @@ const FooterColumn = styled.p`
   text-align: left;
   @media screen and (max-width: 768px) {
     padding: 0 10px;
-  } 
+  }
 `
 const Disclaimer = FooterColumn
 
-const CopyRight = styled.div`
-  clear: both;
-  display: block;
-  width: 100%;
+const CopyRight = styled(FooterColumn)`
+  font-size: 0.875rem;
+  padding-bottom: 0;
 `
 
 const Main = styled.main`
   min-height: 400px;
 `
-
 
 class Layout extends React.Component {
   render() {
@@ -65,12 +66,13 @@ class Layout extends React.Component {
 
     return (
       <PageWrapper>
+        <Header>
+          <Menu />
+          {header}
+        </Header>
         <Container>
-          <Header>
-            <Menu />
-            {header}
-          </Header>
           <Main>{children}</Main>
+          <Bio />
         </Container>
         <Footer>
           <Disclaimer>
@@ -83,11 +85,9 @@ class Layout extends React.Component {
             position or attitudes of my employer, their clients, or any of their
             affiliated companies.
           </Disclaimer>
-          <Container>
             <CopyRight>
               © 2006 - {new Date().getFullYear()}, Copyright - codespud.com
             </CopyRight>
-          </Container>
         </Footer>
       </PageWrapper>
     )

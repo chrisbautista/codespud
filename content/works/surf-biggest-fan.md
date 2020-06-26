@@ -1,5 +1,5 @@
 ---
-path: "/workss/2015/03/surf-biggest-fan/"
+path: "/works/2015/03/surf-biggest-fan/"
 date: "2015-03-02T22:50:13Z"
 title: "Surf : Biggest Fan"
 categories: []
@@ -24,9 +24,9 @@ Clients screens each entry and successful participants are notified via phone 
 
 Facebook enabled contest. Added interactivity and animation keeping in mind the subtle and delicate atmosphere brought out by the design. Used filepicker.io API to store entries. Stakeholders review the entries using a custom admin page.
 
-**Backend: **PHP, MySQL, Facebook API, Filepicker IO
+**Backend:** PHP, MySQL, Facebook API, Filepicker IO
 
-**Frontend:**HTML, Javascript, JQuery
+**Frontend:** HTML, Javascript, JQuery
 
 **Source: [Click here](https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/surfbiggestfan "Github : Surf's Biggest Fan")**
 

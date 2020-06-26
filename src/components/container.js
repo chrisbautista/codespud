@@ -3,9 +3,9 @@ import styled from "styled-components"
 const Container = styled.div`
   margin: 0 auto;
   padding: 0 15%;
-  max-width: 1100px;
+  max-width: 960px;
 
-  @media screen and (max-width: 1099px) {
+  @media screen and (max-width: 959px) {
     padding: 0 5%;
   }
 

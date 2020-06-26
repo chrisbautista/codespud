@@ -1,5 +1,5 @@
 ---
-path: "/workss/2014/08/self-aware/"
+path: "/works/2014/08/self-aware/"
 date: "2014-08-29T21:18:35Z"
 title: "Self : AWARE"
 categories: []
@@ -24,13 +24,13 @@ featured_image :  /self-app-for-aware-foundation.png
 
 **Concept:** Dominic Stallard
 
-**Creative Direction by:   **Noel Perlas, Eranga Tennekoon, Mandar Wairkar
+**Creative Direction by:**   **Noel Perlas, Eranga Tennekoon, Mandar Wairkar
 
-**My Role:**
+**My role:**
 
 All server backend for user management and SMS processing.  Used SLIM PHP framework because of its small footprint. Eventually, took over the IOS applicaiton and maintained everything. Applied  flat design by Noel Perlas when the application was updated to IOS 6.
 
-**User Interface:**
+**User interface:**
 
 Object C, Foundation Classes, iOS 6
 

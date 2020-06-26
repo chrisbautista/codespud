@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Context from '../core/context';
-import Bio from "../components/bio"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
@@ -33,7 +33,6 @@ class BlogIndex extends React.Component {
         <SEO title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
         {Pages}
         {posts.map(({ node }) => {
           return <BlogStory key={node.fields.slug} ctx={ctx} node={node} />

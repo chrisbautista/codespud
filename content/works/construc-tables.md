@@ -1,5 +1,5 @@
 ---
-path: "/workss/2014/08/construc-tables/"
+path: "/works/2014/08/construc-tables/"
 date: "2014-08-28T19:21:31Z"
 title: "Go Nuts : Constructables"
 categories: []
@@ -19,28 +19,28 @@ Go Nuts Donuts - ConstrucTables are tables up-cycled for fun and utility:
 3. The Charge Table:
     Eat your donut while charging your phone: sit comfortably, connect your phone and pedal.
 
-**Art Direction**: John Pabalan, Lowe - Creatives
+**Art direction:** John Pabalan, Lowe - Creatives
 
-**Website collaborated with**: Ena Escanan , Lowe - Creative Technology
+**Website collaborated with:** Ena Escanan , Lowe - Creative Technology
 
-**My Role:**
+**My role:**
 
 Technical consultant for integrating Arduino to the projects. Built and programmed an Arduino kit with an audio and network shield to record and upload files to server.
-
 Coded Xively API support and REST API support
 
-**_Bike Table_**
+####Bike Table
 
 **Hardware:**
 Arduino Due, Audio Shield, Wifi Shield
 
-**Server:**
+**Server:**:
 Apache,PHP, HTTP PUT processing
 
-**_Charge Table_**
+####Charge Table
 
 **Hardware:**
 Arduino Due, Sensor Shield
 
 **Server:**
 [Xively](https://xively.com) polling, PHP
+

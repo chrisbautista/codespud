@@ -25,7 +25,7 @@ This blog is mostly about family , friends, programming, internet culture and ev
   * Voracious Eater
   * [Clickpotato][3]
 
- [1]: mailto:chris@codespud.com
+ [1]: #
  [2]: http://www.codespud.com/
  [3]: http://encyclopedia2.thefreedictionary.com/click+potato
  [4]: https://github.com/chrisbautista/

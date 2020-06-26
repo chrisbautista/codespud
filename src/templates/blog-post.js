@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
@@ -15,6 +14,11 @@ const PaginationNav = styled.ul`
   padding: 0;
 `
 
+const PostTitle = styled.h1`
+  text-align: center;
+  margin: 3rem 0;
+`
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -26,8 +30,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <Bio />
-        <h1>{post.frontmatter.title}</h1>
+        <PostTitle>{post.frontmatter.title}</PostTitle>
         <p>{post.frontmatter.date}</p>
         <div>
           {post.frontmatter.featured_image && (
@@ -38,23 +41,21 @@ class BlogPostTemplate extends React.Component {
           )}
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        
+
         <hr />
-        
-        <Bio />
 
         <PaginationNav>
           <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                ← {next.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                {previous.frontmatter.title} →
               </Link>
             )}
           </li>

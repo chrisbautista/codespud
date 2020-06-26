@@ -8,7 +8,7 @@ redirect_from:
 featured_image :  /assets/2014/08/features-tools-3dc022115028973bfa824eb354f1d87c.png
 
 ---
-I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research. <!--more-->First in my list was a workflow to streamline development. It&#8217;s been a while since I modified my workflow and so I thought it was time for a change.
+I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research. First in my list was a workflow to streamline development. It&#8217;s been a while since I modified my workflow and so I thought it was time for a change.<!--more-->
 
 Aside from the design and flow of the application, my immediate concern was where to host my apps once I&#8217;m done with the first milestone. I was researching around the interweb and a familiar link caught my eye.  Heroku was the 2nd link of my search. I investigated Heroku when I first made a Facebook application for Lowe Philippines.  I remember seeing a link to Heroku from Facebook&#8217;s &#8220;Create App&#8221; wizard. Back then I was more curious than impressed. Anyway, this time I was very curious but now I&#8217;m also very impressed with how Heroku made it easy to deploy an app. Heroku does not magically build a scaffold for you but it does guide you through steps in their &#8220;Getting started&#8221; page and heck it&#8217;s free.  
 
