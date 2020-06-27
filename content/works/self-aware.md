@@ -1,6 +1,6 @@
 ---
 path: "/works/2014/08/self-aware/"
-date: "2014-08-29T21:18:35Z"
+date: "2013-08-29T21:18:35Z"
 title: "Self : AWARE"
 categories: []
 tags: []

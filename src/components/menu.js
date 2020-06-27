@@ -33,9 +33,11 @@ margin-bottom: 0;
 text-align: right;
 
 @media screen and (max-width: 768px) {
-  min-width: 100%;
-  border-bottom: 1px solid #000;
-  font-size: 1.5em;
+    width: calc(100% - 1rem);
+    border-bottom: 1px solid #999;
+    font-size: 1.2rem;
+    padding: 5px 1rem 5px 0;
+    margin: 0;
 }
 `
 

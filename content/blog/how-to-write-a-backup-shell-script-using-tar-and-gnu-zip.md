@@ -5,7 +5,6 @@ type: post
 date: 2009-01-02T23:20:00+00:00
 redirect_from:
   - /2009/01/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/
-featured_image: /linux-logo.jpg
 ---
 
 Happy New Year!

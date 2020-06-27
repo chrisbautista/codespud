@@ -1,6 +1,6 @@
 ---
 path: "/works/2014/08/plana-forma/"
-date: "2014-08-13T19:16:46Z"
+date: "2013-08-13T19:16:46Z"
 title: "Plana Forma"
 categories: []
 tags: []

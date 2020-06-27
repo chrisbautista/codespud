@@ -28,10 +28,6 @@ Heroku is very easy to setup.  You can go straight to the toolbelt and the dash
 
 **[Getting Started][1] <-  start here**
 
-[<img class="aligncenter wp-image-317 size-large" src="http://162.243.23.189/wp-content/uploads/2014/08/herokuGettingStarted-1024x607.png" alt="herokuGettingStarted" width="980" height="580" />][2]
-
-&nbsp;
-
 Heroku supports a number of languages including PHP, NodeJS etc.  This time I was making a PHP application with some AngularJS for the frontend so I followed the PHP track. Anyway, I just did the steps and I got a functional workflow as a starting point.
 
 In summary the steps are:
@@ -64,10 +60,7 @@ First time you push a project (git push heroku master) and it&#8217;s empty, i
 
 It just means, Heroku does not know what your app is about and so it can&#8217;t build the application. Solution is just provide a common starter file like index.php or index.html. This will tell Heroku that you have a PHP or HTML project and build the necessary dependencies.  You can also fix this by providing a composer.json, setting up the dependencies you need.
 
-[<img class="aligncenter wp-image-318 size-full" src="http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png" alt="Deploy" width="846" height="495" srcset="/assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png 846w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-300x176.png 300w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-768x449.png 768w" sizes="(max-width: 846px) 100vw, 846px" />][3]
+<img class="aligncenter wp-image-318 size-full" src="/assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-768x449.png" alt="Deploy" width="846" height="495" srcset="/assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png 846w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-300x176.png 300w, /assets/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM-768x449.png 768w" sizes="(max-width: 846px) 100vw, 846px" />
 
-&nbsp;
 
  [1]: https://devcenter.heroku.com/start "start here to build your heroku app"
- [2]: http://162.243.23.189/wp-content/uploads/2014/08/herokuGettingStarted.png
- [3]: http://162.243.23.189/wp-content/uploads/2014/08/Screen-Shot-2014-08-28-at-1.35.13-PM.png

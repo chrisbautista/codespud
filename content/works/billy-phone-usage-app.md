@@ -1,6 +1,6 @@
 ---
 path: "/works/2014/08/billy-phone-usage-app/"
-date: "2014-08-13T19:15:18Z"
+date: "2012-08-13T19:15:18Z"
 title: "Billy"
 categories: []
 tags: []

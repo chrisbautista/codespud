@@ -13,7 +13,7 @@ const FeaturedImage = styled.img`
 `
 const Figure = styled.figure`
   overflow: hidden;
-  min-height: 140px;
+  height: 150px;
   margin: 2rem 0;
 `
 
@@ -75,7 +75,7 @@ const Card = styled.div`
 `
 
 const Description = styled.p`
-  text-align: justify;
+  text-align: left;
 `
 
 const Title = styled.h1`
@@ -122,7 +122,7 @@ class WorksIndex extends Component {
         <Title>{"Portfolio"}</Title>
         <Cards>
           {posts.map(({ node }) => (
-            <AnimatedCard post={node} />
+            <AnimatedCard key={node.frontmatter.title} post={node} />
           ))}
         </Cards>
       </Layout>

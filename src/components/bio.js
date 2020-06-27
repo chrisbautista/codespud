@@ -49,7 +49,11 @@ function Bio(props) {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <BioContainer style={{ justifyContent: props.type === 'left' ? 'flex-start': 'flex-end'}}>
+          <BioContainer
+            style={{
+              justifyContent: props.type === "left" ? "flex-start" : "flex-end",
+            }}
+          >
             <WrittenBy>
               <BioImage
                 fixed={data.avatar.childImageSharp.fixed}
@@ -61,10 +65,15 @@ function Bio(props) {
               <SocialAnchor
                 href={`https://twitter.com/${social.twitter}`}
                 title={social.twitter}
+                style={{ color: "#1b91db" }}
               >
                 <Icon type={IconType.Twitter} />
               </SocialAnchor>
-              <SocialAnchor href={`${social.linkedin}`} title={social.linkedin}>
+              <SocialAnchor
+                href={`${social.linkedin}`}
+                title={social.linkedin}
+                style={{ color: "#283e4b" }}
+              >
                 <Icon type={IconType.LinkedIn} />
               </SocialAnchor>
             </SocialIcons>

@@ -112,9 +112,9 @@ Tell me if you're in the same situation. You have a workstation that cannot supp
     - Open **Visual Studio Code Insiders** then open modules
     - Search for [Remote Development](https://code.visualstudio.com/insiders/) extension pack, then hit Install.
     
-    > From VS code documentation
+    From VS Code documentation
 
-    >   [Optional] If your server requires multi-factor authentication, set "`remote.SSH.showLoginTerminal`":`true` in settings.json 
+    >   [Optional] If your server requires multi-factor authentication, set "remote.SSH.showLoginTerminal":"true" in settings.json 
     >   and enable the [ControlMaster](http://man.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5?query=ssh%255fconfig%26arch=i386#ControlMaster) SSH feature. See here for details.
 
 ## Security
@@ -123,7 +123,8 @@ Since your code base needs to be accessed in the cloud, security is very importa
 
 - Never let login with root `(PermitRootLogin=no)` and create sudo-users
 - Enable key authentication `(PubKeyAuthentication=yes)`
-- Limiting the service to a specific host and address instead of listening to all interfaces. `(ListenAddress=hostname:port)`
+- Limiting the service to a specific host and address instead of listening to all interfaces. 
+`(ListenAddress=hostname:port)`
 - Create Private keys with passphrases
 
 There are other SSHD configuration options that can further secure your connection. Check some recommendations from [ssh.com](https://www.ssh.com/ssh/)

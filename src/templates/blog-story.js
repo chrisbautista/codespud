@@ -31,12 +31,13 @@ const Excerpt = styled.p`
 
 const StoryBody = styled.div`
   img {
-    max-width: 45%;
+    width: 350px;
     float: right;
     margin: 0 0 0 2rem;
 
     @media screen and (max-width: 759px){
-      max-width: 100%;
+      height: auto;
+      width: 100%;
       margin: 1rem 0 -1rem;
       float: none;
     }
