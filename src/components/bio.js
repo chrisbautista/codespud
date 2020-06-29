@@ -18,6 +18,15 @@ const BioImage = styled(Image)`
   border-radius: 30px;
   width: 25px;
   height: 25px;
+  
+  img {
+    margin: 0;
+  }
+  pic {
+    img {
+      margin: 0;
+    }
+  }
 `
 
 const BioContainer = styled.div`

@@ -9,7 +9,19 @@ const PaginationNav = styled.ul`
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin: 2rem 0 2rem;
+
+  li {
+    margin-left: 0;
+  }
+
+  a {
+    padding: 8px 2px 6px;
+    text-decoration: none;
+    :hover {
+      border-bottom: 2px solid #999;
+    }
+  }
 `
 
 const Pagination = ({

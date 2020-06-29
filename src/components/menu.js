@@ -27,8 +27,7 @@ padding: 0;
 const NavLi = styled.li`
 list-style: none;
 display: inline-block;
-min-width: 90px;
-padding: 5px 0 5px 10px;
+padding: 5px 0 5px 2rem;
 margin-bottom: 0;
 text-align: right;
 
@@ -51,8 +50,8 @@ const Menu = () => (
             </MenuLink>
           </NavLi>
           <NavLi>
-            <MenuLink to={"/works"} alt={`Works`}>
-              Works
+            <MenuLink to={"/works"} alt={`Portfolio`}>
+              Portfolio
             </MenuLink>
           </NavLi>
           <NavLi>

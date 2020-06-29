@@ -14,7 +14,7 @@ You compiled and installed a linux binary or made a nifty script but you don&#82
 ###### Level: Beginner, Intermediate
 
 <div style="margin-left: 1em; margin-right: 1em; text-align: center;">
-  <img src="http://1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png" /><br />Yeah your a rockstar!
+  <img src="//1.bp.blogspot.com/_BBS5bkzuLXM/Srw5tM3OeRI/AAAAAAAACjE/qLCjLDvRLHo/s200/punk+penguin.png" /><br />Yeah your a rockstar!
 </div>
 
 ```bash
@@ -132,5 +132,5 @@ Simple. Do what experts do. Use &#8220;export&#8221; to modify the PATH environm
                 </p>
                 
                 <p>
-                  <a href="http://dl.getdropbox.com/u/1510515/potatokorner/potatokorner-tutorial-export-command.pdf" target="_blank">Download a PDF copy</a>
+                  <a href="//dl.getdropbox.com/u/1510515/potatokorner/potatokorner-tutorial-export-command.pdf" target="_blank">Download a PDF copy</a>
                 </p>

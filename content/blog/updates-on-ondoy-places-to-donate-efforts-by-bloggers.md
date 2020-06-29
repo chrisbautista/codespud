@@ -5,7 +5,7 @@ type: post
 date: 2009-09-28T03:07:00+00:00
 redirect_from: 
   - /2009/09/updates-on-ondoy-places-to-donate-efforts-by-bloggers/
-featured_image : ./potatokorner-philippines_flooding.jpg
+featured_image : /potatokorner-philippines_flooding.jpg
 
 ---
 

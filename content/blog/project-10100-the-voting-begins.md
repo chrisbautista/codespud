@@ -5,14 +5,10 @@ type: post
 date: 2009-09-25T23:39:00+00:00
 redirect_from:
   - /2009/09/project-10100-the-voting-begins/
-
----
-
-Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.<!--more--> Projects they believe, can do the most good.
-
+---Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.<!--more--> Projects they believe, can do the most good.
 
 <div style="border: 1px solid #DDD; clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png"><img src="http://3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png" border="0" /></a>
+  <a style="margin-left: 1em; margin-right: 1em;" href="//3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png"><img src="//3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png" border="0" /></a>
 </div>
 
 The past year (2008), Google received more than 150,000 ideas. It took another year(2009) and 3000 Google employees to sort them through. The ideas need to cover one of the following categories
@@ -38,7 +34,7 @@ Now they are asking for people to vote. To pick the ideas they believe can make 
 <div>
 </div>
 
-So I invite you guys to go on <a href="http://www.project10tothe100.com/vote.html" target="_blank">Project 10^100&#8217;s voting page</a>. Read all the ideas, and look into yourself what you think will help this hurting world of ours. Then pick the best one. After that invite others( friends,family, co-workers etc.) to do the same.
+So I invite you guys to go on <a href="//www.project10tothe100.com/vote.html" target="_blank">Project 10^100&#8217;s voting page</a>. Read all the ideas, and look into yourself what you think will help this hurting world of ours. Then pick the best one. After that invite others( friends,family, co-workers etc.) to do the same.
 
 **Conclusion**
 

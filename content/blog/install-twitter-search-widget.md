@@ -152,7 +152,7 @@ I&#8217;m happy with the results, click &#8220;Finish and Grab Code&#8221; butto
 
 Simply insert the code into your page&#8217;s html and you&#8217;re done. see results here
 
-There you have it, shown you how to get the widget. Now go play with your new toy! If you have a problem installing, just leave a comment or email me at <a href="http://scr.im/chrisbautista" target="_blank">http://scr.im/chrisbautista</a>.
+There you have it, shown you how to get the widget. Now go play with your new toy! If you have a problem installing, just leave a comment or email me at `questions at codespud dot com`.
 
 #### Some closing tips
 

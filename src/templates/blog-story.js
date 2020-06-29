@@ -6,7 +6,16 @@ import styled from "styled-components"
 const Story = styled.div`
   clear: both;
   display: block;
-  margin-bottom: 4em;
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 2rem;
+  }
 
   :after {
     content: " ";
@@ -26,18 +35,21 @@ const MoreLink = styled(Link)`
 `
 
 const Excerpt = styled.p`
-  text-align: justify;
+  text-align: left;
 `
 
 const StoryBody = styled.div`
   img {
-    width: 350px;
+    height: 300px;
+    width: auto;
+    max-width: 100%;
     float: right;
-    margin: 0 0 0 2rem;
+    margin: 0 1rem 2rem 1rem;
 
     @media screen and (max-width: 759px){
       height: auto;
       width: 100%;
+      max-width: unset;
       margin: 1rem 0 -1rem;
       float: none;
     }

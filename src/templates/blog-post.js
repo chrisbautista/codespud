@@ -44,13 +44,14 @@ const MetaDiv = styled.div`
 `
 
 function BackLink({ isPost, title }) {
+
   return isPost ? (
     <span>
-      <Link to="/">{"Post"}</Link> {">"} {title}
+      <a href="/" alt={'Home'} >{"Home"}</a> {">"} {title}
     </span>
   ) : (
     <span>
-      <Link to="/works">{"Works"}</Link> {">"} {title}
+      <Link to="/works" alt={'Portfolio'}>{"Portfolio"}</Link> {">"} {title}
     </span>
   )
 }
