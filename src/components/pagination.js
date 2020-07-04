@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Icon, { IconType } from "./icons"
 
 const PaginationNav = styled.ul`
   display: flex;
@@ -13,6 +14,10 @@ const PaginationNav = styled.ul`
 
   li {
     margin-left: 0;
+  }
+
+  li.page-numbers {
+    width: 30px;
   }
 
   a {
@@ -32,43 +37,55 @@ const Pagination = ({
   isFirst,
   isLast,
   showPageNumbers = false,
+  ctx,
 }) => {
-  return <PaginationNav>
-    <li>
-      {!isFirst ? (
-        <Link to={prevPage} rel="prev">
-          ← Previous Page
-        </Link>
-      ) : <span>← Previous Page</span>}
-    </li>
-    {showPageNumbers &&
-      Array.from({ length: numPages }, (_, i) => (
-        <li
-          key={`pagination-number${i + 1}`}
-          style={{
-            margin: 0,
-          }}
-        >
-          <Link
-            to={`/${i === 0 ? "" : i + 1}`}
+  return (
+    <PaginationNav>
+      <li>
+        {!isFirst ? (
+          <Link to={prevPage} rel="prev">
+            <Icon type={IconType.Back} /> {ctx.i18n.Back}
+          </Link>
+        ) : (
+          <span>
+            <Icon type={IconType.Back} /> {ctx.i18n.Back}
+          </span>
+        )}
+      </li>
+      {showPageNumbers &&
+        Array.from({ length: numPages }, (_, i) => (
+          <li
+            className="page-numbers"
+            key={`pagination-number${i + 1}`}
             style={{
-              textDecoration: "none",
-              color: i + 1 === currentPage ? "#ffffff" : "",
-              background: i + 1 === currentPage ? "#007acc" : "",
+              margin: 0,
             }}
           >
-            {i + 1}
+            <Link
+              to={`/${i === 0 ? "" : i + 1}`}
+              style={{
+                textDecoration: "none",
+                color: i + 1 === currentPage ? "#ffffff" : "",
+                background: i + 1 === currentPage ? "#007acc" : "",
+              }}
+            >
+              {i + 1}
+            </Link>
+          </li>
+        ))}
+      <li>
+        {!isLast ? (
+          <Link to={nextPage} rel="next">
+            {ctx.i18n.Next} <Icon type={IconType.Next} />
           </Link>
-        </li>
-      ))}
-    <li>
-      {!isLast ? (
-        <Link to={nextPage} rel="next">
-          Next Page →
-        </Link>
-      ) : <span>Next Page →</span>}
-    </li>
-  </PaginationNav>
+        ) : (
+          <span>
+            {ctx.i18n.Next} <Icon type={IconType.Next} />
+          </span>
+        )}
+      </li>
+    </PaginationNav>
+  )
 }
 
 export default Pagination

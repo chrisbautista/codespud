@@ -3,58 +3,8 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Icon, { IconType } from "../components/icons"
 import styled from "styled-components"
-
-const PaginationNav = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-`
-
-const PostTitle = styled.h1`
-  text-align: center;
-  margin: 3rem 0 3rem;
-  
-  .date {
-    font-size: 0.875rem;
-  }
-`
-
-const Img = styled.img`
-  height: 300px;
-  width: auto;
-  display: block;
-
-  @media screen and (max-width: 759px) {
-    width: 100%;
-    height: auto;
-  }
-`
-
-const MetaDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.875rem;
-
-  font-family: Montserrat;
-`
-
-function BackLink({ isPost, title }) {
-
-  return isPost ? (
-    <span>
-      <a href="/" alt={'Home'} >{"Home"}</a> {">"} {title}
-    </span>
-  ) : (
-    <span>
-      <Link to="/works" alt={'Portfolio'}>{"Portfolio"}</Link> {">"} {title}
-    </span>
-  )
-}
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -95,14 +45,14 @@ class BlogPostTemplate extends React.Component {
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                ← {next.frontmatter.title}
+                <Icon type={IconType.Back} /> {next.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                {previous.frontmatter.title} →
+                {previous.frontmatter.title} <Icon type={IconType.Next} />
               </Link>
             )}
           </li>
@@ -135,3 +85,70 @@ export const pageQuery = graphql`
     }
   }
 `
+const PaginationNav = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: 1rem;
+
+  @media screen and (max-width: 900px){
+    display: block;
+    padding: 0.5rem 0.5rem 1rem;
+    text-align: center;
+    margin: 0;
+    li {
+      display: block;
+      padding: 0.4rem 0;
+      margin: 0.3rem 0 0;
+    }
+  }
+`
+
+const PostTitle = styled.h1`
+  text-align: center;
+  margin: 3rem 0 3rem;
+
+  .date {
+    font-size: 0.875rem;
+  }
+`
+
+const Img = styled.img`
+  height: 300px;
+  width: auto;
+  display: block;
+
+  @media screen and (max-width: 759px) {
+    width: 100%;
+    height: auto;
+  }
+`
+
+const MetaDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+`
+
+function BackLink({ isPost, title }) {
+  return isPost ? (
+    <span>
+      <a href="/" alt={"Home"}>
+        {"Home"}
+      </a>{" "}
+      {">"} {title}
+    </span>
+  ) : (
+    <span>
+      <Link to="/works" alt={"Portfolio"}>
+        {"Portfolio"}
+      </Link>{" "}
+      {">"} {title}
+    </span>
+  )
+}

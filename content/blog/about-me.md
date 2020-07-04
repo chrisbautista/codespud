@@ -14,18 +14,17 @@ contentType: profile
 
 Hi! I&#8217;m Chris Bautista. I&#8217;m a veteran programmer, addicted gamer, clueless photographer and novice writer. 
 
-This blog is mostly about family , friends, programming, internet culture and everything in between. This is my way of learning and sharing as well. <!--more--> I do love challenges so if you have a topic I can help with post it as a comment or email me at [chris at codespud.com][1].
+This blog is mostly about programming, internet culture, a little about family, my work, and everything in between. This is my learning journal. <!--more--> I do love challenges so if you have a topic I can help with post it as a comment or email me at <u>**challenges at codespud dot com**</u>.
 
 ## What I do
 
-  * Owner, [CodeSpud Web Services.][2]
-  * [Web developer](https://github.com/chrisbautista/) 
+  * Owner, [CodeSpud Web Services.][1]
+  * [Web developer][3]<github> 
   * Video Gamer (Console mostly and some coin-ops)
   * Cook (Trying to be a Chef)
   * Voracious Eater
-  * [Clickpotato][3]
+  * [Clickpotato][2]
 
- [1]: #
- [2]: http://www.codespud.com/
- [3]: http://encyclopedia2.thefreedictionary.com/click+potato
- [4]: https://github.com/chrisbautista/
+ [1]: http://www.codespud.com/
+ [2]: http://encyclopedia2.thefreedictionary.com/click+potato
+ [3]: https://github.com/chrisbautista/

@@ -85,6 +85,13 @@ function Bio(props) {
               >
                 <Icon type={IconType.LinkedIn} />
               </SocialAnchor>
+              <SocialAnchor
+                href={`${social.github}`}
+                title={social.github}
+                style={{ color: "#333" }}
+              >
+                <Icon type={IconType.Github} />
+              </SocialAnchor>
             </SocialIcons>
           </BioContainer>
         )

@@ -1,14 +1,18 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const PageListWrapper = styled.nav`
   position: absolute;
-  top: 1rem;
-  left: 1.5rem ;
-  width: 180px;
+  top: 0;
+  left: 0 ;
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 1rem 1rem 2rem;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2); 
 
-  @media screen and (max-widt: 759px) {
+  @media screen and (max-width: 1486px) {
     display: none;
   }
 `

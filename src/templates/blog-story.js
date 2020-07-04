@@ -8,6 +8,7 @@ const Story = styled.div`
   display: block;
   padding: 2rem;
   margin-bottom: 1rem;
+  box-shadow: 0 1px 22px 1px rgba(0, 0, 0, 0.1);
 
   h3 {
     margin-top: 0;

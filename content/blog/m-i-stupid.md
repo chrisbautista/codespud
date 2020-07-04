@@ -11,10 +11,6 @@ Do you know how to send an SOS in morse code? Do you know your birthstone? Or th
 
 <!--more-->
 
-<div style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s1600-h/mistupidman.gif" style="margin-left: 1em; margin-right: 1em;"><img src="http://4.bp.blogspot.com/_BBS5bkzuLXM/SrSK24922jI/AAAAAAAACgU/g7fUtuiMVUc/s320/mistupidman.gif" /></a>
-</div>
-
 <div>
   <a href="http://mistupid.com/contents.htm" target="_blank">http://mistupid.com/contents.htm</a>
 </div>

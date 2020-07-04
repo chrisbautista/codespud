@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Container from "./container"
 import Menu from "./menu"
 
-import Bio from "../components/bio"
+import Bio from "./bio"
 
 const PageWrapper = styled.div`
   color: #333;
@@ -65,31 +65,33 @@ class Layout extends React.Component {
     )
 
     return (
-      <PageWrapper>
-        <Header>
-          <Menu />
-          {header}
-        </Header>
-        <Container>
-          <Main>{children}</Main>
-          <Bio />
-        </Container>
-        <Footer>
-          <Disclaimer>
-            DISCLAIMER This is my personal weblog and learning tool. The content
-            within it is exactly that – personal. The views and opinions
-            expressed on the posts and the comments I make on this Blog
-            represent my own and not those of people, institutions or
-            organisations I am affiliated with unless stated explicitly. My Blog
-            is not affiliated with, neither does it represent the views,
-            position or attitudes of my employer, their clients, or any of their
-            affiliated companies.
-          </Disclaimer>
+      <>
+        <PageWrapper>
+          <Header>
+            <Menu />
+            {header}
+          </Header>
+          <Container>
+            <Main>{children}</Main>
+            <Bio />
+          </Container>
+          <Footer>
+            <Disclaimer>
+              DISCLAIMER This is my personal weblog and learning tool. The
+              content within it is exactly that – personal. The views and
+              opinions expressed on the posts and the comments I make on this
+              Blog represent my own and not those of people, institutions or
+              organisations I am affiliated with unless stated explicitly. My
+              Blog is not affiliated with, neither does it represent the views,
+              position or attitudes of my employer, their clients, or any of
+              their affiliated companies.
+            </Disclaimer>
             <CopyRight>
               © 2006 - {new Date().getFullYear()}, Copyright - codespud.com
             </CopyRight>
-        </Footer>
-      </PageWrapper>
+          </Footer>
+        </PageWrapper>
+      </>
     )
   }
 }
