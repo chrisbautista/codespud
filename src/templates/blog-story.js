@@ -25,16 +25,6 @@ const Story = styled.div`
   }
 `
 
-const MoreLink = styled(Link)`
-  background-color: antiquewhite;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
-  padding: 6px 18px;
-  width: 62px;
-  display: inline-block;
-  text-align: center;
-`
-
 const Excerpt = styled.p`
   text-align: left;
 `
@@ -81,9 +71,6 @@ export default function BlogStory({ ctx, node }) {
           }}
         />
       </StoryBody>
-      <MoreLink to={node.fields.slug} title={title}>
-        {ctx.i18n.More}
-      </MoreLink>
     </Story>
   )
 }

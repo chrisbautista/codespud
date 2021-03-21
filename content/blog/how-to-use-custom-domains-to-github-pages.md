@@ -33,7 +33,7 @@ Hosting a project wiki or a personal blog on Github is very easy with github-pag
     3. Add a CNAME with the following details:
 
         - Host: www
-        - Points to: chrisbautista.github.io
+        - Points to: -----.github.io
         - TTL: 1 hour
 
     4. Save your settings.
@@ -47,13 +47,13 @@ Hosting a project wiki or a personal blog on Github is very easy with github-pag
 
     ![alt text][3]
 
-    2. Navigate to __Settings > Options > GitHub Pages__
+    1. Navigate to __Settings > Options > GitHub Pages__
 
     ![alt text][4]
 
-    3. Point branch to __gh-pages branch__
-    4. Fill in your domain. In my case, it's _www.codespud.com_.
-    5. Enable __'Enforce HTTPS'__, if the option is enabled. Sometimes it will indicate you need to wait for 24 hours. Just check again later and enable it if you're allowed to. If you have a different issue checkout [Github article](https://help.github.com/en/articles/troubleshooting-custom-domains) on troubleshooting custom domains. 
+    1. Point branch to __gh-pages branch__
+    2. Fill in your domain. In my case, it's _www.codespud.com_.
+    3. Enable __'Enforce HTTPS'__, if the option is enabled. Sometimes it will indicate you need to wait for 24 hours. Just check again later and enable it if you're allowed to. If you have a different issue checkout [Github article](https://help.github.com/en/articles/troubleshooting-custom-domains) on troubleshooting custom domains. 
 
 ---
 ### NPM package
