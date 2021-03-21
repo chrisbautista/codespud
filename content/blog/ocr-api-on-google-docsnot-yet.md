@@ -10,9 +10,9 @@ blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com
 blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
+  - @codespud
+  - @codespud
+  - @codespud
 blogger_permalink:
   - /2009/09/ocr-api-on-google-docsnot-yet.html
   - /2009/09/ocr-api-on-google-docsnot-yet.html

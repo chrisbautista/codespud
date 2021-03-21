@@ -34,7 +34,7 @@ Tell me if you're in the same situation. You have a workstation that cannot supp
     
     Using gulp and [gulp-rsync](https://www.npmjs.com/package/gulp-rsync),
 
-    ```
+    ```bash
     npm install gulp-rsync --save-dev
     ```
     ```js
@@ -64,7 +64,7 @@ Tell me if you're in the same situation. You have a workstation that cannot supp
 
   Here's a link to my [vimrc](https://github.com/chrisbautista/vim-workflow/blob/master/.vimrc). Search through Github there's no shortage of excellent vim configurations that might fit your liking. 
 
-  ```
+  ```bash
     "====================
     " vim workflow
     " @chrisbautista "codespud"

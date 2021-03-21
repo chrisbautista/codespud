@@ -6,9 +6,9 @@ date: 2006-05-28T10:55:00+00:00
 draft: true
 url: /?p=290
 blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
+  - @codespud
+  - @codespud
+  - @codespud
 blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com

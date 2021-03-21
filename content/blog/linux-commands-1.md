@@ -10,9 +10,9 @@ blogger_permalink:
   - /2006/05/linux-commands-1.html
   - /2006/05/linux-commands-1.html
 blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
+  - @codespud
+  - @codespud
+  - @codespud
 blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com

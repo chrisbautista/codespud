@@ -10,9 +10,9 @@ blogger_blog:
   - potatokorner.blogspot.com
   - potatokorner.blogspot.com
 blogger_author:
-  - Christopher Bautista
-  - Christopher Bautista
-  - Christopher Bautista
+  - @codespud
+  - @codespud
+  - @codespud
 blogger_permalink:
   - /2006/04/photoshop-regrets-hi-heres-my-first.html
   - /2006/04/photoshop-regrets-hi-heres-my-first.html
