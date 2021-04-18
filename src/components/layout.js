@@ -20,11 +20,16 @@ const Header = styled.header`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 0;
   }
 `
 
 const H1 = styled.h1`
   margin-top: 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 16px;
+  }
 `
 
 const Footer = styled.footer`
@@ -49,6 +54,15 @@ const Disclaimer = FooterColumn
 const CopyRight = styled(FooterColumn)`
   font-size: 0.875rem;
   padding-bottom: 0;
+  padding-top: 0;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+
+    &:first {
+      padding-top: 1rem 10px 0;
+    }
+  }
 `
 
 const Main = styled.main`
@@ -87,8 +101,9 @@ class Layout extends React.Component {
               their affiliated companies.
             </Disclaimer>
             <CopyRight>
-              © 2006 - {new Date().getFullYear()}, Copyright - codespud.com
+              © 2006 - {new Date().getFullYear()}, Copyright - codespud.com.
             </CopyRight>
+            <CopyRight>Theme by @codespud 2018</CopyRight>
           </Footer>
         </PageWrapper>
       </>

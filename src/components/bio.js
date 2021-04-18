@@ -34,6 +34,11 @@ const BioContainer = styled.div`
   width: 100%;
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 759px){
+    display: block;
+    text-align: center;
+  }
 `
 
 const SocialAnchor = styled.a`
@@ -45,10 +50,25 @@ const SocialAnchor = styled.a`
 const WrittenBy = styled.div`
   text-align: left;
   font-size: 1rem;
+
+  @media screen and (max-width: 759px){
+    padding: 1rem 0;
+    display: inline-block;
+  }
 `
 
 const SocialIcons = styled.div`
   vertical-align: middle;
+
+  a {
+    width: 40px;
+    height: 40px;
+    svg.svg-inline--fa {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
 `
 
 function Bio(props) {

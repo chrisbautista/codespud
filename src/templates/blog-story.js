@@ -33,7 +33,7 @@ const StoryBody = styled.div`
   img {
     height: 300px;
     width: auto;
-    max-width: 100%;
+    max-width: 75%;
     float: right;
     margin: 0 1rem 2rem 1rem;
 
@@ -41,7 +41,7 @@ const StoryBody = styled.div`
       height: auto;
       width: 100%;
       max-width: unset;
-      margin: 1rem 0 -1rem;
+      margin: 1rem 0 0.5rem;
       float: none;
     }
   }

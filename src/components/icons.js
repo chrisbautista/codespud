@@ -9,6 +9,7 @@ import {
   faArrowLeft,
   faArrowRight,
   faHome,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons"
 
 export const IconType = {
@@ -18,6 +19,7 @@ export const IconType = {
   Back: "back-arrow",
   Next: "forward-arrow",
   Home: "home",
+  Menu: "menu",
 }
 
 export default function Icon({ type }) {
@@ -34,6 +36,8 @@ export default function Icon({ type }) {
       return <FontAwesomeIcon icon={faArrowRight} />
     case IconType.Home:
       return <FontAwesomeIcon icon={faHome} />
+    case IconType.Menu:
+      return <FontAwesomeIcon icon={faBars} />
     default:
       return null
   }
