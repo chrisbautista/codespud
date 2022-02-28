@@ -6,7 +6,7 @@ import styled from "styled-components"
 const Story = styled.div`
   clear: both;
   display: block;
-  padding: 2rem;
+  padding: 1rem 0.75rem;
   margin-bottom: 1rem;
 
   h3 {

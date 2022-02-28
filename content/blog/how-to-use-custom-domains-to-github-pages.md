@@ -3,6 +3,7 @@ title: How to Use Custom Domains with Github Pages
 author: Chris
 type: post
 date: 2019-04-22T14:20:00+00:00
+featured_image: /godaddy-domain-admin_1.png
 
 ---
 

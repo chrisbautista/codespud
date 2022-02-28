@@ -31,14 +31,6 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.title}
           <p className="date">{post.frontmatter.date}</p>
         </PostTitle>
-        <div>
-          {post.frontmatter.featured_image && (
-            <Img
-              src={post.frontmatter.featured_image}
-              alt={post.frontmatter.title}
-            />
-          )}
-        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
         <PaginationNav>
@@ -122,17 +114,6 @@ const PostTitle = styled.h1`
 
   .date {
     font-size: 0.875rem;
-  }
-`
-
-const Img = styled.img`
-  height: 300px;
-  width: auto;
-  display: block;
-
-  @media screen and (max-width: 759px) {
-    width: 100%;
-    height: auto;
   }
 `
 

@@ -5,6 +5,8 @@ type: post
 date: 2009-10-08T01:07:00+00:00
 redirect_from:
   - /2009/10/funny-video-animator-vs-animated/
+featured_image: /animatorvsanimated.png
+
 ---
 
 Shared for your viewing pleasure.
