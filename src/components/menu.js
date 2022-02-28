@@ -31,7 +31,6 @@ const BurgerMenu = styled.button`
     right: 20px;
     background: transparent;
     border: 0;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
 
     svg.svg-inline--fa.fa-bars {
       width: 25px;

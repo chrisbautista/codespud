@@ -6,8 +6,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 import {
-  faArrowLeft,
-  faArrowRight,
+  faChevronLeft,
+  faChevronRight,
   faHome,
   faBars,
 } from "@fortawesome/free-solid-svg-icons"
@@ -22,22 +22,22 @@ export const IconType = {
   Menu: "menu",
 }
 
-export default function Icon({ type }) {
+export default function Icon({ type, style }) {
   switch (type) {
     case IconType.Twitter:
-      return <FontAwesomeIcon icon={faTwitter} />
+      return <FontAwesomeIcon icon={faTwitter} style={style} />
     case IconType.LinkedIn:
-      return <FontAwesomeIcon icon={faLinkedin} />
+      return <FontAwesomeIcon icon={faLinkedin} style={style} />
     case IconType.Github:
-      return <FontAwesomeIcon icon={faGithub} />
+      return <FontAwesomeIcon icon={faGithub} style={style} />
     case IconType.Back:
-      return <FontAwesomeIcon icon={faArrowLeft} />
+      return <FontAwesomeIcon icon={faChevronLeft} style={style} />
     case IconType.Next:
-      return <FontAwesomeIcon icon={faArrowRight} />
+      return <FontAwesomeIcon icon={faChevronRight} style={style} />
     case IconType.Home:
-      return <FontAwesomeIcon icon={faHome} />
+      return <FontAwesomeIcon icon={faHome} style={style} />
     case IconType.Menu:
-      return <FontAwesomeIcon icon={faBars} />
+      return <FontAwesomeIcon icon={faBars} style={style} />
     default:
       return null
   }

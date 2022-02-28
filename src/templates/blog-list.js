@@ -37,7 +37,6 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           return <BlogStory key={node.fields.slug} ctx={ctx} node={node} />
         })}
-        {Pages}
       </Layout>
     )
   }

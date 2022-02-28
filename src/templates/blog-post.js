@@ -85,6 +85,10 @@ export const pageQuery = graphql`
     }
   }
 `
+
+//
+// Styles
+//
 const PaginationNav = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +107,11 @@ const PaginationNav = styled.ul`
       display: block;
       padding: 0.4rem 0;
       margin: 0.3rem 0 0;
+
+      svg {
+        margin-right: 0.2rem;
+        margin-left: 0.2rem;
+      }
     }
   }
 `
@@ -136,19 +145,21 @@ const MetaDiv = styled.div`
 `
 
 function BackLink({ isPost, title }) {
+  let divider = <Icon type={IconType.Next}/>;
+  
   return isPost ? (
     <span>
       <a href="/" alt={"Home"}>
         {"Home"}
       </a>{" "}
-      {">"} {title}
+      {divider} {title}
     </span>
   ) : (
     <span>
       <Link to="/works" alt={"Portfolio"}>
         {"Portfolio"}
       </Link>{" "}
-      {">"} {title}
+      {divider} {title}
     </span>
   )
 }

@@ -8,7 +8,6 @@ const Story = styled.div`
   display: block;
   padding: 2rem;
   margin-bottom: 1rem;
-  box-shadow: 0 1px 22px 1px rgba(0, 0, 0, 0.1);
 
   h3 {
     margin-top: 0;
@@ -31,12 +30,6 @@ const Excerpt = styled.p`
 
 const StoryBody = styled.div`
   img {
-    height: 300px;
-    width: auto;
-    max-width: 75%;
-    float: right;
-    margin: 0 1rem 2rem 1rem;
-
     @media screen and (max-width: 759px){
       height: auto;
       width: 100%;

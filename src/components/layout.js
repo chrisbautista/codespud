@@ -43,7 +43,7 @@ const Footer = styled.footer`
 
 const FooterColumn = styled.p`
   margin: 0 auto;
-  padding: 30px 15%;
+  padding: 0 40px;
   text-align: left;
   @media screen and (max-width: 768px) {
     padding: 0 10px;

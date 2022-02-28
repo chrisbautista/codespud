@@ -11,7 +11,7 @@ import Image from "gatsby-image"
 import styled from "styled-components"
 import Icon, { IconType } from "./icons"
 
-const BioImage = styled(Image)`
+const BiographyImage = styled(Image)`
   clear: both;
   float: left;
   margin-right: 10px;
@@ -29,7 +29,7 @@ const BioImage = styled(Image)`
   }
 `
 
-const BioContainer = styled.div`
+const BiographyContainer = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
@@ -71,20 +71,20 @@ const SocialIcons = styled.div`
 
 `
 
-function Bio(props) {
+function Biography(props) {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <BioContainer
+          <BiographyContainer
             style={{
               justifyContent: props.type === "left" ? "flex-start" : "flex-end",
             }}
           >
             <WrittenBy>
-              <BioImage
+              <BiographyImage
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author}
               />
@@ -113,7 +113,7 @@ function Bio(props) {
                 <Icon type={IconType.Github} />
               </SocialAnchor>
             </SocialIcons>
-          </BioContainer>
+          </BiographyContainer>
         )
       }}
     />
@@ -142,4 +142,4 @@ const bioQuery = graphql`
   }
 `
 
-export default Bio
+export default Biography
