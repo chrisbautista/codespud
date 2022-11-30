@@ -57,7 +57,7 @@
     <p>The navigation sequence does not follow the natural way of content consumption.</p>
   </figcaption>
 </figure>
-<p>To improve the focus/read order, we should make the first tab active and prevent the inactive tabs from getting the focus sequence. Navigation will go directly to the content when tabbing through. Another rule some UI developers forget is to make sure hidden elements should not get focused. So for the example above, the “Services” and “Products” content panels should not receive focus when inactive/not shown.</p>
+<p>To improve the focus/read order, we should make the first tab active and prevent the inactive tabs from getting the focus sequence. Navigation will go directly to the content when tabbing from the tab button. Another rule some UI developers forget is to make sure hidden elements do not get focus. So for the previous example, the “Services” and “Products” content panels and its content must not receive focus.</p>
 <figure>
   <img src="/blog/build_an_accessible_tab_container___correct_focus_order.png" alt="corrected focus order">
   <figcaption>
@@ -82,7 +82,7 @@
     <cite>- MDN</cite>  
   </figcaption>
 </figure>
-<p>It would have been nice if there was a tab panel semantic tag. There is none so we use ARIA attributes. On their own ARIA attributes do not do much. It does not add styling or extra behavior. But, for screenreaders or tools to aid people with health conditions or impairments, ARIA attributes add extra meaning to the elements so that a browser knows how to interpret what’s on the page for the mentioned tools.</p>
+<p>It would have been nice if there was a tab panel semantic tag. There is none so we use ARIA attributes. On their own ARIA attributes do not do much. It does not add styling or extra behavior. But for screen readers or tools that aid people with impairments, ARIA attributes paint a picture that a browser can interpret.</p>
 <p>For the tabbed container, we set the following ARIA attributes. </p>
 <table>
   <thead>
