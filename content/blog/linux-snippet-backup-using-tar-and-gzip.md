@@ -6,6 +6,7 @@ date: 2008-12-07T08:51:00+00:00
 redirect_from:
   - /2008/12/linux-snippet-backup-using-tar-and-gzip/
 featured_image: /linux-logo.jpg
+tags: [linux, script, bash]
 ---
 
 As a programmer i have to make multiple revisions of a project on a remote site. Getting things wrong and messing up the files tend to happen more often than I am comfortable with. Fortunately, making quick backups in linux is a breeze. You can either make a folder and just copy your existing files via recursive cp command or; archive it using tar and gzip. Personally, I prefer archives since they tend to be smaller and easy to manage. <!--more-->

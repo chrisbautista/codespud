@@ -5,6 +5,7 @@ type: post
 date: 2009-09-25T03:37:00+00:00
 redirect_from:
   - /2009/09/use-export-command-to-help-linux-find-your-scripts/
+tags: [linux, bash, scripts]
 ---
 
 You compiled and installed a linux binary or made a nifty script but you don&#8217;t want to mess the server bin tree. So you placed it in an isolated folder like so:

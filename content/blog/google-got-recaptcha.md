@@ -5,7 +5,7 @@ type: post
 date: 2009-09-19T08:55:00+00:00
 redirect_from:
   - /2009/09/google-got-recaptcha/
-
+tags: [google, security, frontend]
 ---
 
 Google announced recently in its official blog, that it has acquired reCAPTCHA. <a href="http://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> is a web technology made out of necessity. It primarily is used to prevent BOTS (or automated apps designed to do malicious tasks) by adding an extra step to site pages that require human interaction. <!--more-->Yes, they&#8217;re the annoying barely readable text images when you register/login for a site.

@@ -6,6 +6,7 @@ date: 2016-11-14T04:08:17+00:00
 redirect_from:
   - /2016/11/make-bash-prompt-work/
 featured_image: /assets/2016/11/mybashpromot_in_action.png
+tags: [ bash, console ]
 ---
 
 If you work with Linux or Unix-like operating systems like Ubuntu or the MacOS, you might be familiar with Bourne-Again Shell or [BASH][1] for short. This article will show you that with a little elbow grease, you can have your BASH prompt work for you and heck maybe have a little fun with it.

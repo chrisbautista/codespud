@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
@@ -7,10 +8,11 @@ exports.createPages = ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const blogIndex = path.resolve(`./src/templates/blog-list.js`)
   const worksIndex = path.resolve(`./src/templates/works-list.js`)
+  const perTagIndex = path.resolve(`./src/templates/blog-tag-list.js`)
   return graphql(
     `
       {
-        allMarkdownRemark(
+        postsRemark:allMarkdownRemark(
           filter: { frontmatter: { draft: { ne: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
@@ -23,8 +25,14 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 contentType
+                tags
               }
             }
+          }
+        }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -41,8 +49,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
-    var numWorks = 0
+    const posts = result.data.postsRemark.edges
 
     // get works
     const works = posts.filter(post => {
@@ -63,6 +70,7 @@ exports.createPages = ({ graphql, actions }) => {
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
+          tags: post.node.frontmatter.tags,
           previous,
           next,
         },
@@ -84,9 +92,10 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog post list pages
-    const postsPerPage = 4
+    const postsPerPage = 12
 
-    const numPages = Math.ceil(blogs.length / postsPerPage)
+    const addPage = blogs.length % postsPerPage > 1 ? 1 : 0;
+    const numPages = Math.floor(blogs.length / postsPerPage) + addPage;
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
@@ -100,6 +109,20 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
+    // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: perTagIndex,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
 
     return null
   })

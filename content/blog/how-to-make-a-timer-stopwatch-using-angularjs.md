@@ -6,6 +6,7 @@ date: 2014-09-28T18:09:50+00:00
 redirect_from: 
   - /2014/09/how-to-make-a-timer-stopwatch-using-angularjs/
 featured_image: /assets/2014/09/angular-featured.png
+tags: [frontend, angularjs, ui, javascript]
 
 ---
 I&#8217;ve got some leeway pushing <a title="Khrunus" href="https://github.com/chrisbautista/Khrunus" target="_blank">Khrunus</a> off the ground.  I&#8217;ve always been successful using JavaScript&#8217;s timing functions but since Khrunus would primarily be built-in in AngularJS. I have to research a way to reuse my timing snippets into proper Angular code.  To study, I built a simple angular app:<!--more--> 

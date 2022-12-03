@@ -5,6 +5,7 @@ type: post
 date: 2009-09-19T07:41:00+00:00
 redirect_from:
   - /2009/09/m-i-stupid/
+tags: [website, fun]
 ---
 
 Do you know how to send an SOS in morse code? Do you know your birthstone? Or the winners of the Oscars since 1927 ? MIStupid.com has an assortment of trivia and topics not known by the most of us. As a bonus they have categories with games and puzzles you can play with when you catch a bit of an information overload.

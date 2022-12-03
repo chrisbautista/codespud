@@ -3,7 +3,7 @@ path: "/works/2015/03/surf-biggest-fan/"
 date: "2013-03-02T22:50:13Z"
 title: "Surf : Biggest Fan"
 categories: []
-tags: []
+tags: [javascript, jquery, animation]
 excerpt: "Surf, in celebration of it's anniversary, is thanking it's customers with \"American Idol\"-ish con..."
 contentType: works
 featured_image: /surf-biggest-fan-facebook-app.png

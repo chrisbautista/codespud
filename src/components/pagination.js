@@ -11,7 +11,7 @@ const PaginationNav = styled.ul`
   min-width: 50px;
   list-style: none;
   padding: 0;
-  margin: 2rem 0 2rem;
+  margin: 0;
   float: right;
 
   @media screen and (max-width: 769px) {

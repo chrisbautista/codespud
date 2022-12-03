@@ -4,6 +4,7 @@ author: chris
 type: post
 date: 2019-05-19T12:07:00+00:00
 featured_image :  /architecture-ssh.png
+tags: [tutorial, IDE]
 
 ---
 

@@ -6,20 +6,12 @@ date: 2006-05-28T10:55:00+00:00
 draft: true
 url: /?p=290
 blogger_author:
-  - @codespud
-  - @codespud
-  - @codespud
+  - \@codespud
 blogger_blog:
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
   - potatokorner.blogspot.com
 blogger_permalink:
   - /2006/05/introduction.html
-  - /2006/05/introduction.html
-  - /2006/05/introduction.html
 blogger_internal:
-  - /feeds/21010737/posts/default/3456076076653730148
-  - /feeds/21010737/posts/default/3456076076653730148
   - /feeds/21010737/posts/default/3456076076653730148
 
 ---

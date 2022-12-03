@@ -9,35 +9,43 @@ import Bio from "./bio"
 
 const PageWrapper = styled.div`
   color: #333;
+  position: relative;
+
+  @media (max-width: 1600px) {
+    padding: 0 4rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+  }
 `
 
 const Header = styled.header`
   margin: 0 auto;
   text-decoration: none;
-  margin-bottom: 4rem;
-  max-width: 960px;
+  margin-bottom: 0;
+  max-width: 1600px;
+  padding: 2rem 0;
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 0;
+    padding: 0;
   }
 `
 
-const H1 = styled.h1`
+const Logo = styled.span`
+  font-size: 2rem;
   margin-top: 1rem;
-
-  @media screen and (max-width: 768px) {
-    padding-left: 16px;
-  }
-`
+`;
 
 const Footer = styled.footer`
   margin-top: 4em;
   border-top: 1px solid #ddd;
   padding: 2em 0;
   font-size: 1em;
-  color: #666;
+  color: #595959;
   background-color: #dfdfdf;
 `
 
@@ -45,6 +53,7 @@ const FooterColumn = styled.p`
   margin: 0 auto;
   padding: 0 40px;
   text-align: left;
+  max-width: 1600px;
   @media screen and (max-width: 768px) {
     padding: 0 10px;
   }
@@ -73,9 +82,9 @@ class Layout extends React.Component {
   render() {
     const { title, children } = this.props
     let header = (
-      <H1>
+      <Logo>
         <Link to={`/`}>{title}</Link>
-      </H1>
+      </Logo>
     )
 
     return (

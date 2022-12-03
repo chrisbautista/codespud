@@ -7,19 +7,11 @@ draft: true
 url: /?p=289
 blogger_permalink:
   - /2006/05/linux-commands-1.html
-  - /2006/05/linux-commands-1.html
-  - /2006/05/linux-commands-1.html
 blogger_author:
-  - @codespud
-  - @codespud
-  - @codespud
+  - \@codespud
 blogger_blog:
   - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
 blogger_internal:
-  - /feeds/21010737/posts/default/2296391083094043883
-  - /feeds/21010737/posts/default/2296391083094043883
   - /feeds/21010737/posts/default/2296391083094043883
 
 ---

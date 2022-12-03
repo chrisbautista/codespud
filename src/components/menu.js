@@ -8,6 +8,11 @@ const MainMenu = styled.div`
 
   @media screen and (max-width: 768px) {
     float: unset;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background-color: #3d3d3d;
+    box-shadow: 0 -5px 10px 0 rgba(0,0,0,0.15), 0 5px 10px 0 rgba(0,0,0,0.15);
 
     nav {
       @media screen and (max-width: 768px) {
@@ -27,14 +32,19 @@ const BurgerMenu = styled.button`
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 1.2rem;
-    right: 20px;
+    top: 1.3rem;
+    right: 1rem;
     background: transparent;
     border: 0;
 
-    svg.svg-inline--fa.fa-bars {
-      width: 25px;
-      height: 25px;
+    svg.svg-inline--fa {
+      width: 30px;
+      height: 30px;
+
+      &.fa-times {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 `
@@ -60,8 +70,15 @@ const NavLi = styled.li`
   text-align: right;
 
   @media screen and (max-width: 768px) {
+    a, a:visited {
+      color: #dddddd;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     width: calc(100% - 1rem);
     border-bottom: 1px solid #999;
+    box-shadow: insert 1px 0 4px 0 rgba(0,0,0,0.5);
     font-size: 1.2rem;
     padding: 5px 1rem 5px 0;
     margin: 0;
@@ -104,7 +121,11 @@ const Menu = () => {
 
   let burgerMenu = shouldRenderMobileMenu ? (
     <BurgerMenu onClick={toggleMenu}>
-      <Icon type={IconType.Menu} />
+      {
+        !showMenu
+          ? <Icon type={IconType.Menu} />
+          : <Icon type={IconType.Close} />
+      }
     </BurgerMenu>
   ) : null
 

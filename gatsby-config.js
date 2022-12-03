@@ -54,6 +54,13 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve:"@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400
+            }
+          },
         ],
       },
     },
@@ -80,7 +87,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-redirect-from",
-    "gatsby-plugin-meta-redirect", // make sure this is always the last one
+    "gatsby-redirect-from"
   ],
 }

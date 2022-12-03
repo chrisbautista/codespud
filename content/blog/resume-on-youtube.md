@@ -5,6 +5,7 @@ type: post
 date: 2009-09-19T13:51:00+00:00
 redirect_from:
   - /2009/09/resume-on-youtube/
+tags: [website, youtube, video]
 ---
 
 <div style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">

@@ -2,15 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 
 import styled from "styled-components"
+import Tags from "../components/tagpills"
 
 const Story = styled.div`
   clear: both;
   display: block;
-  padding: 1rem 0.75rem;
   margin-bottom: 1rem;
+  vertical-align: center;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15), 2px 2px 4px 0 rgba(0,0,0,0.15) ;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+  overflow:hidden;
+  padding: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   h3 {
     margin-top: 0;
+    font-size: 1.6rem;
   }
 
   :last-child {
@@ -22,48 +33,81 @@ const Story = styled.div`
     display: block;
     clear: both;
   }
+
+  @media (max-width: 659px) {
+    box-shadow: none;
+  }
 `
 
 const Excerpt = styled.p`
   text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Change this line if you want. In this case it trimmed the text to 3 lines. */
+  overflow: hidden;
+`
+
+const StoryWrapper = styled.div`
+border-radius: 6px;
+height: 100%;
+border: 1px solid rgba(150,150,150,0.05);
+text-align: center;
 `
 
 const StoryBody = styled.div`
-  img {
-    @media screen and (max-width: 759px){
-      height: auto;
-      width: 100%;
-      max-width: unset;
-      margin: 1rem 0 0.5rem;
-      float: none;
-    }
-  }
-`
+  padding: 1rem;
+  min-height: 250px;
+`;
+
+const StoryImage = styled.img`
+  height: 200px;
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+`;
 
 export default function BlogStory({ ctx, node }) {
   const title = node.frontmatter.title || node.fields.slug
+  const linkRef = React.useRef();
+
+  function onClick() {
+    linkRef.current.querySelector('a.post-slug').click();
+  }
+
+  function onKeyUp(e) {
+    if(e.key === 'Enter') {
+      onClick();
+    }
+  }
 
   return (
-    <Story>
-      <h3>
-        <Link to={node.fields.slug} title={title}>
-          {title}
-        </Link>
-      </h3>
-      <small>{node.frontmatter.date}</small>
-      <StoryBody>
+    <Story ref={linkRef}>
+      <StoryWrapper>
         {node.frontmatter.featured_image && (
-          <img
+          <StoryImage onClick={onClick}
             src={node.frontmatter.featured_image}
-            alt={node.frontmatter.title}
+            alt=""
+            tabIndex="-1"
           />
         )}
-        <Excerpt
-          dangerouslySetInnerHTML={{
-            __html: node.excerpt,
-          }}
-        />
-      </StoryBody>
+        <StoryBody>
+          <h3>
+            <Link className="post-slug" to={node.fields.slug}>
+              {title}
+            </Link>
+          </h3>
+          <small
+            tabIndex="-1"
+            onClick={onClick} onKeyUp={onKeyUp} role="button">{node.frontmatter.date}</small>
+          <Tags tags={node.frontmatter.tags} />
+          <Excerpt onClick={onClick}
+            tabIndex="-1"
+            dangerouslySetInnerHTML={{
+              __html: node.excerpt,
+            }}
+          />
+        </StoryBody>
+      </StoryWrapper>
     </Story>
   )
 }

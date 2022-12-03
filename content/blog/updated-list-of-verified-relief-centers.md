@@ -6,7 +6,7 @@ date: 2009-09-28T23:02:00+00:00
 redirect_from: 
   - /2009/09/updated-list-of-verified-relief-centers/
 featured_image :  /potatokorner-ondoy-victims.jpg
-
+tags: [personal]
 ---
 
 

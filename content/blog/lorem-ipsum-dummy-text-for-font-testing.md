@@ -7,19 +7,11 @@ draft: true
 url: /?p=291
 blogger_blog:
   - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
 blogger_author:
-  - @codespud
-  - @codespud
-  - @codespud
+  - \@codespud
 blogger_permalink:
   - /2006/04/lorem-ipsum.html
-  - /2006/04/lorem-ipsum.html
-  - /2006/04/lorem-ipsum.html
 blogger_internal:
-  - /feeds/21010737/posts/default/7905972739294883573
-  - /feeds/21010737/posts/default/7905972739294883573
   - /feeds/21010737/posts/default/7905972739294883573
 
 ---

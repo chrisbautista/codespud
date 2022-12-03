@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   }
 `
 
-const H3 = styled.h3`
+const H2 = styled.h2`
   font-size: 1.1em;
   margin-top: 0.3em;
 `
@@ -38,6 +38,8 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: dense;
+  max-width: 1600px;
+  margin: 0 auto;
 
   @media (max-width: 659px) {
     display: flex;
@@ -79,9 +81,23 @@ const Description = styled.p`
 `
 
 const Title = styled.h1`
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 3rem;
+font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+font-size: 5rem;
+text-align: left;
+margin-top: 2rem;
+margin-bottom: 2rem;
+border-bottom: 2px solid #ddd;
+padding-bottom: 2rem;
+
+max-width: 1600px;
+
+  @media screen and (max-width: 720px) {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+  }
 `
 
 const AnimatedCard = ({ post }) => {
@@ -93,7 +109,7 @@ const AnimatedCard = ({ post }) => {
   return (
     <Card>
       <StyledLink to={`${node.fields.slug}`}>
-        <H3>{title}</H3>
+        <H2>{title}</H2>
 
         {node.frontmatter.featured_image && (
           <Figure>
@@ -155,6 +171,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             featured_image
+            tags
           }
         }
       }

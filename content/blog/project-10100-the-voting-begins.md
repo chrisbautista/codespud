@@ -5,7 +5,10 @@ type: post
 date: 2009-09-25T23:39:00+00:00
 redirect_from:
   - /2009/09/project-10100-the-voting-begins/
----Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.<!--more--> Projects they believe, can do the most good.
+tags: [website, google]
+---
+
+Project 10^100 is a Google Project that transcends the information superhighway. It&#8217;s aim, simply, is to help &#8211; to help people so they can help others. How ? They promised to give 10 million dollars to fund any project that can improve peoples lives. But as funding is finite, they need to find the best ideas.<!--more--> Projects they believe, can do the most good.
 
 <div style="border: 1px solid #DDD; clear: both; text-align: center;">
   <a style="margin-left: 1em; margin-right: 1em;" href="//3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s1600-h/potatokorner-project-10-100.png"><img src="//3.bp.blogspot.com/_BBS5bkzuLXM/Sr1TvZGmd3I/AAAAAAAADF8/UQFO6reQYbU/s320/potatokorner-project-10-100.png" border="0" /></a>

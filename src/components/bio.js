@@ -32,6 +32,8 @@ const BiographyImage = styled(Image)`
 const BiographyContainer = styled.div`
   display: flex;
   width: 100%;
+  max-width: 1600px;
+  margin: 3rem auto 0;
   align-items: center;
   justify-content: flex-end;
 

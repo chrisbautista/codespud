@@ -7,21 +7,13 @@ redirect_from:
   - /2009/10/what-browser/
 blogger_blog:
   - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
 blogger_author:
-  - @codespud
-  - @codespud
-  - @codespud
+  - \@codespud
 blogger_permalink:
-  - /2009/10/what-browser-home.html
-  - /2009/10/what-browser-home.html
   - /2009/10/what-browser-home.html
 blogger_internal:
   - /feeds/21010737/posts/default/5020628614146954525
-  - /feeds/21010737/posts/default/5020628614146954525
-  - /feeds/21010737/posts/default/5020628614146954525
-
+tags: [browser, website]
 ---
 
 Ever wondered what a browser truly is? Or know someone you&#8217;ve been trying to educate for a long time to use one? Ever met someone who keeps confusing a browser with a webpage? Are you still at hairs end trying to pick the best one? Don&#8217;t fret, Google comes to the rescue again. 

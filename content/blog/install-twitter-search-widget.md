@@ -7,21 +7,14 @@ redirect_from:
   - /2009/10/install-twitter-search-widget/
 blogger_blog:
   - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
-  - potatokorner.blogspot.com
 blogger_author:
-  - @codespud
-  - @codespud
-  - @codespud
+  - \@codespud
 blogger_permalink:
-  - /2009/10/twitter-search-widget.html
-  - /2009/10/twitter-search-widget.html
   - /2009/10/twitter-search-widget.html
 blogger_internal:
   - /feeds/21010737/posts/default/6325991344956883481
-  - /feeds/21010737/posts/default/6325991344956883481
-  - /feeds/21010737/posts/default/6325991344956883481
-
+featured_image: /twitter.png
+tags: [widget, twitter, javascript]
 ---
 When I started blogging again last September, I was delighted to get a template with built-in message polling to twitter. I played with it a bit and settled with the look you see at the right. I am not a prolific &#8216;twitterer&#8217;, but I love the whole concept of [micropublishing][1].
 
