@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Dec 2022 16:17:21 GMT</lastBuildDate><item><title><![CDATA[Rock-Paper-Scissors-Lizard-Spock Game]]></title><description><![CDATA[I am a big Big Bang Theory fan. So is my wife. Her absolute favorite character is Sheldon Cooper. In one of the episodes Sheldon proposed an improved version of the rock-paper-scissors game.  This version extends the possible moves to five(5). The additional two options would increase the possibility of win chances as it minimizes the chance of both players picking the same move.]]></description><link>https://www.codespud.com/2022/rock-paper-scissors-lizard-spock/</link><guid isPermaLink="false">https://www.codespud.com/2022/rock-paper-scissors-lizard-spock/</guid><pubDate>Sun, 20 Nov 2022 02:13:00 GMT</pubDate><content:encoded>&lt;p&gt;I am a big Big Bang Theory fan. So is my wife. Her absolute favorite character is Sheldon Cooper. In one of the episodes Sheldon proposed an improved version of the rock-paper-scissors game.  This version extends the possible moves to five(5). The additional two options would increase the possibility of win chances as it minimizes the chance of both players picking the same move. &lt;!--more--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Dec 2022 10:59:01 GMT</lastBuildDate><item><title><![CDATA[Rock-Paper-Scissors-Lizard-Spock Game]]></title><description><![CDATA[I am a big Big Bang Theory fan. So is my wife. Her absolute favorite character is Sheldon Cooper. In one of the episodes Sheldon proposed an improved version of the rock-paper-scissors game.  This version extends the possible moves to five(5). The additional two options would increase the possibility of win chances as it minimizes the chance of both players picking the same move.]]></description><link>https://www.codespud.com/2022/rock-paper-scissors-lizard-spock/</link><guid isPermaLink="false">https://www.codespud.com/2022/rock-paper-scissors-lizard-spock/</guid><pubDate>Sun, 20 Nov 2022 02:13:00 GMT</pubDate><content:encoded>&lt;p&gt;I am a big Big Bang Theory fan. So is my wife. Her absolute favorite character is Sheldon Cooper. In one of the episodes Sheldon proposed an improved version of the rock-paper-scissors game.  This version extends the possible moves to five(5). The additional two options would increase the possibility of win chances as it minimizes the chance of both players picking the same move. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;I made a javascript version. Using a few emojis for the hand graphics. I made a very simple interface&lt;/p&gt;
 &lt;h2&gt;Game logic&lt;/h2&gt;
 &lt;p&gt;The game logic is pretty simple. &lt;/p&gt;
@@ -1484,50 +1484,49 @@ University of the Philippines, Diliman, Quezon City&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;– Compiled by Annalyn Ardoña and Patricia Faustino, GMA NEWS AND PUBLIC AFFAIRS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update: some more info from &lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot;&gt;google-ondoy page&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Google Ondoy Help Page]]></title><description><![CDATA[Updates: 
-http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Google joins the Filipino nation in helping those affected by Typhoon Ondoy! I am reposting the info here if you have time please check the actual google page.]]></description><link>https://www.codespud.com/2009/google-ondoy-help-page/</link><guid isPermaLink="false">https://www.codespud.com/2009/google-ondoy-help-page/</guid><pubDate>Mon, 28 Sep 2009 10:39:00 GMT</pubDate><content:encoded>&lt;p&gt;Updates:
-&lt;a href=&quot;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&quot;&gt;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Google Ondoy Help Page]]></title><description><![CDATA[Updates: Helping Victims of Tropical Storm Google joins the Filipino nation in helping those affected by Typhoon Ondoy! I am reposting the info here if you have time please check the actual google page.]]></description><link>https://www.codespud.com/2009/google-ondoy-help-page/</link><guid isPermaLink="false">https://www.codespud.com/2009/google-ondoy-help-page/</guid><pubDate>Mon, 28 Sep 2009 10:39:00 GMT</pubDate><content:encoded>&lt;p&gt;Updates:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html&quot;&gt;Helping Victims of Tropical Storm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Google joins the Filipino nation in helping those affected by Typhoon Ondoy!&lt;/p&gt;
 &lt;p&gt;I am reposting the info here if you have time please check the actual google page.&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.google.com/landing/typhoon-ondoy.html&quot; target=&quot;_blank&quot;&gt;http://www.google.com/landing/typhoon-ondoy.html&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Help for Typhoon Ondoy Victims in the Philippines&lt;/h3&gt;
-&lt;p&gt;  &lt;span&gt;O&lt;/span&gt;n September 26, 2009, Typhoon Ondoy brought a month’s worth of rainfall to Metro Manila and nearby areas in just a few hours, causing severe flooding which resulted in the loss of many lives and the displacement of hundreds of thousands of people. This site compiles relevant information about the disaster, including a volunteer-maintained map of persons needing rescue and a list of relief organizations accepting donations, so that more help can be provided where it is needed. You can also keep track of the latest news on &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;Google News&lt;/a&gt; and &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; style=&quot;color: #0000cc;&quot;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;  &lt;span&gt;O&lt;/span&gt;n September 26, 2009, Typhoon Ondoy brought a month’s worth of rainfall to Metro Manila and nearby areas in just a few hours, causing severe flooding which resulted in the loss of many lives and the displacement of hundreds of thousands of people. This site compiles relevant information about the disaster, including a volunteer-maintained map of persons needing rescue and a list of relief organizations accepting donations, so that more help can be provided where it is needed. You can also keep track of the latest news on &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; &gt;Google News&lt;/a&gt; and &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=en_ph&amp;hl=en&amp;q=ondoy&quot; &gt;YouTube&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Know someone who needs help?&lt;/h3&gt;
-&lt;p&gt;  A group of volunteer map makers have been maintaining the map below, which documents flood updates and persons needing rescue. If you know someone who needs help urgently or if you would like to report the status of the flood in your area, please&lt;a href=&quot;https://spreadsheets.google.com/viewform?formkey=dExYV0pxcWlLLWVOUmQzeDUwWUdObVE6MA&quot; style=&quot;color: #0000cc;&quot;&gt;complete this form&lt;/a&gt;. The information will be sent to the group’s main database for posting on the map.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;View &lt;a href=&quot;http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=110868206150348750692.00047479b6400ee29bd89&amp;ll=14.645791,121.107874&amp;spn=0.107954,0.154324&amp;source=embed&quot; style=&quot;color: blue; text-align: left;&quot;&gt;Ondoy situation map for Metro Manila&lt;/a&gt; in a larger map&lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;  Disclaimer: This map was initiated by a group of volunteers not directly connected with Google. We cannot guarantee 100% accuracy of all placemarks. If you are familiar with Google Maps and would like to help the group’s volunteer efforts, please email&lt;a href=&quot;http://www.google.com/landing/typhoonondoy@googlegroups.com&quot; style=&quot;color: #0000cc;&quot;&gt;typhoonondoy@googlegroups.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;  A group of volunteer map makers have been maintaining the map below, which documents flood updates and persons needing rescue. If you know someone who needs help urgently or if you would like to report the status of the flood in your area, please&lt;a href=&quot;https://spreadsheets.google.com/viewform?formkey=dExYV0pxcWlLLWVOUmQzeDUwWUdObVE6MA&quot; &gt;complete this form&lt;/a&gt;. The information will be sent to the group’s main database for posting on the map.&lt;/p&gt;
+&lt;p&gt;View &lt;a href=&quot;http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=110868206150348750692.00047479b6400ee29bd89&amp;ll=14.645791,121.107874&amp;spn=0.107954,0.154324&amp;source=embed&quot; &gt;Ondoy situation map for Metro Manila&lt;/a&gt; in a larger map&lt;/p&gt;
+&lt;p&gt;  Disclaimer: This map was initiated by a group of volunteers not directly connected with Google. We cannot guarantee 100% accuracy of all placemarks. If you are familiar with Google Maps and would like to help the group’s volunteer efforts, please email&lt;a href=&quot;http://www.google.com/landing/typhoonondoy@googlegroups.com&quot; &gt;typhoonondoy@googlegroups.com&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Useful Links&lt;/h3&gt;
 &lt;h4&gt;News and Updates&lt;/h4&gt;
 &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
   &lt;li&gt;
-    &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;q=ondoy+&quot; style=&quot;color: #0000cc;&quot;&gt;Google News&lt;/a&gt;
+    &lt;a href=&quot;http://news.google.com.ph/news/search?aq=f&amp;pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;q=ondoy+&quot; &gt;Google News&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href=&quot;http://www.youtube.com/results?search_query=ondoy&amp;search_type=&amp;aq=f&quot; style=&quot;color: #0000cc;&quot;&gt;YouTube&lt;/a&gt;
+    &lt;a href=&quot;http://www.youtube.com/results?search_query=ondoy&amp;search_type=&amp;aq=f&quot; &gt;YouTube&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href=&quot;http://www.google.com/url?q=http%3A//www.gmanews.tv/&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHFiSDgL_SqlsAxemTYt_NX9F4oCg&quot; style=&quot;color: #0000cc;&quot;&gt;GMA News&lt;/a&gt;&amp;nbsp;(&lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.gmanews.tv%2Fstory%2F173283%2Fnew-map-of-most-urgent-cases-needing-rescue&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFGL7rP1MVOnKSzm9m_xcmIC88UuQ&quot; style=&quot;color: #0000cc;&quot;&gt;Relief Map&lt;/a&gt;)
+    &lt;a href=&quot;http://www.google.com/url?q=http%3A//www.gmanews.tv/&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHFiSDgL_SqlsAxemTYt_NX9F4oCg&quot; &gt;GMA News&lt;/a&gt;&amp;nbsp;(&lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.gmanews.tv%2Fstory%2F173283%2Fnew-map-of-most-urgent-cases-needing-rescue&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFGL7rP1MVOnKSzm9m_xcmIC88UuQ&quot; &gt;Relief Map&lt;/a&gt;)
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.gov.ph%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHX2nPQmikb5g5aiMavnCNp7nas_g&quot; style=&quot;color: #0000cc;&quot;&gt;Official Government Site&lt;/a&gt;
+    &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.gov.ph%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHX2nPQmikb5g5aiMavnCNp7nas_g&quot; &gt;Official Government Site&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     Local media websites 
     &lt;ul style=&quot;margin-bottom: 1em; margin-top: 0px;&quot;&gt;
       &lt;li&gt;
-        &lt;a href=&quot;http://www.abs-cbnnews.com/&quot; style=&quot;color: #0000cc;&quot; title=&quot;ABS-CBN News&quot;&gt;ABS-CBN News&lt;/a&gt;
+        &lt;a href=&quot;http://www.abs-cbnnews.com/&quot;  title=&quot;ABS-CBN News&quot;&gt;ABS-CBN News&lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;http://www.gmanews.tv/&quot; style=&quot;color: #0000cc;&quot; title=&quot;GMA News&quot;&gt;GMA News&lt;/a&gt;
+        &lt;a href=&quot;http://www.gmanews.tv/&quot;  title=&quot;GMA News&quot;&gt;GMA News&lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;span dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://www.mb.com.ph/&quot; style=&quot;color: #0000cc;&quot; title=&quot;Manila Bulletin&quot;&gt;Manila Bulletin&lt;/a&gt;&lt;/span&gt;
+        &lt;span dir=&quot;ltr&quot;&gt;&lt;a href=&quot;http://www.mb.com.ph/&quot;  title=&quot;Manila Bulletin&quot;&gt;Manila Bulletin&lt;/a&gt;&lt;/span&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;http://www.inquirer.net/&quot; style=&quot;color: #0000cc;&quot; title=&quot;Philippine Daily Inquirer&quot;&gt;Philippine Daily Inquirer&lt;/a&gt;
+        &lt;a href=&quot;http://www.inquirer.net/&quot;  title=&quot;Philippine Daily Inquirer&quot;&gt;Philippine Daily Inquirer&lt;/a&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;http://www.phistar.com/&quot; style=&quot;color: #0000cc;&quot; title=&quot;Philippine Star&quot;&gt;Philippine Star&lt;/a&gt;
+        &lt;a href=&quot;http://www.phistar.com/&quot;  title=&quot;Philippine Star&quot;&gt;Philippine Star&lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;    
     &lt;/li&gt; 
@@ -1584,7 +1583,7 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
           Philippine National Red Cross Rizal Chapter operations center hotline: (+632-6350922, +632-6347824)
         &lt;/li&gt;
         &lt;li&gt;
-          Go to&amp;nbsp;&lt;a href=&quot;http://www.facebook.com/topic.php?uid=116724526976&amp;topic=9724&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;GMA Facebook page&lt;/a&gt;&amp;nbsp;&amp; post complete addresses and names of people in need of immediate help.
+          Go to&amp;nbsp;&lt;a href=&quot;http://www.facebook.com/topic.php?uid=116724526976&amp;topic=9724&quot; rel=&quot;nofollow&quot;  target=&quot;_blank&quot;&gt;GMA Facebook page&lt;/a&gt;&amp;nbsp;&amp; post complete addresses and names of people in need of immediate help.
         &lt;/li&gt;
         &lt;li&gt;
           ABS-CBN Typhoon Ondoy Hotline: (+632-4163641)
@@ -1627,13 +1626,13 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
                     
   &lt;ul style=&quot;margin-bottom: 1em; margin-top: 1em;&quot;&gt;
     &lt;li&gt;
-      &lt;a href=&quot;http://www.google.com/url?q=http://www.kapusofoundation.com/donate&amp;usd=2&amp;usg=ALhdy2946VOU4pgNTr6v4MUOlJa43wdQog&quot; style=&quot;color: #0000cc;&quot;&gt;GMA Kapuso Foundation&lt;/a&gt;
+      &lt;a href=&quot;http://www.google.com/url?q=http://www.kapusofoundation.com/donate&amp;usd=2&amp;usg=ALhdy2946VOU4pgNTr6v4MUOlJa43wdQog&quot; &gt;GMA Kapuso Foundation&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href=&quot;http://www.txtpower.org/2009/09/philippines-help-typhoon-victims-in-luzon-philippine&quot; style=&quot;color: #0000cc;&quot;&gt;ABS-CBN Foundation&lt;/a&gt;
+      &lt;a href=&quot;http://www.txtpower.org/2009/09/philippines-help-typhoon-victims-in-luzon-philippine&quot; &gt;ABS-CBN Foundation&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href=&quot;http://www.philippineaid.com/&quot; style=&quot;color: #0000cc;&quot;&gt;Philippine Aid&lt;/a&gt;
+      &lt;a href=&quot;http://www.philippineaid.com/&quot; &gt;Philippine Aid&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
                     
@@ -1673,7 +1672,7 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
       &lt;strong&gt;NoyMar relief Operations&lt;/strong&gt;: Clare Amador (+639285205508) or Jana Vicente at +639285205499). Drop off for relief donations is at Balay Expo Center across Farmers Market Cubao.
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;strong&gt;Miriam Quiambao&lt;/strong&gt;&amp;nbsp;drop off points: One Orchard Road Building in Eastwood, or message &lt;a href=&quot;http://www.twitter.com/miriamq&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;http://www.twitter.com/miriamq&lt;/a&gt; for more details.
+      &lt;strong&gt;Miriam Quiambao&lt;/strong&gt;&amp;nbsp;drop off points: One Orchard Road Building in Eastwood, or message &lt;a href=&quot;http://www.twitter.com/miriamq&quot; rel=&quot;nofollow&quot; &gt;http://www.twitter.com/miriamq&lt;/a&gt; for more details.
     &lt;/li&gt;
     &lt;li&gt;
       &lt;strong&gt;Philippine Army Gym&amp;nbsp;&lt;/strong&gt;inside Fort Bonifacio or&amp;nbsp;&lt;strong&gt;GHQ Gym&lt;/strong&gt;&amp;nbsp;in Camp Aguinaldo are now distributing donations for Ondoy Victims.
@@ -1694,7 +1693,7 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
       &lt;strong&gt;Simbahang Lingkod ng Bayan Task Force Noah&lt;/strong&gt;, a disaster response arm of the Jesuits, is accepting donations. Please drop it off sa Ateneo Cervini Dorm.
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;strong&gt;Philippine National Red Cross&lt;/strong&gt;‘&amp;nbsp;&lt;a href=&quot;http://www.redcross.org.ph/Site/PNRC/wtd.aspx&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;different ways to Donate.&lt;/a&gt;
+      &lt;strong&gt;Philippine National Red Cross&lt;/strong&gt;‘&amp;nbsp;&lt;a href=&quot;http://www.redcross.org.ph/Site/PNRC/wtd.aspx&quot; rel=&quot;nofollow&quot; &gt;different ways to Donate.&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;strong&gt;Red Cross Load Donations&lt;/strong&gt;: Right now the easiest way to make donations from the seat of your chair is via mobile phone load. The Red Cross Rescue and Relief Operations. Text: RED&lt;space&gt;AMOUNT to 2899 (Globe) or 4483 (Smart)&lt;/space&gt;
@@ -1706,10 +1705,10 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
       &lt;strong&gt;Papemelroti&lt;/strong&gt;&amp;nbsp;stores in 91 Roces Ave. / Ali Mall Cubao / SM City North EDSA / SM Fairview / SM Megamall / Glorietta 3 in Makati / SM Centerpoint / SM Southmall are accepting relief goods (canned goods / milk / bottled water / clothes – NO CASH pls.)
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;strong&gt;TXTPower&lt;/strong&gt;&amp;nbsp;now accepts donations via SmartMoney 5577514418667103, GCash 09179751092 and Paypal&lt;a href=&quot;http://is.gd/3GvuN&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; target=&quot;_blank&quot;&gt;http://is.gd/3GvuN&lt;/a&gt;
+      &lt;strong&gt;TXTPower&lt;/strong&gt;&amp;nbsp;now accepts donations via SmartMoney 5577514418667103, GCash 09179751092 and Paypal&lt;a href=&quot;http://is.gd/3GvuN&quot; rel=&quot;nofollow&quot;  target=&quot;_blank&quot;&gt;http://is.gd/3GvuN&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;strong&gt;Our Lady of Pentecost Parish&amp;nbsp;&lt;/strong&gt;(+632-4342397, +632-9290665) per&amp;nbsp;&lt;a href=&quot;http://twitter.com/gabemercado/status/4393300142&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot; title=&quot;Gabe Mercado on Twitter&quot;&gt;Gabe Mercado&lt;/a&gt;, donations are very much welcome. The Parish is located at 12 F. Dela Rosa corner C. Salvador Sts., Loyola Heights, Quezon City.
+      &lt;strong&gt;Our Lady of Pentecost Parish&amp;nbsp;&lt;/strong&gt;(+632-4342397, +632-9290665) per&amp;nbsp;&lt;a href=&quot;http://twitter.com/gabemercado/status/4393300142&quot; rel=&quot;nofollow&quot;  title=&quot;Gabe Mercado on Twitter&quot;&gt;Gabe Mercado&lt;/a&gt;, donations are very much welcome. The Parish is located at 12 F. Dela Rosa corner C. Salvador Sts., Loyola Heights, Quezon City.
     &lt;/li&gt;
     &lt;li&gt;
       &lt;strong&gt;Hillsborough Village Chapel&lt;/strong&gt;&amp;nbsp;– Water, blankets, shoes, and clothes may be sent to Hillsborough Village Chapel in Muntinlupa City. These will go to families whose houses were washed out in the nearby sitios.
@@ -1724,7 +1723,7 @@ http://googleblog.blogspot.com/2009/10/helping-victims-of-tropical-storm.html Go
       &lt;strong&gt;LUCA&lt;/strong&gt;&amp;nbsp;stores (Rockwell, Shang-rila, Eastwood, or GA towers): Send your old clothes &amp; donations (no cash pls).
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;strong&gt;“LUZON RELIEF: Volunteer / Donate / Pray”&lt;/strong&gt;: Donations can be brought to RENAISSANCE FITNESS CENTER, 2nd Floor, Bramante Building, Renaissance Towers Ortigas, MeralcoAvenue, Pasig City starting MONDAY (Sept.28) / 9am – 7pm Contact Person: Warren Habaluyas (+632929-8713488) or email at&amp;nbsp;&lt;a href=&quot;http://us.mc1114.mail.yahoo.com/mc/compose?to=luzonrelief@gmail.com&quot; rel=&quot;nofollow&quot; style=&quot;color: #0000cc;&quot;&gt;luzonrelief@gmail.com&lt;/a&gt;
+      &lt;strong&gt;“LUZON RELIEF: Volunteer / Donate / Pray”&lt;/strong&gt;: Donations can be brought to RENAISSANCE FITNESS CENTER, 2nd Floor, Bramante Building, Renaissance Towers Ortigas, MeralcoAvenue, Pasig City starting MONDAY (Sept.28) / 9am – 7pm Contact Person: Warren Habaluyas (+632929-8713488) or email at&amp;nbsp;&lt;a href=&quot;http://us.mc1114.mail.yahoo.com/mc/compose?to=luzonrelief@gmail.com&quot; rel=&quot;nofollow&quot; &gt;luzonrelief@gmail.com&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;strong&gt;MOONSHINE&lt;/strong&gt;&amp;nbsp;boutique in Rockwell also accepting relief good to help Ondoy victims in Marikina and&amp;nbsp;&lt;span style=&quot;background-color: transparent; background-repeat: repeat repeat;&quot;&gt;Cainta.&lt;/span&gt;
@@ -1987,10 +1986,11 @@ X’s Creativity Test &lt;a href=&quot;http://dl.getdropbox.com/u/1510515/potato
 &lt;/div&gt;
 &lt;p&gt;No matter how trivial or uninteresting the fact is &lt;strong&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;MIStupid.com&lt;/span&gt;&lt;/strong&gt; will surely have it, otherwise go back to &lt;strong&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Google&lt;/span&gt;&lt;/strong&gt; (hehehe). Well okay it’s not Encarta but its free and &lt;strong&gt;&lt;span style=&quot;color: green;&quot;&gt;&lt;span style=&quot;color: green; font-weight: bold;&quot;&gt;GREEN&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt; 🙂&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;p&gt;potato&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Write a Backup Shell Script using Tar and Gnu Zip]]></title><description><![CDATA[Happy New Year! As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you’re new to shell scripting you might like to read this articles. http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml http://tldp.org/LDP/abs/html/ If you’re lazy like I am. Don’t worry I’ll explain parts of the code.]]></description><link>https://www.codespud.com/2009/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</link><guid isPermaLink="false">https://www.codespud.com/2009/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</guid><pubDate>Fri, 02 Jan 2009 23:20:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy New Year!&lt;/p&gt;
-&lt;p&gt;As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you’re new to shell scripting you might like to read this articles.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&quot;&gt;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://tldp.org/LDP/abs/html/&quot;&gt;http://tldp.org/LDP/abs/html/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;potato&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Write a Backup Shell Script using Tar and Gnu Zip]]></title><description><![CDATA[Happy New Year! As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you’re new to shell scripting you might like to read these articles. Unix shell scripting with ksh/bash
+Advanced Bash-Scripting Guide If you’re lazy like I am. Don’t worry I’ll explain parts of the code.]]></description><link>https://www.codespud.com/2009/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</link><guid isPermaLink="false">https://www.codespud.com/2009/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/</guid><pubDate>Fri, 02 Jan 2009 23:20:00 GMT</pubDate><content:encoded>&lt;p&gt;Happy New Year!&lt;/p&gt;
+&lt;p&gt;As promised I made a rudimentary Linux shell script utilizing the tar and gzip commands to archive or make backups. If you’re new to shell scripting you might like to read these articles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.dartmouth.edu/~rc/classes/ksh/print_pages.shtml&quot;&gt;Unix shell scripting with ksh/bash&lt;/a&gt;
+&lt;a href=&quot;http://tldp.org/LDP/abs/html/&quot;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you’re lazy like I am. Don’t worry I’ll explain parts of the code.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;Our goal is to make a shell script to create backups (in tar-gzip versions) of the folders we want unto a safe location on a disk. We want to be able to list all the folders and have the script loop through them. Now that’s settled, we can proceed to the code.&lt;!--more--&gt;&lt;/p&gt;
