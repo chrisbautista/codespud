@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 15 Dec 2022 23:18:37 GMT</lastBuildDate><item><title><![CDATA[Five simple steps to improve website accessibility]]></title><description><![CDATA[Accessibility is very important. It ensures that anything we make is available to a greater number of people. It is not just about people…]]></description><link>https://www.codespud.com/2022/five_steps_to_improve_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/five_steps_to_improve_accessibility/</guid><pubDate>Sat, 10 Dec 2022 23:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Accessibility is very important. It ensures that anything we make is available to a greater number of people. It is not just about people who use screen readers. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Dec 2022 07:04:25 GMT</lastBuildDate><item><title><![CDATA[Five Web Accessibility Visual Studio Code Extensions]]></title><description><![CDATA[Developing with accessibility in mind requires knowledge of WCAG rules and good techniques. These techniques boils down to recognizing patterns. Linters are good at discerning patterns to avoid and provide hints on how to fix them. Using a good linter will help with making sure your code follows accessibility best practices.]]></description><link>https://www.codespud.com/2022/five_accessibility_vscode_extensions/</link><guid isPermaLink="false">https://www.codespud.com/2022/five_accessibility_vscode_extensions/</guid><pubDate>Thu, 15 Dec 2022 08:07:00 GMT</pubDate><content:encoded>&lt;!--
+    Angle:
+
+    Aid in making sure code is acessible
+    Find patterns that are against accessibility rules
+    Provide sufficient techniques in code
+    Avoid accessibility issues in code
+
+    - Webhint https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint
+
+    - Axe-Linter https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter
+
+    - Web Accessibility https://marketplace.visualstudio.com/items?itemName=MaxvanderSchee.web-accessibility
+
+    - Eslint with jsx-a11y https://www.npmjs.com/search?ranking=popularity&amp;q=eslint%20a11y
+
+    - SonarLint https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
+
+    - Bonus: ErrorLens https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
+--&gt;
+&lt;p&gt;Developing with accessibility in mind requires knowledge of WCAG rules and good techniques. These techniques boils down to recognizing patterns. Linters are good at discerning patterns to avoid and provide hints on how to fix them. Using a good linter will help with making sure your code follows accessibility best practices.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Web accessibility involves following certain design principles which ensure that people who experience difficulties or limitations have the same or a similar experience as those who do not. - &lt;a href=&quot;https://blog.hubspot.com/website/web-accessibility&quot;&gt;Hubspot&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the example below the linter should be able to recognize that the button tag is missing a visible label.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;save.png&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;responsive&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The code above is problematic for screenreaders because it does not have any text to describe what action the button is supposed to do.  I have seen a lot of HTML markup that forgets this simple rule. A linter would have caught this before even going into production. A linter is just one of the tools that help improve the quality of your code especially for accessibility.&lt;/p&gt;
+&lt;p&gt;Here is the same code with a linter&lt;/p&gt;
+&lt;img src=&quot;/blog/code-with-linter.png&quot;  alt=&quot;Code with linter warning&quot; class=&quot;no-margin&quot;&gt;
+&lt;p&gt;Visual Studio Code being one of the more popular IDE have plugins that help coders make their code pass accessibility checks. &lt;/p&gt;
+&lt;p&gt;Here are the top 5 plugins I use:&lt;/p&gt;
+&lt;h2&gt;1. &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter&quot;&gt;Axe accessibility linter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Axe&lt;/strong&gt; is a leader in accessibility testing and tooling. They built axe-core which powers axe-linter. It is easy to install and no configuration needed. You can start enjoying the benefits of realtime code accessibility checks.&lt;/p&gt;
+&lt;p&gt;Its pre-configured to check the following file extensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;React (.js, .ts, .jsx, .tsx)&lt;/li&gt;
+&lt;li&gt;HTML (.htm, .html)&lt;/li&gt;
+&lt;li&gt;Markdown (.md, .markdown)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The great thing about axe-linter is you can click a link in the hint. The linked page will explain the issue, why its relevant and how to fix it.&lt;/p&gt;
+&lt;img src=&quot;/blog/vsce-example.png&quot; alt=&quot;Axe linter&quot;&gt;
+&lt;h2&gt;2. &lt;a href=&quot;https://webhint.io/docs/user-guide/extensions/vscode-webhint/&quot;&gt;Webhint&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Webhint helps you improve your site’s accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. - &lt;a href=&quot;https://webhint.io/&quot;&gt;Webhint&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Webhint.io&lt;/strong&gt; is a tool that looks for a suite of website best practices. These best practices include accessibility, website performance, security, etc. The &lt;a href=&quot;https://webhint.io/docs/user-guide/&quot;&gt;command line tool&lt;/a&gt; will scan the site provided and return a report. The webhint visual studio extension, on the other hand, analyzes code while you develop.  (&lt;a href=&quot;https://webhint.io/docs/user-guide/hints/hint-axe/&quot;&gt;See accessibility hints&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;It also uses axe-core to analyze the code.&lt;/p&gt;
+&lt;img src=&quot;/blog/webhint-vscode.gif&quot; alt=&quot;Webhint.io&quot;&gt;
+&lt;h2&gt;3. &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=MaxvanderSchee.web-accessibility&quot;&gt;Web Accessibility&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Website accessiblity&lt;/strong&gt; is another Vscode plugin geared at checking for accessibility issues in code. Not as extensive as the first two plugins but I think that is a good thing. Its focus is just accessibility issues nothing else. The hints are simple and does not offer any other options. Perfect for coders who love memory efficient IDEs.&lt;/p&gt;
+&lt;img src=&quot;/blog/web-accessibility.gif&quot; alt=&quot;Web accessibility&quot;&gt;
+&lt;h2&gt;4. &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint&quot;&gt;Eslint&lt;/a&gt; with &lt;a href=&quot;https://www.npmjs.com/search?ranking=popularity&amp;#x26;q=eslint%20a11y&quot;&gt;jsx-a11y&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Eslint is a bit more complex to install than the previous plugins. If you’ve been developing with the Eslint and Eslint plugin then you will have an easier time.  &lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Run these commands in your project root&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --save-dev eslint eslint-plugin-jsx-a11y
+./node_modules/.bin/eslint &lt;span class=&quot;token parameter variable&quot;&gt;--init&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also do this globally;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-g&lt;/span&gt; eslint eslint-plugin-jsx-a11y 
+eslint &lt;span class=&quot;token parameter variable&quot;&gt;--init&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally, add jsx-a11y in plugins section of your &lt;code class=&quot;language-text&quot;&gt;.eslintrc&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+ &lt;span class=&quot;token property&quot;&gt;&quot;plugins&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;jsx-a11y&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You might get a popup saying there is an error starting eslint plugin, check the output logs in Vscode for any issues. In most cases, making sure you have the latest nodejs and npm fixes the issue.&lt;/p&gt;
+&lt;h2&gt;5. &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode&quot;&gt;SonarLint&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Last but not the least is Sonarlint is a code quality linter, like Webhint and Eslint. It checks for a suite of issues in your code not just accessibility. It requires Java runtime to work.&lt;/p&gt;
+&lt;p&gt;The accessibility rules are limited to &lt;a href=&quot;https://rules.sonarsource.com/html/tag/accessibility&quot;&gt;HTML&lt;/a&gt; portion of your code.  &lt;/p&gt;
+&lt;p&gt;If you are more interested in accessibility checks, I advise using the others on this list.&lt;/p&gt;
+&lt;h2&gt;Bonus: &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens&quot;&gt;Errorlens&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Errorlens is not an accessibility plugin but a support plugin that places the warnings and errors from the linters front and center. Its nice to see the issues directly without having to hover over the squiggly lines or opening the “problems” tab. &lt;/p&gt;
+&lt;p&gt;Once you have chosen your accessibility plugin I recommend installing Errorlens to improve visibility for accessibility errors and warnings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Without Errorlens&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;/blog/without-errorlens.png&quot; alt=&quot;Vscode without Errorlens&quot; class=&quot;no-margin&quot;&gt;
+&lt;p&gt;&lt;strong&gt;With Errorlens&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;/blog/vscode-with-errorlens.png&quot; alt=&quot;Vscode with Errorlens&quot; class=&quot;no-margin&quot;&gt;</content:encoded></item><item><title><![CDATA[Five simple steps to improve website accessibility]]></title><description><![CDATA[Accessibility is very important. It ensures that anything we make is available to a greater number of people. It is not just about people…]]></description><link>https://www.codespud.com/2022/five_steps_to_improve_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/five_steps_to_improve_accessibility/</guid><pubDate>Sat, 10 Dec 2022 23:07:00 GMT</pubDate><content:encoded>&lt;p&gt;Accessibility is very important. It ensures that anything we make is available to a greater number of people. It is not just about people who use screen readers. &lt;/p&gt;
 &lt;p&gt;Web Content Accessibility Guidelines (WCAG) set down a set of rules on how to make websites accessible to people with health conditions or impairments. &lt;/p&gt;
 &lt;p&gt;It is hard to meet all the WCAG criterions. It requires understanding of each criterion and the sufficient techniques to meet those requirements. I have been working to improve accessibility in our product. Most of the time I’ve only needed to remember five things.   &lt;/p&gt;
 &lt;h2&gt;1. All interactive elements and images should have descriptive labels or text&lt;/h2&gt;
