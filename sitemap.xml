@@ -68,6 +68,7 @@
 <url> <loc>https://www.codespud.com/tags/linux/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/personal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/productivity/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.codespud.com/tags/reactjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/script/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/scripts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/security/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
