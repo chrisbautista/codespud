@@ -48,7 +48,7 @@
 <url> <loc>https://www.codespud.com/tags/best-practice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/blogging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/browser/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/console/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.codespud.com/tags/cli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/css/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/devops/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/extension/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -56,8 +56,6 @@
 <url> <loc>https://www.codespud.com/tags/frontend/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/fun/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/game/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/games/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/github/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/google/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/images/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -74,7 +72,6 @@
 <url> <loc>https://www.codespud.com/tags/tip/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/tools/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/tutorial/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/twitter/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/ui/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/utility/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/video/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -82,6 +79,4 @@
 <url> <loc>https://www.codespud.com/tags/web-development/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/webapps/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/website/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/widget/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/youtube/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
