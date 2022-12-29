@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Dec 2022 22:17:26 GMT</lastBuildDate><item><title><![CDATA[Making invisible elements accessible]]></title><description><![CDATA[Invisible UI elements]]></description><link>https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</link><guid isPermaLink="false">https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
-
-Hover UI visible elements issue
-Focusable elements should be visible
-
-Focus psuedo selectors
-
-:focus
-:focus-within
-:focus-visible
-
-Examples
-- table icon buttons hover effect
-- on hover button in card
-
-
----&gt;
-&lt;h1&gt;Invisible UI elements&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[React Custom button: a study on accessibility]]></title><description><![CDATA[React and accessibility I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects.]]></description><link>https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;React and accessibility&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Dec 2022 22:36:04 GMT</lastBuildDate><item><title><![CDATA[React Custom button: a study on accessibility]]></title><description><![CDATA[React and accessibility I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects.]]></description><link>https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;React and accessibility&lt;/h2&gt;
 &lt;p&gt;I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;One of the great things about working with ReactJs is working with JSX. ReactJS does not understand JSX - we achieve this with Babel. Babel transpile JSX to something ReactJS can understand. Anyhow, JSX is almost like HTML with some differences. And because it looks like HTML markup it becomes really easy to learn. But, and it’s a big but, making it easy to learn does not save developers from issues related to accessibility. Some patterns that are perfectly valid and working in a way in ReactJS does not necessarily accessible.&lt;/p&gt;
 &lt;p&gt;For example, when using labels in forms &lt;/p&gt;
@@ -312,7 +295,24 @@ Examples
 &lt;li&gt;Event handlers not just for the mouse but for the keyboard as well.&lt;/li&gt;
 &lt;li&gt;ARIA to change the semantic meaning of an element to a button.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;With the &lt;code class=&quot;language-text&quot;&gt;useButton&lt;/code&gt; hook we can extract the learnings from this exercise into a reusable function and apply it anywhere we need a custom button element. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Five Web Accessibility Extensions for Visual Studio Code]]></title><description><![CDATA[Developing with accessibility in mind requires knowledge of WCAG rules and good techniques. These techniques boils down to remembering good accessbility patterns in code. Linters are good at discerning less ideal patterns and provide hints on how to fix them. Before I used to think linters are optional for developers. But now I don’t think I can work without them. Using a good IDE linter will help making sure your code follows accessibility best practices and in turn make you more productive.]]></description><link>https://www.codespud.com/2022/five_accessibility_vscode_extensions/</link><guid isPermaLink="false">https://www.codespud.com/2022/five_accessibility_vscode_extensions/</guid><pubDate>Thu, 15 Dec 2022 08:07:00 GMT</pubDate><content:encoded>&lt;!--
+&lt;p&gt;With the &lt;code class=&quot;language-text&quot;&gt;useButton&lt;/code&gt; hook we can extract the learnings from this exercise into a reusable function and apply it anywhere we need a custom button element. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making invisible elements accessible]]></title><description><![CDATA[Invisible UI elements]]></description><link>https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</link><guid isPermaLink="false">https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
+
+Hover UI visible elements issue
+Focusable elements should be visible
+
+Focus psuedo selectors
+
+:focus
+:focus-within
+:focus-visible
+
+Examples
+- table icon buttons hover effect
+- on hover button in card
+
+
+---&gt;
+&lt;h1&gt;Invisible UI elements&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[Five Web Accessibility Extensions for Visual Studio Code]]></title><description><![CDATA[Developing with accessibility in mind requires knowledge of WCAG rules and good techniques. These techniques boils down to remembering good accessbility patterns in code. Linters are good at discerning less ideal patterns and provide hints on how to fix them. Before I used to think linters are optional for developers. But now I don’t think I can work without them. Using a good IDE linter will help making sure your code follows accessibility best practices and in turn make you more productive.]]></description><link>https://www.codespud.com/2022/five_accessibility_vscode_extensions/</link><guid isPermaLink="false">https://www.codespud.com/2022/five_accessibility_vscode_extensions/</guid><pubDate>Thu, 15 Dec 2022 08:07:00 GMT</pubDate><content:encoded>&lt;!--
     Angle:
 
     Aid in making sure code is acessible

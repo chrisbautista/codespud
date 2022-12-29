@@ -51,6 +51,7 @@
 <url> <loc>https://www.codespud.com/tags/browser/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/cli/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/css/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.codespud.com/tags/development/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/devops/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/extension/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/forms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -77,7 +78,6 @@
 <url> <loc>https://www.codespud.com/tags/utility/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/video/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/vscode/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.codespud.com/tags/web-development/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/webapps/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.codespud.com/tags/website/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
