@@ -44,7 +44,6 @@ export default function PageList() {
         }
       `}
       render={data => {
-        console.log(data)
         const posts = data.allMarkdownRemark.edges
         return (
           <PageListWrapper>

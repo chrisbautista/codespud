@@ -50,12 +50,12 @@ class PerTagIndex extends React.Component {
     const ctx = new Context()
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Tag list"
+      <Layout location={this.props.location} title={siteTitle} backgroundColor="transparent">
+        <SEO title={`Tag #${tag}`}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <BlogWrapper>
-        <div>{tagHeader}</div>
+        <div style={{color: '#fff', fontWeight: 'bold', fontSize: '1.6rem'}}>{tagHeader}</div>
           <BlogList >
             {posts.map(({ node }) => {
               return <BlogStory key={node.fields.slug} ctx={ctx} node={node} />
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true}  },  }
     ) {
       totalCount
       edges {

@@ -92,7 +92,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog post list pages
-    const postsPerPage = 12
+    const postsPerPage = 15
 
     const addPage = blogs.length % postsPerPage > 1 ? 1 : 0;
     const numPages = Math.floor(blogs.length / postsPerPage) + addPage;

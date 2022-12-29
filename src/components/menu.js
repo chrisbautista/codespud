@@ -36,6 +36,7 @@ const BurgerMenu = styled.button`
     right: 1rem;
     background: transparent;
     border: 0;
+    color: #e1f6ec;
 
     svg.svg-inline--fa {
       width: 30px;
@@ -70,18 +71,17 @@ const NavLi = styled.li`
   text-align: right;
 
   @media screen and (max-width: 768px) {
+    width: calc(100% - 1rem);
+    border-bottom: 1px solid #999;
+    box-shadow: inset 1px 0 4px 0 rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+    padding: 8px 1rem 8px 0;
+    margin: 0;
+    box-sizing: border-box;
+
     a, a:visited {
       color: #dddddd;
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    width: calc(100% - 1rem);
-    border-bottom: 1px solid #999;
-    box-shadow: insert 1px 0 4px 0 rgba(0,0,0,0.5);
-    font-size: 1.2rem;
-    padding: 5px 1rem 5px 0;
-    margin: 0;
   }
 `
 
@@ -131,7 +131,7 @@ const Menu = () => {
 
   let menuStyle = null
   if (shouldRenderMobileMenu) {
-    menuStyle = showMenu ? { height: "125px" } : { height: "0" }
+    menuStyle = showMenu ? { height: "150px" } : { height: "0" }
   }
 
   return (

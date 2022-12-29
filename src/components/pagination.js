@@ -32,6 +32,7 @@ const PaginationNav = styled.ul`
   }
 
   svg {
+    width: 0.5rem;
     transform: scale(2);
   }
 
@@ -46,6 +47,7 @@ const PaginationNav = styled.ul`
   
   a {
     text-decoration: none;
+    color: #f2f2f2;
   }
 `
 
@@ -64,10 +66,10 @@ const Pagination = ({
       <li>
         {!isFirst ? (
           <Link to={prevPage} rel="prev" aria-label={ctx.i18n.Back}>
-            <Icon type={IconType.Back} />
+            <NavIcon type={IconType.Back} />
           </Link>
         ) : <span>
-          <Icon type={IconType.Back} />
+          <NavIcon type={IconType.Back} />
         </span>}
       </li>
       {showPageNumbers &&
@@ -94,10 +96,10 @@ const Pagination = ({
       <li>
         {!isLast ? (
           <Link to={nextPage} rel="next" aria-label={ctx.i18n.Next}>
-            <Icon type={IconType.Next} />
+            <NavIcon type={IconType.Next} />
           </Link>
         ) : <span>
-          <Icon type={IconType.Next} />
+          <NavIcon type={IconType.Next} />
         </span>
         }
       </li>
@@ -106,3 +108,7 @@ const Pagination = ({
 }
 
 export default Pagination
+
+function NavIcon ({type}) {
+  return <Icon type={type} style={{width: "0.625rem"}} />;
+}

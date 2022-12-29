@@ -31,15 +31,14 @@ const BiographyImage = styled(Image)`
 
 const BiographyContainer = styled.div`
   display: flex;
-  width: 100%;
   max-width: 1600px;
-  margin: 3rem auto 0;
+  margin: 0 auto 0;
   align-items: center;
   justify-content: flex-end;
 
   @media screen and (max-width: 759px){
-    display: block;
     text-align: center;
+    padding-bottom: 20px;
   }
 `
 
@@ -90,7 +89,7 @@ function Biography(props) {
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author}
               />
-              Written by <strong>{author}</strong> &nbsp;
+              By <strong>{author}</strong> &nbsp;
             </WrittenBy>
             <SocialIcons>
               <SocialAnchor

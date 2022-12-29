@@ -80,25 +80,25 @@ const Description = styled.p`
   text-align: left;
 `
 
-const Title = styled.h1`
-font-weight: bold;
-margin-left: auto;
-margin-right: auto;
-font-weight: bold;
-font-size: 5rem;
-text-align: left;
-margin-top: 2rem;
-margin-bottom: 2rem;
-border-bottom: 2px solid #ddd;
-padding-bottom: 2rem;
+// const Title = styled.h1`
+// font-weight: bold;
+// margin-left: auto;
+// margin-right: auto;
+// font-weight: bold;
+// font-size: 5rem;
+// text-align: left;
+// margin-top: 2rem;
+// margin-bottom: 2rem;
+// border-bottom: 2px solid #ddd;
+// padding-bottom: 2rem;
 
-max-width: 1600px;
+// max-width: 1600px;
 
-  @media screen and (max-width: 720px) {
-    font-size: 3.5rem;
-    padding-bottom: 1rem;
-  }
-`
+//   @media screen and (max-width: 720px) {
+//     font-size: 3.5rem;
+//     padding-bottom: 1rem;
+//   }
+// `
 
 const AnimatedCard = ({ post }) => {
   const node = post
@@ -133,9 +133,8 @@ class WorksIndex extends Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} backgroundColor='transparent'>
         <SEO title="Portfolio" keywords={[`works`, `portfolio`]} />
-        <Title>{"Portfolio"}</Title>
         <Cards>
           {posts.map(({ node }) => (
             <AnimatedCard key={node.frontmatter.title} post={node} />

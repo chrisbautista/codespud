@@ -26,7 +26,7 @@ const TagContainer = styled.span`
 
   a {
     font-weight: bold;
-    margin: 2px 5px;
+    margin: 0 5px 10px;
     font-size: 1rem;
   }
 `;
