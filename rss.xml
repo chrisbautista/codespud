@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 31 Dec 2022 22:57:20 GMT</lastBuildDate><item><title><![CDATA[Programmer's New Year Resolution]]></title><description><![CDATA[I am the most undisciplined person I know. I make resolutions every year - and every year I fall short.]]></description><link>https://www.codespud.com/2022/programmers_resolution_2023/</link><guid isPermaLink="false">https://www.codespud.com/2022/programmers_resolution_2023/</guid><pubDate>Sat, 31 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Jan 2023 00:51:19 GMT</lastBuildDate><item><title><![CDATA[Programmer's New Year Resolution]]></title><description><![CDATA[I am the most undisciplined person I know. I make resolutions every year - and every year - I fall short. But I am stubborn too. So this year, I have decided to be a better programmer and work on my journey in this blog. I am starting with my new year’s resolution as a front-end developer.]]></description><link>https://www.codespud.com/2022/programmers_resolution_2023/</link><guid isPermaLink="false">https://www.codespud.com/2022/programmers_resolution_2023/</guid><pubDate>Sat, 31 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
 [Inspired by math](https://matt.might.net/articles/programmers-resolutions/)
 
 Resolution
@@ -9,7 +9,49 @@ Resolution
 4. Create 1 blog post per week
 5. Stay healthy 
 --&gt;
-&lt;p&gt;I am the most undisciplined person I know. I make resolutions every year - and every year I fall short. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making invisible elements accessible]]></title><description><![CDATA[Invisible UI elements]]></description><link>https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</link><guid isPermaLink="false">https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
+&lt;p&gt;I am the most undisciplined person I know. I make resolutions every year - and every year - I fall short. But I am stubborn too. So this year, I have decided to be a better programmer and work on my journey in this blog. I am starting with my new year’s resolution as a front-end developer. &lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;To keep me honest I have contracted my wife to check on my progress every month for each resolution. I made it a mission where I get a reward for accomplising my goal and punishment if I fail.  I got the idea from this list of &lt;a href=&quot;https://www.makeuseof.com/strict-commitment-apps-that-force-you-working/&quot;&gt;commitment apps&lt;/a&gt;. My wife promised to make it really hurt financially if I fail. That should keep me on my toes.😁&lt;/p&gt;
+&lt;p&gt;Inspired by &lt;a href=&quot;https://matt.might.net/articles/programmers-resolutions/&quot;&gt;Math’s programmers resolutions&lt;/a&gt; here are my five new year resolutions. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#frameworks&quot;&gt;Learn three(3) new front-end frameworks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#accessibility&quot;&gt;Focus on web accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#blog&quot;&gt;Create one (1) blog post per week&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#stayhealthy&quot;&gt;Stay healthy&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#workflow&quot;&gt;Streamline workflow&lt;/a&gt; &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;frameworks&quot;&gt;1. Learn three (3) new front-end frameworks &lt;/h2&gt;
+&lt;p&gt;This year was a good year for frameworks. &lt;a href=&quot;https://tsh.io/state-of-frontend/#frameworks&quot;&gt;More and more developers are using front-end frameworks&lt;/a&gt;. I aim to learn at least three(3) new front-end frameworks. I have been working primarily with ReactJS. I can not say I am an expert. But I am proficient enough to earn a living. This year to start, I want the reach the same proficiency in Vue, Svelte, and NextJS. I have chosen these three because they are well documented and I found a great amount of community support. &lt;/p&gt;
+&lt;p&gt;By the end of this year, I should have the following for each language;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal project on github&lt;/li&gt;
+&lt;li&gt;Blog post on how I made the project&lt;/li&gt;
+&lt;li&gt;Cheatsheet I can share on this blog &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;accessibility&quot;&gt;2. Focus on web accessibility &lt;/h2&gt;
+&lt;p&gt;This year I have been interested with web accessibility. I thought I had been doing a great job of making my projects inclusive. I was dead wrong. This year I will work on projects that improve accessibility, champion accessibility in our company, and share my experiences with my peers.&lt;/p&gt;
+&lt;h2 id=&quot;blog&quot;&gt;3. Create one (1) blog post per week&lt;/h2&gt;
+&lt;p&gt;I started blogging to force myself to share the things that interest me. Sharing is my incentive to explore new things. I have been really lax this past few years. I used personal stuff as an excuse when really its my lack of discipline is the issue. This past few months I have been blogging, I realized I learn more when creating an article than I do at studying intentionally. Blogging forces me to research and dig deep into the topic than when I am just solving a specific problem. This year I will try to publish at least one(1) post a week. &lt;/p&gt;
+&lt;h2 id=&quot;stayhealthy&quot;&gt;4. Stay healthy&lt;/h2&gt;
+&lt;p&gt;From Math’s list of programmer’s resolution, this one resonated with me a lot. For most who work as a developer keeping healthy is a hard battle. This year I want to do what I can to be healthy. Starting with the following habits;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Less caffeine&lt;/li&gt;
+&lt;li&gt;Go out for fresh air at least once a day&lt;/li&gt;
+&lt;li&gt;Run twice a week&lt;/li&gt;
+&lt;li&gt;Set aside some time to be offline once a day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;workflow&quot;&gt;5. Streamline workflow&lt;/h2&gt;
+&lt;p&gt;To accomplish the previous resolutions, I need to be more efficient. I have not explored automating some of my tasks and been working with the same toolset from three years ago. This year I will explore streamlining my workflow.  &lt;/p&gt;
+&lt;p&gt;Tasks like; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choosing a new machine for development;&lt;/li&gt;
+&lt;li&gt;Cleaning up my IDE plugins;&lt;/li&gt;
+&lt;li&gt;Using design software&lt;/li&gt;
+&lt;li&gt;Uncluttering my workstation&lt;/li&gt;
+&lt;li&gt;Exploring new tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will probably figure out more things to do later. I will keep you updated. &lt;/p&gt;
+&lt;p&gt;So that’s it! I have listed my new year’s resolution as a programmer. What’s yours? &lt;/p&gt;
+&lt;p&gt;Happy new year to all! 🎉🎉🎉🎉🎉&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making invisible elements accessible]]></title><description><![CDATA[Invisible UI elements]]></description><link>https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</link><guid isPermaLink="false">https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
 
 Hover UI visible elements issue
 Focusable elements should be visible
