@@ -54,50 +54,7 @@
 <p>I solved these issues by using the <code class="language-text">:focus-within</code> psuedo-selector.</p>
 <p>I listed a few of them and the solutions.</p>
 <h2>Table row with hidden buttons</h2>
-<p>This was a common problem with table-like interfaces. The developer added an effect that shows the buttons when hovered. The markup is accessible to screen readers but does not look correct for sighted persons that use the keyboard. Accessibility is not just for screenreaders. Sighted people need to make sense of the page too. </p>
-<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Job description<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Controls<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>user<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>John Doe<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>rocket scientist<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>delete<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>❌<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>save<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>💾<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-      ...
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre></div>
-<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// SCSS</span>
-
-<span class="token selector">tbody tr </span><span class="token punctuation">{</span>
-  <span class="token selector">button </span><span class="token punctuation">{</span>
-    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token comment">/**
-  * Show buttons on hover
-  */</span>
-  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffd57e<span class="token punctuation">;</span>
-    <span class="token selector">button </span><span class="token punctuation">{</span>
-      <span class="token property">opacity</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
+<p>Here the developer added an effect that shows the buttons when hovered. The markup is accessible to screen readers but does not look correct for sighted persons that use the keyboard. Accessibility is not just for screenreaders. Sighted people need to make sense of the page too. </p>
 <style>
 .demo table {
   min-width: 500px;
@@ -146,59 +103,127 @@ button {
 }
 
 </style>
-<p>Using the mouse, the table below works perfectly you see color highlighting the hovered row and the buttons become visible. </p>
-<p>If you navigate the table using the keyboard, the experience is not good. Firstly, you don’t see the highlight color when focused on a row. The worst of it is you will be able to go through all the focusable elements - including the hidden buttons. This is confusing for sighted people using the keyboard. The user experience needs fixing.</p>
 <div class="demo">
 <table tabindex="0">
-        <thead>
-          <tr>
-            <th>
-              <div class="sr-only">Checkbox</div>
-            </th>
-            <th>Name</th>
-            <th>Job description</th>
-            <th>
-              <div class="sr-only">Controls</div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><input type="checkbox" value="1" name="user"></td>
-            <td>John Doe</td>
-            <td>rocket scientist</td>
-            <td>
-              <button class="delete">❌</button>
-              <button class="save">💾</button>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" value="1" name="user"></td>
-            <td>Adam smith</td>
-            <td>economist</td>
-            <td>
-              <button class="delete">❌</button>
-              <button class="save">💾</button>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" value="1" name="user"></td>
-            <td>Jose <rizal></rizal>
-            </td>
-            <td>novelist</td>
-            <td>
-              <button class="delete">❌</button>
-              <button class="save">💾</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <thead>
+    <tr>
+      <th>
+        <div class="sr-only">Checkbox</div>
+      </th>
+      <th>Name</th>
+      <th>Job description</th>
+      <th>
+        <div class="sr-only">Controls</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox" value="1" name="user"></td>
+      <td>John Doe</td>
+      <td>rocket scientist</td>
+      <td>
+        <button class="delete" aria-label="delete">❌</button>
+        <button class="save"  aria-label="save">💾</button>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="1" name="user"></td>
+      <td>Adam smith</td>
+      <td>economist</td>
+      <td>
+        <button class="delete" aria-label="delete">❌</button>
+        <button class="save" aria-label="save">💾</button>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" value="1" name="user"></td>
+      <td>Jose <rizal></rizal>
+      </td>
+      <td>novelist</td>
+      <td>
+        <button class="delete" aria-label="delete">❌</button>
+        <button class="save" aria-label="save">💾</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </div>
-<p>The solution is to use <code class="language-text">:focus-within</code> where the <code class="language-text">:hover</code> psuedo selecter is defined. </p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Job description<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Controls<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>user<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>John Doe<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>rocket scientist<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>delete<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>delete<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>❌<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>save<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>save<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>💾<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+      ...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre></div>
+<p>Using the mouse, the table above works perfectly well. There is color highlighting and the buttons become visible when the mouse is over a table row. </p>
+<p>If you navigate the table using the keyboard, the experience is not what you will expect. Firstly, you don’t see the highlight color when focused on a row. The worst of it is you will be able to go through all the focusable elements using the keyboard - including the invisible buttons. This is confusing for sighted people using the keyboard. </p>
+<p>Let’s check the style code below. The buttons are invisible by default(<code class="language-text">opacity: 0</code>). When the mouse is over the row (<code class="language-text">:hover</code>), it gets a background color and buttons become visible(<code class="language-text">opacity: 100%</code>).</p>
+<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// SCSS</span>
+
+<span class="token selector">tbody tr </span><span class="token punctuation">{</span>
+  <span class="token selector">button </span><span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+  * Show buttons on hover
+  */</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffd57e<span class="token punctuation">;</span>
+    <span class="token selector">button </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Solution</h3>
+<p>We can use javascript and add an event handler on the focusable elements that triggers whenever any element on the row is focused. With that we can set a class (<code class="language-text">.has-focused-element</code>) that applies the same style above.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> els <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'tr input[type=checkbox], tr button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+els<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">el</span> <span class="token operator">=></span> document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'focus'</span><span class="token punctuation">,</span> onFocus<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// etc...</span></code></pre></div>
+<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// SCSS</span>
+
+<span class="token selector">tbody tr </span><span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+
+  <span class="token comment">/**
+  * Show buttons on hover
+  */</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover,
+  <span class="token parent important">&amp;</span>.has-focused-element </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffd57e<span class="token punctuation">;</span>
+    <span class="token selector">button </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>The changes above will work but uneccessary. We should try to solve any style problems inside the CSS first before reaching for Javascript.</p>
+<p>Another solution is to use <code class="language-text">:focus-within</code> where the <code class="language-text">:hover</code> psuedo-selector is defined. </p>
 <blockquote>
 <p>The :focus-within CSS pseudo-class matches an element if the element or any of its descendants are focused. In other words, it represents an element that is itself matched by the :focus pseudo-class or has a descendant that is matched by :focus. (This includes descendants in shadow trees.) - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within">MDN</a></p>
 </blockquote>
-<p>“Focus-within” psuedo selector defines style for elements that has elements that gets focused. In this case, we have the <code class="language-text">checkbox</code> and <code class="language-text">button</code> elements. When these elements gets focus, we can apply the same style as if we hovered the pointer on the table row.</p>
+<p>“Focus-within” psuedo selector can match elements that has elements that gets focused. In this case, we have the <code class="language-text">checkbox</code> and <code class="language-text">button</code> elements. When these elements gets focus, we can apply the same style as if we hovered the pointer on the table row. This will work without adding a line of javascript. </p>
 <div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// SCSS</span>
 
 <span class="token selector">tbody tr </span><span class="token punctuation">{</span>
@@ -275,40 +300,9 @@ button {
         </tbody>
       </table>
 </div>
-<p>A user can navigate through the focusable elements in the row and see the hover effect. </p>
-<h2>Card with hover style</h2>
+<p>A user can navigate through the focusable elements in the row and see the “hover” effect. </p>
+<h2>Card with like(♥) button</h2>
 <p>Here’s another user interface with a hover effect but no keyboard focus effect. Hovering over any part of the card applies a heart icon on top of the image indicating to the user that they can make the image their favorite. This card UI is part of an image gallery.</p>
-<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://images.unsplash.com/photo-1671026423293-7adf6a6abd13?crop=entropy&amp;cs=tinysrgb&amp;fm=jpg&amp;ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzMwNTEwNzE&amp;ixlib=rb-4.0.3&amp;q=80<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>♥<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>like<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>♥<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
-<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// scss</span>
-
-<span class="token selector">.card </span><span class="token punctuation">{</span>
-  
-  <span class="token comment">// ...</span>
-  
-  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
-    <span class="token selector">img </span><span class="token punctuation">{</span>
-      <span class="token property">opacity</span><span class="token punctuation">:</span> 70%<span class="token punctuation">;</span>
-      <span class="token property">background-color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token selector">span </span><span class="token punctuation">{</span>
-      <span class="token property">opacity</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token selector">button </span><span class="token punctuation">{</span>
-      <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token comment">// ...</span>
-<span class="token punctuation">}</span></code></pre></div>
 <style>
 
 .card {
@@ -359,7 +353,6 @@ button {
 }
 
 </style>
-<p>Works when using the mouse but when navigating using the keyboard again the user experience fails. The keyboard experience is lacking. When you tab through the card, the button gets focused -which is fine - but it’s not the effect we wanted.</p>
 <div class='demo' tabindex="0">
 <div class="card">
     <img src="https://images.unsplash.com/photo-1671026423293-7adf6a6abd13?crop=entropy&amp;cs=tinysrgb&amp;fm=jpg&amp;ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzMwNTEwNzE&amp;ixlib=rb-4.0.3&amp;q=80" alt="">
@@ -367,7 +360,40 @@ button {
     <button class="like">♥</button>
   </div>
 </div>
-<p>Again we fix this by adding <code class="language-text">:focus-within</code> where <code class="language-text">:hover</code> is defined. I know you will ask why can we not just add <code class="language-text">tabindex=0</code> on the card and add a <code class="language-text">:focus</code> style. Yeah that could work. But, we don’t want that cause we would end up with two focus steps(the card and the heart (♥) button) instead of just the button. </p>
+<p>Works when using the mouse but when navigating using the keyboard - again the user experience fails. It lacks a good keyboard experience. When you tab through the card, the button gets focused - which is fine - but it’s not the effect we wanted.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://images.unsplash.com/photo-1671026423293-7adf6a6abd13?crop=entropy&amp;cs=tinysrgb&amp;fm=jpg&amp;ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzMwNTEwNzE&amp;ixlib=rb-4.0.3&amp;q=80<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>♥<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>like<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>♥<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// scss</span>
+
+<span class="token selector">.card </span><span class="token punctuation">{</span>
+  
+  <span class="token comment">// ...</span>
+  
+  <span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+    <span class="token selector">img </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 70%<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">span </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">button </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>I know some will ask why can we not just add <code class="language-text">tabindex=0</code> on the card and add a <code class="language-text">:focus</code> style. Yeah that could work. But, we would end up with two focus steps(one for the card and the heart (♥) button) instead of just the button. We don’t want that.</p>
+<p>Again <code class="language-text">:focus-within</code> to the rescue. We go back to the style code and look for <code class="language-text">:hover</code> styling. </p>
 <div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// scss</span>
 <span class="token comment">/**
   * Make heart cover image visible when button is focused
@@ -387,6 +413,7 @@ button {
       <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span></code></pre></div>
+<p>That works better. Now we have the same experience for both mouse and keyboard users. </p>
 <p>As a rule, we also want to add an outline when the card is focused using the keyboard. Similar to what we get when focus any interactive control when navigating the page with the keyboard.</p>
 <div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// scss</span>
 <span class="token selector">.card </span><span class="token punctuation">{</span>
@@ -409,7 +436,7 @@ button {
   </div>
 </div>
 <h2>Effects when buttons are hovered</h2>
-<p>In this example we have a image with a color swatch control. When you hover over any of the colors, the corresponding color value is blended with the image. This works correctly with the mouse but with the keyboard. We want to be able to get the same effect on the image when any of the buttons gets focused using the keyboard.</p>
+<p>In this example we have an image with a color swatch control. When you hover over any of the colors, the corresponding color value is blended with the image. This works correctly with the mouse but with the keyboard. We want to be able to get the same effect on the image when any of the buttons gets focused using the keyboard.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>picker<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>picker-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>picker-item<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--selected-color</span><span class="token punctuation">:</span> #912424</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>red<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
@@ -495,7 +522,7 @@ picker<span class="token punctuation">.</span><span class="token function">addEv
   </div>
 </div>
 <p>Again the issue here is that the interface does not work well with the keyboard for sighted people. It’s screen reader friendly but the experience is lacking when not using the mouse. </p>
-<p>We leverage <code class="language-text">:focus-within</code> in conjunction with a <code class="language-text">focus</code> event to set the color and blend style when using the keyboard. </p>
+<p>This is a bit more complicated so we leverage <code class="language-text">:focus-within</code> in conjunction with a <code class="language-text">focus</code> event handler to set the color and blend style when using the keyboard. </p>
 <div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token comment">// SCSS</span>
 
 <span class="token selector">.picker </span><span class="token punctuation">{</span>
@@ -511,11 +538,11 @@ picker<span class="token punctuation">.</span><span class="token function">addEv
 
 buttons<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">button</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   button<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"mouseover"</span><span class="token punctuation">,</span> onHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  button<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"focus"</span><span class="token punctuation">,</span> onHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  button<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"focus"</span><span class="token punctuation">,</span> onHighlight<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// trigger highlight script when buttons are focused</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">//...</span></code></pre></div>
-<p>Using <code class="language-text">:focus-within</code>, we end up with a great solution without having to do a lot of refactoring. I think the solution is elegant because it’s simple. </p>
+<p>Using the solution above, we get a better experience without a lot of extra code. See the solution in action in the Codepen below. </p>
 <h2>Full solution</h2>
 <p>Here are all three solutions in action. Check out the final code to understand the solutions in their entirety. </p>
 <p><a href="https://codepen.io/chrisbautista/pen/bGjBZzM"><div><iframe 
