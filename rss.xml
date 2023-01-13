@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Jan 2023 17:37:02 GMT</lastBuildDate><item><title><![CDATA[Fix accessibility using focus-within]]></title><description><![CDATA[A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable.]]></description><link>https://www.codespud.com/2023/fix_accessibility_with_focus_within/</link><guid isPermaLink="false">https://www.codespud.com/2023/fix_accessibility_with_focus_within/</guid><pubDate>Sun, 08 Jan 2023 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable. &lt;!--more--&gt; But, because the keyboard experience did not match the mouse-only interactions. These user interfaces are confusing, to say the least. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 07:46:50 GMT</lastBuildDate><item><title><![CDATA[Fix accessibility using focus-within]]></title><description><![CDATA[A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable.]]></description><link>https://www.codespud.com/2023/fix_accessibility_with_focus_within/</link><guid isPermaLink="false">https://www.codespud.com/2023/fix_accessibility_with_focus_within/</guid><pubDate>Sun, 08 Jan 2023 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable. &lt;!--more--&gt; But, because the keyboard experience did not match the mouse-only interactions. These user interfaces are confusing, to say the least. &lt;/p&gt;
 &lt;p&gt;I solved these issues by using the &lt;code class=&quot;language-text&quot;&gt;:focus-within&lt;/code&gt; psuedo-selector.&lt;/p&gt;
 &lt;p&gt;I listed a few of them and the solutions.&lt;/p&gt;
 &lt;h2&gt;Table row with hidden buttons&lt;/h2&gt;
@@ -249,6 +249,7 @@ els&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
       &lt;/table&gt;
 &lt;/div&gt;
 &lt;p&gt;A user can navigate through the focusable elements in the row and see the “hover” effect. &lt;/p&gt;
+&lt;!--ad--&gt;
 &lt;h2&gt;Card with like(♥) button&lt;/h2&gt;
 &lt;p&gt;Here’s another user interface with a hover effect but no keyboard focus effect. Hovering over any part of the card applies a heart icon on top of the image indicating to the user that they can make the image their favorite. This card UI is part of an image gallery.&lt;/p&gt;
 &lt;style&gt;
@@ -384,6 +385,7 @@ els&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &lt;button class=&quot;like&quot;&gt;♥&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;!--ad--&gt;
 &lt;h2&gt;Apply effects when buttons are hovered&lt;/h2&gt;
 &lt;p&gt;In this example we have an image with a color swatch control. When you hover over any of the colors, the corresponding color value is blended with the image. This works correctly with the mouse but with the keyboard. We want to be able to get the same effect on the image when any of the buttons gets focused using the keyboard.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;picker&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -564,24 +566,7 @@ Resolution
 &lt;/ul&gt;
 &lt;p&gt;I will probably figure out more things to do later. I will keep you updated. &lt;/p&gt;
 &lt;p&gt;So that’s it! I have listed my new year’s resolution as a programmer. What’s yours? &lt;/p&gt;
-&lt;p&gt;Happy new year to all! 🎉🎉🎉🎉🎉&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making invisible elements accessible]]></title><description><![CDATA[Invisible UI elements]]></description><link>https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</link><guid isPermaLink="false">https://www.codespud.com/2022/draft__making_invisible_buttons_accessible/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
-
-Hover UI visible elements issue
-Focusable elements should be visible
-
-Focus psuedo selectors
-
-:focus
-:focus-within
-:focus-visible
-
-Examples
-- table icon buttons hover effect
-- on hover button in card
-
-
----&gt;
-&lt;h1&gt;Invisible UI elements&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[React Custom button: a study on accessibility]]></title><description><![CDATA[React and accessibility I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects.]]></description><link>https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;React and accessibility&lt;/h2&gt;
+&lt;p&gt;Happy new year to all! 🎉🎉🎉🎉🎉&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Custom button: a study on accessibility]]></title><description><![CDATA[React and accessibility I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects.]]></description><link>https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2022/custom_button-a_study_on_react_accessibility/</guid><pubDate>Mon, 19 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;h2&gt;React and accessibility&lt;/h2&gt;
 &lt;p&gt;I love ReactJs. I learned late in my career as there were not a lot of opportunities to do so. When I finally found a suitable situation to explore ReactJs for a previous employer. I jumped on it and picked it up quickly. It was weird in the beginning but it became quite natural in the end. Now I mainly work with ReactJS in most of my projects. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;One of the great things about working with ReactJs is working with JSX. ReactJS does not understand JSX - we achieve this with Babel. Babel transpile JSX to something ReactJS can understand. Anyhow, JSX is almost like HTML with some differences. And because it looks like HTML markup it becomes really easy to learn. But, and it’s a big but, making it easy to learn does not save developers from issues related to accessibility. Some patterns that are perfectly valid and working in a way in ReactJS does not necessarily accessible.&lt;/p&gt;
 &lt;p&gt;For example, when using labels in forms &lt;/p&gt;
