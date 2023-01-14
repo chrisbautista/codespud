@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Jan 2023 07:46:50 GMT</lastBuildDate><item><title><![CDATA[Fix accessibility using focus-within]]></title><description><![CDATA[A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable.]]></description><link>https://www.codespud.com/2023/fix_accessibility_with_focus_within/</link><guid isPermaLink="false">https://www.codespud.com/2023/fix_accessibility_with_focus_within/</guid><pubDate>Sun, 08 Jan 2023 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable. &lt;!--more--&gt; But, because the keyboard experience did not match the mouse-only interactions. These user interfaces are confusing, to say the least. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Jan 2023 20:28:50 GMT</lastBuildDate><item><title><![CDATA[Newbie's Guide to Learning Vue.js]]></title><description><![CDATA[Part of my new year resolution for 2023 is to learn at least 3 new front-end frameworks. One of these frameworks I intend to dive deeper into is Vue.js. Every time I want to learn something I try to plan first. It’s the worst thing to do is to try to run around like a headless chicken. Learning without a plan is just a glorified waste of time.]]></description><link>https://www.codespud.com/2023/newbies_guide_to_learning_vuejs/</link><guid isPermaLink="false">https://www.codespud.com/2023/newbies_guide_to_learning_vuejs/</guid><pubDate>Sat, 14 Jan 2023 07:07:00 GMT</pubDate><content:encoded>&lt;!--
+**To learn Vue.js, it&apos;s important to understand the following concepts:**
+
+Components - Vue.js uses components as the building blocks of a user interface. A component is a reusable and self-contained piece of code that represents a part of the UI, such as a button, a form, or a modal.
+
+Templates - Vue.js uses templates to define the structure of a component. Templates are written in HTML and can include special Vue.js directives and expressions to bind data to the template.
+
+Data and Methods - Vue.js components have a data object that holds the component&apos;s state, and methods that can be used to manipulate the state.
+
+Computed Properties - Vue.js allows you to define computed properties, which are properties that are calculated based on other properties.
+
+Directives - Vue.js provides a set of directives, such as v-if, v-for, and v-bind, that can be used to control the behavior of the template.
+
+Event handling - Vue.js allows you to handle events, such as button clicks, form submissions, and more.
+
+Vue Router - Vue Router is the official router for Vue.js, it allows you to handle client-side routing for single-page applications.
+
+Vuex - Vuex is a state management library for Vue.js, it allows you to manage the state of your application in a centralized way.
+
+Build Setup - Vue.js allows you to use a variety of build tools and libraries to set up your project and handle things like transpiling, minifying, and hot-reloading.
+
+Deployment - Once you have built your Vue.js application, you will need to know how to deploy it to a live server.
+
+It&apos;s also important to practice by building small projects, experimenting with different features and following along tutorials, also read the official documentation of Vue.js.
+ --&gt;
+&lt;p&gt; Part of my &lt;a href=&quot;/2022/programmers_resolution_2023/&quot;&gt;new year resolution for 2023&lt;/a&gt; is to learn at least 3 new front-end frameworks. One of these frameworks I intend to dive deeper into is Vue.js. Every time I want to learn something I try to plan first. It’s the worst thing to do is to try to run around like a headless chicken. Learning without a plan is just a glorified waste of time. &lt;!--more--&gt; So for Vue.js, I went to their site and also googled some resources online. I planned to scan all the topics that I needed to grasp first. Enough so that I can start practicing what I’ve learned in a Vue.js project. &lt;/p&gt;
+&lt;p&gt; After reading around, most of it was from the great documentation on Vue.js website, I outlined the minimum concepts I need to start learning Vue.js. I’ve outlined it in this post. If you’re like me, one that is practically new to Vue.js, or worked on Vue.js before but interested in a refresher, or are just interested in reading on the topic. Feel free to read on.&lt;/p&gt;
+&lt;h2&gt;Codespud’s Beginner Vue.js learning plan&lt;/h2&gt;
+&lt;p&gt;If you’ve gone to &lt;a href=&quot;https://vuejs.org/guide/introduction.html&quot;&gt;Vue.js’ documentation page&lt;/a&gt;, You will find an outline of things you should learn as a prospective Vue.js programmer. I read through Vue.js’ documentation page and it was good - especially the Essentials section. &lt;/p&gt;
+&lt;p&gt;To be honest I got lost early because of some topics like the difference between Options API and Composition API. If you don’t know what that is, then you were me at the beginning too. &lt;a href=&quot;https://vuejs.org/guide/introduction.html#api-styles&quot;&gt;Vue.js documentation on API Preference&lt;/a&gt; should explain the difference between API styles.&lt;/p&gt;
+&lt;p&gt;Anyhow, there is just so much stuff to learn. For some people, this would be enough and you are free to do so. Based on the same documentation I made an outline of the topics I wanted to learn first. Also, I restricted my practice to using the &lt;a href=&quot;https://vuejs.org/guide/introduction.html#options-api&quot;&gt;Options API&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#create&quot;&gt;Create a Vue application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#templates&quot;&gt;Templates&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#directives&quot;&gt;Directives&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#data&quot;&gt;Data and Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#computed&quot;&gt;Computed properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2023/newbies_guide_to_learning_vuejs/#event-handling&quot;&gt;Event Handling&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--ad--&gt;
+&lt;h3 id=&quot;create&quot;&gt;1. Create a Vue Application&lt;/h3&gt;
+&lt;p&gt;To start off, the first thing any developer wants to learn is how to make a simple application. Like most front-end frameworks nowadays, there are two ways to start creating an application. The first option is hosting an HTML page with the library CDN loaded and one is to build an application using build setup. Choose whichever way you want to start with. What’s important is you get started early to practice.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Using a CDN&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/quick-start.html#using-vue-from-cdn&quot;&gt;Vuejs.org: Using a CDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vueschool.io/lessons/getting-started-with-vuejs&quot;&gt;Vue School: Getting started with VueJS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using NodeJS setup&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/quick-start.html#creating-a-vue-application&quot;&gt;Vuejs.org: Using NodeJS Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started#installation&quot;&gt;MDN: Vue.js - Installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;templates&quot;&gt;2. Templates&lt;/h3&gt;
+&lt;p&gt;Vue.js has templates to define the structure of a simple application. Templates are written in HTML(or HTML-like syntax) and can include special library-specific directives and expressions to render data. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Message: {{ msg }}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;{{ rawHtml }}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/essentials/template-syntax.html&quot;&gt;Vuejs.org: Template Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vueschool.io/lessons/vuejs-template-syntax-and-expressions&quot;&gt;Vue School: Vue.js Template Syntax and Expressions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;directives&quot;&gt;3. Directives&lt;/h3&gt;
+&lt;p&gt;While working with templates, you will soon encounter directives. You will see this directive as attributes specific to Vue.js. They are prefixed with &lt;code class=&quot;language-text&quot;&gt;v-&lt;/code&gt; syntax. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;v-for&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;item in items&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  {{ item.text }}
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/api/built-in-directives.html&quot;&gt;VueJS.org: Directives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.codecademy.com/courses/learn-vue-js/lessons/vue-introduction/exercises/directives&quot;&gt;CodeAcademy: Directives 💵&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://vuejsdevelopers.com/lessons/understanding-directives-1/1/&quot;&gt;Vuejsdevelopers.com: Understanding Directives&lt;/a&gt;&lt;/p&gt;
+&lt;!--ad--&gt;
+&lt;h3 id=&quot;data&quot;&gt;4. Data and Methods&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vue.js components have a data object that holds the component’s state, and methods that can be used to manipulate the state. In my opinion, the ability to manage and manipulate data is what makes front-end frameworks interesting. It’s the difference between a simple HTML page and a dynamic site. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/api/options-state.html#data&quot;&gt;VueJS.org: Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vueschool.io/lessons/vue-methods&quot;&gt;Vue School: Fundamentals - Vue methods&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;State management&lt;/h3&gt;
+&lt;p&gt;Understanding Vue.js data and methods, you will soon arrive at the concept of state management. You can use the data object and other techniques to manage the state of the application. But there are also state management libraries you can use. Vue.js’ answer to flux pattern libraries of React.js.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pinia.vuejs.org/introduction.html&quot;&gt;Pinia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuex.vuejs.org/&quot;&gt;Vuex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vue.js recommends using &lt;strong&gt;Pinia&lt;/strong&gt;. &lt;/p&gt;
+&lt;h3 id=&quot;computed&quot;&gt;5. Computed Properties&lt;/h3&gt;
+&lt;p&gt;Vue.js has the concept of computed properties. Computed properties are properties that are calculated based on other properties. The contrived example below illustrates what computed properties are used for.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token literal-property property&quot;&gt;fruits&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos;apple&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos;mango&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos;banana&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;computed&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;hasMangoToSell&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fruits&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;mango&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Yes&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;No&apos;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Has mango to sell?&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;{{ hasMangoToSell }}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  ...
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/essentials/computed.html&quot;&gt;VueJs.org: Computed properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vueschool.io/lessons/vuejs-computed-properties&quot;&gt;Vue School: Computed properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_computed_properties&quot;&gt;MDN: Using Vue computed properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;!--ad--&gt;
+&lt;h3 id=&quot;event-handling&quot;&gt;6. Event Handling&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Event handling is the essence of front-end interactivity. Vue.js allows you to handle events, such as button clicks, form submissions, and more. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/essentials/event-handling.html&quot;&gt;VueJS.org: Event Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/guide/essentials/forms.html&quot;&gt;VueJS.org: Form Input Bindings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vueschool.io/lessons/vuejs-user-events&quot;&gt;Vue School: User events&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other concepts a Vue.js developer needs to learn of course. I think you will encounter those topics while running through this list. Topics like components, watchers, and hooks. &lt;/p&gt;
+&lt;h2&gt;Wrapping up&lt;/h2&gt;
+&lt;p&gt;After the list above I plan to explore more advanced topics and start building a project. It is important to practice by building small projects, experimenting with different features, and following tutorials. Here’s my plan so far.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;s&gt;Learn Vue.js essential concepts&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;Debugging a VueJS application&lt;/li&gt;
+&lt;li&gt;Create a blog application using Vue.js&lt;/li&gt;
+&lt;li&gt;Learn Vue-Router&lt;/li&gt;
+&lt;li&gt;Build for Production&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Fix accessibility using focus-within]]></title><description><![CDATA[A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable.]]></description><link>https://www.codespud.com/2023/fix_accessibility_with_focus_within/</link><guid isPermaLink="false">https://www.codespud.com/2023/fix_accessibility_with_focus_within/</guid><pubDate>Sun, 08 Jan 2023 01:07:00 GMT</pubDate><content:encoded>&lt;p&gt;A few issues I found recently for clients were related to accessibility. A few perfectly working user interfaces were not keyboard accessible. Not because they are custom controls nor because the controls were not tabable. &lt;!--more--&gt; But, because the keyboard experience did not match the mouse-only interactions. These user interfaces are confusing, to say the least. &lt;/p&gt;
 &lt;p&gt;I solved these issues by using the &lt;code class=&quot;language-text&quot;&gt;:focus-within&lt;/code&gt; psuedo-selector.&lt;/p&gt;
 &lt;p&gt;I listed a few of them and the solutions.&lt;/p&gt;
 &lt;h2&gt;Table row with hidden buttons&lt;/h2&gt;
