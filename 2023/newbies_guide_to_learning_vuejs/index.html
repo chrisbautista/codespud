@@ -93,21 +93,19 @@ It's also important to practice by building small projects, experimenting with d
 <h3 id="create">1. Create a Vue Application</h3>
 <p>To start off, the first thing any developer wants to learn is how to make a simple application. Like most front-end frameworks nowadays, there are two ways to start creating an application. The first option is hosting an HTML page with the library CDN loaded and one is to build an application using build setup. Choose whichever way you want to start with. What’s important is you get started early to practice.</p>
 <ol>
-<li>
-<p>Using a CDN</p>
+<li>Using a CDN</li>
+</ol>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/vue@3/dist/vue.global.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div>
 <ul>
 <li><a href="https://vuejs.org/guide/quick-start.html#using-vue-from-cdn">Vuejs.org: Using a CDN</a></li>
 <li><a href="https://vueschool.io/lessons/getting-started-with-vuejs">Vue School: Getting started with VueJS</a></li>
+<li>Using NodeJS setup</li>
 </ul>
-</li>
-<li>
-<p>Using NodeJS setup</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token operator">></span> <span class="token function">npm</span> init vue@latest</code></pre></div>
 <ul>
 <li><a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">Vuejs.org: Using NodeJS Setup</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started#installation">MDN: Vue.js - Installation</a></li>
 </ul>
-</li>
-</ol>
 <h3 id="templates">2. Templates</h3>
 <p>Vue.js has templates to define the structure of a simple application. Templates are written in HTML(or HTML-like syntax) and can include special library-specific directives and expressions to render data. </p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Message: {{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
@@ -117,19 +115,17 @@ It's also important to practice by building small projects, experimenting with d
 <li><a href="https://vueschool.io/lessons/vuejs-template-syntax-and-expressions">Vue School: Vue.js Template Syntax and Expressions</a></li>
 </ul>
 <h3 id="directives">3. Directives</h3>
-<p>While working with templates, you will soon encounter directives. You will see this directive as attributes specific to Vue.js. They are prefixed with <code class="language-text">v-</code> syntax. </p>
+<p>While working with templates, you will soon encounter directives. You will see directives as element attributes specific to Vue.js. They are prefixed with <code class="language-text">v-</code> syntax like the example below.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in items<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   {{ item.text }}
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
 <ul>
 <li><a href="https://vuejs.org/api/built-in-directives.html">VueJS.org: Directives</a></li>
 <li><a href="https://www.codecademy.com/courses/learn-vue-js/lessons/vue-introduction/exercises/directives">CodeAcademy: Directives 💵</a></li>
-<li>
-<p><a href="https://vuejsdevelopers.com/lessons/understanding-directives-1/1/">Vuejsdevelopers.com: Understanding Directives</a></p>
+<li><a href="https://vuejsdevelopers.com/lessons/understanding-directives-1/1/">Vuejsdevelopers.com: Understanding Directives</a></li>
+</ul>
 </div><ins class="adunit__Ins-sc-1nr4oln-0 bxwMOe adsbygoogle" style="box-shadow:1px 1px 3px 0 rgba(0,0,0, 0.15)" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4889352773674825" data-ad-slot="2581564797"></ins><div class="blog-post__PostContent-sc-1993m0e-5 eHXUXk">
 <h3 id="data">4. Data and Methods</h3>
-</li>
-</ul>
 <p>Vue.js components have a data object that holds the component’s state, and methods that can be used to manipulate the state. In my opinion, the ability to manage and manipulate data is what makes front-end frameworks interesting. It’s the difference between a simple HTML page and a dynamic site. </p>
 <ul>
 <li><a href="https://vuejs.org/api/options-state.html#data">VueJS.org: Data</a></li>
@@ -173,11 +169,9 @@ It's also important to practice by building small projects, experimenting with d
 <li><a href="https://vuejs.org/guide/essentials/computed.html">VueJs.org: Computed properties</a></li>
 <li><a href="https://vueschool.io/lessons/vuejs-computed-properties">Vue School: Computed properties</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_computed_properties">MDN: Using Vue computed properties</a></li>
-<li>
+</ul>
 </div><ins class="adunit__Ins-sc-1nr4oln-0 bxwMOe adsbygoogle" style="box-shadow:1px 1px 3px 0 rgba(0,0,0, 0.15)" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4889352773674825" data-ad-slot="2581564797"></ins><div class="blog-post__PostContent-sc-1993m0e-5 eHXUXk">
 <h3 id="event-handling">6. Event Handling</h3>
-</li>
-</ul>
 <p>Event handling is the essence of front-end interactivity. Vue.js allows you to handle events, such as button clicks, form submissions, and more. </p>
 <ul>
 <li><a href="https://vuejs.org/guide/essentials/event-handling.html">VueJS.org: Event Handling</a></li>
