@@ -56,11 +56,17 @@
 <p>One of the areas UX designers and developers alike fail to give attention to is keyboard navigation. Keyboard navigation is important because you may have users that depend on the keyboard or screenreaders to read your website. If your site is hard to navigate for these users, they might just quit your site all together and move on. </p>
 <p>Here are my top three tips for better keyboard and screen reader navigation</p>
 <h2>1. Use headings and landmarks</h2>
-<ul>
-<li><strong>Headings</strong> - h1, h2, h3 etc.</li>
-</ul>
 <p>I mentioned before in <a href="/2022/five_steps_to_improve_accessibility">five steps to improve accessibility</a>. One of the simplest thing you can do is use semantic tags like headings and landmarks to mark up your HTML. Headings and landmark tags not only help tell the screen reader about the information hierarchy on your page but also helps in navigation. This technique benefits screenreader users. </p>
 <p><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Headings</a> provide a straightforward way of distinguishing information hierarchy on a page. The first heading (<code class="language-text">&lt;h1 /></code>) is commonly the title of the page which tells the reader what the site or page is about. After that, you organize the supporting information into sub-topics titled <code class="language-text">&lt;h2/></code> and so on.  </p>
+<p><strong>Headings</strong> </p>
+<ul>
+<li>h1</li>
+<li>h2</li>
+<li>h3</li>
+<li>h4</li>
+<li>h5</li>
+<li>h6</li>
+</ul>
 <p><a href="https://www.w3.org/WAI/tutorials/page-structure/regions/">Page regions or landmarks</a> divide the content into meaningful areas. For example, the <code class="language-text">&lt;header /></code> will contain navigation links and the name of a website, and the <code class="language-text">&lt;main /></code> tag will wrap the “main” content of the page.</p>
 <p><strong>Region tags</strong> </p>
 <ul>
@@ -84,7 +90,7 @@
 <p>Screen readers are capable of traversing a page through headings and landmarks. Using certain shortcuts, assistive technologies can jump from one heading to another. Some screenreaders can even list all the headings and landmarks on a page and then give the user a choice to jump to a specific heading or landmark. </p>
 <h2>2. Add skip links</h2>
 <p>The worst part about navigating a page with the keyboard (e.g. <kbd>Tab</kbd>) is having to go through a lot of page real estate. For example, you would need to go through the main navigation, aside elements, tag lists, and call-to-action buttons before you can get to the main content. It can be exhausting for your users to do that every time. My <kbd>Tab</kbd> key finger (if that is a thing) already hurts just thinking about it. It wastes your users’ time when they can already be reading your awesome content. To remedy this add skip links to your markup. Skip links can be part of your design or hidden until needed. These elements allow the user to jump to a specific topic or area on your page. Saving them so much pain. </p>
-<p>Here’s a simple “skip to main content” you can incorporate to your site.</p>
+<p>Here’s a simple “skip to main content” link you can incorporate to your site.</p>
 <div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token selector">.skip-to-main-content </span><span class="token punctuation">{</span>
   <span class="token comment">// hide by default but readable to screenreaders </span>
   <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
@@ -109,7 +115,7 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main-content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre></div>
-<p>The key here is to make the skip link the very top element in the markup so that it gets focused first. The hash parameter pushes the page to scroll to the page content marked by the <code class="language-text">id=main-content</code>. </p>
+<p>The key here is to make the skip link the very top element in the markup so that it gets focused first. The link scrolls the page to the page content marked by the <code class="language-text">id=main-content</code>. </p>
 <h2>3. Minimize key presses</h2>
 <p>If you have a user interface/design that requires a lot of traversals and you can’t use skip links, try adding extra keys for navigation. The most common keys used for navigation are the arrow keys. </p>
 <div class="img-demo">
