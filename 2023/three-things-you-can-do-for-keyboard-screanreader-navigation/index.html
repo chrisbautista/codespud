@@ -123,12 +123,14 @@
 <div class="img-demo">
   <img src="/blog/just-tabs.png"/>
 </div>
-<p>Tables are a common pattern to present information for a related group of data. Take, for example, the wireframe above, we have columns for data and a column for action buttons. The easiest we can do is just mark up the HTML so that the focusable elements like buttons can be “tabbed” into. In the previous image, we marked the element the user needs to interact with. If you use the <kbd>Tab</kbd> key, it will take you 8 key presses before a user reaches the <code class="language-text">Delete</code> button. I call <strong>8</strong> key presses the traversal index (<code class="language-text">T</code> index for short) to activate the <code class="language-text">Delete</code> button. Before we go further, note I just coined the term, traversal index. Not sure if there’s a proper term for that. Anyhow, it is still OK now for the sample table with three controls(checkbox, delete and save button) but when you’ve got more focusable elements or when the number of table rows increases, the traversal index will grow quite large. We don’t want that. </p>
+<p>Tables are a common pattern to present information for a related group of data. Take, for example, the wireframe above, we have columns for data and a column for action buttons. The easiest we can do is just mark up the HTML so that the focusable elements like buttons can be “tabbed” into. In the previous image, we marked the element the user needs to interact with. If you use the <kbd>Tab</kbd> key, it will take you 8 key presses before a user reaches the <code class="language-text">Delete</code> button. I call <strong>8</strong> key presses the traversal index (<code class="language-text">T</code> index for short) to activate the <code class="language-text">Delete</code> button. </p>
+<p>Before we go further, note I just coined the term, traversal index. Not sure if there’s a proper term for that. </p>
+<p>Anyhow, the table still looks fine with three controls(checkbox, delete and save button) and a few rows. But when you’ve add more focusable elements or when the number of table rows increases, the traversal index will grow quite large. </p>
 <p>We want to reduce the <code class="language-text">T</code> index to make your keyboard(/screen reader) users happy.  Now check out the sample below, </p>
 <div class="img-demo">
   <img src="/blog/with-arrow-keys.png"/>
 </div>
-<p>In this table, we’ve added event handlers to use <kbd>Arrow Up</kbd> and <kbd>Arrow Down</kbd> keys to navigate between table rows. Once the specific row is focused(indicated by grey background color), the user can then use the <kbd>Tab</kbd> key to navigate between the elements within the row. With this simple addition, we’ve reduced the <code class="language-text">T</code> index to 4. We’ve spared the user from carpal tunnel syndrome or other typing-related pain. </p>
+<p>In this table, we’ve added event handlers to use <kbd>Arrow Up</kbd> and <kbd>Arrow Down</kbd> keys to navigate between table rows. Once a row is focused(indicated by grey background color), the user can then use the <kbd>Tab</kbd> key to navigate between the items within the row. With this simple change, we’ve reduced the <code class="language-text">T</code> index to 4. Sparing your users from carpal tunnel syndrome. </p>
 <p>It is important to note that since this is not a common navigation convention for tables, you need to notify the user about the extended navigation before or when the table is focused. </p>
 <blockquote>
 <p>For example,</p>
@@ -142,21 +144,21 @@
 </div>
 <p>The wireframe shows three sections (header, table, and links). The header has only one link and the table has four(4) rows with one(1) focusable element per row. To navigate from the header to the “links” section, we will need to press the <kbd>Tab</kbd> key six(6) times. The problematic step here is we spend a lot of time focusing on the table rows before arriving at the Links section.</p>
 <p>We can improve the keyboard navigation by keeping the “tab” stops on the three sections initially. One way of doing this is to prevent your table contents from getting focused until needed. For instance, adding <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert">inert</a> attribute to the <code class="language-text">&lt;tbody /></code> wrapper will prevent the table contents from getting focused. This change reduces the <code class="language-text">T</code> index to <code class="language-text">3</code>. </p>
-<p>The second part of this technique is to assign a special key( or keys) to enable navigation inside the table. For example, same with the previous table navigation handler, when the table is focused pressing <kbd>Arrow down</kbd> or <kbd>Arrow up</kbd> keys will focus one of the rows. Then you can navigate vertically or horizontally inside the table after. When the user is done, we can continue through the table rows or press <kbd>Escape</kbd> key to exit the table. </p>
+<p>The second part of this technique is to assign a special key( or keys) to enable navigation inside the table. For example, same with the previous table navigation handler, when the table is focused pressing <kbd>Arrow down</kbd> or <kbd>Arrow up</kbd> keys will focus one of the rows. Then you can navigate vertically or horizontally inside the table after. We can then continue through the table rows or press <kbd>Escape</kbd> key to exit the table. </p>
 <div class="img-demo">
   <img src="/blog/page-sections-plan-focus.png"/>
 </div>
-<p>You might think that this is complex. It might be - but it really depends on your implementation. It will take quite a bit of coding but the other side of the equation is a more intuitive way of navigating your page.</p>
-<p>Another way to improve the <code class="language-text">T</code> index for this wireframe is to assign a key combination(/s) to each section. For example, assign <kbd>/</kbd> + <kbd>l</kbd> to jump straight to the links section. This will keep the default navigation behavior but still provide the user a means to avoid extraneous key presses. </p>
-<p>The key for both techniques is to inform the user of the special keyboard navigation. </p>
+<p>You might think that the additional navigation is complex. It won’t be - it really depends on your implementation. It will take quite a bit of coding but the other side of the equation is a better way of navigating your page.</p>
+<p>Another option we can do here to improve the <code class="language-text">T</code> index is to assign a key combination(/s) to each section. For example, assign <kbd>/</kbd> + <kbd>l</kbd> to jump straight to the links section. This will keep the default navigation behavior but still provide the user a means to avoid extraneous key presses. </p>
+<p>Again, the key for both techniques is to inform the user of the special keyboard navigation. </p>
 <h2>Wrapping up</h2>
-<p>Making sure your website is keyboard accessible is an important task. We can improve keyboard accessibility a step further by making sure to;</p>
+<p>Improve keyboard accessibility further by making sure to;</p>
 <ul>
 <li>use headings and landmarks; </li>
-<li>add skip links and; </li>
-<li>reduce the number of keypresses when navigating.</li>
+<li>add skip links when necessary and; </li>
+<li>reduce the number of keypresses to navigate a page/section</li>
 </ul>
-<h2>References</h2>
+<h2>Reference</h2>
 <ul>
 <li><a href="https://www.w3.org/WAI/tutorials/page-structure/">WCAG Tutorials</a></li>
 <li><a href="https://webaim.org/techniques/skipnav/">WebAIM: Skip navigation links</a></li>
