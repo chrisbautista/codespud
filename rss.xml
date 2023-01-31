@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Jan 2023 08:08:01 GMT</lastBuildDate><item><title><![CDATA[Most commonly-used CSS patterns part 1]]></title><description><![CDATA[I love working with CSS. It brings out the creative side of what is otherwise a boring web development task. It works in tandem with HTML and Javascript but I think CSS is still what makes everything nice and energetic. I’ve worked in a lot of websites builds in different industries. Although the size and theme of these sites may vary I am glad that I can still count on some basic UI patterns.]]></description><link>https://www.codespud.com/2023/most-used-css-patterns/</link><guid isPermaLink="false">https://www.codespud.com/2023/most-used-css-patterns/</guid><pubDate>Sat, 28 Jan 2023 08:37:00 GMT</pubDate><content:encoded>&lt;!--
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 31 Jan 2023 02:16:45 GMT</lastBuildDate><item><title><![CDATA[Most commonly-used CSS patterns part 1]]></title><description><![CDATA[I love working with CSS. It brings out the creative side of what is otherwise a boring web development task. It works in tandem with HTML and Javascript but I think CSS is still what makes everything nice and energetic. I’ve worked in a lot of websites builds in different industries. Although the size and theme of these sites may vary I am glad that I can still count on some basic UI patterns.]]></description><link>https://www.codespud.com/2023/most-used-css-patterns/</link><guid isPermaLink="false">https://www.codespud.com/2023/most-used-css-patterns/</guid><pubDate>Sat, 28 Jan 2023 08:37:00 GMT</pubDate><content:encoded>&lt;!--
 - modal overlay
 - screenreader-only
 - golden ratio font settings
@@ -153,7 +153,7 @@ I am hoarder
     &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;I used this a lot, especially for navigation. You can replace the text with anchor tags or buttons. If you have a lot of items this style will also wrap the items nicely. &lt;/p&gt;
+&lt;p&gt;I used this a lot, especially for navigation. You can replace the text with anchor tags or buttons. If you have a lot of items this style will also wrap nicely. &lt;/p&gt;
 &lt;div class=&quot;demo list&quot;&gt;
    &lt;ul class=&quot;horizontal-list&quot;&gt;
     &lt;li&gt;
@@ -252,8 +252,10 @@ I am hoarder
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/div&gt;
+&lt;p&gt;It’s important to note that you need to the “horizontal list” style with the breadcrumb CSS here.
+s&lt;/p&gt;
 &lt;h3 id=&quot;screen-reader-only&quot;&gt;4. For screen readers only&lt;/h3&gt;
-&lt;p&gt;Accessibility work might take you into situations where you need to expose text to screenreaders but hide it from sighted users. &lt;/p&gt;
+&lt;p&gt;Accessibility work might take you into situations where you need to expose text to screenreaders but hide it from sighted users. One use case is when you need image buttons without text. &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.screenreader-only&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;-10000px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -300,7 +302,7 @@ I am hoarder
  }
 
 &lt;/style&gt;
-&lt;p&gt;We have a list of icon buttons. The output can be understood by sighted users but is next to useless for screen reader users. We lack descriptive text that tells screen reader users the buttons’ purpose. &lt;/p&gt;
+&lt;p&gt;Here we have a list of icon buttons. The output can be understood by sighted users but is next to useless for screen reader users. We need descriptive text to tell screen reader users the buttons’ purpose. &lt;/p&gt;
 &lt;div class=&quot;demo icon&quot;&gt;
     &lt;ul class=&quot;horizontal-list icon-buttons&quot;&gt;
       &lt;li&gt;
@@ -311,7 +313,7 @@ I am hoarder
       &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;To remedy this we change the markup a bit to include the descriptive text wrapped in a span with &lt;code class=&quot;language-text&quot;&gt;screenreader-only&lt;/code&gt; class. &lt;/p&gt;
+&lt;p&gt;To remedy this we change the markup a bit to include the button text. Wrap the text in span with &lt;code class=&quot;language-text&quot;&gt;screenreader-only&lt;/code&gt; class. &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;horizontal-list icon-buttons&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
           &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;✖&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;screenreader-only&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; Delete&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -320,7 +322,8 @@ I am hoarder
           &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;💾&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;screenreader-only&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; Save&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now when a screen reader focuses a button it will pickup the text. Activate a screen reader to test out the markup below. &lt;/p&gt;
+&lt;p&gt;Now when a screen reader focuses one of the buttons it will announce the included text. &lt;/p&gt;
+&lt;p&gt;Use a screen reader to test the widget below. &lt;/p&gt;
 &lt;div class=&quot;demo icon&quot;&gt;
     &lt;ul class=&quot;horizontal-list icon-buttons&quot;&gt;
       &lt;li&gt;
@@ -332,16 +335,22 @@ I am hoarder
     &lt;/ul&gt;
 &lt;/div&gt;
 &lt;h3 id=&quot;disabled&quot;&gt;5. Disabled area&lt;/h3&gt;
-&lt;p&gt;Here is a style commonly used but rarely thought about. In the use case, you want to disable an area to prevent interaction. On form controls (input, textarea, buttons etc.) you can accomplish this by using the &lt;code class=&quot;language-text&quot;&gt;[disabled=true]&lt;/code&gt; parameter. But for non-form controls like a big wall of text. There is no markup or attribute to aid with this. &lt;/p&gt;
+&lt;p&gt;Here is a style commonly used but rarely thought about. I for one only remember adding disabled styles when I actually need it. The use case is you want to disable an area to prevent interaction. On form controls (input, textarea, buttons etc.) you can accomplish this by using the &lt;code class=&quot;language-text&quot;&gt;[disabled=true]&lt;/code&gt; parameter. But for non-form controls like a table or big wall of text. There is no markup or attribute to aid with this. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;wall-of-text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis risus. Vivamus id urna augue. Quisque laoreet fringilla lorem vitae posuere. Integer non ex molestie, maximus ex non, tristique enim. Pellentesque dapibus ultrices elit, eget ornare risus. Etiam eget ullamcorper nunc, sed ultricies enim. Quisque vehicula sit amet enim eu imperdiet. Aenean dignissim purus nisi, ultricies accumsan tortor finibus et. Duis dictum orci vitae convallis bibendum.
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are a lot of reasons to disable a section or group of non-interactive elements. One such use case is when preventing a user from interacting with anything inside a section like editing a form control. Another reason is to tell the user the difference between different states like when the toggle is triggered. &lt;/p&gt;
+&lt;p&gt;Another reason to disable a section of your page is to tell the user the difference between different states like when a toggle controls some content. &lt;/p&gt;
 &lt;style&gt;
 
-  .demo.disabled .toggle:checked ~ .wall-of-text {
+  .demo.disabled .toggle ~ .wall-of-text {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  .demo.disabled .toggle:checked ~ .wall-of-text {
+    opacity: 1;
+    pointer-events: auto;
   }
 
 &lt;/style&gt;
@@ -350,9 +359,11 @@ Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis r
     &lt;span class=&quot;token property&quot;&gt;pointer-events&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; none&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;demo disabled&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot;&gt; Disable wall of text
+  &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot;&gt; Read agreement
   &lt;div class=&quot;wall-of-text&quot;&gt;
   Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis risus. Vivamus id urna augue. Quisque laoreet fringilla lorem vitae posuere. Integer non ex molestie, maximus ex non, tristique enim. Pellentesque dapibus ultrices elit, eget ornare risus. Etiam eget ullamcorper nunc, sed ultricies enim. Quisque vehicula sit amet enim eu imperdiet. Aenean dignissim purus nisi, ultricies accumsan tortor finibus et. Duis dictum orci vitae convallis bibendum.
+  &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;choice&quot; class=&quot;toggle&quot;&gt; Agree&lt;/label&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;choice&quot; class=&quot;toggle&quot;&gt; Disagree&lt;/label&gt;
   &lt;/div&gt;   
 &lt;/div&gt;
 &lt;h2&gt;Wrapping up&lt;/h2&gt;

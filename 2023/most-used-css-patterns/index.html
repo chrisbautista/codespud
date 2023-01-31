@@ -207,7 +207,7 @@ I am hoarder
     </li>
 </ul>
 </div>
-<p>I used this a lot, especially for navigation. You can replace the text with anchor tags or buttons. If you have a lot of items this style will also wrap the items nicely. </p>
+<p>I used this a lot, especially for navigation. You can replace the text with anchor tags or buttons. If you have a lot of items this style will also wrap nicely. </p>
 <div class="demo list">
    <ul class="horizontal-list">
     <li>
@@ -306,8 +306,10 @@ I am hoarder
     </ul>
   </nav>
 </div>
+<p>It’s important to note that you need to the “horizontal list” style with the breadcrumb CSS here.
+s</p>
 <h3 id="screen-reader-only">4. For screen readers only</h3>
-<p>Accessibility work might take you into situations where you need to expose text to screenreaders but hide it from sighted users. </p>
+<p>Accessibility work might take you into situations where you need to expose text to screenreaders but hide it from sighted users. One use case is when you need image buttons without text. </p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.screenreader-only</span> <span class="token punctuation">{</span>
   <span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span>
   <span class="token property">left</span><span class="token punctuation">:</span>-10000px<span class="token punctuation">;</span>
@@ -354,7 +356,7 @@ I am hoarder
  }
 
 </style>
-<p>We have a list of icon buttons. The output can be understood by sighted users but is next to useless for screen reader users. We lack descriptive text that tells screen reader users the buttons’ purpose. </p>
+<p>Here we have a list of icon buttons. The output can be understood by sighted users but is next to useless for screen reader users. We need descriptive text to tell screen reader users the buttons’ purpose. </p>
 <div class="demo icon">
     <ul class="horizontal-list icon-buttons">
       <li>
@@ -365,7 +367,7 @@ I am hoarder
       </li>
     </ul>
 </div>
-<p>To remedy this we change the markup a bit to include the descriptive text wrapped in a span with <code class="language-text">screenreader-only</code> class. </p>
+<p>To remedy this we change the markup a bit to include the button text. Wrap the text in span with <code class="language-text">screenreader-only</code> class. </p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-list icon-buttons<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>✖<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>screenreader-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
@@ -374,7 +376,8 @@ I am hoarder
           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>💾<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>screenreader-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> Save<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre></div>
-<p>Now when a screen reader focuses a button it will pickup the text. Activate a screen reader to test out the markup below. </p>
+<p>Now when a screen reader focuses one of the buttons it will announce the included text. </p>
+<p>Use a screen reader to test the widget below. </p>
 <div class="demo icon">
     <ul class="horizontal-list icon-buttons">
       <li>
@@ -386,16 +389,22 @@ I am hoarder
     </ul>
 </div>
 <h3 id="disabled">5. Disabled area</h3>
-<p>Here is a style commonly used but rarely thought about. In the use case, you want to disable an area to prevent interaction. On form controls (input, textarea, buttons etc.) you can accomplish this by using the <code class="language-text">[disabled=true]</code> parameter. But for non-form controls like a big wall of text. There is no markup or attribute to aid with this. </p>
+<p>Here is a style commonly used but rarely thought about. I for one only remember adding disabled styles when I actually need it. The use case is you want to disable an area to prevent interaction. On form controls (input, textarea, buttons etc.) you can accomplish this by using the <code class="language-text">[disabled=true]</code> parameter. But for non-form controls like a table or big wall of text. There is no markup or attribute to aid with this. </p>
+<p><strong>Example</strong></p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wall-of-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis risus. Vivamus id urna augue. Quisque laoreet fringilla lorem vitae posuere. Integer non ex molestie, maximus ex non, tristique enim. Pellentesque dapibus ultrices elit, eget ornare risus. Etiam eget ullamcorper nunc, sed ultricies enim. Quisque vehicula sit amet enim eu imperdiet. Aenean dignissim purus nisi, ultricies accumsan tortor finibus et. Duis dictum orci vitae convallis bibendum.
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
-<p>There are a lot of reasons to disable a section or group of non-interactive elements. One such use case is when preventing a user from interacting with anything inside a section like editing a form control. Another reason is to tell the user the difference between different states like when the toggle is triggered. </p>
+<p>Another reason to disable a section of your page is to tell the user the difference between different states like when a toggle controls some content. </p>
 <style>
 
-  .demo.disabled .toggle:checked ~ .wall-of-text {
+  .demo.disabled .toggle ~ .wall-of-text {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  .demo.disabled .toggle:checked ~ .wall-of-text {
+    opacity: 1;
+    pointer-events: auto;
   }
 
 </style>
@@ -404,9 +413,11 @@ Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis r
     <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
   <span class="token punctuation">}</span></code></pre></div>
 <div class="demo disabled">
-  <input type="checkbox" class="toggle"> Disable wall of text
+  <input type="checkbox" class="toggle"> Read agreement
   <div class="wall-of-text">
   Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis risus. Vivamus id urna augue. Quisque laoreet fringilla lorem vitae posuere. Integer non ex molestie, maximus ex non, tristique enim. Pellentesque dapibus ultrices elit, eget ornare risus. Etiam eget ullamcorper nunc, sed ultricies enim. Quisque vehicula sit amet enim eu imperdiet. Aenean dignissim purus nisi, ultricies accumsan tortor finibus et. Duis dictum orci vitae convallis bibendum.
+  <label><input type="radio" name="choice" class="toggle"> Agree</label>
+  <label><input type="radio" name="choice" class="toggle"> Disagree</label>
   </div>   
 </div>
 <h2>Wrapping up</h2>
