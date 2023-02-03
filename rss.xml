@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Feb 2023 04:54:23 GMT</lastBuildDate><item><title><![CDATA[Lesser Known CSS Patterns I Use 90% of The Time Part 1]]></title><description><![CDATA[I have snippets of code I go back to whenever I find a familiar UI pattern from a design I need to build. It is one of those efficiency hacks I’ve adopted as a programmer. I’ve collected quite a lot. I’ve worked on a lot of website builds in different industries. Although the size and theme of these sites may vary I am glad that I can still count on some basic UI patterns.]]></description><link>https://www.codespud.com/2023/most-used-css-patterns/</link><guid isPermaLink="false">https://www.codespud.com/2023/most-used-css-patterns/</guid><pubDate>Sat, 28 Jan 2023 08:37:00 GMT</pubDate><content:encoded>&lt;!--
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Feb 2023 07:58:02 GMT</lastBuildDate><item><title><![CDATA[Lesser Known CSS Snippets I Use 90% of The Time Part 2]]></title><link>https://www.codespud.com/2023/most-used-css-patterns-part-2/</link><guid isPermaLink="false">https://www.codespud.com/2023/most-used-css-patterns-part-2/</guid><pubDate>Sat, 28 Jan 2023 08:37:00 GMT</pubDate><content:encoded>&lt;!--
+Part 1
+- golden ratio font settings
+- screenreader-only
+- inline list
+- breadcrumbs
+- disabled
+
+Part 2
+- centered child
+- modal overlay
+- text truncate
+   - line
+   - multiline
+- card container
+- fullscreen image
+
+Part 3
+- news layout
+- 2 column layout
+- grid layout
+- z layout
+- f layout 
+
+
+angle
+
+I love CSS
+I hate repeating myself
+I am hoarder
+
+
+--&gt;</content:encoded></item><item><title><![CDATA[Lesser Known CSS Snippets I Use 90% of The Time - Part 1]]></title><description><![CDATA[I have snippets of code I return to whenever I find patterns in a design. It is one of those efficiency hacks I’ve adopted as a programmer. I have quite a collection. Gathered working on websites in different industries. Although the size and theme of these websites vary,  I can still count on some basic UI patterns.]]></description><link>https://www.codespud.com/2023/most-used-css-patterns/</link><guid isPermaLink="false">https://www.codespud.com/2023/most-used-css-patterns/</guid><pubDate>Sat, 28 Jan 2023 08:37:00 GMT</pubDate><content:encoded>&lt;!--
 - modal overlay
 - screenreader-only
 - golden ratio font settings
@@ -21,8 +53,8 @@ I am hoarder
 
 
 --&gt;
-&lt;p&gt;I have snippets of code I go back to whenever I find a familiar UI pattern from a design I need to build. It is one of those efficiency hacks I’ve adopted as a programmer. I’ve collected quite a lot. I’ve worked on a lot of website builds in different industries. Although the size and theme of these sites may vary I am glad that I can still count on some basic UI patterns. &lt;!--more--&gt; I have some tried and tested snippets I can use. &lt;/p&gt;
-&lt;p&gt;In this post, I am sharing some of these CSS snippets for patterns I use in my projects. &lt;/p&gt;
+&lt;p&gt;I have snippets of code I return to whenever I find patterns in a design. It is one of those efficiency hacks I’ve adopted as a programmer. I have quite a collection. Gathered working on websites in different industries. Although the size and theme of these websites vary,  I can still count on some basic UI patterns. &lt;!--more--&gt; I condensed them into tried and tested snippets I use often. &lt;/p&gt;
+&lt;p&gt;In this post, I am sharing some of these CSS snippets for UI patterns I use in my projects. &lt;/p&gt;
 &lt;h2 id=&quot;font-settings&quot;&gt;1. Golden ratio font settings&lt;/h2&gt;
 &lt;p&gt;The first thing I learned as a web developer is that how you define the text styles tells the reader the hierarchy of the information presented on a page. For that reason one of the very first things a web developer defines in CSS is the font styles. &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string url&quot;&gt;&apos;https://fonts.googleapis.com/css?family=Poppins:400&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
@@ -1136,7 +1168,7 @@ buttons&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within&quot;&gt;MDN: focus-within&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html&quot;&gt;WCAG: Focus order&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-visible.html&quot;&gt;WCAG: Focus visible&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Programmer's New Year Resolution]]></title><description><![CDATA[I am the most undisciplined person I know. I make resolutions every year - and every year - I fall short. But I am stubborn too. So this year, I have decided to be a better programmer and work on my journey in this blog. I am starting with my new year’s resolution as a front-end developer.]]></description><link>https://www.codespud.com/2022/programmers_resolution_2023/</link><guid isPermaLink="false">https://www.codespud.com/2022/programmers_resolution_2023/</guid><pubDate>Sat, 31 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Absolutely Positioned drawer panel height issue]]></title><link>https://www.codespud.com/2023/fullheight-container-issue/</link><guid isPermaLink="false">https://www.codespud.com/2023/fullheight-container-issue/</guid><pubDate>Sun, 08 Jan 2023 01:07:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Programmer's New Year Resolution]]></title><description><![CDATA[I am the most undisciplined person I know. I make resolutions every year - and every year - I fall short. But I am stubborn too. So this year, I have decided to be a better programmer and work on my journey in this blog. I am starting with my new year’s resolution as a front-end developer.]]></description><link>https://www.codespud.com/2022/programmers_resolution_2023/</link><guid isPermaLink="false">https://www.codespud.com/2022/programmers_resolution_2023/</guid><pubDate>Sat, 31 Dec 2022 01:07:00 GMT</pubDate><content:encoded>&lt;!--
 [Inspired by math](https://matt.might.net/articles/programmers-resolutions/)
 
 Resolution
