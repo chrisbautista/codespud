@@ -388,9 +388,9 @@ s</p>
       </li>
     </ul>
 </div>
-</div><div class="adunit__AdWrapper-sc-1nr4oln-0 cvVnfw"><ins class="adunit__Ins-sc-1nr4oln-1 ffZNyF adsbygoogle" style="box-shadow:1px 1px 3px 0 rgba(0,0,0, 0.15)" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4889352773674825" data-ad-slot="2581564797"></ins></div><div class="blog-post__PostContent-sc-1993m0e-5 eHXUXk">
 <h2 id="disabled">5. Disabled area</h2>
 <p>Here is a style commonly used but rarely thought about. I for one only remember adding disabled styles when I actually need it. The use case is you want to disable an area to prevent interaction. On form controls (input, textarea, buttons etc.) you can accomplish this by using the <code class="language-text">[disabled=true]</code> parameter. But for non-form controls like a table or big wall of text. There is no markup or attribute to aid with this. </p>
+</div><div class="adunit__AdWrapper-sc-1nr4oln-0 cvVnfw"><ins class="adunit__Ins-sc-1nr4oln-1 ffZNyF adsbygoogle" style="box-shadow:1px 1px 3px 0 rgba(0,0,0, 0.15)" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4889352773674825" data-ad-slot="2581564797"></ins></div><div class="blog-post__PostContent-sc-1993m0e-5 eHXUXk">
 <p><strong>Example</strong></p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wall-of-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis risus. Vivamus id urna augue. Quisque laoreet fringilla lorem vitae posuere. Integer non ex molestie, maximus ex non, tristique enim. Pellentesque dapibus ultrices elit, eget ornare risus. Etiam eget ullamcorper nunc, sed ultricies enim. Quisque vehicula sit amet enim eu imperdiet. Aenean dignissim purus nisi, ultricies accumsan tortor finibus et. Duis dictum orci vitae convallis bibendum.
@@ -421,7 +421,7 @@ Fusce porta pellentesque molestie. Praesent sit amet tempus enim, in convallis r
   <label><input type="radio" name="choice" class="toggle"> Disagree</label>
   </div>   
 </div>
-<p><strong>Update:</strong> We now have <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert">inert</a> attribute that is well supported now by most browsers and support is getting better as I write this. It works similarly to <code class="language-text">pointer-events: none</code> that prevents triggering or receiving any events on the element. Note that, unlike form controls that change the style when <code class="language-text">disabled</code> attribute is set, there is no visible indication when inert is set. It is the developer’s responsibility to define if needed. </p>
+<p><strong>Update:</strong> Most browsers now support <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert">inert</a> attribute. It works similarly to <code class="language-text">pointer-events: none</code> that prevents triggering or receiving any events on the element. Note that, unlike form controls that change the style when <code class="language-text">disabled</code> attribute is set, there is no visible indication when inert is set. It is the developer’s responsibility to define if needed. </p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">[inert]</span> <span class="token punctuation">{</span>
   <span class="token property">opacity</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
