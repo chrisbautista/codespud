@@ -10,7 +10,7 @@ import _ from "lodash"
 
 function Layout(props) {
   const { title, children, backgroundColor, tags, isInsidePage } = props;
-  const scrolled = React.useRef(null);
+  const scrolled = React.useRef(null);  
 
   React.useEffect(() => {
     const headID = document.getElementsByTagName('head')[0];
@@ -28,7 +28,7 @@ function Layout(props) {
       gaScript.type = 'text/javascript'
       headID.appendChild(gaScript)
     }
-    
+
   }, []);
 
 
@@ -64,11 +64,19 @@ function Layout(props) {
               let tag = tagItem.fieldValue;
               let scale = parseInt(tagItem.totalCount) / (maxTagCount / 3);
               let scaleStyle;
+              let horizMargin = 25;
               if (scale >= 1) {
                 if (scale > 2.5) {
                   scale = 2.5;
+
+                  if (tag.length > 12) {
+                    horizMargin = 30;
+                  }
                 }
-                scaleStyle = { transform: `scale(${scale})`, margin: `${5 * scale}px ${25 * scale}px` }
+                scaleStyle = { 
+                  transform: `scale(${scale})`, 
+                  margin: `${6 * scale}px ${horizMargin * scale}px`,
+                  padding: tag.length > 12 ? `0 ${scale * 1.2}rem` : '0' }
               }
 
               return <a key={`tag${tag}${i}`}
@@ -232,6 +240,7 @@ const Aside = styled.section`
   border-radius: 8px;
   max-width: 1600px;
   margin: 2rem auto;
+  overflow: hidden;
   
   a.tag-pill {
     display: inline;

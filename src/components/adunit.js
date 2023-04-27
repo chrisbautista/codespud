@@ -25,13 +25,13 @@ export default function AdUnit({ type = AdUnitType.Grid, withShadow = false }) {
     const style = withShadow ? { boxShadow: '1px 1px 3px 0 rgba(0,0,0, 0.15)' } : undefined;
 
     if (type === AdUnitType.InArticle) {
-        return <Ins className="adsbygoogle"
+        return <AdWrapper><Ins className="adsbygoogle"
             style={style}
             {...dataTestProp}
             data-ad-layout="in-article"
             data-ad-format="fluid"
             data-ad-client={clientId}
-            data-ad-slot="2581564797"></Ins>;
+            data-ad-slot="2581564797"></Ins></AdWrapper>;
     }
 
     return <Ins className="adsbygoogle"
@@ -40,8 +40,26 @@ export default function AdUnit({ type = AdUnitType.Grid, withShadow = false }) {
         data-ad-client={clientId}
         data-ad-slot="3654107349"
         data-ad-format="auto"
-        data-full-width-responsive="true"></Ins>;
+        data-full-width-responsive="true" />;
 }
+
+const AdWrapper = styled.div`
+    margin: 1.5rem auto 2.5rem;
+
+    &:has(ins.adsbygoogle[data-ad-status='unfilled']){
+        display: none;
+    }
+
+    &:has(ins:empty){
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        aspect-ratio: 1 / 1;
+        margin: 1.2rem auto 0;
+    }
+`;
 
 const Ins = styled.ins`
 display: block;

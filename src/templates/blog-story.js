@@ -3,6 +3,21 @@ import { Link } from "gatsby"
 
 import styled from "styled-components"
 import Tags from "../components/tagpills"
+import _ from 'lodash';
+
+
+const AdContainer = styled.div`
+  display: flex;
+  height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 1rem;
+
+  &:has(ins:empty){
+    display: none;
+  }
+`;
 
 const Story = styled.div`
   clear: both;
@@ -14,6 +29,21 @@ const Story = styled.div`
   background-color: #fdfdfd;
   overflow:hidden;
   padding: 1rem;
+  max-height: 632px;
+
+  .slogan {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 250px;
+    margin: 2rem 1.5rem 0;
+    padding-top: 1rem;
+    font-size: 1.55rem;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 
   &:empty {
     display: none;
@@ -28,10 +58,8 @@ const Story = styled.div`
     font-size: 1.6rem;
   }
 
-  :after {
-    content: " ";
-    display: block;
-    clear: both;
+  .tag-pill  {
+    font-size: 0.875rem;
   }
 
   @media (max-width: 659px) {
@@ -43,16 +71,21 @@ const Story = styled.div`
       padding: 0;
       min-height: 400px;
       font-size: 1.125rem;
+      
+      [class*=blog-story__StoryBody] {
+        width: 50%;
+        min-width: 50%;
+      }
 
       [class*="blog-story__StoryWrapper"]  {
         display: flex;        
         min-width: 100%;
-        min-height: 100%;
+        height: auto;
         padding: 0;
+        flex: 1;
 
         .image-container {
           min-width: 50%;
-          min-height: 100%;
           padding: 0;
           margin: 0;
         }
@@ -70,24 +103,6 @@ const Story = styled.div`
 
         p {
           padding: 1rem 2rem;
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    &.blog-latest {
-      [class*="blog-story__StoryWrapper"]  {
-        display: flex;
-        min-width: calc(100% - 232px);
-        min-height: 100%;
-        padding: 0;
-
-        .image-container {
-          min-width: 40%;
-          min-height: 100%;
-          padding: 0;
-          margin: 0;
         }
       }
     }
@@ -137,25 +152,36 @@ const StoryImage = styled.img`
   object-fit: cover;
 `;
 
-const HeroAdContainer = styled.div`
-  overflow: none;
-  display:none;
+// const HeroAdContainer = styled.div`
+//   display: none;
+//   &:empty {display: none;}
 
-  &:empty {display: none;}
-
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    margin: 1rem 1rem;
-    height: 100%;
-    min-width: 200px; 
-    min-height: 200px;
-  }
-
-`;
+//   @media screen and (min-width: 1600px) {
+//     display: flex;
+//     margin: 0 0 0 2rem;
+//     height: 100%;
+//     min-width: 180px; 
+//     height: 500px;
+//   }
+// `;
 
 export default function BlogStory({ ctx, node, latest, ad }) {
+  let [tick, updateTick] = React.useState(0);
   const title = node.frontmatter.title || node.fields.slug
   const linkRef = React.useRef();
+
+  const onResize = React.useCallback(() => {
+    updateTick(++tick);
+  }, [tick]);
+
+  React.useEffect(() => {
+    const debouncedHandler = _.debounce(onResize);
+    window.addEventListener('resize', debouncedHandler);
+
+    return () => {
+      window.removeEventListener('resize', debouncedHandler);
+    };
+  }, [onResize]);
 
   function onClick() {
     linkRef.current.querySelector('a.post-slug').click();
@@ -167,11 +193,17 @@ export default function BlogStory({ ctx, node, latest, ad }) {
     }
   }
 
+  // let showHeroAd = false;
+  // if (typeof window === 'object') {
+  //   showHeroAd = (window?.innerWidth || undefined) > 1600;
+  // }
   return (
     <>
-      <Story style={{ overflow: 'hidden' }}>
-        {!latest && ad}
-      </Story>
+      {!latest && ad ? <>
+        <AdContainer className="ad-container">
+          {ad}
+        </AdContainer>
+      </> : null}
       <Story ref={linkRef} className={latest ? "blog-latest" : ""}>
         <StoryWrapper >
           {node.frontmatter.featured_image && (
@@ -192,7 +224,7 @@ export default function BlogStory({ ctx, node, latest, ad }) {
             <small
               tabIndex="-1"
               onClick={onClick} onKeyUp={onKeyUp} role="button">{node.frontmatter.date}</small>
-            <Tags tags={node.frontmatter.tags} />
+            <Tags tags={node.frontmatter.tags} count={3} />
             {latest ? <ExcerptFull onClick={onClick}
               tabIndex="-1"
               dangerouslySetInnerHTML={{
@@ -206,10 +238,22 @@ export default function BlogStory({ ctx, node, latest, ad }) {
             />}
           </StoryBody>
         </StoryWrapper>
-        <HeroAdContainer>
+        {/* {showHeroAd && <HeroAdContainer>
           {latest && ad}
-        </HeroAdContainer>
+        </HeroAdContainer>} */}
       </Story>
     </>
   )
 }
+
+
+// const quotes = [
+
+//   "“Before software can be reusable it first has to be usable.” – Ralph Johnson",
+//   "“Java is to JavaScript what car is to Carpet.” – Chris Heilmann",
+//   "“Code is like humor. When you have to explain it, it’s bad.” – Cory House",
+//   "“Optimism is an occupational hazard of programming: feedback is the treatment. “ Kent Beck",
+//   "“Make it work, make it right, make it fast.” – Kent Beck",
+//   "“Design is not just what it looks like and feels like. Design is how it works.” -- Steve Jobs",
+
+// ];

@@ -305,17 +305,29 @@ const PostWrapper = styled.article`
   }
 
   .demo {
-    border: 1px solid #d3d3d3;
-    padding: 1.5rem;
+    border: 2px dashed #d3d3d3;
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    overflow: auto;
 
     label {
       font-size: 1rem;
       font-weight: bold;
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 15px 5px 20px;
+    }
   }
 
-  ins {
-    margin: 1.5rem 0;
+  blockquote {
+    margin: 2.5rem 0;
+  }
+
+  .gatsby-highlight {
+    margin: 2.5rem 0;
+
+    pre {padding: 1.6rem; }
   }
 `;
 

@@ -1,20 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import _  from "lodash"
+import _ from "lodash"
 
-export default function Tags({ tags }) {
-    if (!tags || tags.length <= 0) {
-        return null;
-    }
+export default function Tags({ tags, count }) {
+  if (!tags || tags.length <= 0) {
+    return null;
+  }
 
-    return <TagContainer>
-        {tags.map(tag => {
-            return <Link key={tag} to={`/tags/${_.kebabCase(tag)}`} className="tag-pill">{tag}</Link>;
-        })}
-    </TagContainer>;
+  tags = tags.slice(0, count);
+
+  return <TagContainer>
+    {tags.map(tag => {
+      return <Link key={tag} to={`/tags/${_.kebabCase(tag)}`} className="tag-pill">{tag}</Link>;
+    })}
+  </TagContainer>;
 }
-
 
 const TagContainer = styled.span`
   display: flex;
@@ -23,7 +24,6 @@ const TagContainer = styled.span`
   justify-content: center;
   margin: 0 auto;
   flex-wrap: wrap;
-
   a {
     font-weight: bold;
     margin: 0 5px 10px;
