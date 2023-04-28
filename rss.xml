@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Apr 2023 07:12:29 GMT</lastBuildDate><item><title><![CDATA[Using Container Queries to Make a News Layout]]></title><description><![CDATA[When I hear media query I think about a bottle filled with liquids that don’t mix (e.g. oil and water). The content(water/oil) will assume…]]></description><link>https://www.codespud.com/2023/using-container-queries-news-layout/</link><guid isPermaLink="false">https://www.codespud.com/2023/using-container-queries-news-layout/</guid><pubDate>Fri, 24 Feb 2023 08:07:00 GMT</pubDate><content:encoded>&lt;p&gt;When I hear media query I think about a bottle filled with liquids that don’t mix (e.g. oil and water). The content(water/oil) will assume the shape and size of the container (bottle). I will not bore you with &lt;code class=&quot;language-text&quot;&gt;science-sy&lt;/code&gt; stuff but some predetermined properties of these liquids define how they exist inside the bottle. Oil is lighter than water so it floats etc. But ultimately they are governed by their single container. You can’t make the oil shaped as a globe float inside of the region of water occupies. What if you have a glass sphere to contain the oil? Then made it so it is suspended inside the bottle? That is what container queries do for CSS. Container queries become the smaller glass container inside the bottle. Then your content can then follow the rules of that smaller container instead of depending on the rules of one bottle. This will allow you more flexibility in styling layouts.  &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Apr 2023 01:59:18 GMT</lastBuildDate><item><title><![CDATA[Testing Keyboard Accessibility]]></title><link>https://www.codespud.com/2023/testing-keyboard-accessibility/</link><guid isPermaLink="false">https://www.codespud.com/2023/testing-keyboard-accessibility/</guid><pubDate>Fri, 03 Mar 2023 16:07:00 GMT</pubDate><content:encoded>&lt;!-- 
+What is keyboard accessibility
+
+What are WCAG guidelines related to the keyboard
+
+WHat do I need to do keyboard accessibility
+
+What things to look out for
+
+--&gt;</content:encoded></item><item><title><![CDATA[Using Container Queries to Make a News Layout]]></title><description><![CDATA[When I hear media query I think about a bottle filled with liquids that don’t mix (e.g. oil and water). The content(water/oil) will assume…]]></description><link>https://www.codespud.com/2023/using-container-queries-news-layout/</link><guid isPermaLink="false">https://www.codespud.com/2023/using-container-queries-news-layout/</guid><pubDate>Fri, 24 Feb 2023 08:07:00 GMT</pubDate><content:encoded>&lt;p&gt;When I hear media query I think about a bottle filled with liquids that don’t mix (e.g. oil and water). The content(water/oil) will assume the shape and size of the container (bottle). I will not bore you with “science-sy” stuff but some predetermined properties of these liquids define how they exist inside the bottle. Oil is lighter than water so it floats etc. But ultimately they are governed by their single container. You can’t make the oil shaped as a globe float inside of the region of water occupies. What if you have a glass sphere to contain the oil? Then made it so it is suspended inside the bottle? That is what container queries do for CSS. Container queries become the smaller glass container inside the bottle. Then your content can then follow the rules of that smaller container instead of depending on the rules of one bottle. This will allow you more flexibility in styling layouts.  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Container queries enable you to apply styles to an element based on the size of the element’s container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts. &lt;/p&gt;
 &lt;ul&gt;
@@ -44,10 +53,9 @@
 &lt;p&gt;Remember that all these cards have the same markup. Imagine you have a server-side rendered(SSR) endpoint that returns an array of cards with similar markup sorted by descending date(e.g news post). Then you just drop all this content in different containers until you fill the layout. No need to cherry pick the data and render to different locations. &lt;/p&gt;
 &lt;p&gt;Check the pen here for a demo.  &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/vYaxdXr&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/vYaxdXr/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/vYaxdXr/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -77,10 +85,9 @@
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; nodesToSkip &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; header .demo-header, aside .links, section&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Next, the code loops thru these sections and adds skip buttons. When the button is focused and activated( using the &lt;key&gt;Enter&lt;/key&gt; key ), the focus jumps to the next section or focusable element. When you navigate to the last section there is no skip button cause there is no section to jump to next. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/zYJLQRp&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/zYJLQRp/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/zYJLQRp/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -208,10 +215,9 @@ I am hoarder
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Check out the demo to see the styles in action. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/WNgQRQE&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/WNgQRQE/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/WNgQRQE/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1616,10 +1622,9 @@ buttons&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h2&gt;Full solution&lt;/h2&gt;
 &lt;p&gt;Here are all three solutions in action. Check out the final code to understand the solutions in their entirety. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/bGjBZzM&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/bGjBZzM/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/bGjBZzM/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1745,10 +1750,9 @@ Resolution
 &lt;hr&gt;
 &lt;p&gt;Our custom button looks like a proper button now with drop shadow and on press styling. When I click the button it writes “button clicked”. For a button to be accessible it should be keyboard accessible. Let’s try navigating to the button using &lt;kbd&gt;Tab&lt;/kbd&gt; (and &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;) key in the Codepen demo below. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/ExpaJMP&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/ExpaJMP/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/ExpaJMP/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1792,10 +1796,9 @@ Resolution
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Let’s see how it works so far, Use the &lt;kbd&gt;Tab&lt;/kbd&gt; key to navigate and activate the button,&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/gOjbJLB&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/gOjbJLB/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/gOjbJLB/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1855,10 +1858,9 @@ Resolution
   &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Voila, the button style when activated with the keyboard works. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/WNKQWxj&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/WNKQWxj/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/WNKQWxj/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1875,10 +1877,9 @@ Resolution
 &lt;p&gt;I mentioned before we should be using &lt;a href=&quot;/2022/five_steps_to_improve_accessibility/&quot;&gt;semantic tags&lt;/a&gt;. The browser readily understands the behavior and information about semantic elements telling assistive technologies(like a screenreader) what to expect. This is already baked into the semantic element. We can just use it straight away. On the other hand, our custom button needs our help providing that information to the browser. Setting the role turns our custom button into a semantic button element.&lt;/p&gt;
 &lt;p&gt;Test the next demo with a screen reader.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/BaPoEbw&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/BaPoEbw/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/BaPoEbw/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -1946,10 +1947,9 @@ Resolution
 
   &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/poZjmNG&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/poZjmNG/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/poZjmNG/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -2519,10 +2519,9 @@ end game&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/dyJyebW&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/dyJyebW/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/dyJyebW/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -2600,10 +2599,9 @@ li&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: This pen got showcased in a Codepen Spark newsletter last April 14th (link below). Thanks Codepen!😀🎉&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/spark/280&quot;&gt;Tab Bar Styles, AI Games, and Some Good Forking News (April 14)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/NWXjqLN&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/NWXjqLN/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/NWXjqLN/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -2694,10 +2692,9 @@ li&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;/table&gt;
 &lt;h2&gt;Our tabbed container in action&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://codepen.io/chrisbautista/pen/XWZgrVx&quot;&gt;&lt;div&gt;&lt;iframe 
-        height=&apos;400&apos;
-        title=&apos;chrisbautista embedded pen&apos; 
+        height=&apos;400&apos; 
         scrolling=&apos;no&apos; 
-        src=&apos;//codepen.io/chrisbautista/embed/preview/XWZgrVx/?height=400&amp;theme-id=dark&amp;default-tab=result&apos; 
+        src=&apos;//codepen.io/chrisbautista/embed/preview/XWZgrVx/?height=400&amp;theme-id=dark&amp;default-tab=html,result&apos; 
         frameborder=&apos;no&apos; 
         allowtransparency=&apos;true&apos; 
         allowfullscreen=&apos;true&apos; 
@@ -3266,7 +3263,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dWC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERJC/9oACAEBAAEFAkqW7B5Zovtvk//EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESL/2gAIAQIBAT8BjT//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhQYGx/9oACAEBAAE/IXOrA43oOyg9wgU86OZMfwZKypT/2gAMAwEAAgADAAAAEMjv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxARwyusv//EABcRAQEBAQAAAAAAAAAAAAAAAAEAIVH/2gAIAQIBAT8QOoVoX//EAB0QAQEAAgIDAQAAAAAAAAAAAAERADFhgSFB0eH/2gAIAQEAAT8QSpwaGjrBSrtHyF9iY8RpUnGRBGqtOcsiDE6fM3AgiXf5M//Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERIy/9oACAEBAAEFAkqW7B5Zox9t8n//xAAXEQEAAwAAAAAAAAAAAAAAAAAAERJB/9oACAEDAQE/AdVl/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEC/9oACAECAQE/AYun/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAECESEiMTL/2gAIAQEABj8CvRjaHMkvIQo//8QAGxAAAwEBAAMAAAAAAAAAAAAAAREhAEGBobH/2gAIAQEAAT8hsTTH203YINmYDPHckkPzQiGHv//aAAwDAQACAAMAAAAQyC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDAQE/EBHDK6y//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhUf/aAAgBAgEBPxA6hNC//8QAHBABAQACAwEBAAAAAAAAAAAAAREAMSFhgUHh/9oACAEBAAE/EEbOLQ0eYOEu0eQv0RxZl4JUnWRxGhWneURhyeMTUgiXf5M//9k=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
