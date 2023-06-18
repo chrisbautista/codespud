@@ -10,7 +10,7 @@ featured_image: /blog/devin-avery-focus-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@devintavery">Devin Avery</a>
 tags: [accessibility, website-development, frontend]
 api: []
-draft: false
+draft: true
 ---
 <!-- 
 What is keyboard accessibility
@@ -22,3 +22,10 @@ WHat do I need to do keyboard accessibility
 What things to look out for
 
 -->
+
+
+
+
+
+
+

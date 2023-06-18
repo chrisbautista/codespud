@@ -8,7 +8,9 @@ export const AdUnitType = {
 
 export default function AdUnit({ type = AdUnitType.Grid, withShadow = false }) {
     const clientId = 'ca-pub-4889352773674825';
-    let isLocalhost = false; // false on production
+    let isLocalhost = true; // false on production
+
+    //return null;
 
     React.useEffect(_ => {
         let p = { google_ad_client: clientId };
@@ -47,15 +49,15 @@ const AdWrapper = styled.div`
     margin: 1.5rem auto 2.5rem;
 
     &:has(ins.adsbygoogle[data-ad-status='unfilled']){
-        display: none;
+        height: 1px;
     }
 
     &:has(ins:empty){
-        display: none;
+        height: 1px;
     }
 
     @media screen and (max-width: 768px) {
-        width: 90%;
+        width: 100%;
         aspect-ratio: 1 / 1;
         margin: 1.2rem auto 0;
     }

@@ -8,6 +8,8 @@ redirect_from:
   - /nes-on-javascript/
 featured_image: /nes.png
 tags: [game, javascript, website, fun]
+draft: false
+
 ---
 
 Here&#8217;s something amazing for Javascript, your good-ole &nbsp;NES (Nintendo Entertainment System) games are now available and playable via Ben Firshman&#8217;s JSNES page. JSNES, is an NES emulator built on javascript&#8217;s canvas objects.

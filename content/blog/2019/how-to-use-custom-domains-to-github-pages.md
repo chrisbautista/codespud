@@ -8,6 +8,7 @@ tags: [ website, blogging ]
 redirect_from: 
     - /how-to-use-custom-domains-to-github-pages/
     - /2019/04/how-to-use-custom-domains-to-github-pages/
+draft: false
 
 ---
 

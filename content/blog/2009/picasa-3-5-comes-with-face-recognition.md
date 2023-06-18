@@ -8,6 +8,7 @@ redirect_from:
   - /picasa-3-5-comes-with-face-recognition/
 featured_image: /clown-mask.gif
 tags: [google, website, images]
+draft: false
 ---
 
 Google released Picasa 3.5 yesterday, with some cool features. In keeping with Picasa Web Albums enhancements, &nbsp;Developers have added <a href="http://picasa.google.com/features-nametags.html" target="_blank">face recognition</a> and <a href="http://en.wikipedia.org/wiki/Geotagging" target="_blank">geo tags</a> to their photo-organizer-slash-jack-of-all-trades software.

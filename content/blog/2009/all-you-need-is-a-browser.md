@@ -8,6 +8,7 @@ redirect_from:
   - /all-you-need-is-a-browser/
 featured_image: /gmail_logo.png
 tags: [browser, webapps, tip]
+draft: false
 ---
 
 The web has become more than just a <a href="http://www.ipl.org/" target="_blank">glorified paperless library</a>, now it has become a place where everyone works, plays and meet up. This has become more true with the surge of desktop applications to their web equivalents (email, desktop publishing, spreadsheet etc.) and the advancement in web technologies(AJAX, HTML5 etc). More and more I find myself using online versions of my computer&#8217;s desktop. <!--more-->Having been hosted on a remote server I enjoy; savings in storage space, automatic backups, safety from physical hardware damage(like for some of my friends affected by Typhoon Ondoy) and ready support(depends on the service provider). Though you do need to constantly have a decent internet connection, for me it works just fine. If you&#8217;re interested, read on!.

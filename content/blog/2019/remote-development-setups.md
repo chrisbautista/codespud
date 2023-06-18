@@ -8,7 +8,7 @@ tags: [tutorial, IDE]
 redirect_from: 
   - /remote-development-setups/
   - /2019/05/remote-development-setups/
-
+draft: false
 ---
 
 Tell me if this sounds familiar. You have a workstation that can not support the technology stack your project requires. Having VMs or Docker installed on your machine is out of the question since it can barely support office software.  You end up building a development machine(perhaps an Linux box) as a  desktop server. This works well for a while until you need to access your development setup remotely. Luckily there's a number of ways you can achieve this. <!--more--> 

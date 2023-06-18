@@ -7,6 +7,7 @@ redirect_from:
   - /2009/09/resume-on-youtube/
   - /resume-on-youtube/
 tags: [website, video]
+draft: false
 ---
 
 <div style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">

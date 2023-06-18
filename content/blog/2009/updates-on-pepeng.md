@@ -8,7 +8,7 @@ url: /?p=252
 redirect_from:
   - /updates-on-pepeng/
   - /2009/10/updates-on-pepeng/
-
+draft: false
 ---
 Though Typhoon Pepeng(Pharma) spared Metro Manila, it&#8217;s still wreaking havoc to thousands of our countrymen up North. Let&#8217;s pray for them and if we can, help in getting the information to government units (Like the NDCC, PNC etc.). Using the latest twitter search widget and Google Ajax Feeds, I&#8217;m setting up this page as an outpost to get updates on Typhoon Pepeng. Use it as you see fit. 
 

@@ -7,6 +7,7 @@ tags: [website, google, api]
 redirect_from:
   - /2009/09/ocr-api-on-google-docsnot-yet/
   - /ocr-api-on-google-docsnot-yet/
+draft: false
 ---
 <a href="http://googledataapis.blogspot.com/2009/09/import-scans-or-go-multilingual.html" target="_blank">Google API blog</a> announced today, new features for their <a href="http://code.google.com/apis/documents/overview.html" target="_blank&quot;&quot;">Documents List &#8211; Data APIs (DLDA)</a> &#8211; one of which is Optical Character Recognition(<a href="http://en.wikipedia.org/wiki/Optical_character_recognition" target="_blank">OCR</a>). To put it simpy, sending an image(with readable text) to a DLDA application, when OCR is enabled into the request, will equip the API to read the image and generate a properly editable document.<!--more-->
 

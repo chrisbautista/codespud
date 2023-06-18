@@ -8,6 +8,7 @@ redirect_from:
   - /updates-on-ondoy-places-to-donate-efforts-by-bloggers/
 featured_image : /potatokorner-philippines_flooding.jpg
 tags: [personal]
+draft: false
 ---
 
 A call for help. If you are able, please donate whatever you can spare to the victims of Ondoy(Ketsana).

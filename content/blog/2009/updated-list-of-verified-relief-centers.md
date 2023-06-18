@@ -8,6 +8,7 @@ redirect_from:
   - /updated-list-of-verified-relief-centers/
 featured_image :  /potatokorner-ondoy-victims.jpg
 tags: [personal]
+draft: false
 ---
 
 

@@ -16,6 +16,7 @@ blogger_internal:
   - /feeds/21010737/posts/default/6325991344956883481
 featured_image: /twitter.png
 tags: [ui, javascript]
+draft: false
 ---
 When I started blogging again last September, I was delighted to get a template with built-in message polling to twitter. I played with it a bit and settled with the look you see at the right. I am not a prolific &#8216;twitterer&#8217;, but I love the whole concept of [micropublishing][1].
 

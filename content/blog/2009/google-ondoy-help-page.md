@@ -8,6 +8,7 @@ redirect_from:
   - /google-ondoy-help-page/
 excerpt: Google joins the Filipino nation in helping those affected by Typhoon Ondoy!
 tags: [personal]
+draft: false
 ---
 
 Updates:

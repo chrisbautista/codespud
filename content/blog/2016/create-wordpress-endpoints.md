@@ -7,6 +7,7 @@ draft: true
 url: /?p=450
 redirect_from: 
   - /create-wordpress-endpoints/
+draft: false
 
 ---
 I was building a wordpress plugin for use with Rand Group&#8217;s website and other clients. One of the features of this plugin is to provide a slug for displaying resources built from Download Monitor( shown below )

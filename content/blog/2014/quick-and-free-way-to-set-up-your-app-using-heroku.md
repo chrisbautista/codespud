@@ -8,6 +8,7 @@ redirect_from:
   - /quick-and-free-way-to-set-up-your-app-using-heroku/
 featured_image :  /assets/2014/08/features-tools-3dc022115028973bfa824eb354f1d87c.png
 tags: [website, devops]
+draft: false
 
 ---
 I had a struck of inspiration earlier this week. I&#8217;ve always wanted to make this webapp that has been playing in my mind  for a while and I finally had some ideas to start on.  Of course, like any of my projects, the first thing I do is research. First in my list was a workflow to streamline development. It&#8217;s been a while since I modified my workflow and so I thought it was time for a change.<!--more-->

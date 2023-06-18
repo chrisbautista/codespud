@@ -7,6 +7,7 @@ redirect_from:
   - /2009/01/how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/
   - /how-to-write-a-backup-shell-script-using-tar-and-gnu-zip/
 tags: [bash, linux, script]
+draft: false
 ---
 
 Happy New Year!

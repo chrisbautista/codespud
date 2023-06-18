@@ -8,6 +8,7 @@ redirect_from:
   - /funny-video-animator-vs-animated/
 featured_image: /animatorvsanimated.png
 tags: [ fun, animation, video ]
+draft: false
 ---
 
 Shared for your viewing pleasure.

@@ -1,6 +1,6 @@
 ---
 title: XOXO Creativity
-author: chris
+author: codespud
 type: post
 date: 2009-09-20T12:16:00+00:00
 url: /2009/09/xoxo-creativity/
@@ -8,6 +8,7 @@ tags: [website, fun]
 redirect_from: 
   - /2009/09/xoxo-creativity/
   - /xoxo-creativity/
+draft: false
 ---
 
 Here&#8217;s a good way to promote creativity and have fun at the same time. The rule is to draw as many things as your imagination can conjure up from X&#8217;s and O&#8217;s.

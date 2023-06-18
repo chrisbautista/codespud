@@ -13,10 +13,6 @@ const AdContainer = styled.div`
   overflow: hidden;
   background-color: #fff;
   margin-bottom: 1rem;
-
-  &:has(ins:empty){
-    display: none;
-  }
 `;
 
 const Story = styled.div`
