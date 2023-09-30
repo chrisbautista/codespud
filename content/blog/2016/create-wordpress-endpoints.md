@@ -3,7 +3,6 @@ title: Create WordPress Endpoints
 author: chris
 type: post
 date: 2016-01-13T00:15:12+00:00
-draft: true
 url: /?p=450
 redirect_from: 
   - /create-wordpress-endpoints/

@@ -51,12 +51,12 @@ exports.createPages = ({ graphql, actions }) => {
 
     // get works
     const works = posts.filter(post => {
-      return post.node.frontmatter.contentType === "works"  && post.node.frontmatter.draft !== "true"
+      return post.node.frontmatter.contentType === "works" && post.node.frontmatter.draft !== "true"
     })
 
     // get blogs
     const blogs = posts.filter(post => {
-      return post.node.frontmatter.contentType !== "works" && post.node.frontmatter.draft !== "true"
+      return post.node.frontmatter.contentType !== "works" && post.node.frontmatter?.draft !== "true"
     })
 
     blogs.forEach((post, index) => {

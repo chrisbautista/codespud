@@ -10,6 +10,7 @@ redirect_from:
 featured_image: /blog/chiara-f-MI8He1NWPWg-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@quasichiara">Chiara F</a>
 tags: [web-development, accessibility, best-practice]
+draft: false
 ---
 
 As part of the work I do for my employer, I analyze UI elements on our product to check if we need to re-engineer the component to improve accessibility. One of the accessibility challenges I have reworked for our company site is the tabbed container.

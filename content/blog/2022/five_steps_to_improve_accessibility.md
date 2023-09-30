@@ -9,6 +9,7 @@ redirect_from:
 featured_image: /blog/daniel-ali-ju1yFZkrxVg-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@untodesign_">Daniel Ali</a>
 tags: [web-development, html, best-practice, accessibility]
+draft: false
 ---
 
 Accessibility is very important. It ensures that anything we make is available to a greater number of people. It is not just about people who use screen readers. 

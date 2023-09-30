@@ -9,6 +9,7 @@ redirect_from:
 featured_image: /blog/marcus-wallis-R1qHDAEnCmc-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@marcus_wallis">Mark Wallis</a>
 tags: [javascript, ui, animation, game]
+draft: false
 ---
 
 I am a big Big Bang Theory fan. So is my wife. Her absolute favorite character is Sheldon Cooper. In one of the episodes Sheldon proposed an improved version of the rock-paper-scissors game.  This version extends the possible moves to five(5). The additional two options would increase the possibility of win chances as it minimizes the chance of both players picking the same move. <!--more-->

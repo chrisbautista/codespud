@@ -10,6 +10,7 @@ redirect_from:
 featured_image: /blog/sigmund-_dJCBtdUu74-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@sigmund">Sigmund</a>
 tags: [javascript, css, ui, animation]
+draft: false
 ---
 
 I wanted to see how much we can do with CSS transitions. No keyframe animations at all. Although you would have more control over the animation with keyframes. For our demo, we need a simple change from one state to another. CSS transitions are all we need.

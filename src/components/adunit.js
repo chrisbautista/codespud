@@ -8,7 +8,7 @@ export const AdUnitType = {
 
 export default function AdUnit({ type = AdUnitType.Grid, withShadow = false }) {
     const clientId = 'ca-pub-4889352773674825';
-    let isLocalhost = true; // false on production
+    let isLocalhost = false; // false on production
 
     //return null;
 
