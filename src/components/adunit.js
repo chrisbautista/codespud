@@ -1,69 +1,69 @@
-import React from "react";
-import styled from "styled-components"
-
 export const AdUnitType = {
     Grid: 0,
     InArticle: 1
 };
 
 export default function AdUnit({ type = AdUnitType.Grid, withShadow = false }) {
-    const clientId = 'ca-pub-4889352773674825';
-    let isLocalhost = false; // false on production
 
-    React.useEffect(_ => {
-        let p = { google_ad_client: clientId };
-        if (typeof window === 'object') {
-            (window.adsbygoogle = window.adsbygoogle || []).push(p);
-        }
-    }, []);
+    return null;
 
-    const dataTestProp = {};
-    if (isLocalhost) {
-        dataTestProp['data-ad-test'] = 'on';
-    }
+    // const clientId = 'ca-pub-4889352773674825';
+    // let isLocalhost = true; // false on production
 
-    const style = withShadow ? { boxShadow: '1px 1px 3px 0 rgba(0,0,0, 0.15)' } : undefined;
+    // React.useEffect(_ => {
+    //     let p = { google_ad_client: clientId };
+    //     if (typeof window === 'object') {
+    //         (window.adsbygoogle = window.adsbygoogle || []).push(p);
+    //     }
+    // }, []);
 
-    if (type === AdUnitType.InArticle) {
-        return <AdWrapper><Ins className="adsbygoogle"
-            style={style}
-            {...dataTestProp}
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client={clientId}
-            data-ad-slot="2581564797"></Ins></AdWrapper>;
-    }
+    // const dataTestProp = {};
+    // if (isLocalhost) {
+    //     dataTestProp['data-ad-test'] = 'on';
+    // }
 
-    return <Ins className="adsbygoogle"
-        style={style}
-        {...dataTestProp}
-        data-ad-client={clientId}
-        data-ad-slot="3654107349"
-        data-ad-format="auto"
-        data-full-width-responsive="true" />;
+    // const style = withShadow ? { boxShadow: '1px 1px 3px 0 rgba(0,0,0, 0.15)' } : undefined;
+
+    // if (type === AdUnitType.InArticle) {
+    //     return <AdWrapper><Ins className="adsbygoogle"
+    //         style={style}
+    //         {...dataTestProp}
+    //         data-ad-layout="in-article"
+    //         data-ad-format="fluid"
+    //         data-ad-client={clientId}
+    //         data-ad-slot="2581564797"></Ins></AdWrapper>;
+    // }
+
+    // return <Ins className="adsbygoogle"
+    //     style={style}
+    //     {...dataTestProp}
+    //     data-ad-client={clientId}
+    //     data-ad-slot="3654107349"
+    //     data-ad-format="auto"
+    //     data-full-width-responsive="true" />;
 }
 
-const AdWrapper = styled.div`
-    margin: 1.5rem auto 2.5rem;
+// const AdWrapper = styled.div`
+//     margin: 1.5rem auto 2.5rem;
 
-    &:has(ins.adsbygoogle[data-ad-status='unfilled']){
-        display: none;
-    }
+//     &:has(ins.adsbygoogle[data-ad-status='unfilled']){
+//         display: none;
+//     }
 
-    &:has(ins:empty){
-        display: none;
-    }
+//     &:has(ins:empty){
+//         display: none;
+//     }
 
-    @media screen and (max-width: 768px) {
-        width: 90%;
-        aspect-ratio: 1 / 1;
-        margin: 1.2rem auto 0;
-    }
-`;
+//     @media screen and (max-width: 768px) {
+//         width: 90%;
+//         aspect-ratio: 1 / 1;
+//         margin: 1.2rem auto 0;
+//     }
+// `;
 
-const Ins = styled.ins`
-display: block;
-width: 100%;
-height: 100%;
-background: white;
-`;
+// const Ins = styled.ins`
+// display: block;
+// width: 100%;
+// height: 100%;
+// background: white;
+// `;

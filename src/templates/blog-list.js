@@ -6,7 +6,7 @@ import Context from '../core/context';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
-import AdUnit from "../components/adunit";
+// import AdUnit from "../components/adunit";
 import BlogStory from './blog-story'
 import styled from "styled-components"
 
@@ -100,12 +100,14 @@ class BlogIndex extends React.Component {
     const { currentPage, numPages } = this.props.pageContext
     const ctx = new Context()
 
+    //console.log('tags', this.props.pageContext);
+
     const pages = (
       <Pagination
         numPages={numPages}
         prevPage={currentPage - 1 === 1 ? "/" : `/${(currentPage - 1)}`}
         isFirst={currentPage === 1}
-        isLast={currentPage === numPages}
+        isLast={currentPage === numPages - 1}
         currentPage={currentPage}
         nextPage={currentPage + 1 === numPages ? `/${numPages}` : `/${currentPage + 1}`}
         ctx={ctx}
@@ -119,12 +121,12 @@ class BlogIndex extends React.Component {
       firstPage = posts[0];
       allPosts.shift();
     }
-    let startIndex = 4;
-    let skipItems = 4;
-    if (this.state.isSmall) {
-      startIndex = 1;
-      skipItems = 3;
-    }
+    // let startIndex = 4;
+    // let skipItems = 4;
+    // if (this.state.isSmall) {
+    //   startIndex = 1;
+    //   skipItems = 3;
+    // }
     return (
       <Layout location={this.props.location} title={siteTitle} backgroundColor='transparent' tags={tags}>
         <SEO title="All posts"
@@ -132,14 +134,14 @@ class BlogIndex extends React.Component {
         />
         <BlogWrapper className={isFirstPage ? "first-page" : null}>
           <div className="pages">{pages}</div>
-          {isFirstPage && firstPage.node && <BlogStory key={firstPage.node.fields?.slug} ctx={ctx} node={firstPage.node} latest ad={<AdUnit />} />}
+          {isFirstPage && firstPage.node && <BlogStory key={firstPage.node.fields?.slug} ctx={ctx} node={firstPage.node} latest />}
           {isFirstPage && <div className="pages-first-page">{pages}</div>}
           <BlogList >
             {allPosts.map(({ node }, i) => {
               let ad = null;
-              if (i + 1 === startIndex || (i > skipItems && ((i + 1) % skipItems)) === 0) {
-                ad = <AdUnit withShadow />;
-              }
+              // if (i + 1 === startIndex || (i > skipItems && ((i + 1) % skipItems)) === 0) {
+              //   ad = <AdUnit withShadow />;
+              // }
 
               return <BlogStory key={node.fields.slug} ctx={ctx} node={node} ad={ad}/>;
             })}

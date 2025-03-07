@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Tags from "../components/tagpills"
 import Icon, { IconType } from "../components/icons"
 import styled from "styled-components"
-import AdUnit, { AdUnitType } from "../components/adunit"
+// import AdUnit, { AdUnitType } from "../components/adunit"
 
 const POST_BODY_TAG = '<!--ad-->';
 
@@ -57,9 +57,9 @@ class BlogPostTemplate extends React.Component {
       let i = 0;
       for (const postBodyItem of postbody) {
         postSegments.push(<PostContent key={`pbody${i}`} dangerouslySetInnerHTML={{ __html: postBodyItem }} />);
-        if (i === 0 || i < postbody.length - 1) {
-          postSegments.push(<AdUnit key={`pbodyAd${i}`} type={AdUnitType.InArticle} withShadow />);
-        }
+        // if (i === 0 || i < postbody.length - 1) {
+        //   postSegments.push(<AdUnit key={`pbodyAd${i}`} type={AdUnitType.InArticle} withShadow />);
+        // }
         i++;
       }
 
@@ -84,7 +84,7 @@ class BlogPostTemplate extends React.Component {
             <p className="date">{post.frontmatter.date}</p>
             <Tags tags={post.frontmatter.tags} />
           </PostTitle>
-          {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />}
+          {/* {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />} */}
           {body}
           {!isAboutPage && <PaginationNav>
             <li>
@@ -102,7 +102,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </PaginationNav>}
-          {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />}
+          {/* {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />} */}
         </PostWrapper>
       </Layout>
     )
@@ -293,6 +293,10 @@ const PostWrapper = styled.article`
     .container {
       max-width: 100%;
     }
+  }
+
+  code {
+    font-size: 0.875rem;
   }
 
   [class*="container"] {

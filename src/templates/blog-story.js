@@ -6,18 +6,18 @@ import Tags from "../components/tagpills"
 import _ from 'lodash';
 
 
-const AdContainer = styled.div`
-  display: flex;
-  height: auto;
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: #fff;
-  margin-bottom: 1rem;
+// const AdContainer = styled.div`
+//   display: flex;
+//   height: auto;
+//   border-radius: 4px;
+//   overflow: hidden;
+//   background-color: #fff;
+//   margin-bottom: 1rem;
 
-  &:has(ins:empty){
-    display: none;
-  }
-`;
+//   &:has(ins:empty){
+//     display: none;
+//   }
+// `;
 
 const Story = styled.div`
   clear: both;
@@ -123,6 +123,7 @@ const Story = styled.div`
 `
 
 const Excerpt = styled.p`
+  font-size: 0.875rem;
   text-align: left;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -165,7 +166,7 @@ const StoryImage = styled.img`
 //   }
 // `;
 
-export default function BlogStory({ ctx, node, latest, ad }) {
+export default function BlogStory({ ctx, node, latest }) {
   let [tick, updateTick] = React.useState(0);
   const title = node.frontmatter.title || node.fields.slug
   const linkRef = React.useRef();
@@ -199,11 +200,11 @@ export default function BlogStory({ ctx, node, latest, ad }) {
   // }
   return (
     <>
-      {!latest && ad ? <>
+      {/* {!latest && ad ? <>
         <AdContainer className="ad-container">
           {ad}
         </AdContainer>
-      </> : null}
+      </> : null} */}
       <Story ref={linkRef} className={latest ? "blog-latest" : ""}>
         <StoryWrapper >
           {node.frontmatter.featured_image && (

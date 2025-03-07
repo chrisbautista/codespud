@@ -142,10 +142,9 @@ const Menu = () => {
           <NavLi>
             <MenuLink to={`/`}>Home</MenuLink>
           </NavLi>
-          <NavLi>
-            {/* <MenuLink to={"/works"}>Portfolio</MenuLink> */}
-            <span>Portfolio <span role="img" aria-label="under construction">🚧</span></span>
-          </NavLi>
+          {/* <NavLi>
+            <MenuLink to={"/works"}>Portfolio</MenuLink>
+          </NavLi> */}
           <NavLi>
             <MenuLink to={"/about-me"}>About</MenuLink>
           </NavLi>

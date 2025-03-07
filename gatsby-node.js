@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         postsRemark:allMarkdownRemark(
+          filter: { frontmatter: { draft: { ne: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -25,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 contentType
                 tags
+                draft
               }
             }
           }
@@ -52,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     // get works
     const works = posts.filter(post => {
-      return post.node.frontmatter.contentType === "works"  && post.node.frontmatter.draft !== "true"
+      return post.node.frontmatter.contentType === "works" && post.node.frontmatter.draft !== "true"
     })
 
     // get blogs
@@ -91,7 +93,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog post list pages
-    const postsPerPage = 15
+    const postsPerPage = 12
 
     const addPage = blogs.length % postsPerPage > 1 ? 1 : 0;
     const numPages = Math.floor(blogs.length / postsPerPage) + addPage;
