@@ -112,29 +112,30 @@
 </ul>
 <p><strong>What it’s used for:</strong></p>
 <ul>
-<li>Automated accessibility scoring and reporting: Generate detailed accessibility reports and scores for your web pages.</li>
-<li>Explaining issues and suggesting improvements with AI: Get easy-to-understand explanations and recommendations for each issue.</li>
-<li>Integrating with Chrome DevTools and CI/CD: Use Lighthouse in your browser or automate it in your build process.</li>
+<li>Quickly assess your site’s accessibility with automated reports and scoring, helping you spot and prioritize issues. (Adapted from <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse docs</a>)</li>
+<li>Get plain-language explanations and actionable recommendations for each issue, powered by AI.</li>
+<li>Integrate with Chrome DevTools or your CI/CD pipeline for seamless, repeatable checks.</li>
 </ul>
 <p><strong>How to integrate Google Lighthouse and Gemini in your workflow:</strong></p>
 <ol>
-<li><strong>Install Google Lighthouse</strong> as a <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">browser extension</a> or use it directly in <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/">Chrome DevTools</a>. <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse docs.</a></li>
-<li><strong>Review the Lighthouse report</strong> for accessibility findings. Each issue includes an explanation and links to best practices or documentation. <a href="https://developer.chrome.com/docs/lighthouse/accessibility/">Accessibility audits with Lighthouse.</a></li>
-<li><strong>Leverage Gemini (or another LLM) for deeper insights:</strong> Copy the Lighthouse report or specific issues and prompt Gemini to summarize, explain, or suggest tailored improvements for your site’s content and audience. <a href="https://deepmind.google/technologies/gemini">Gemini overview.</a></li>
-<li><strong>Apply recommended changes</strong> in your codebase, using Gemini’s suggestions to improve accessibility, clarity, and user experience. Let’s use the same example we used for Copilot, Gemini might suggest improving a button’s accessible name in TypeScript/React:</li>
+<li><strong>Install Google Lighthouse</strong> as a <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">browser extension</a> or use it directly in <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/">Chrome DevTools</a>. For more, see the <a href="https://developer.chrome.com/docs/lighthouse/overview/">official docs</a>.</li>
+<li><strong>Run an audit and review the Lighthouse report.</strong> Each finding comes with explanations and links to best practices. <a href="https://developer.chrome.com/docs/lighthouse/accessibility/">Accessibility audits with Lighthouse.</a></li>
+<li><strong>Bring in Gemini (or your favorite LLM) for deeper insights:</strong> Copy the Lighthouse report or specific issues and ask Gemini to break them down, explain, or suggest improvements tailored to your site’s content and audience. <a href="https://deepmind.google/technologies/gemini">Gemini overview.</a></li>
+<li><strong>Put the AI’s advice into action.</strong> For instance, Gemini might spot a vague button label and suggest something more descriptive in your React code:</li>
 </ol>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// Before</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">Click here</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 
-<span class="token comment">// Gemini suggestion for clarity</span>
+<span class="token comment">// Gemini’s suggestion for clarity (adapted from accessibility best practices)</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Download report<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">Download</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre></div>
 <ol start="5">
-<li><strong>Re-run Lighthouse</strong> to verify that issues are resolved and your accessibility score has improved. Iterate as needed for continuous improvement.</li>
-<li><strong>Automate audits in your CI/CD pipeline</strong> by running <a href="https://github.com/GoogleChrome/lighthouse-ci">Lighthouse CI</a> and using Gemini to review and explain results for every deployment or pull request. <a href="https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md">Lighthouse CI docs.</a></li>
+<li><strong>Run Lighthouse again</strong> to see if your fixes did the trick and if your accessibility score is climbing. Keep iterating for steady progress.</li>
+<li><strong>Level up your workflow by automating audits in CI/CD.</strong> Use <a href="https://github.com/GoogleChrome/lighthouse-ci">Lighthouse CI</a> to run checks on every deployment or pull request, and let Gemini help you interpret the results. <a href="https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md">Lighthouse CI docs.</a></li>
 </ol>
-<p>This workflow helps you combine automated audits with AI-powered explanations and recommendations, making accessibility improvements more actionable and effective.</p>
+<p><em>Feature descriptions and workflow steps paraphrased and adapted from <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse documentation</a>, <a href="https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md">Lighthouse CI docs</a>, and <a href="https://deepmind.google/technologies/gemini">Gemini overview</a>.</em></p>
+<p>This workflow lets you combine automated audits with AI-powered explanations, making accessibility improvements more practical and less mysterious.</p>
 <h3>3. Axe by Deque</h3>
-<p><a href="https://www.deque.com/axe/">Axe</a> is a suite of accessibility testing tools built on the popular open-source <a href="https://github.com/dequelabs/axe-core">axe-core</a> library. It offers:</p>
+<p><a href="https://www.deque.com/axe/">Axe</a> is a suite of accessibility testing tools built on the open-source <a href="https://github.com/dequelabs/axe-core">axe-core</a> library. Here’s what’s in the toolbox:</p>
 <ul>
 <li><a href="https://www.deque.com/axe/devtools/">Axe DevTools</a>: Browser extensions for automated and guided accessibility testing</li>
 <li><a href="https://www.deque.com/axe/auditor/">Axe Auditor</a>: Manual testing for full WCAG coverage</li>
@@ -143,12 +144,11 @@
 </ul>
 <p><strong>What it’s used for:</strong></p>
 <ul>
-<li>Automated and manual accessibility testing: Perform both quick automated scans and thorough manual audits for compliance.</li>
-<li>Continuous monitoring and compliance: Track accessibility status over time and ensure ongoing compliance with standards.</li>
-<li>Integrating accessibility into development and CI/CD workflows: Add accessibility checks to your codebase and deployment pipelines.</li>
+<li>Run quick automated scans or deep-dive manual audits, so you’re covered for both fast checks and full compliance reviews.</li>
+<li>Keep tabs on your site’s accessibility over time and make sure you’re always in line with the latest standards.</li>
+<li>Build accessibility checks right into your development and deployment pipelines for peace of mind.</li>
 </ul>
-<p><a href="https://www.deque.com/blog/one-click-fix-get-suggestions-to-make-your-code-accessible-in-the-ide/"><strong>One-click fix with Axe MCP Server</strong></a>: The axe MCP Server brings Deque’s accessibility expertise directly into developer tools like VS Code, Copilot, Windsurf, and Cursor. By leveraging the Model Context Protocol (MCP), it connects AI agents with accessibility analysis and remediation. Developers can ask their AI agent to “make this code accessible,” and the axe MCP Server will analyze the code, identify issues, and suggest fixes—right in the IDE. These suggestions can be applied, rejected, or modified with a single click, streamlining the process and keeping developers in their workflow. The goal is to enable fast, accurate, and scalable accessibility fixes from the start of development. The MCP is by invite only so far. <a href="https://accessibility.deque.com/axe-mcp-server-waitlist">Join the waitlist for early access.</a></p>
-<p><em>Just a note: I am not an employee of axe, nor do I play one on the internet. I just like good tools.</em></p>
+<p><em>Feature list and descriptions paraphrased and adapted from <a href="https://www.deque.com/axe/">Axe documentation</a> and <a href="https://github.com/dequelabs/axe-core">axe-core GitHub</a>.</em></p>
 <hr>
 <h2>Workflow: AI-Driven Accessibility in Action</h2>
 <p>Curious how all these tools and AI-powered features come together in practice? Here’s a quick overview of what a modern, automated accessibility workflow can look like. The following steps show how you can integrate accessibility checks, AI review, and team collaboration into your development process—making accessibility a seamless part of building and shipping great web experiences:</p>
