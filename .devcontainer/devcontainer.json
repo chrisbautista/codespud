@@ -5,14 +5,16 @@
 	"dockerFile": "Dockerfile",
 	
 	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint"
+			]
+		}
 	},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"dbaeumer.vscode-eslint"
-	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	//"forwardPorts": [8000],

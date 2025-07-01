@@ -21,6 +21,10 @@ const PaginationNav = styled.ul`
   li {
     margin-left: 0;
     list-style: none;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     span {
       color: #aaa;
@@ -49,6 +53,7 @@ const PaginationNav = styled.ul`
     text-decoration: none;
     color: #f2f2f2;
   }
+    
 `
 
 const Pagination = ({

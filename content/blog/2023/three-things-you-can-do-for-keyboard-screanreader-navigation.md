@@ -24,6 +24,8 @@ I mentioned before in [five steps to improve accessibility](/2022/five_steps_to_
 
 [Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/) provide a straightforward way of distinguishing information hierarchy on a page. The first heading (`<h1 />`) is commonly the title of the page which tells the reader what the site or page is about. After that, you organize the supporting information into sub-topics titled `<h2/>` and so on.  
 
+*Best practices for headings and landmarks are based on [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/page-structure/headings/) and [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning).*
+
 **Headings** 
 - h1
 - h2
@@ -61,6 +63,8 @@ The worst part about navigating a page with the keyboard (e.g. <kbd>Tab</kbd>) i
 <!--ad-->
 
 Here's a simple "skip to main content" link you can incorporate to your site.
+
+*Skip link pattern adapted from [WebAIM: Skip navigation links](https://webaim.org/techniques/skipnav/).*
 
 ```scss
 .skip-to-main-content {

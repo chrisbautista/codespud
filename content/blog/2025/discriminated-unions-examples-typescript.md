@@ -16,11 +16,10 @@ In this post we explore the marvelous world of Discriminated Unions in TypeScrip
 
 _Discriminated Unions_ are a way to combine types that have a common discriminant (usually a literal property) so that TypeScript can narrow down which type it’s dealing with. Let’s explore the 10 patterns that make these unions your coding sidekick!
 
-If you're like me that learn better with sample code, then I won't go into explaining what Discriminated Unions anymore and let's get straight to some examples. 
+If you're like me and learn better with sample code, then I won't go into explaining what Discriminated Unions are anymore—let's get straight to some examples. 
 
 ## 1. Basic Discriminated Union
 ```typescript
-
 	type Circle = { kind: "circle"; radius: number };
 	type Square = { kind: "square"; side: number };
 	type Shape = Circle | Square;
@@ -35,7 +34,7 @@ If you're like me that learn better with sample code, then I won't go into expla
 	}
 
 ```
-*This pattern shows the simple yet powerful use of a common property (`kind`) to determine how to process each shape.  This is most common pattern on when to use Discriminated Unions. When your object has a common property that helps "discriminate" the "shape" of the object. Other common properties used are "type", "status", "responseType" etc.*
+*This pattern shows the simple yet powerful use of a common property (`kind`) to determine how to process each shape. This is the most common pattern for using Discriminated Unions. When your object has a common property that helps "discriminate" the "shape" of the object. Other common properties used are "type", "status", "responseType" etc.*
 
 
 ## 2.  Exhaustiveness Checking
@@ -57,7 +56,7 @@ If you're like me that learn better with sample code, then I won't go into expla
 	}
 
 ```
-*This example  ensures every case is handled, it introduces a function that throws an exception if you introduced one you have not defined. Use this pattern to safeguard agains "oops" moments. 
+*This example ensures every case is handled. The `assertNever` function throws an exception if you introduce a new type that you have not defined. Use this pattern to safeguard against "oops" moments and future-proof your code as your union grows.*
 
 
 ## 3. Handling Different API Responses
@@ -82,8 +81,6 @@ If you're like me that learn better with sample code, then I won't go into expla
 ## 4. Handling Success and Failure
 ```typescript
 
-	//...
-	
 	type Success<T> = { status: "success"; data: T };
 	type Failure = { status: "failure"; error: string };
 	type Result<T> = Success<T> | Failure;
@@ -91,14 +88,14 @@ If you're like me that learn better with sample code, then I won't go into expla
 	interface ChatResponse extends ApiResponse {}
 	
 	function MyComponent(props: Readonly<IMyComponentProps>) {
-		const [result, setResult] = useState<Result<ChatResponse>>({});
+		const [result, setResult] = useState<Result<ChatResponse>>({ status: "failure", error: "" });
 		
 		function fetchData(): void {
 		  // Simulating an API call ...
 		}
 		
 		function handleFetchResult(response: Result<ChatResponse>) {		
-			setResult({...response});
+			setResult({ ...response });
 		}
 		
 		if (result.status === "success") {
@@ -150,7 +147,7 @@ If you're like me that learn better with sample code, then I won't go into expla
 	}
 
 ```
-*This pattern shows how discriminated unions can power recursive data structures, like summing values in a tree. It’s your code’s version of a nested Russian doll, but with fewer existential crises!*
+*This pattern shows how discriminated unions can power recursive data structures, like summing values in a tree. (Pattern adapted from the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/advanced-types.html).)*
 
 ---
 
@@ -173,7 +170,7 @@ If you're like me that learn better with sample code, then I won't go into expla
 	}
 
 ```
-*Discriminated unions here allow you to handle different events with precision. It’s like having a remote control that instantly switches channels—only, in this case, you’re switching event handlers!*
+*Discriminated unions here allow you to handle different events with precision. (Pattern adapted from the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/advanced-types.html).) It’s like having a remote control that instantly switches channels—only, in this case, you’re switching event handlers!*
 
 ---
 
@@ -221,9 +218,11 @@ If you're like me that learn better with sample code, then I won't go into expla
 	function initializePlugin(plugin: Plugin): void {
 	  switch (plugin.type) {
 	    case "logger":
-	      logger.write(`Logger initialized with level ${plugin.logLevel}`);
+	      console.log(`Logger initialized with level ${plugin.logLevel}`);
+	      break;
 	    case "auth":
-	      logger.write(`Auth plugin using ${plugin.provider}`);
+	      console.log(`Auth plugin using ${plugin.provider}`);
+	      break;
 	  }
 	}
 
@@ -244,11 +243,11 @@ If you're like me that learn better with sample code, then I won't go into expla
 	function execute(command: Command): DbResponse {
 	  switch (command.type) {
 	    case "create":
-	      return db.query(sql, {payload: data.payload }); 
+	      return db.query(sql, {payload: command.payload }); 
 	    case "update":
-	      return db.query(sql, {id: data.id, payload: data.payload }); 	
+	      return db.query(sql, {id: command.id, payload: command.payload }); 	
 	    case "delete":
-	      return db.query(sql, {id: data.id}); 	
+	      return db.query(sql, {id: command.id}); 	
 	  }
 	}
 
@@ -257,43 +256,16 @@ If you're like me that learn better with sample code, then I won't go into expla
 
 ---
 
-## When to use Discrimated Unions
+## When to use Discriminated Unions
 
-```pgsql
+- Do you have multiple related types that share common fields?
+- Do the types have a clear "kind" or "type" discriminator?
+- Do you need type safety in switch or if-else checks?
 
-                            ┌───────────────────────────────────┐
-                            │ Do you have multiple related     │
-                            │ types that share common fields?  │
-                            └───────────────────────────────────┘
-                                           │
-                     Yes                   ▼                   No
-                      ─────────────────► ┌───────────────────┐ ──────► Consider other patterns
-                                         │ Do the types have │
-                                         │ a clear "kind" or │
-                                         │ "type" discriminator? │
-                                         └───────────────────┘
-                                           │
-                     Yes                   ▼                   No
-                      ─────────────────► ┌───────────────────┐ ──────► Use Union Types without
-                                         │ Do you need type  │        discriminators or Interfaces
-                                         │ safety in switch  │
-                                         │ or if-else checks?│
-                                         └───────────────────┘
-                                           │
-                     Yes                   ▼                   No
-                      ─────────────────► ┌───────────────────┐ ──────► Consider simple types
-                                         │ Use Discriminated │
-                                         │ Unions for better │
-                                         │ type safety       │
-                                         └───────────────────┘
-
-
-```
-
-If you said yes to all the questions then use a Discriminated Union. If you said no to one of the questions, maybe you need to think of a different pattern. 
+If you answered yes to all the questions, use a Discriminated Union. If you answered no to any of the questions, you may need to consider a different pattern.
 
 # Wrap-Up
 
-Discriminated unions is another Typescript feature to help you write robust, maintainable code. By clearly defining each possible state or variant, you can avoid runtime errors and make your code self-documenting, just like a well-curated 80's playlist. As you experiment with these patterns, explore further resources like the [TypeScript Handbook on Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) and [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/) to continue your journey. 
+Discriminated unions are another TypeScript feature to help you write robust, maintainable code. By clearly defining each possible state or variant, you can avoid runtime errors and make your code self-documenting, just like a well-curated 80's playlist. As you experiment with these patterns, explore further resources like the [TypeScript Handbook on Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) and [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/) to continue your journey. 
 
 Happy coding!

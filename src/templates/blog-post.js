@@ -166,6 +166,29 @@ const PaginationNav = styled.ul`
   margin-top: 3rem;
   padding-top: 1rem;
 
+  li {
+      display: flex;
+      max-width: 350px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: wrap;
+
+      a {
+        display: inline-flex;
+        font-size: 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.7rem;
+      }
+  }
+
+  li:last-child {
+    a {
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+
   @media screen and (max-width: 900px){
     display: block;
     padding: 0.5rem 0.5rem 1rem;

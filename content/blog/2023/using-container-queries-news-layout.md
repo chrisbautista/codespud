@@ -22,6 +22,8 @@ For years, developers like me have asked for a better way of styling website ele
 
 This is where container queries come in. They are the solution we've been asking for all along. 
 
+*Some technical explanations and code patterns in this post are based on the [MDN documentation on CSS Container Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries).*
+
 ## How to do container queries
 
 There are two steps to doing container queries.
