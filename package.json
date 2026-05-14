@@ -73,6 +73,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gh-pages -d public",
     "post-build": "gatsby build --prefix-paths",
-    "upload": "gatsby build && npm run deploy"
+    "upload": "gatsby build && npm run deploy",
+    "new-post": "node scripts/new-post.js",
+    "publish": "node scripts/publish-post.js",
+    "drafts": "node scripts/list-drafts.js",
+    "dashboard": "node scripts/generate-dashboard.js"
   }
 }
