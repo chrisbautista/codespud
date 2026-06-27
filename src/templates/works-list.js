@@ -158,7 +158,7 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: { draft: { ne: true }, contentType: { in: ["works"] } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {

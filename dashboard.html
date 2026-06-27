@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codespud Publishing Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+    --text: #e2e8f0; --muted: #8892a4; --accent: #7c6af7;
+    --green: #4ade80; --warn: #f59e0b; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; font-size: 14px; }
+  header { padding: 24px 32px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; gap: 16px; }
+  header h1 { font-size: 20px; font-weight: 700; color: var(--accent); }
+  header .meta { color: var(--muted); font-size: 12px; }
+  .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 24px 32px; }
+  .full { grid-column: 1 / -1; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 16px; }
+  .stats-row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .stat { display: flex; flex-direction: column; gap: 4px; }
+  .stat .value { font-size: 32px; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 12px; color: var(--muted); }
+  .cadence { margin-top: 12px; font-size: 12px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--border); }
+  td { padding: 8px 8px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  td.age { color: var(--muted); font-variant-numeric: tabular-nums; }
+  td.status { text-align: center; color: var(--green); }
+  td.filepath { font-family: monospace; font-size: 11px; color: var(--muted); word-break: break-all; }
+  td.filepath a { color: var(--accent); text-decoration: none; }
+  td.filepath a:hover { text-decoration: underline; }
+  span.warn { color: var(--warn); }
+  .empty { color: var(--muted); font-style: italic; }
+  .ideas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .idea-group h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin-bottom: 8px; }
+  .idea-group ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .idea-group li { font-size: 13px; color: var(--text); padding-left: 12px; position: relative; }
+  .idea-group li::before { content: '→'; position: absolute; left: 0; color: var(--muted); }
+  canvas { max-height: 220px; }
+  .recent-list { display: flex; flex-direction: column; gap: 8px; }
+  .recent-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .recent-item .post-title { color: var(--text); }
+  .recent-item .post-date { font-size: 11px; color: var(--muted); white-space: nowrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Codespud Publishing Dashboard</h1>
+  <span class="meta">Generated 5/14/2026, 1:51:47 PM</span>
+</header>
+<div class="layout">
+
+  <div class="card">
+    <h2>Overview</h2>
+    <div class="stats-row">
+      <div class="stat"><span class="value">43</span><span class="label">Published</span></div>
+      <div class="stat"><span class="value">13</span><span class="label">Drafts</span></div>
+      <div class="stat"><span class="value">56</span><span class="label">Total posts</span></div>
+      <div class="stat"><span class="value">20</span><span class="label">Unique tags</span></div>
+    </div>
+    <p class="cadence">~0.13 posts/week (18 posts over last 142 weeks)</p>
+  </div>
+
+  <div class="card">
+    <h2>Recent Published</h2>
+    <div class="recent-list">
+      <div class="recent-item">
+        <span class="post-title">Automating Accessibility Audits With AI</span>
+        <span class="post-date">2025-06-28</span>
+      </div><div class="recent-item">
+        <span class="post-title">Ten Common Typescript Discriminated Union Examples</span>
+        <span class="post-date">2025-02-8 </span>
+      </div><div class="recent-item">
+        <span class="post-title">Using Container Queries to Make a News Layout</span>
+        <span class="post-date">2023-02-24</span>
+      </div><div class="recent-item">
+        <span class="post-title">Automatically generate skip buttons to improve accessibility</span>
+        <span class="post-date">2023-02-17</span>
+      </div><div class="recent-item">
+        <span class="post-title">CSS Snippets I Use 90% of The Time - Part 2</span>
+        <span class="post-date">2023-02-09</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Posts per Year</h2>
+    <canvas id="yearChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h2>Top Tags</h2>
+    <canvas id="tagChart"></canvas>
+  </div>
+
+  <div class="card full">
+    <h2>Draft Pipeline</h2>
+    <table>
+    <thead><tr><th>Title</th><th>Age</th><th>Tags</th><th>Image</th><th>File</th></tr></thead>
+    <tbody>
+    <tr>
+      <td>Bash Command of the Day – alias</td>
+      <td class="age">7290d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2006/bash-command-of-the-day-alias.md">content/blog/2006/bash-command-of-the-day-alias.md</a></td>
+    </tr>
+<tr>
+      <td>Linux Commands #1</td>
+      <td class="age">7291d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2006/linux-commands-1.md">content/blog/2006/linux-commands-1.md</a></td>
+    </tr>
+<tr>
+      <td>Linux: Series Introduction</td>
+      <td class="age">7291d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2006/linux-series-introduction.md">content/blog/2006/linux-series-introduction.md</a></td>
+    </tr>
+<tr>
+      <td>Lorem Ipsum – Dummy text for Font Testing</td>
+      <td class="age">7323d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2006/lorem-ipsum-dummy-text-for-font-testing.md">content/blog/2006/lorem-ipsum-dummy-text-for-font-testing.md</a></td>
+    </tr>
+<tr>
+      <td>Photoshop Regrets</td>
+      <td class="age">7347d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2006/photoshop-regrets.md">content/blog/2006/photoshop-regrets.md</a></td>
+    </tr>
+<tr>
+      <td>PHP – Editors</td>
+      <td class="age">6690d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2008/php-editors.md">content/blog/2008/php-editors.md</a></td>
+    </tr>
+<tr>
+      <td>Updates on Pepeng</td>
+      <td class="age">6066d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2009/updates-on-pepeng.md">content/blog/2009/updates-on-pepeng.md</a></td>
+    </tr>
+<tr>
+      <td>Create WordPress Endpoints</td>
+      <td class="age">3774d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2016/create-wordpress-endpoints.md">content/blog/2016/create-wordpress-endpoints.md</a></td>
+    </tr>
+<tr>
+      <td>Making your AJAX Content SEO Friendly</td>
+      <td class="age">3548d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2016/experiments-ajax-test.md">content/blog/2016/experiments-ajax-test.md</a></td>
+    </tr>
+<tr>
+      <td>Looking for the perfect home office desk</td>
+      <td class="age">1190d</td>
+      <td class="status">✓</td>
+      <td class="status">✓</td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2023/home-office-desk.md">content/blog/2023/home-office-desk.md</a></td>
+    </tr>
+<tr>
+      <td>Testing Keyboard Accessibility</td>
+      <td class="age">1168d</td>
+      <td class="status">✓</td>
+      <td class="status">✓</td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2023/testing-keyboard-accessibility.md">content/blog/2023/testing-keyboard-accessibility.md</a></td>
+    </tr>
+<tr>
+      <td>Aria live regions deep dive</td>
+      <td class="age">0d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/2026/aria-live-regions-deep-dive.md">content/blog/2026/aria-live-regions-deep-dive.md</a></td>
+    </tr>
+<tr>
+      <td>Hello World</td>
+      <td class="age">4030d</td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="status"><span class="warn">✗</span></td>
+      <td class="filepath"><a href="vscode://file//Users/potato/workspace/Work/Projects/codespud/codespud/content/blog/hello-world/index.md">content/blog/hello-world/index.md</a></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="card full">
+    <h2>Content Ideas</h2>
+    <div class="ideas-grid">
+    <div class="idea-group">
+      <h3>Accessibility</h3>
+      <ul><li>ARIA live regions deep dive</li><li>Building an accessible modal from scratch</li><li>Focus trap patterns without a library</li><li>Color contrast tools comparison 2026</li><li>Accessibility in design tokens</li></ul>
+    </div>
+  
+    <div class="idea-group">
+      <h3>CSS</h3>
+      <ul><li>Cascade layers in real projects</li><li>:has() selector patterns you'll actually use</li><li>CSS anchor positioning for tooltips</li><li>Container queries cookbook</li><li>Modern CSS reset for 2026</li></ul>
+    </div>
+  
+    <div class="idea-group">
+      <h3>JavaScript</h3>
+      <ul><li>Web Animations API vs CSS transitions</li><li>Intersection Observer practical patterns</li><li>Custom events for component communication</li><li>AbortController beyond fetch</li></ul>
+    </div>
+  
+    <div class="idea-group">
+      <h3>TypeScript</h3>
+      <ul><li>Template literal types in practice</li><li>The satisfies operator explained</li><li>Branded types for runtime safety</li><li>Infer keyword patterns</li></ul>
+    </div>
+  
+    <div class="idea-group">
+      <h3>Tooling / DevOps</h3>
+      <ul><li>Vite plugin guide for beginners</li><li>VS Code extensions for accessibility testing</li><li>Git hooks to enforce code standards</li><li>GitHub Actions for Gatsby deploys</li></ul>
+    </div>
+  
+    <div class="idea-group">
+      <h3>Frontend Patterns</h3>
+      <ul><li>Compound component pattern in React</li><li>Headless components with render props</li><li>CSS-only toggle switches</li><li>Skeleton loaders without a library</li></ul>
+    </div>
+  </div>
+  </div>
+
+</div>
+<script>
+const chartDefaults = {
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { ticks: { color: '#8892a4' }, grid: { color: '#2a2d3a' } },
+    y: { ticks: { color: '#8892a4', stepSize: 1 }, grid: { color: '#2a2d3a' } },
+  },
+};
+
+new Chart(document.getElementById('yearChart'), {
+  type: 'bar',
+  data: {
+    labels: ["2008","2009","2014","2016","2019","2022","2023","2025"],
+    datasets: [{ data: [1,19,2,1,2,8,8,2], backgroundColor: '#7c6af7', borderRadius: 4 }],
+  },
+  options: { ...chartDefaults, responsive: true },
+});
+
+new Chart(document.getElementById('tagChart'), {
+  type: 'bar',
+  data: {
+    labels: ["website","frontend","accessibility","javascript","web-development","css","bash","fun","google","personal","ui","linux","animation","best-practice","UX","script","browser","video","game","productivity"],
+    datasets: [{ data: [11,10,9,7,7,5,4,4,4,4,4,3,3,3,3,2,2,2,2,2], backgroundColor: '#4ade80', borderRadius: 4 }],
+  },
+  options: {
+    ...chartDefaults,
+    indexAxis: 'y',
+    responsive: true,
+    scales: {
+      x: { ticks: { color: '#8892a4' }, grid: { color: '#2a2d3a' } },
+      y: { ticks: { color: '#e2e8f0', font: { size: 11 } }, grid: { display: false } },
+    },
+  },
+});
+</script>
+</body>
+</html>

@@ -27,7 +27,7 @@ export default function PageList() {
       query={graphql`
         query PageListQuery {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
             limit: 30
           ) {
             edges {

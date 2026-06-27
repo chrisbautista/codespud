@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "9831628d2d596199",
+    "type": "split",
+    "children": [
+      {
+        "id": "887cd88ec4a28423",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6a1e78c86d77794",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/2025/discriminated-unions-examples-typescript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "discriminated-unions-examples-typescript"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7bc8c38d0ae62c55",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4999c17e46ff8af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "970caf65b6ac79c1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4d82c3e1051f2622",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "33e93d22854a4663",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "20536afde3789e80",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb67b27e418ef805",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb3a84ee62f3b63d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "blog/2025/discriminated-unions-examples-typescript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for discriminated-unions-examples-typescript"
+            }
+          },
+          {
+            "id": "99e650d5daed2c93",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "blog/2025/discriminated-unions-examples-typescript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from discriminated-unions-examples-typescript"
+            }
+          },
+          {
+            "id": "7b9036163a51d109",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "36bf2ee7fa79e8ba",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "bd85569e2a0e4c7d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "blog/2025/discriminated-unions-examples-typescript.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of discriminated-unions-examples-typescript"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b6a1e78c86d77794",
+  "lastOpenFiles": [
+    "blog/2026/one-year-of-the-accessibility-act-unplug-your-mouse-and-see-what-breaks.md",
+    "blog/2025/ai-accessibility-audits.md",
+    "blog/2023/most-used-css-patterns.md",
+    "blog/2023/newbies_guide_to_learning_vuejs.md",
+    "blog/2023/skip-button-js.md",
+    "blog/2023/three-things-you-can-do-for-keyboard-screanreader-navigation.md",
+    "blog/2025/discriminated-unions-examples-typescript.md",
+    "blog/2023/five-common-javascript-mistakes.md"
+  ]
+}

@@ -7,11 +7,11 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Icon, { IconType } from "./icons"
 
-const BiographyImage = styled(Image)`
+const BiographyImage = styled(GatsbyImage)`
   clear: both;
   float: left;
   margin-right: 10px;
@@ -86,7 +86,7 @@ function Biography(props) {
           >
             <WrittenBy>
               <BiographyImage
-                fixed={data.avatar.childImageSharp.fixed}
+                image={getImage(data.avatar)}
                 alt={author}
               />
               By <strong>{author}</strong> &nbsp;
@@ -125,9 +125,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile.png/" }) {
       childImageSharp {
-        fixed(width: 25, height: 25) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 25, height: 25, layout: FIXED)
       }
     }
     site {

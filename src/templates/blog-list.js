@@ -165,7 +165,7 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: { draft: { ne: true }, contentType: { nin: ["works", "profile"] } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
     ) {
@@ -186,7 +186,7 @@ export const pageQuery = graphql`
       }
     }
     tags: allMarkdownRemark(limit: 2000, filter: {frontmatter: {draft: {ne: true}, contentType: {ne: "works"}}}) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue,
         totalCount
       }
