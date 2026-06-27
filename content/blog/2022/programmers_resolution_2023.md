@@ -9,7 +9,7 @@ redirect_from:
 
 featured_image: /blog/boliviainteligente-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@boliviainteligente">BoliviaInteligente</a>
-tags: [web-development, personal, frontend]
+tags: [web development, personal, frontend]
 draft: false
 ---
 <!--

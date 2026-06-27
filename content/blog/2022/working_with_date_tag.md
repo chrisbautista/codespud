@@ -8,7 +8,7 @@ redirect_from:
   - /working_with_date_tag/
 featured_image: /blog/nick-hillier-yD5rv8_WzxA-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@nhillier">Nick Hillier</a>
-tags: [web-development, html, best-practice, forms]
+tags: [web development, html, best-practice, forms]
 ---
 
 I remember using JqueryUI's datepicker. It was my go-to calendar widget in the past. It was great.  I just drop an input box give it an "id" and then run a function. 

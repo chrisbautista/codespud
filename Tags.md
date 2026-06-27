@@ -39,6 +39,6 @@ utility
 video
 vscode
 vue
-web-development
+web development
 webapps
 website

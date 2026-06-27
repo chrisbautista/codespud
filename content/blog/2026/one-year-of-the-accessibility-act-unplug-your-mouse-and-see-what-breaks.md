@@ -1,5 +1,5 @@
 ---
-title: One Year of the Accessibility Act - Unplug Your Mouse and See What Breaks
+title: Unplug Your Mouse - One Year On, Accessibility Widgets Still Don't Work
 author: chris
 type: post
 date: 2026-06-27 08:29:00+00:00
@@ -7,27 +7,29 @@ url: /2026/one-year-of-the-accessibility-act-unplug-your-mouse-and-see-what-brea
 redirect_from:
   - /one-year-of-the-accessibility-act-unplug-your-mouse-and-see-what-breaks/
 featured_image: "/blog/worn-tab-key-keyboard.png"
-tags: []
+featured_image_attrribution: "A dark keyboard where every key looks brand new except a worn, glowing Tab key, with an unplugged mouse gathering dust in the corner. Caption: keyboard users carry the web; the Tab key took the beating."
+tags: [accessibility, web development]
 draft: false
 ---
-
 The [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) turns one tomorrow. It took force on 28 June 2025. For many teams it was the first hard deadline they had ever faced for this work — e-commerce, banking, transport, ticketing, and telecom, across all 27 EU countries.
 
-A year on, I see the same reflex. A team bolts a widget into the corner of the page: a floating icon that swears it fixes accessibility in one click. It does not. Here is why, and here is what I do instead.
+A year on, the same reflex persists — and it still doesn't work. A team bolts an [accessibility widget](https://www.hintogroup.eu/en/blog/digital-accessibility-when-widget-no-longer-enough-and-what-actually-needed) into the corner of the page: a floating icon that swears it fixes accessibility in one click. **It does not**. Here is why, and here is what I do instead.
 
-### A widget is a sticker over a crack
+## A widget is a sticker over a crack
 
-Most accessibility lives in your markup and your CSS, not in a script you paste before `</body>`. A widget can recolor text or grow the font. It can not build a focus order your page never had. It can not teach a `<div onclick>` to behave like a `<button>`.
+> Accessibility widgets (often called "overlays") are plugins installed on websites to add functionality via overlay buttons. They frequently promise compliance with regulations (such as WCAG or EAA) with a single line of code. - www.hintogroup.eu
+
+Most accessibility lives in your markup and your CSS, not in a script you paste before `</body>`. A widget can recolor text or grow the font. It won't build a focus order your page never had. It can't teach a `<div onclick>` to behave like a `<button />`.
 
 The Nielsen Norman Group has said this for years: accessibility is a mindset, not a checklist, and a bolted-on widget is not enough. The only real test is to put disabled users in front of the design. So drop the sticker. The best test costs nothing but a little pride.
 
-### Unplug your mouse
+## Unplug your mouse
 
-I mean it. Pull the mouse out. Use your own site with the keyboard. Tab forward, `Shift+Tab` back, `Enter` and `Space` to act, `Esc` to close.
+Testing keyboard accessibility starts the same way every time: pull the mouse out. Use your own site with the keyboard. Tab forward, <kbd>Shift+Tab</kbd> back, <kbd>Enter</kbd> and <kbd>Space</kbd> to act, <kbd>Esc</kbd> to close.
 
-You will find the broken parts in a minute. A modal you can tab into but never out of. A dropdown the keyboard skips. A "button" that ignores `Enter` because it is a `<span>` in costume. The mouse hid all of it.
+You will find the broken parts in a minute. A modal you can tab into but never out of. A dropdown the keyboard skips. A "button" that ignores <kbd>Enter</kbd> because it is a `<span>` in costume. The mouse hid all of it.
 
-This is no fringe group. Some people drive the keyboard because their hands need it, some because a screen reader drives it for them, some because it is faster. Marieke McCloskey set the three rules a decade ago, and they still hold: keep focus visible, let the Tab key reach every control, and let users skip past long menus.
+This is no fringe group. Some people drive the keyboard because their hands need it, some because a screen reader drives it for them, some because it is faster. Marieke McCloskey set the [three rules a decade ago](https://www.nngroup.com/articles/keyboard-accessibility/), and they still hold: keep focus visible, let the <kbd>Tab</kbd> key reach every control, and let users skip past long menus.
 
 This is the check I run as I tab:
 
@@ -46,11 +48,13 @@ flowchart TD
 
 Three of those boxes catch most of what I find. None need a widget. They need markup.
 
-### The dull CSS that does the work
+## The dull CSS that does the work
 
-[WCAG 2.2](https://www.w3.org/TR/WCAG22/) shipped on 5 October 2023 and added [nine new criteria](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/). Most are dull. That is the point: they turn good intentions into numbers you can check.
+[WCAG 2.2](https://www.w3.org/TR/WCAG22/) shipped on 5 October 2023 and added [nine new criteria](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/). Most are boring — deliberately. They turn good intentions into numbers you can check.
 
-Focus first. This is still the worst line of CSS on the web:
+### Focus first
+
+This is still the worst line of CSS on the web:
 
 ```css
 /* Please don't. This blinds every keyboard user. */
@@ -100,16 +104,23 @@ The cheapest win is older than any guideline: use the right HTML. A real `<butto
 
 Same pixels. Worlds apart for anyone off the mouse. I have deleted many clever components by swapping in the plain element that already worked.
 
-### Why this beats the fine
+## Why this beats the fine
 
-The EAA carries real penalties, and within days of the deadline French groups sent legal notices to big retailers. The fines are a good reason to care. They are not my reason.
+The EAA carries real penalties, and within days of the deadline [French groups sent legal notices](https://www.inclusiveweb.co/accessibility-resources/eaa-wakeup-call) to big retailers. The fines are a good reason to care. They are not my reason. 
 
-One in five people lives with a disability, and as many are neurodiverse. Build for them and the work pays everyone back — the parent holding a baby and a phone, the commuter in glare, the person whose trackpad just died. A focus ring helps the power user. A 24-pixel target helps every thumb. Here the edge case makes the center better.
+My reason is - for example - a potential buyer who will reach a checkout screen. She drove the page by keyboard, reached the "Pay" button, pressed Enter — and nothing happened. It was a `<div>`. She tabbed back, tried again, then quietly closed the tab. No error, no fine, no record. Just a sale that never happened and a person told, without a word, that the site was not built for her.
+
+That is what the widget hides. Roughly [one in five people lives with a disability](https://www.cdc.gov/disability-and-health/articles-documents/infographic-adults-with-disabilities-ethnicity-and-race.html), and many more are neurodiverse. Build for them and the work pays everyone back — the parent holding a baby and a phone, the commuter in glare, the person whose trackpad just died. A focus ring helps the power user. A 24-pixel target helps every thumb. Here the edge case makes the center better.
+
+<figure>
+<img src="/blog/infograph-adults-disabilities-ethnicity-race.png" alt="Adults with disabilities: Ethinicity and Race">
+<figcaption>One in five people lives with a disability - cdc.gov</figcaption>
+</figure>
 
 The widget swears it skips all this. It can not. Your keyboard shows you the truth in a minute, and three lines of CSS fix most of what it shows.
 
-### Start tomorrow morning
+## Start tomorrow morning
 
-The Act turning one is a fine nudge. Unplug the mouse, tab through your top page, and note what breaks. Swap `outline: none` for `:focus-visible`. Give your small buttons 24 real pixels. Replace one fake button with a real one. Small, dull, and it stays fixed. That beats a sticker.
+The Act turning one is a fine nudge. Unplug the mouse, tab through your top page, and note what breaks. Remove `outline: none` in `:focus` selectors. If you must touch `outline`, use `:focus-visible` so the ring still appears for the people who rely on it. Give your small buttons 24 real pixels. Replace one fake button with a real one. Small, dull, and it stays fixed. That beats a sticker.
 
 Happy (inclusive) building!

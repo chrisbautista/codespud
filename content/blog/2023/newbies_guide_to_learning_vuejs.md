@@ -8,7 +8,7 @@ redirect_from:
   - /newbies_guide_to_learning_vuejs/
 featured_image: /blog/viewfinder-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@helloimnik">Hello I'm Nik</a>
-tags: [vue, frontend, web-development]
+tags: [vue, frontend, web development]
 draft: false
 ---
 Part of my [new year resolution for 2023](/2022/programmers_resolution_2023/) is to learn at least 3 new front-end frameworks. One of these frameworks I intend to dive deeper into is Vue.js. 

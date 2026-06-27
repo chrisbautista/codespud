@@ -9,7 +9,7 @@ redirect_from:
 
 featured_image: /blog/daniel-ali-ju1yFZkrxVg-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@untodesign_">Daniel Ali</a>
-tags: [web-development, reactjs, accessibility]
+tags: [web development, reactjs, accessibility]
 draft: false
 ---
 

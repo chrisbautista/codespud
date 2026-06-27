@@ -8,7 +8,7 @@ redirect_from:
   - /five-common-javascript-mistakes/
 featured_image: /blog/brett-jordan-error-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/fr/@brett_jordan">Brett Jordan</a>
-tags: [javascript, error, web-development, list]
+tags: [javascript, error, web development, list]
 api: ['===', '==', 'const', 'for..of', 'for..in', 'this' ]
 draft: false
 ---
