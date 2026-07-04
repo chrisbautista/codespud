@@ -10,7 +10,7 @@ redirect_from:
 featured_image: /blog/boliviainteligente-unsplash.jpg
 featured_image_attribution: photo by <a href="https://unsplash.com/@boliviainteligente">BoliviaInteligente</a>
 tags: [web development, personal, frontend]
-draft: false
+draft: true
 ---
 <!--
 [Inspired by math](https://matt.might.net/articles/programmers-resolutions/)

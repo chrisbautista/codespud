@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
 
 :root {
-  --accent-color: #AF6204;
+  --accent-color: #ff253a;
   --link-color: #1e1e1e;
   --body-color: #333;
   --hairlines: #a3a3a3;
@@ -69,18 +69,17 @@ a:active {
 [class*="blog-post__PostContent"] a,
 [class*="tagpills__TagContainer"] a,
 .tag-pill {
-  color: var(--accent-color);
+  color: #ff253a;
   font-weight: 600;
-  border-bottom: 2px dashed var(--accent-color);
 }
 
 [class*="blog-post__PostContent"] a:hover, 
 [class*="tagpills__TagContainer"] a:hover,
 .tag-pill:hover,
 .tag-pill:visited {
-  color: var(--accent-color);
+  color: #ff253a;
   text-decoration: none;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid #ff253a;
 }
 
 .tag-pill {
@@ -162,7 +161,7 @@ img {
 }
 
 blockquote {
-  background-color: #ffeedf;
+  background-color: #fffcf4;
   margin: 12px 0;
   padding: 2rem 2rem;
   border-left: 5px solid #999;
@@ -194,11 +193,12 @@ figure figcaption {
 
 :not(pre) > code[class*="language-text"] {
   color: #222;
+  background-color: #fffcf4 !important;
 }
 
 /*[class*=blog-post] :not(pre) > code[class*="language-"], */
 [class*=blog-post] pre[class*="language-"] {
-  background-color: #101012;
+  background-color: #fffcf4;
 }
 
 .sr-only {

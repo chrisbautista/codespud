@@ -74,14 +74,13 @@ Chris writes like a friendly senior dev leaning over your shoulder — first per
 
 1. Open with a relatable confession or framing, then state plainly what the post will cover.
 2. Write first person. Admit your own mistakes and confusion as the teaching device.
-3. Keep sentences short. Use fragments and conjunction-openers for rhythm. Drop in a colon-drumroll before a payoff.
-4. Put jokes, hedges, and side-notes in parentheses. Land at least one punchline inside parens.
-5. For technical posts: backtick every keyword/value; snippet → *italic* explanation; link generously to official docs in bullet lists.
-6. Add a table of contents with anchor links if there are 4+ sections; number and name the sections.
-7. Use one apt analogy per major point — a vivid simile that clarifies, never crowding out the substance.
-8. Address the reader directly. Invite them to try it, choose for themselves, or comment.
-9. Sprinkle warmth: 1–2 emoji max, the odd exclamation in intro/CTA/close.
-10. Close under a "Wrapping up" heading: 2–4 sentence takeaway, then a short upbeat sign-off ("Cheers!", "Happy coding!").
+3. Put jokes, hedges, and side-notes in parentheses. Land at least one punchline inside parens.
+4. For technical posts: backtick every keyword/value; snippet → *italic* explanation; link generously to official docs in bullet lists.
+5. Add a table of contents with anchor links if there are 4+ sections; number and name the sections.
+6. Use one apt analogy per major point — a vivid simile that clarifies, never crowding out the substance.
+7. Address the reader directly. Invite them to try it, choose for themselves, or comment.
+8. Sprinkle warmth: 1–2 emoji max, the odd exclamation in intro/CTA/close.
+9. Close under a "Wrapping up" heading: 2–4 sentence takeaway, then a short upbeat sign-off ("Cheers!", "Happy coding!").
 
 ## 10. Era notes (since this profile covers the whole blog)
 
@@ -94,7 +93,6 @@ Chris writes like a friendly senior dev leaning over your shoulder — first per
 ## Manual Corrections
 
 *(User edits below outrank the auto-analysis above and survive every refresh. Add your fixes here.)*
-- Avoids self-deprecating talk. Admits mistakes but does not put himself down. Uses experience as credibility.
+- Occasional self-deprecating talk. Admits mistakes but does not put himself down. Uses experience as credibility.
 - Varies sentence length. 
-- Avoids casual connectors on technical articles.
 - Close with a good title for last section instead of always using "Wrapping up" as a title. 
