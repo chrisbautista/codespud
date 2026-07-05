@@ -3,10 +3,10 @@ path: "/works/2014/08/self-aware/"
 date: "2013-08-29T21:18:35Z"
 title: "Self : AWARE"
 categories: []
-tags: []
+tags: [ios, objective-c, php, rest-api]
 excerpt: "Most women do not complain about domestic violence (verbal and physical) because they have no evidence to prove it. This app, when activated, monitors for a spike in the ambient sound decibel level (for example shouting), and automatically starts recording,..."
 contentType: works
-featured_image :  /self-app-for-aware-foundation.png
+featured_image: /self-app-for-aware-foundation.png
 
 ---
 

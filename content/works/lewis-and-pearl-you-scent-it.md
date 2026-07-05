@@ -3,11 +3,10 @@ path: "/works/2015/02/lewis-and-pearl-you-scent-it/"
 date: "2013-02-18T19:08:45Z"
 title: "Lewis and Pearl: You Scent It!"
 categories: []
-tags: []
+tags: [php, mysql, javascript, jquery]
 excerpt: "You Scent It! is a promotional Facebook application by Lewis and Pearl.Participants must choose amo..."
 contentType: works
-featured_image :  /you-scent-it-facebook-promo.png
-draft: true
+featured_image: /you-scent-it-facebook-promo.png
 ---
 
 You Scent It! is a promotional Facebook application by Lewis and Pearl.

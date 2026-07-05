@@ -1,115 +1,155 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tagpills"
-import Icon, { IconType } from "../components/icons"
-import styled from "styled-components"
-// import AdUnit, { AdUnitType } from "../components/adunit"
+import useMermaid from "../components/mermaid-renderer"
+import useCopyCode from "../components/copy-code"
 
-const POST_BODY_TAG = '<!--ad-->';
+const BlogPostTemplate = ({ data, pageContext }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
+  const bodyRef = React.useRef(null)
 
-class BlogPostTemplate extends React.Component {
-  componentDidMount() {
-    this.setupAria();
-  }
-  setupAria() {
+  const isWork = post.frontmatter.contentType === "works"
+  const isAboutPage = post.fields.slug === "/2009/about-me/"
 
-    // codepen
-    const nodeCodepen = document.querySelectorAll('iframe[src*="codepen"]');
-    if (nodeCodepen.length) {
-      Array.from(nodeCodepen).forEach(item => {
-        item.setAttribute('title', this.props.data.markdownRemark.frontmatter.title + ' codepen');
-      });
-    }
-
-    //remove codepen link
-    const nodeAnchorCodepen = document.querySelectorAll('a[href*="codepen.io/"]');
-    if (nodeAnchorCodepen.length) {
-      Array.from(nodeAnchorCodepen).forEach(item => {
-        if (item.innerHTML.trim() === '') {
-          item.classList.add('sr-only');
-          item.setAttribute('tabindex', -1)
-          item.setAttribute('aria-hidden', 'true');
-          item.innerHTML = 'codepen';
-        }
-      });
-    }
-  }
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-
-    let isPost = !(
-      post.frontmatter &&
-      post.frontmatter.contentType &&
-      post.frontmatter.contentType === "works"
-    )
-
-    const isAboutPage = post.fields.slug === '/2009/about-me/';
-    const hasInsertAd = post.html.indexOf(POST_BODY_TAG) !== -1;
-
-    const postSegments = [];
-    let body = <PostContent dangerouslySetInnerHTML={{ __html: post.html }} />;
-    if (hasInsertAd) {
-      const postbody = post.html.split(POST_BODY_TAG);
-      let i = 0;
-      for (const postBodyItem of postbody) {
-        postSegments.push(<PostContent key={`pbody${i}`} dangerouslySetInnerHTML={{ __html: postBodyItem }} />);
-        // if (i === 0 || i < postbody.length - 1) {
-        //   postSegments.push(<AdUnit key={`pbodyAd${i}`} type={AdUnitType.InArticle} withShadow />);
-        // }
-        i++;
+  // Accessibility fixes for embedded codepens in the rendered markdown.
+  React.useEffect(() => {
+    document.querySelectorAll('iframe[src*="codepen"]').forEach(item => {
+      item.setAttribute("title", `${post.frontmatter.title} codepen`)
+    })
+    document.querySelectorAll('a[href*="codepen.io/"]').forEach(item => {
+      if (item.innerHTML.trim() === "") {
+        item.classList.add("sr-only")
+        item.setAttribute("tabindex", -1)
+        item.setAttribute("aria-hidden", "true")
+        item.innerHTML = "codepen"
       }
+    })
+  }, [post.frontmatter.title])
 
-      body = <>
-        {postSegments}
-      </>;
-    }
+  useMermaid(bodyRef)
+  useCopyCode(bodyRef)
 
-    return (
-      <Layout location={this.props.location} title={siteTitle} isInsidePage>
-        <PostWrapper>
-          <SEO
-            title={post.frontmatter.title}
-            description={post.frontmatter.description || post.excerpt}
-          />
-          <FeaturedImageBanner src={post.frontmatter.featured_image} alt={post.frontmatter.title} attribution={post.frontmatter.featured_image_attribution} />
-          <MetaDiv>
-            <BackLink isPost={isPost} title={post.frontmatter.title} />
-          </MetaDiv>
-          <PostTitle>
+  return (
+    <Layout title={siteTitle}>
+      <article>
+        <header>
+          <nav
+            aria-label="Breadcrumb"
+            className="font-mono text-xs text-slate-500 dark:text-slate-400"
+          >
+            {isWork ? (
+              <Link
+                to="/works"
+                className="underline underline-offset-2 hover:text-slate-900 dark:hover:text-slate-100"
+              >
+                Works
+              </Link>
+            ) : (
+              <Link
+                to="/"
+                className="underline underline-offset-2 hover:text-slate-900 dark:hover:text-slate-100"
+              >
+                Home
+              </Link>
+            )}
+            <span aria-hidden="true"> / </span>
+            <span>{post.frontmatter.title}</span>
+          </nav>
+          <h1 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
             {post.frontmatter.title}
-            <p className="date">{post.frontmatter.date}</p>
+          </h1>
+          <p className="mt-3 font-mono text-sm text-slate-500 dark:text-slate-400">
+            <time dateTime={post.frontmatter.isoDate}>
+              {post.frontmatter.date}
+            </time>
+            {post.timeToRead > 0 && <> · {post.timeToRead} min read</>}
+          </p>
+          <div className="mt-4">
             <Tags tags={post.frontmatter.tags} />
-          </PostTitle>
-          {/* {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />} */}
-          {body}
-          {!isAboutPage && <PaginationNav>
-            <li>
+          </div>
+          {post.frontmatter.featured_image && (
+            <figure className="mt-8">
+              <span className="block overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img
+                  src={post.frontmatter.featured_image}
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                  className="h-auto w-full dark:brightness-90"
+                />
+              </span>
+              {post.frontmatter.featured_image_attribution && (
+                <figcaption
+                  className="mt-2 font-mono text-xs text-slate-500 dark:text-slate-400"
+                  dangerouslySetInnerHTML={{
+                    __html: post.frontmatter.featured_image_attribution,
+                  }}
+                />
+              )}
+            </figure>
+          )}
+        </header>
+        <section
+          ref={bodyRef}
+          className="prose prose-slate mt-10 dark:prose-invert"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+        {!isAboutPage && (previous || next) && (
+          <nav
+            aria-label="Post navigation"
+            className="mt-14 flex flex-col gap-4 border-t border-slate-200 pt-6 dark:border-slate-800 sm:flex-row sm:justify-between"
+          >
+            <span className="max-w-[48%]">
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  <Icon type={IconType.Back} style={{ width: "0.625rem" }} /> {next.frontmatter.title}
+                <Link
+                  to={next.fields.slug}
+                  rel="next"
+                  className="font-mono text-sm text-slate-600 underline underline-offset-4 transition-colors duration-200 hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100"
+                >
+                  ← {next.frontmatter.title}
                 </Link>
               )}
-            </li>
-            <li>
+            </span>
+            <span className="max-w-[48%] text-right">
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  {previous.frontmatter.title} <Icon type={IconType.Next} style={{ width: "0.625rem" }} />
+                <Link
+                  to={previous.fields.slug}
+                  rel="prev"
+                  className="font-mono text-sm text-slate-600 underline underline-offset-4 transition-colors duration-200 hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100"
+                >
+                  {previous.frontmatter.title} →
                 </Link>
               )}
-            </li>
-          </PaginationNav>}
-          {/* {!isAboutPage && <AdUnit type={AdUnitType.InArticle} withShadow />} */}
-        </PostWrapper>
-      </Layout>
-    )
-  }
+            </span>
+          </nav>
+        )}
+      </article>
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate
+
+export const Head = ({ data }) => {
+  const post = data.markdownRemark
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      pathname={post.fields.slug}
+      image={post.frontmatter.featured_image}
+      article={{
+        headline: post.frontmatter.title,
+        datePublished: post.frontmatter.isoDate,
+      }}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -123,301 +163,19 @@ export const pageQuery = graphql`
       id
       excerpt
       html
+      timeToRead
       fields {
         slug
       }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        isoDate: date(formatString: "YYYY-MM-DD")
         tags
         featured_image
         featured_image_attribution
         contentType
-        tags
       }
     }
   }
 `
-
-function FeaturedImageBanner({ src, alt, attribution }) {
-
-  if (!src) {
-    return null;
-  }
-
-  return <figure className="featured-image">
-    <div className="container"><FeaturedImage src={src} alt={alt} /></div>
-    {attribution && <figcaption dangerouslySetInnerHTML={{ __html: attribution }} />}
-  </figure>;
-}
-
-//
-// Styles
-//
-
-const PaginationNav = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin-left: 1rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
-
-  li {
-      display: flex;
-      max-width: 350px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: wrap;
-
-      a {
-        display: inline-flex;
-        font-size: 1rem;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 0.7rem;
-      }
-  }
-
-  li:last-child {
-    a {
-      justify-content: flex-end;
-      text-align: right;
-    }
-  }
-
-  @media screen and (max-width: 900px){
-    display: block;
-    padding: 0.5rem 0.5rem 1rem;
-    text-align: center;
-    margin: 0;
-    li {
-      display: block;
-      padding: 0.4rem 0;
-      margin: 0.3rem 0 0;
-
-      svg {
-        margin-right: 0.2rem;
-        margin-left: 0.2rem;
-      }
-    }
-  }
-`
-
-const PostTitle = styled.h1`
-  text-align: center;
-  margin: 3rem auto;
-  font-size: 3.5rem;
-  max-width: 1024px;
-
-  .date {
-    font-size: 0.875rem;
-  }
-
-  @media screen and (max-width: 1200px){
-    font-size: 3rem;
-  }
-
-  @media screen and (max-width: 960px){
-    font-size: 2.5rem;
-  }
-
-  @media screen and (max-width: 768px){
-    font-size: 2rem;
-  }
-`
-
-const FeaturedImage = styled.img`
-   width: 100%;
-   object-fit: cover;
-`;
-
-const MetaDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Montserrat;
-  font-size: 0.875rem;
-  max-width: 1024px;
-  margin: 2rem auto 0;
-
-  @media screen and (max-width: 768px){
-    margin-top: 1rem;
-  }
-`;
-
-const PostWrapper = styled.article`
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 56px 56px;
-  border-radius: 5px;
-  background-color: #fff;
-  overflow: hidden;
-
-  @media screen and (max-width: 900px){
-    padding: 0 20px 1.5rem;
-  }
-
-  @media screen and (max-width: 768px){
-    padding: 0 1rem 20px;
-    border-radius: 0;
-  }
-  
-  .featured-image {
-    display: block;
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
-    left: -56px;
-    top: 0;
-    width: calc(100% + 112px);
-    
-    [class*="container"] {
-      height: 350px;
-      margin: 0;
-      padding: 0;
-
-      @media screen and (max-width: 768px){
-        height: 175px;
-      }
-    }
-
-    figcaption {
-      --caption-color: #c2c4cc;
-
-      display: inline-block;
-      position: absolute;
-      bottom: 15px;
-      right: 0;
-      margin-top: -56px;
-      padding: 0.5rem 1rem;
-      color: var(--caption-color);
-      background-color: rgba(0,0,0,0.20);
-      font-size: 0.75rem;
-
-      @media screen and (max-width: 768px){
-        right: 2rem;
-      }
-
-      a {
-        color: var(--caption-color);
-      }
-    }
-
-    image {
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 100%;
-    }
-  }
-
-  code {
-    font-size: 0.875rem;
-  }
-
-  [class*="container"] {
-    display: flex;
-    justify-content: center;
-    max-width: 1024px;
-    height: 350px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .demo {
-    border: 2px dashed #d3d3d3;
-    padding: 2.5rem;
-    margin: 2.5rem 0;
-    overflow: auto;
-
-    label {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    @media screen and (max-width: 768px) {
-      padding: 15px 5px 20px;
-    }
-  }
-
-  blockquote {
-    margin: 2.5rem 0;
-  }
-
-  .gatsby-highlight {
-    margin: 2.5rem 0;
-
-    pre {padding: 1.6rem; }
-  }
-`;
-
-const PostContent = styled.div`
-  max-width: 1024px;
-  margin: 0 auto;
-  font-weight: normal;
-  line-height: 1.75;
-  h1 {
-    font-size: 3.052rem;
-  }  
-  h2 {
-    font-size: 2.441rem;
-  }  
-  h3 {
-    font-size: 1.953rem;
-  }
-  h4 {
-    font-size: 1.563rem;
-  }
-  h5 {
-    font-size: 1.25rem;
-  }
-  small, .text_small {
-    font-size: 0.8rem;
-  }
-
-  @media screen and (max-width: 768px){
-    h1 {
-      font-size: 2rem;
-    }  
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.841em;
-    }  
-    h3 {
-      font-size: 1.703rem;
-    }
-    h4 {
-      font-size: 1.563rem;
-    }
-    h5 {
-      font-size: 1.25rem;
-    }
-  }
-`;
-
-function BackLink({ isPost, title }) {
-  let divider = <Icon type={IconType.Next} style={{ width: '9px', height: '14px' }} />;
-
-  return isPost ? (
-    <span>
-      <a href="/" alt={"Home"}>
-        {"Home"}
-      </a>{" "}
-      {divider} {title}
-    </span>
-  ) : (
-    <span>
-      <Link to="/works" alt={"Portfolio"}>
-        {"Portfolio"}
-      </Link>{" "}
-      {divider} {title}
-    </span>
-  )
-}

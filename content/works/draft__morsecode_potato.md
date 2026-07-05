@@ -6,6 +6,6 @@ categories: []
 tags: []
 excerpt: 
 contentType: works
-featured_image : 
+featured_image:
 draft: true
 ---

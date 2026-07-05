@@ -5,12 +5,12 @@ type: post
 date: 2009-09-24T01:07:00+00:00
 url: /2009/09/about-me/
 redirect_from: 
-  - /2009/09/about-me/
+  - /about-me/
   - /about-me
   - /about
 featured_image :  /potato.png
 contentType: profile
-
+draft: false
 ---
 
 Hi! I&#8217;m Chris Bautista. I&#8217;m a veteran programmer, addicted gamer, clueless photographer and novice writer. 

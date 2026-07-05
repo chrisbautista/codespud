@@ -3,10 +3,10 @@ path: "/works/2014/08/plana-forma/"
 date: "2013-08-13T19:16:46Z"
 title: "Plana Forma"
 categories: []
-tags: []
+tags: [cordova, jquery-mobile, ios, android, php]
 excerpt: "The Plana FORMA App allows you to schedule and register for classes at the Plana FORMA studios of y..."
 contentType: works
-featured_image :  /plana_forma_mobile_app.png
+featured_image: /plana_forma_mobile_app.png
 
 ---
 

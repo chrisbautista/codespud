@@ -7,7 +7,6 @@ tags: [javascript, jquery, animation]
 excerpt: "Surf, in celebration of it's anniversary, is thanking it's customers with \"American Idol\"-ish con..."
 contentType: works
 featured_image: /surf-biggest-fan-facebook-app.png
-draft: true
 ---
 
 Surf, in celebration of it's anniversary, is thanking it's customers with "American Idol"-ish contest. Participants are asked to send in a story, a photo or a video telling Surf why they are Surf's biggest fan.

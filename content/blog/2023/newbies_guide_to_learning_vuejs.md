@@ -11,8 +11,6 @@ featured_image_attribution: photo by <a href="https://unsplash.com/@helloimnik">
 tags: [vue, frontend, web development]
 draft: false
 ---
-Part of my [new year resolution for 2023](/2022/programmers_resolution_2023/) is to learn at least 3 new front-end frameworks. One of these frameworks I intend to dive deeper into is Vue.js. 
-
 Every time I want to learn something new I try to plan first. A very quick to-do list related to the subject. I know there's a lot of great guides out there about Vue.js. <!--more--> But I still like making my little todo list. It keeps me focused. 
 
 To start, I went to [Vue.js' documentation page](https://vuejs.org/guide/introduction.html). I scanned all the topics provided. I looked for the least amount of concepts to get a sense of Vue.js - enough to start a simple application. Then, I grew my knowledge gradually. I've outlined these initial concepts in this post. 

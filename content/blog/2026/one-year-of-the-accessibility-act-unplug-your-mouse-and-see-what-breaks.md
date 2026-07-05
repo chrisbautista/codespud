@@ -7,7 +7,7 @@ url: /2026/one-year-of-the-accessibility-act-unplug-your-mouse-and-see-what-brea
 redirect_from:
   - /one-year-of-the-accessibility-act-unplug-your-mouse-and-see-what-breaks/
 featured_image: "/blog/worn-tab-key-keyboard.png"
-featured_image_attrribution: "A dark keyboard where every key looks brand new except a worn, glowing Tab key, with an unplugged mouse gathering dust in the corner. Caption: keyboard users carry the web; the Tab key took the beating."
+featured_image_attribution: "keyboard users carry the web; the Tab key took the beating."
 tags: [accessibility, web development]
 draft: false
 ---

@@ -3,11 +3,10 @@ path: "/works/2014/08/construc-tables/"
 date: "2013-08-28T19:21:31Z"
 title: "Go Nuts : Constructables"
 categories: []
-tags: []
+tags: [arduino, iot, rest-api]
 excerpt: "Go Nuts Donuts - ConstrucTables are tables up-cycled for fun and utility:    Bike tables let you ha..."
 contentType: works
-featured_image :  /constructables-website.png
-draft: true
+featured_image: /constructables-website.png
 ---
 
 Go Nuts Donuts - ConstrucTables are tables up-cycled for fun and utility:

@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,7 +42,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 672,
             },
           },
           {
@@ -51,15 +51,22 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: `<span aria-hidden="true">#</span>`,
+              className: `heading-anchor`,
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           {
-            resolve:"@weknow/gatsby-remark-codepen",
+            resolve: "@weknow/gatsby-remark-codepen",
             options: {
               theme: "dark",
-              height: 400
-            }
+              height: 400,
+            },
           },
         ],
       },
@@ -132,9 +139,8 @@ module.exports = {
         icon: "content/assets/potato.png", // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    'gatsby-redirect-from',
-    'gatsby-plugin-meta-redirect' // make sure this is always the last one
-    ],
+    `gatsby-plugin-remove-serviceworker`,
+    "gatsby-redirect-from",
+    "gatsby-plugin-meta-redirect", // make sure this is always the last one
+  ],
 }

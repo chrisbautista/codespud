@@ -1,158 +1,97 @@
 import React from "react"
-import { graphql } from "gatsby"
-
-import Context from '../core/context';
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
-// import AdUnit from "../components/adunit";
-import BlogStory from './blog-story'
-import styled from "styled-components"
+import PostList from "../components/post-list"
+import Tags from "../components/tagpills"
 
-const BlogList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-  grid-template-rows: masonry;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 3rem;
-  grid-auto-flow: dense;
-  width: 100%;
-  padding-top: 2rem;
+const Hero = ({ node }) => {
+  const {
+    title,
+    date,
+    isoDate,
+    featured_image,
+    featured_image_attribution,
+    tags,
+  } = node.frontmatter
 
-  @media (max-width: 1024px) {
-    grid-row-gap: 1rem;
-    grid-column-gap: 2rem;
-  }
+  return (
+    <section aria-label="Latest post" className="mb-12">
+      <Link to={node.fields.slug} className="group block">
+        <p className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+          Latest · <time dateTime={isoDate}>{date}</time>
+        </p>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 group-hover:underline underline-offset-4 dark:text-slate-100 sm:text-4xl">
+          {title}
+        </h2>
+        {featured_image && (
+          <span className="mt-6 block overflow-hidden border border-slate-200 dark:border-slate-800">
+            <img
+              src={featured_image}
+              alt=""
+              loading="eager"
+              decoding="async"
+              className="h-full w-full scale-100 object-cover grayscale transition-all duration-500 group-hover:scale-[1.02] group-hover:grayscale-0 motion-reduce:transition-none motion-reduce:group-hover:scale-100 dark:brightness-90"
+            />
+          </span>
+        )}
+        {node.excerpt && (
+          <p
+            className="mt-4 max-w-measure leading-relaxed text-slate-600 dark:text-slate-400"
+            dangerouslySetInnerHTML={{ __html: node.excerpt }}
+          />
+        )}
+      </Link>
+      {featured_image && featured_image_attribution && (
+        <p
+          className="mt-2 font-mono text-xs text-slate-500 dark:text-slate-400"
+          dangerouslySetInnerHTML={{ __html: featured_image_attribution }}
+        />
+      )}
+      <div className="mt-4">
+        <Tags tags={tags} count={5} />
+      </div>
+    </section>
+  )
+}
 
-  @media (max-width: 768px) {
-    grid-row-gap: 0.5rem;
-    padding-top: 0.5rem;
-  }
+const BlogIndex = ({ data, pageContext }) => {
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
+  const { currentPage, numPages } = pageContext
 
-  @media (max-width: 659px) {
-    display: flex;
-    flex-direction: column;
-  }
-`
-const BlogWrapper = styled.div`
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: transparent;
+  const isFirstPage = currentPage === 1
+  const heroPost = isFirstPage ? posts[0] : null
+  const listPosts = isFirstPage ? posts.slice(1) : posts
 
-  &.first-page {
-    .pages {
-      display: none;
-    }
-
-    .pages-first-page {
-      display: block;
-    }
-
-    @media (max-width: 768px) {
-      grid-row-gap: 0.5rem;
-      .pages {
-        display: block;
-        
-        ul {
-          margin: 2rem 0 2rem;
-        }
-      }
-
-      .pages-first-page {
-        display: none;
-      }
-        
-    }
-  }
-
-`;
-
-// const Title = styled.h1`
-//   font-weight: bold;
-//   font-size: 5rem;
-//   text-align: left;
-//   margin-top: 2rem;
-//   margin-bottom: 2rem;
-//   border-bottom: 2px solid #ddd;
-//   padding-bottom: 2rem;
-
-//     @media screen and (max-width: 720px) {
-//       font-size: 3.5rem;
-//       margin-bottom: -15px;
-//       padding-bottom: 1rem;
-//     }
-// `
-
-class BlogIndex extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {isSmall : false};
-  }
-  componentDidMount(){
-    this.setState({isSmall: window.innerWidth < 768});
-  }
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
-    const tags = data.tags.group;
-    const { currentPage, numPages } = this.props.pageContext
-    const ctx = new Context()
-
-    //console.log('tags', this.props.pageContext);
-
-    const pages = (
+  return (
+    <Layout title={siteTitle}>
+      <h1 className="sr-only">{siteTitle} — All posts</h1>
+      {heroPost && <Hero node={heroPost.node} />}
+      <PostList posts={listPosts} />
       <Pagination
         numPages={numPages}
-        prevPage={currentPage - 1 === 1 ? "/" : `/${(currentPage - 1)}`}
-        isFirst={currentPage === 1}
-        isLast={currentPage === numPages - 1}
         currentPage={currentPage}
-        nextPage={currentPage + 1 === numPages ? `/${numPages}` : `/${currentPage + 1}`}
-        ctx={ctx}
+        isFirst={isFirstPage}
+        isLast={currentPage === numPages}
+        prevPage={currentPage - 1 === 1 ? "/" : `/${currentPage - 1}`}
+        nextPage={`/${currentPage + 1}`}
       />
-    )
-
-    const isFirstPage = currentPage === 1;
-    let firstPage = null;
-    let allPosts = [...posts];
-    if (isFirstPage) {
-      firstPage = posts[0];
-      allPosts.shift();
-    }
-    // let startIndex = 4;
-    // let skipItems = 4;
-    // if (this.state.isSmall) {
-    //   startIndex = 1;
-    //   skipItems = 3;
-    // }
-    return (
-      <Layout location={this.props.location} title={siteTitle} backgroundColor='transparent' tags={tags}>
-        <SEO title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        <BlogWrapper className={isFirstPage ? "first-page" : null}>
-          <div className="pages">{pages}</div>
-          {isFirstPage && firstPage.node && <BlogStory key={firstPage.node.fields?.slug} ctx={ctx} node={firstPage.node} latest />}
-          {isFirstPage && <div className="pages-first-page">{pages}</div>}
-          <BlogList >
-            {allPosts.map(({ node }, i) => {
-              let ad = null;
-              // if (i + 1 === startIndex || (i > skipItems && ((i + 1) % skipItems)) === 0) {
-              //   ad = <AdUnit withShadow />;
-              // }
-
-              return <BlogStory key={node.fields.slug} ctx={ctx} node={node} ad={ad}/>;
-            })}
-          </BlogList>
-        </BlogWrapper>
-      </Layout>
-    )
-  }
+    </Layout>
+  )
 }
 
 export default BlogIndex
+
+export const Head = () => (
+  <SEO
+    title="All posts"
+    pathname="/"
+    keywords={[`blog`, `web development`, `javascript`, `accessibility`]}
+  />
+)
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
@@ -163,7 +102,10 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        frontmatter: { draft: { ne: true }, contentType: { nin: ["works", "profile"] } }
+        frontmatter: {
+          draft: { ne: true }
+          contentType: { nin: ["works", "profile"] }
+        }
       }
       sort: { frontmatter: { date: DESC } }
       limit: $limit
@@ -172,25 +114,19 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          html
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM DD")
+            isoDate: date(formatString: "YYYY-MM-DD")
             title
             featured_image
+            featured_image_attribution
             tags
           }
         }
       }
-    }
-    tags: allMarkdownRemark(limit: 2000, filter: {frontmatter: {draft: {ne: true}, contentType: {ne: "works"}}}) {
-      group(field: { frontmatter: { tags: SELECT } }) {
-        fieldValue,
-        totalCount
-      }
-
     }
   }
 `

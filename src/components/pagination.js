@@ -1,60 +1,8 @@
 import React from "react"
-import styled from "styled-components"
 import { Link } from "gatsby"
-import Icon, { IconType } from "./icons"
 
-const PaginationNav = styled.ul`
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 50px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
-
-  @media screen and (max-width: 769px) {
-    margin: 2rem 0 0;
-  }
-
-  li {
-    margin-left: 0;
-    list-style: none;
-    max-width: 300px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    span {
-      color: #aaa;
-    }
-  }
-
-  .page-numbers {
-    font-size: 1.2rem;
-  }
-
-  svg {
-    width: 0.5rem;
-    transform: scale(2);
-  }
-
-  a, span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 4px;
-    width: 44px;
-    height: 44px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #f2f2f2;
-  }
-    
-`
+const linkClass =
+  "font-mono text-sm text-slate-600 underline underline-offset-4 transition-colors duration-200 hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100"
 
 const Pagination = ({
   numPages,
@@ -63,57 +11,38 @@ const Pagination = ({
   nextPage,
   isFirst,
   isLast,
-  showPageNumbers = false,
-  ctx,
 }) => {
+  if (numPages <= 1) {
+    return null
+  }
+
   return (
-    <PaginationNav>
-      <li>
-        {!isFirst ? (
-          <Link to={prevPage} rel="prev" aria-label={ctx.i18n.Back}>
-            <NavIcon type={IconType.Back} />
+    <nav
+      aria-label="Pagination"
+      className="mt-12 flex items-center justify-between border-t border-slate-200 pt-6 dark:border-slate-800"
+    >
+      <span>
+        {!isFirst && (
+          <Link to={prevPage} rel="prev" className={linkClass}>
+            ← Newer
           </Link>
-        ) : <span>
-          <NavIcon type={IconType.Back} />
-        </span>}
-      </li>
-      {showPageNumbers &&
-        Array.from({ length: numPages }, (_, i) => {
-          if (currentPage !== i+1) {
-            return null;
-          }
-          
-          return <li
-            className="page-numbers"
-            key={`pagination-number${i + 1}`}
-            style={{
-              margin: 0,
-            }}
-          >
-            <Link
-              to={`/${i === 0 ? "" : i + 1}`}
-              
-            >
-              {i + 1} / {numPages}
-            </Link>
-          </li>
-        })}
-      <li>
-        {!isLast ? (
-          <Link to={nextPage} rel="next" aria-label={ctx.i18n.Next}>
-            <NavIcon type={IconType.Next} />
+        )}
+      </span>
+      <span
+        aria-current="page"
+        className="font-mono text-sm text-slate-500 dark:text-slate-400"
+      >
+        {currentPage} / {numPages}
+      </span>
+      <span>
+        {!isLast && (
+          <Link to={nextPage} rel="next" className={linkClass}>
+            Older →
           </Link>
-        ) : <span>
-          <NavIcon type={IconType.Next} />
-        </span>
-        }
-      </li>
-    </PaginationNav>
+        )}
+      </span>
+    </nav>
   )
 }
 
 export default Pagination
-
-function NavIcon ({type}) {
-  return <Icon type={type} style={{width: "0.625rem"}} />;
-}
