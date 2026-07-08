@@ -97,7 +97,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre></div>
 <p><em>The <code class="language-text">alt</code> names the chart; the <code class="language-text">figcaption</code> carries the numbers.</em></p>
 <p>A self-test from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img">MDN</a>: read the alt text aloud with the paragraph before it. If the pair conveys what a sighted reader gets, stop. If it repeats or leaves a hole, keep editing.</p>
-<h2 id="o-decision-tree">4. The alt text decision tree</h2>
+<h2 id="o-decision-tree">The alt text decision tree</h2>
 <p>The W3C’s <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">alt decision tree</a> formalizes this. I run a simplified version on every <code class="language-text">&lt;img></code>:</p>
 <div class="gatsby-highlight" data-language="mermaid"><pre class="language-mermaid"><code class="language-mermaid"><span class="token keyword">flowchart</span> TD
     A<span class="token text string">["New &lt;img>. What does it DO?"]</span> <span class="token arrow operator">--></span> B<span class="token punctuation">{</span>Is it purely
@@ -118,7 +118,7 @@ the meaning"]
     G <span class="token inter-arrow-label"><span class="token arrow-head arrow operator">--</span> <span class="token label property">Yes</span> <span class="token arrow operator">--></span></span> I["Short alt + long description
 <span class="token text string">(figure, table, or link)</span>"]</code></pre></div>
 <p>No box says “describe what the image looks like”. Appearance matters only when appearance <em>is</em> the information — a painting on a gallery site, a rash on a medical page, a mockup in a design critique.</p>
-<h2 id="o-ai-cant-classify">5. Why AI-generated alt text fails</h2>
+<h2 id="o-ai-cant-classify">Why AI-generated alt text fails</h2>
 <p>In 2026, every CMS and editor plugin will generate alt text for you. The models describe pixels well. I use them. But the first three branches of the tree above have nothing to do with pixels.</p>
 <p>Is the image decorative? Depends on the page. Functional? Depends on the markup around it. Does it add information? Depends on the text. A model looking at a cropped file sees none of that. It answers the one question it can — “what’s in this picture?” — which is the last question that matters, and often the wrong one.</p>
 <p>Researchers have documented the failure. <a href="https://silktide.com/blog/the-downsides-of-ai-alt-text/">Silktide found</a> that screen reader users can tell when alt text is AI-generated: accurate descriptions that convey no purpose or function. The <a href="https://afb.org/blog/entry/alt-text-age-ai">American Foundation for the Blind</a> puts it plainly: description without intent isn’t access.</p>
