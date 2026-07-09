@@ -37,17 +37,17 @@ const Hero = ({ node }) => {
             />
           </span>
         )}
-        {node.excerpt && (
-          <p
-            className="mt-4 max-w-measure leading-relaxed text-slate-600 dark:text-slate-400"
-            dangerouslySetInnerHTML={{ __html: node.excerpt }}
-          />
-        )}
       </Link>
       {featured_image && featured_image_attribution && (
         <p
           className="mt-2 font-mono text-xs text-slate-500 dark:text-slate-400"
           dangerouslySetInnerHTML={{ __html: featured_image_attribution }}
+        />
+      )}
+      {node.excerpt && (
+        <p
+          className="mt-4 max-w-measure leading-relaxed text-slate-600 dark:text-slate-400"
+          dangerouslySetInnerHTML={{ __html: node.excerpt }}
         />
       )}
       <div className="mt-4">
