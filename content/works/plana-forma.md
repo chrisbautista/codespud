@@ -1,33 +1,27 @@
 ---
-path: "/works/2014/08/plana-forma/"
-date: "2013-08-13T19:16:46Z"
+path: "/works/2012/08/plana-forma/"
+date: "2012-08-13T19:16:46Z"
 title: "Plana Forma"
-categories: []
+categories: [project, works]
 tags: [cordova, jquery-mobile, ios, android, php]
-excerpt: "The Plana FORMA App allows you to schedule and register for classes at the Plana FORMA studios of y..."
+excerpt: "A hybrid iOS and Android app for the Plana FORMA studios, letting members schedule and register for classes and view promos."
 contentType: works
 featured_image: /plana_forma_mobile_app.png
-
+draft: false
 ---
 
-The Plana FORMA App allows you to schedule and register for classes at the Plana FORMA studios of your choice. You can also view promos and announcements.
+The Plana FORMA app lets you schedule and register for classes at the Plana FORMA studio of your choice, and view promos and announcements.
 
->Plana FORMA™ created by Julie Alagde, draws inspiration from her extensive experiences in dance, pilates, yoga, sports and Physique 57 to come up with one highly effective and dynamic workout that is highly addicting, fun, intense and challenging to the core. 
+> Plana FORMA™, created by Julie Alagde, draws on her experience in dance, pilates, yoga, sports, and Physique 57 to build one effective, dynamic workout — fun, intense, and challenging to the core.
 
-**Download:** (defunct)
+**Role**
 
-[ITUNES](https://itunes.apple.com/hk/app/plana-forma/id600154493?mt=8 "Plana Forma for IOS")     [ANDROID](https://play.google.com/store/apps/details?id=com.lowe.planaforma&hl=en "Plana Forma for Android")
+Hybrid mobile development with jQuery Mobile and Cordova (formerly PhoneGap), with REST services built in PHP against the [Mindbody Online Developer API](https://developers.mindbodyonline.com/).
 
-**Art Direction by:** Noel Perlas
+**Credits**
 
-**User Interface:**
+- Art direction — Noel Perlas
 
-HTML5, Jquery-Mobile, Cordova
+**Links**
 
-**Server:**
-
-PHP, SOAP client to mindbodyonline API
-
-**My role:**
-
-Hybrid mobile development using Jquery-Mobile and Cordova (formerly Phonegap). REST services built in PHP using [Mindbody Online  Developer API](https://developers.mindbodyonline.com/).
+- App Store and Google Play listings are no longer available (app defunct).

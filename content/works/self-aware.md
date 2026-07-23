@@ -1,39 +1,30 @@
 ---
-path: "/works/2014/08/self-aware/"
-date: "2013-08-29T21:18:35Z"
-title: "Self : AWARE"
-categories: []
+path: "/works/2012/06/self-aware/"
+date: "2012-06-29T21:18:35Z"
+title: "Self: AWARE"
+categories: [project, works]
 tags: [ios, objective-c, php, rest-api]
-excerpt: "Most women do not complain about domestic violence (verbal and physical) because they have no evidence to prove it. This app, when activated, monitors for a spike in the ambient sound decibel level (for example shouting), and automatically starts recording,..."
+excerpt: "An award-winning iOS app for the AWARE Foundation of Singapore that discreetly records evidence of domestic abuse when ambient sound spikes."
 contentType: works
 featured_image: /self-app-for-aware-foundation.png
-
+draft: false
 ---
 
-**Self** is an award winning IOS app by AWARE foundation of Singapore.
+Self is an award-winning iOS app for the AWARE Foundation of Singapore.
 
-> <span style="color: #898989;">Most women do not complain about domestic violence (verbal and physical) because they have no evidence to prove it. This app, when activated, monitors for a spike in the ambient sound decibel level (for example shouting), and automatically starts recording, saving an audio file in a secret folder. The victim can later use this recording as proof of abuse. The app also has an optional facility of automatically sending an SOS, via SMS, to a nominated person when the sound level rises above a certain point.</span>
+> Most women do not report domestic violence, verbal or physical, because they have no evidence to prove it. When activated, this app monitors for a spike in ambient sound (for example, shouting) and automatically starts recording, saving the audio to a hidden folder the victim can later use as proof of abuse. It can also send an SOS via SMS to a nominated contact when the sound level crosses a set threshold.
 
-**Awards:**
+**Role**
 
-[Lowe Singapore triumphs at Creative Circle Awards with 29 Gongs](http://www.lowesingapore.com/news/lowe-singapore-triumphs-creative-circle-awards-29-gongs/)
+I built all of the server backend for user management and SMS processing, using the Slim PHP framework for its small footprint. The initial iOS version was created by a contractor; I later took it over and maintained the whole app, applying Noel Perlas's flat design when it was updated for iOS 6.
 
-[Dandad.org: Self](http://www.dandad.org/awards/professional/2014/mobile-marketing/23780/self/)
+**Credits**
 
-[Spikes.asia Winners 2013](http://www.spikes.asia/winners/2013/mobile/entry.cfm?entryid=3015)
+- Concept — Dominic Stallard
+- Creative direction — Noel Perlas, Eranga Tennekoon, Mandar Wairkar
 
-**Concept:** Dominic Stallard
+**Awards**
 
-**Creative Direction by:**   **Noel Perlas, Eranga Tennekoon, Mandar Wairkar
-
-**My role:**
-
-All server backend for user management and SMS processing. I used SLIM PHP framework because of its small footprint. The initial version was created by a contractor. Eventually, I took over the IOS applicaiton and maintained everything. Applied flat design by Noel Perlas when the application was updated to IOS 6.
-
-**User interface:**
-
-Object C, Foundation Classes, iOS 6
-
-**Server:**
-
-PHP, Slim REST  microframework
+- [D&AD Wood Pencil, 2014](https://www.dandad.org/work/d-ad-awards-archive/self)
+- Creative Circle Awards — part of Lowe Singapore's 29-award haul
+- Spikes Asia 2013, Mobile

@@ -1,32 +1,29 @@
 ---
-path: "/works/2015/03/surf-biggest-fan/"
-date: "2013-03-02T22:50:13Z"
-title: "Surf : Biggest Fan"
-categories: []
+path: "/works/2012/03/surf-biggest-fan/"
+date: "2012-03-02T22:50:13Z"
+title: "Surf: Biggest Fan"
+categories: [project, works]
 tags: [javascript, jquery, animation]
-excerpt: "Surf, in celebration of it's anniversary, is thanking it's customers with \"American Idol\"-ish con..."
+excerpt: "An anniversary Facebook contest for Surf where fans submit a story, photo, or video to prove they're the brand's biggest fan."
 contentType: works
 featured_image: /surf-biggest-fan-facebook-app.png
+draft: false
 ---
 
-Surf, in celebration of it's anniversary, is thanking it's customers with "American Idol"-ish contest. Participants are asked to send in a story, a photo or a video telling Surf why they are Surf's biggest fan.
+> Are you Surf's biggest fan? Then prove it — tell us with a story, a photo, or a video.
 
-> Are you Surf's Biggest Fan? Then prove it! tell us with a story, a photo or a video
+To celebrate its anniversary, Surf thanked its customers with an American Idol–style contest. Participants submitted a story, photo, or video explaining why they were Surf's biggest fan. The client screened each entry, and successful participants were notified by phone and email.
 
-Clients screens each entry and successful participants are notified via phone and email.
+**Role**
 
-**Art Direction:**John Pabalan, Lowe Philippines
+I built the Facebook-enabled contest, adding interactivity and animation in keeping with the design's tone. Entries were stored through the filepicker.io API, and stakeholders reviewed them through a custom admin page.
 
-**Accounts:**Katrina Nadela, Dea Bobadilla
+**Credits**
 
-**Comments/My Role:**
+- Art direction — John Pabalan, Lowe Philippines
+- Accounts — Katrina Nadela, Dea Bobadilla
 
-Facebook enabled contest. Added interactivity and animation keeping in mind the subtle and delicate atmosphere brought out by the design. Used filepicker.io API to store entries. Stakeholders review the entries using a custom admin page.
+**Links**
 
-**Backend:** PHP, MySQL, Facebook API, Filepicker IO
-
-**Frontend:** HTML, Javascript, JQuery
-
-**Source: [Click here](https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/surfbiggestfan "Github : Surf's Biggest Fan")**
-
-**Demo: [Click here](https://chrisbautista.github.io/projects/surfbiggestfan/build/ "Github: Surf's Biggest Fan")**
+- [Source on GitHub](https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/surfbiggestfan "GitHub: Surf's Biggest Fan")
+- [Live demo](https://chrisbautista.github.io/projects/surfbiggestfan/build/ "Surf's Biggest Fan demo")

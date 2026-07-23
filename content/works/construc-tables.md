@@ -1,45 +1,26 @@
 ---
-path: "/works/2014/08/construc-tables/"
-date: "2013-08-28T19:21:31Z"
-title: "Go Nuts : Constructables"
-categories: []
+path: "/works/2012/08/construc-tables/"
+date: "2012-08-28T19:21:31Z"
+title: "Go Nuts: ConstrucTables"
+categories: [project, works]
 tags: [arduino, iot, rest-api]
-excerpt: "Go Nuts Donuts - ConstrucTables are tables up-cycled for fun and utility:    Bike tables let you ha..."
+excerpt: "Interactive up-cycled tables for Go Nuts Donuts — a bike table, a drum table, and a charging table, each built around an Arduino kit."
 contentType: works
 featured_image: /constructables-website.png
+draft: false
 ---
 
-Go Nuts Donuts - ConstrucTables are tables up-cycled for fun and utility:
+Go Nuts Donuts ConstrucTables are café tables up-cycled for fun and utility:
 
-1. The Bike Table:
-    Bike tables let you have your donut and burn calories too with its reconfigured pedals from old bicycles and a calorie counter to track what you’ve burned.
-2. The Drum Table:
-    Record your own beats while eating your donut! This table makes our customers a sound machine and uploads all the recordings to SoundCloud.
-3. The Charge Table:
-    Eat your donut while charging your phone: sit comfortably, connect your phone and pedal.
+1. **The Bike Table** lets you have your donut and burn calories too, with pedals reconfigured from old bicycles and a calorie counter to track what you've burned.
+2. **The Drum Table** turns each seat into a sound machine — record your own beats while you eat, and the recordings upload straight to SoundCloud.
+3. **The Charge Table** lets you charge your phone while you sit: connect it, and pedal.
 
-**Art direction:** John Pabalan, Lowe - Creatives
+**Role**
 
-**Website collaborated with:** Ena Escanan , Lowe - Creative Technology
+Technical consultant for the Arduino integration across all three tables. I built and programmed an Arduino kit with audio and network shields to record and upload files to the server, and implemented Xively and REST API support.
 
-**My role:**
+**Credits**
 
-Technical consultant for integrating Arduino to the projects. Built and programmed an Arduino kit with an audio and network shield to record and upload files to server.
-Coded Xively API support and REST API support
-
-####Bike Table
-
-**Hardware:**
-Arduino Due, Audio Shield, Wifi Shield
-
-**Server:**:
-Apache,PHP, HTTP PUT processing
-
-####Charge Table
-
-**Hardware:**
-Arduino Due, Sensor Shield
-
-**Server:**
-[Xively](https://xively.com) polling, PHP
-
+- Art direction — John Pabalan, Lowe Creatives
+- Website collaboration — Ena Escanan, Lowe Creative Technology

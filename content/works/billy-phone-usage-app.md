@@ -1,35 +1,23 @@
 ---
-path: "/works/2014/08/billy-phone-usage-app/"
-date: "2012-08-13T19:15:18Z"
-title: "Billy: Proof-of-concept"
-categories: []
+path: "/works/2010/05/billy-phone-usage-app/"
+date: "2010-05-11T19:15:18Z"
+title: "Billy: Phone Usage Tracker"
+categories: [project, works]
 tags: [cordova, jquery-mobile, javascript, android]
-excerpt: "Billy barks so your phone bills don't bite. Download Billy for free and start tracking your mobile ..."
+excerpt: "A proof-of-concept Android app that tracks mobile usage and estimates your bill from your phone's own call, SMS, and data logs."
 contentType: works
 featured_image: /billy_mobile_usage_app.png
+draft: false
 ---
 
-> Billy barks so your phone bills don't bite. Download Billy for free and start tracking your mobile usage.
+> Billy barks so your phone bills don't bite. Track your mobile usage and know what you owe before the bill arrives.
 
-Billy uses your phone's own logs for SMS, talk minutes, and data. It then computes costs according to preset rates, which you can customize. You can also tell Billy when you want to be reminded.
+Billy reads your phone's own logs for SMS, talk minutes, and data, then estimates your costs against preset rates you can customize. You can also set reminders for when to check in. All calculations run offline, so you don't need a data connection to see where you stand. This proof-of-concept was built for a client and targets postpaid users in the Philippines (Globe, Smart, Sun).
 
-For now, this version of Billy is for postpaid users in the Philippines (Globe, Smart, Sun).
+**Role**
 
-This is a proof-of-concept(POC) work requested by a client.
+I built Billy in Cordova (formerly PhoneGap) and jQuery Mobile on Android. Beyond the interface, I wrote the middleware that collects usage data — call duration, contact numbers, and time of day — and cached provider details (plan name, cost per SMS, cost per minute) pulled from a service-provider API so the cost calculations could run entirely offline. I also built the reporting view: a simple graph of daily plan cost.
 
-**My role:**
+**Links**
 
-I built Billy in Cordova(formerly Phonegap) and Jquery Mobile on Android. Aside from the user interface, I built out middleware to collect data like call duration, contact numbers and time of day. There is also some offline data like details from the mobile service provider like name of postpaid plan, cost per sms, and cost of call per minute extracted from an API call to a service provider server.  The calculations are done offline so that user does not have to depend on mobile data. I made the report interface as well. The a report is a simple graph showing cost using the phone plan per day. 
-
-**Download:**
-
- [ANDROID](https://play.google.com/store/apps/details?id=com.lowe.billypostpaid.pak)
-
-**User Interface:**
-
-Jquery Mobile, Cordova, AJAX
-
-**Server:**
-
-PHP, JSON, MySQL
-
+- The Google Play listing is no longer available (app defunct).

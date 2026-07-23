@@ -1,43 +1,36 @@
 ---
 path: "/works/morsecode-potato/"
 date: "2018-08-28T19:21:31Z"
-title: Morsecode-Potato
-categories: [projects, works]
+title: "Morsecode-Potato"
+categories: [project, works]
 tags: [reactjs, tailwind]
-excerpt: 
+excerpt: "A React experiment that packages Morse code translation and playback into reusable hooks, with a telegraph-themed demo app."
 contentType: works
 featured_image: /morsecode-potato-header.png
 draft: false
 ---
 
-Morsecode-potato is a fun experiment to understand how to use react hooks to package functionality.
+Morsecode-Potato is an experiment in packaging functionality into reusable React hooks. It translates text to Morse code and plays it back as sound, light, or both.
 
-In this experiment, I created:
+**Role**
 
-- Custom hooks to translate and execute morsecode. 
+Sole author. I built the hooks and the demo app:
 
-    - useMorse - Translates text to international morse (ITU-R M.1677-1) returns a "morse" string
-    - useMorsePlayer - Plays a morse string as audio, as a silent visual signal, or both in sync — one clock drives everything, so sound and light can't drift.
-
-- Demo page 
-
-  - A tailwind styled react app
-  - Color scheme (shift) is old timey telegraph station. 
-  - Sections are:
-    - The input text area
-    - Playback buttons 
-    - Abbreviation reference table
+- `useMorse` — translates text to international Morse code (ITU-R M.1677-1) and returns a Morse string.
+- `useMorsePlayer` — plays a Morse string as audio, as a silent visual signal, or both in sync. One clock drives everything, so sound and light can't drift.
+- Demo page — a Tailwind-styled React app themed after an old-time telegraph station, with an input text area, playback controls, and an abbreviation reference table.
 
 <figure>
-<img src="/morsecode-potato-app.png" height="50%" width="50%" />
-<figcaption>Morsecode potato demo page in light theme</figcaption>
+<img src="/morsecode-potato-app.png" width="50%" alt="Morsecode-Potato demo page in light theme" />
+<figcaption>Demo page in light theme</figcaption>
 </figure>
 
 <figure>
-<img src="/morsecode-potato-dark.png" height="50%" width="50%" />
-<figcaption>Morsecode potato demo page in dark theme</figcaption>
+<img src="/morsecode-potato-dark.png" width="50%" alt="Morsecode-Potato demo page in dark theme" />
+<figcaption>Demo page in dark theme</figcaption>
 </figure>
 
-Demo: [chrisbautista.github.io/morsecode-potato/](https://chrisbautista.github.io/morsecode-potato/)
+**Links**
 
-Code: [chrisbautista/morsecode-potato](https://github.com/chrisbautista/morsecode-potato)
+- [Live demo](https://chrisbautista.github.io/morsecode-potato/?202607)
+- [Source on GitHub](https://github.com/chrisbautista/morsecode-potato)

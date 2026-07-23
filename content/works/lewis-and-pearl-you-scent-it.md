@@ -1,34 +1,29 @@
 ---
-path: "/works/2015/02/lewis-and-pearl-you-scent-it/"
-date: "2013-02-18T19:08:45Z"
+path: "/works/2012/02/lewis-and-pearl-you-scent-it/"
+date: "2012-02-18T19:08:45Z"
 title: "Lewis and Pearl: You Scent It!"
-categories: []
+categories: [project, works]
 tags: [php, mysql, javascript, jquery]
-excerpt: "You Scent It! is a promotional Facebook application by Lewis and Pearl.Participants must choose amo..."
+excerpt: "A promotional Facebook app for Lewis and Pearl that lets participants design a scented postcard and message for someone they love."
 contentType: works
 featured_image: /you-scent-it-facebook-promo.png
+draft: false
 ---
 
-You Scent It! is a promotional Facebook application by Lewis and Pearl.
+> Tell someone how you feel with the scents of Rio, Paris, and Japan.
 
-Participants must choose among a number different scents and design themes in the You Scent It App and come up with a thoughtful, heartwarming message for their loved ones.
+You Scent It! is a promotional Facebook application for Lewis and Pearl. Participants choose among a range of scents and design themes, then write a heartfelt message for a loved one. The client screens each entry, and successful ones are queued for printing and delivery.
 
-> Tell someone how you feel with the scents of Rio, Paris and Japan.
+**Role**
 
-Clients screens each entry and successful entries are then queued  for printing and delivery.
+I added the interactivity and animation, keeping in mind the subtle, delicate atmosphere of the design. The preview uses a custom script font to simulate how the back of the printed postcard would look, and stakeholders review entries through a custom admin page.
 
-**Art Direction:**John Pabalan, Lowe Philippines
+**Credits**
 
-**Accounts:**Katrina Nadela, Dea Bobadilla
+- Art direction — John Pabalan, Lowe Philippines
+- Accounts — Katrina Nadela, Dea Bobadilla
 
-**Comments:**
+**Links**
 
-Added interactivity and animation keeping in mind the subtle and delicate atmosphere brought out by the design. Preview use a custom script font to simulate how the back of the postcard would look when printed.  Stakeholders review the entries using a custom admin page.
-
-**Backend:** PHP, MySQL
-
-**Frontend:** HTML, Javascript, JQuery, JQuery UI
-
-**Source:** [Click here](https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/youscentit "Github : Youscentit")
-
-**Demo:** [Click here](https://chrisbautista.github.io/projects/youscentit/build/ "Github: You Scent It Demo")
+- [Source on GitHub](https://github.com/chrisbautista/chrisbautista.github.io/tree/master/projects/youscentit "GitHub: You Scent It")
+- [Live demo](https://chrisbautista.github.io/projects/youscentit/build/ "You Scent It demo")
