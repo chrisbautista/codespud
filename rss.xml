@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud RSS Feed]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Aug 2026 04:57:07 GMT</lastBuildDate><item><title><![CDATA[Five Things Every CMS Image Field Needs]]></title><description><![CDATA[Most CMS image fields do exactly one job. They take a file, then hand you a single box to type an alt attribute into. That’s fine for one…]]></description><link>https://www.codespud.com/2026/five-things-every-cms-image-field-is-missing/</link><guid isPermaLink="false">https://www.codespud.com/2026/five-things-every-cms-image-field-is-missing/</guid><pubDate>Tue, 04 Aug 2026 08:29:00 GMT</pubDate><content:encoded>&lt;p&gt;Most CMS image fields do exactly one job.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CodeSpud RSS Feed]]></title><description><![CDATA[A coding nerd taking life one line of code at a time.]]></description><link>https://www.codespud.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Aug 2026 03:59:22 GMT</lastBuildDate><item><title><![CDATA[Top 5 Git Commands You Should Know for a Better Dev Workflow]]></title><description><![CDATA[I’ll say it plainly: my entire git workflow runs on two commands.  when I need to get out of the way.  when I need to get somewhere else. No…]]></description><link>https://www.codespud.com/2026/top-5-git-commands-better-dev-workflow/</link><guid isPermaLink="false">https://www.codespud.com/2026/top-5-git-commands-better-dev-workflow/</guid><pubDate>Thu, 06 Aug 2026 08:29:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ll say it plainly: my entire git workflow runs on two commands.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;git stash&lt;/code&gt; when I need to get out of the way. &lt;code class=&quot;language-text&quot;&gt;git checkout&lt;/code&gt; when I need to get somewhere else.&lt;/p&gt;
+&lt;p&gt;No aliases, no muscle-memory shortcuts, no clever &lt;code class=&quot;language-text&quot;&gt;bisect&lt;/code&gt; story about the regression I hunted down in fifteen minutes. Just stash and checkout, over and over, for years, because they cover almost everything a normal day asks for.&lt;/p&gt;
+&lt;p&gt;But “almost” is doing a lot of work in that sentence.&lt;/p&gt;
+&lt;p&gt;The five commands below are what I’ve started reaching for instead, not to replace stash and checkout, but because each one quietly does a job I’d been solving by hand without noticing it was a job.&lt;/p&gt;
+&lt;p&gt;None of them are exotic. They’ve all shipped in git for years, sitting one &lt;code class=&quot;language-text&quot;&gt;--help&lt;/code&gt; away, waiting for someone to actually read the manual instead of pattern-matching off whatever worked last time.&lt;/p&gt;
+&lt;p&gt;Consider this a shortlist for anyone else who’s been getting by on two verbs when git actually offers a whole vocabulary.&lt;/p&gt;
+&lt;h2 id=&quot;contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#contents&quot; aria-label=&quot;contents permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt;Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#o-switch&quot;&gt;git switch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#o-restore&quot;&gt;git restore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#o-worktree&quot;&gt;git worktree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#o-bisect&quot;&gt;git bisect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#o-reflog&quot;&gt;git reflog&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;o-switch&quot;&gt;git switch&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout&lt;/code&gt; used to do three unrelated jobs: switch branches, restore files, and detach &lt;code class=&quot;language-text&quot;&gt;HEAD&lt;/code&gt; for a look around.&lt;/p&gt;
+&lt;p&gt;Git 2.23 split that pile in two, and &lt;a href=&quot;https://git-scm.com/docs/git-switch&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git switch&lt;/code&gt;&lt;/a&gt; got the branch-switching half (detaching &lt;code class=&quot;language-text&quot;&gt;HEAD&lt;/code&gt; came along with it, since it’s a special case of switching).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git switch main
+git switch -c fix/leaky-modal&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The difference from &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt; is narrow but real. &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; only touches branches, so it refuses to guess when you type a filename instead of a branch name, which is exactly the ambiguity that used to eat an afternoon. &lt;code class=&quot;language-text&quot;&gt;git switch -&lt;/code&gt; even swaps back to your previous branch, the same trick as &lt;code class=&quot;language-text&quot;&gt;cd -&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I’m not saying &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt; is wrong. I’m saying &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; is honest about what it’s doing, and honesty is underrated in a command you type forty times a day. Old habits still work, since &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt; isn’t going anywhere, but &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; is the one I reach for now.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use case&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Jumping to &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; to review a teammate’s PR without losing your place on your own branch&lt;/li&gt;
+&lt;li&gt;Creating a new branch straight from a ticket number, before touching a single file&lt;/li&gt;
+&lt;li&gt;Bouncing back to whatever you were just on with &lt;code class=&quot;language-text&quot;&gt;git switch -&lt;/code&gt;, the same trick as &lt;code class=&quot;language-text&quot;&gt;cd -&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git switch -   # use case 3: bounce back to whatever you were just on&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;o-restore&quot;&gt;git restore&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-restore&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git restore&lt;/code&gt;&lt;/a&gt; took the other half of &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt;’s job: pulling a file back to how it looked in the index or in some earlier commit.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git restore --staged app.js
+git restore --source=HEAD~2 app.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Where this earns its keep is the &lt;code class=&quot;language-text&quot;&gt;--staged&lt;/code&gt; flag. It unstages a file without touching your working copy, which used to mean memorizing &lt;code class=&quot;language-text&quot;&gt;git reset HEAD -- &amp;lt;file&gt;&lt;/code&gt; and hoping you got the argument order right.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;restore&lt;/code&gt; reads like what it does. &lt;code class=&quot;language-text&quot;&gt;reset&lt;/code&gt; never did, not for anyone who wasn’t already fluent in git’s plumbing. Splitting the two commands means the name tells you which side of the change you’re touching, the index or the working file, instead of leaving you to remember which flags do which.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use case&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Undoing edits to a file you weren’t supposed to touch, back to how &lt;code class=&quot;language-text&quot;&gt;HEAD&lt;/code&gt; has it&lt;/li&gt;
+&lt;li&gt;Unstaging a file you &lt;code class=&quot;language-text&quot;&gt;git add&lt;/code&gt;ed by mistake, without losing the edits sitting in it&lt;/li&gt;
+&lt;li&gt;Pulling one file back from two commits ago, just to compare an old approach&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git restore app.js   # use case 1: undo edits to a file you weren&apos;t supposed to touch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;o-worktree&quot;&gt;git worktree&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-worktree&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git worktree&lt;/code&gt;&lt;/a&gt; is the one that would have saved me the most stashes.&lt;/p&gt;
+&lt;p&gt;It checks out a second branch into its own folder, fully independent of whatever’s happening in your main one.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git worktree add ../hotfix main&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No more stashing a half-finished feature just to hop over and fix something urgent on &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; (as long as &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; isn’t the branch you’re currently sitting on, since git refuses to check the same branch out twice). Both branches sit on disk at once, each with its own working tree, so you can build one while testing the other in a separate terminal tab. Run &lt;code class=&quot;language-text&quot;&gt;git worktree remove ../hotfix&lt;/code&gt; when the fix ships, and the extra folder disappears with it, no cleanup ritual required.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use case&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fixing something urgent on &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; without stashing the feature you’re mid-way through&lt;/li&gt;
+&lt;li&gt;Checking out a teammate’s branch to test their PR, while your own work stays untouched&lt;/li&gt;
+&lt;li&gt;Running a slow test suite on one branch while you keep coding on another&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git worktree add ../review teammate-feature   # use case 2: check out a teammate&apos;s PR branch
+git worktree list                             # use case 3: keep tabs on trees while one runs tests&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It’s also having a moment among people running coding agents, since &lt;a href=&quot;https://dev.to/copyleftdev/the-git-commands-you-forgot-exist-and-why-ai-workflows-make-them-relevant-again-2gb8&quot;&gt;switching branches mid-session breaks an AI agent’s context, and worktree lets you avoid that collision entirely&lt;/a&gt;, and that’s a workflow &lt;code class=&quot;language-text&quot;&gt;stash&lt;/code&gt; was never built for. The mention of AI is a whole other story we will not tackler here.&lt;/p&gt;
+&lt;h2 id=&quot;o-bisect&quot;&gt;git bisect&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-bisect&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git bisect&lt;/code&gt;&lt;/a&gt; finds the commit that broke something, using binary search instead of your eyeballs.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git bisect start
+git bisect bad
+git bisect good v1.4.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Git checks out a commit halfway between the two, you test it, and you tell it &lt;code class=&quot;language-text&quot;&gt;good&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;bad&lt;/code&gt;. It halves the range again. A hundred commits collapses to about seven guesses.&lt;/p&gt;
+&lt;p&gt;Hand it a script instead of a human, with &lt;code class=&quot;language-text&quot;&gt;git bisect run ./test.sh&lt;/code&gt;, and it walks the whole search on its own while you make coffee. The only real skill is picking a good &lt;code class=&quot;language-text&quot;&gt;good&lt;/code&gt; commit, far enough back that you’re certain the bug wasn’t there yet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use case&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Finding which commit introduced a flaky test, somewhere across weeks of history&lt;/li&gt;
+&lt;li&gt;Tracking down the exact release that broke a performance benchmark&lt;/li&gt;
+&lt;li&gt;Locating the merge that quietly reintroduced a bug someone had already fixed once&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git bisect run ./benchmark.sh                 # use case 2: automate the hunt for a broken benchmark
+git bisect start --first-parent HEAD v1.4.0   # use case 3: focus on the merge that reintroduced a bug&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;o-reflog&quot;&gt;git reflog&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-reflog&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git reflog&lt;/code&gt;&lt;/a&gt; is the safety net under everything else on this list.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git reflog
+git reset --hard HEAD@{2}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Every time &lt;code class=&quot;language-text&quot;&gt;HEAD&lt;/code&gt; moves, whether from a commit, a checkout, a rebase, or a reset you immediately regretted, git writes it down. Nothing is actually gone until git’s garbage collector runs, and that default window is 90 days for anything still reachable, 30 for anything that isn’t.&lt;/p&gt;
+&lt;p&gt;So the branch you just force-pushed over, or the commit &lt;code class=&quot;language-text&quot;&gt;reset --hard&lt;/code&gt; seemed to delete, is usually still sitting in your local reflog, waiting for you to point back at it and push again. It’s worth running once, cold, before you ever need it, the same way you’d want to know where the fire extinguisher is before there’s a fire.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use case&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Recovering a branch you just deleted with &lt;code class=&quot;language-text&quot;&gt;git branch -D&lt;/code&gt;, one keystroke too fast&lt;/li&gt;
+&lt;li&gt;Undoing a &lt;code class=&quot;language-text&quot;&gt;reset --hard&lt;/code&gt; that wiped out committed work you hadn’t pushed anywhere&lt;/li&gt;
+&lt;li&gt;Getting back a commit that seems to have vanished after a rebase went sideways&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git reflog                             # reference your safety net
+-----
+9e8b7c (HEAD -&gt; master, origin/master, origin/HEAD) HEAD@{0}: commit: redesign
+a7e23c85 HEAD@{1}: commit: new post
+1d768e5c HEAD@{2}: branch: deleted recovered-branch
+abc1234  HEAD@{3}: commit: redesign 1
+8df55c2b HEAD@{4}: commit: fix resolution post
+4e284f5c HEAD@{5}: commit: cleanup
+...
+
+git branch recovered-branch HEAD@{2}   # use case 1: recover a branch deleted with git branch -D
+git cherry-pick abc1234                # use case 3: get back a commit lost after a bad rebase&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;two-commands-isnt-a-workflow-its-a-habit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#two-commands-isnt-a-workflow-its-a-habit&quot; aria-label=&quot;two commands isnt a workflow its a habit permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt;Two commands isn’t a workflow, it’s a habit&lt;/h2&gt;
+&lt;p&gt;None of this makes &lt;code class=&quot;language-text&quot;&gt;stash&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;checkout&lt;/code&gt; obsolete.&lt;/p&gt;
+&lt;p&gt;I still reach for both most days, and I probably always will. What’s changed is that they’re no longer the only tools on the bench: &lt;code class=&quot;language-text&quot;&gt;switch&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;restore&lt;/code&gt; for the everyday moves, &lt;code class=&quot;language-text&quot;&gt;worktree&lt;/code&gt; for when two branches need to exist at once, &lt;code class=&quot;language-text&quot;&gt;bisect&lt;/code&gt; for the bug I can’t just eyeball, &lt;code class=&quot;language-text&quot;&gt;reflog&lt;/code&gt; for the moment I do something I can’t undo any other way.&lt;/p&gt;
+&lt;p&gt;Pick one from this list and use it on purpose this week. That’s a smaller commitment than relearning your whole workflow, and it’s the only way any of these actually stick.&lt;/p&gt;
+&lt;p&gt;Start with whichever one solves a problem you already have. If you keep stashing to switch branches, that’s &lt;code class=&quot;language-text&quot;&gt;worktree&lt;/code&gt;. If you keep losing work to a bad &lt;code class=&quot;language-text&quot;&gt;reset --hard&lt;/code&gt;, that’s &lt;code class=&quot;language-text&quot;&gt;reflog&lt;/code&gt;. The rest will follow once one of them earns your trust.&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Five Things Every CMS Image Field Needs]]></title><description><![CDATA[Most CMS image fields do exactly one job. They take a file, then hand you a single box to type an alt attribute into. That’s fine for one…]]></description><link>https://www.codespud.com/2026/five-things-every-cms-image-field-is-missing/</link><guid isPermaLink="false">https://www.codespud.com/2026/five-things-every-cms-image-field-is-missing/</guid><pubDate>Tue, 04 Aug 2026 08:29:00 GMT</pubDate><content:encoded>&lt;p&gt;Most CMS image fields do exactly one job.&lt;/p&gt;
 &lt;p&gt;They take a file, then hand you a single box to type an alt attribute into. That’s fine for one photo on one page, but it falls apart the moment the same photo gets reused as a hero here and a thumbnail there, because a single field can’t hold two different jobs at once.&lt;/p&gt;
 &lt;p&gt;Three real media libraries make the pattern easy to spot.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blog/media-library-wordpress.png&quot; alt=&quot;WordPress&amp;#x27;s Attachment Details panel, showing separate Title, Caption, and Alt Text fields that are all saved once per file.&quot;&gt;
@@ -13,8 +113,8 @@
   &lt;span class=&quot;token property&quot;&gt;&quot;alt&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Team standup, April 2026&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Company X development team. Sign below says &apos;April 2026&apos;&quot;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There is nothing wrong with the JSON model but most usages these are not enough.&lt;/p&gt;
-&lt;p&gt;Here’s what I’d want added into that field every time an image is uploaded.&lt;/p&gt;
+&lt;p&gt;There is nothing wrong with the JSON model but for most usages these are not enough.&lt;/p&gt;
+&lt;p&gt;Here’s what I’d want added into the metadata every time an image is uploaded.&lt;/p&gt;
 &lt;h2 id=&quot;additional-metadata-that-makes-an-image-an-asset&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#additional-metadata-that-makes-an-image-an-asset&quot; aria-label=&quot;additional metadata that makes an image an asset permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;#&lt;/span&gt;&lt;/a&gt;Additional metadata that makes an image an “asset”&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#o-alt-travels&quot;&gt;Alt text that travels with the placement&lt;/a&gt;&lt;/li&gt;
