@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcodespud_blog=self.webpackChunkcodespud_blog||[]).push([[8488],{8488:function(e,c,u){u.d(c,{createArchitectureServices:function(){return r.S}});var r=u(9221);u(1400)}}]);
